@@ -1,0 +1,242 @@
+/* Landscape stage mode: everything is laid out on a 1920x1080 canvas and scaled by --s (see stage.mjs).
+   Only active under html.staged; phones/portrait keep the fluid rules in styles.css.
+   Viewport units (vw/vh) from styles.css are replaced here with px at design resolution. */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Dela+Gothic+One&display=swap");
+
+:root{--display:"Dela Gothic One","M PLUS Rounded 1c",var(--round)}
+:root{--round:"M PLUS Rounded 1c","Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic",system-ui,sans-serif}
+body{font-family:var(--round)}
+
+html.staged{font-size:21px}
+html.staged body{overflow:hidden;background:#120906;min-width:0;min-height:0}
+html.staged #app{position:fixed;left:50%;top:50%;width:1920px;height:1080px;overflow:hidden;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center center;background:#2a1712}
+html.staged .game,html.staged .title-screen{width:1920px;height:1080px;min-height:0}
+html.staged .game{background-attachment:scroll}
+
+/* ----- frame: HUD like the mockups (taller red band, big logo badge, big chips) ----- */
+html.staged .hud{height:86px;padding:0 22px;gap:14px;flex-wrap:nowrap;border-bottom-width:5px}
+html.staged .logo-badge{padding:6px 22px;border-width:3px;border-radius:16px}
+html.staged .logo-badge strong{font-family:var(--display);font-weight:400;font-size:30px;letter-spacing:0;white-space:nowrap}
+html.staged .logo-badge small{font-size:15px;padding:1px 10px}
+html.staged .plaque{font-size:30px;padding:8px 26px;border-width:3px}
+html.staged .hud-chips{gap:10px}
+html.staged .chip{font-size:22px;padding:8px 16px;border-width:3px;border-radius:12px}
+html.staged .chip-btn{font-size:22px;padding:8px 18px}
+html.staged .stars{font-size:26px}
+html.staged .stage{padding:22px 34px 26px;gap:20px;overflow:auto}
+html.staged .stage.with-owner{padding-left:440px}
+html.staged .hintbar{font-size:17px;padding:6px 24px}
+
+/* owner stand + bubble anchored to the stage (a transformed ancestor contains position:fixed) */
+html.staged .owner-stand{position:absolute;left:-20px;bottom:0;height:790px;max-width:none}
+html.staged .owner-bubble{position:absolute;left:24px;top:110px;bottom:auto;width:400px;max-width:none;font-size:25px;padding:18px 22px;border-width:4px;border-radius:28px}
+html.staged .owner-bubble::after{left:46%;bottom:-18px;border-width:16px;border-bottom:0}
+html.staged .bubble-name{font-size:20px}
+
+/* cards / buttons a notch bigger, like the mockup panels */
+html.staged .card{border-width:4px;border-radius:20px}
+html.staged .card-title{font-size:26px;padding:10px 20px}
+html.staged .card-body{padding:16px 20px}
+html.staged button{border-radius:16px}
+html.staged .big-cta{font-size:34px;padding:16px 56px;border-radius:22px}
+html.staged .toast{max-width:900px}
+html.staged .tutorial-banner{width:900px}
+
+/* ----- title (title mockup) ----- */
+html.staged .kat-owner{height:1180px;left:-40px;bottom:-90px}
+html.staged .kat-dish{left:640px;bottom:-30px;width:900px}
+html.staged .kat-logo{left:660px;right:40px;top:40px}
+html.staged .kat-ribbon{font-size:44px;padding:6px 64px}
+html.staged .kat-title{font-family:var(--display);font-weight:400;font-size:230px;letter-spacing:0}
+html.staged .kat-sub{font-size:40px}
+html.staged .kat-menu{right:40px;top:440px;width:440px;gap:14px}
+html.staged .kat-menu button{font-size:32px;padding:14px 20px}
+html.staged .kat-menu button.primary{font-size:40px;padding:18px 20px}
+
+/* ----- morning (mockup 01): three tall panels + large CTA ----- */
+html.staged .cols-3{gap:24px;align-items:stretch}
+html.staged .cols-3>.card{display:flex;flex-direction:column}
+html.staged .inv-row{padding:10px 4px}
+html.staged .inv-icon{font-size:36px}
+html.staged .slider-row{grid-template-columns:4rem 1fr 2.4rem;margin:14px 0}
+html.staged .forecast strong{font-size:56px}
+html.staged .mix-face{width:46px;height:46px}
+
+/* ----- shop (mockup 02) ----- */
+html.staged .shop-layout{grid-template-columns:1fr 600px;gap:24px}
+html.staged .shop-owner{height:720px;margin-left:-30px}
+html.staged .shop-guest{width:400px}
+html.staged .order-face{width:80px;height:80px}
+html.staged .order-dish{width:150px}
+
+/* ----- cooking / P3 (P3 mockup) ----- */
+html.staged .steps{gap:6px}
+html.staged .steps{flex-wrap:nowrap}
+html.staged .step{min-width:178px;font-size:26px;padding:6px 24px 8px 32px}
+html.staged .step b{font-size:22px}
+html.staged .step-ico{font-size:40px}
+html.staged .step-arrow{font-size:22px}
+html.staged .cook-layout{grid-template-columns:330px 1fr 470px;gap:24px}
+html.staged .memo-face{width:72px;height:72px}
+html.staged .work .card-body{min-height:560px}
+html.staged .work.fry-mode .card-body{min-height:0}
+html.staged .work.fry-mode .fry-scene{width:100%;max-width:800px;aspect-ratio:1448/1086;margin:0 auto}
+html.staged .fry-time{width:100%;max-width:760px;margin-top:-110px;position:relative;z-index:2}
+html.staged .fry-time strong{font-size:44px}
+html.staged .fry-bar{height:26px}
+html.staged .fry-meta strong{font-size:30px}
+html.staged .fry-meta .q1{font-size:44px}
+html.staged .gauge{height:30px}
+html.staged .stage-photo{width:220px}
+html.staged .pot-timer{font-size:60px}
+html.staged .plate span{font-size:64px}
+html.staged .board{width:760px}
+html.staged .meat-zone{height:300px}
+html.staged .coat-cutlet{height:260px}
+
+/* ----- cooking complete (調理完了 mockup) ----- */
+html.staged .complete-layout{grid-template-columns:1fr 560px;gap:30px}
+html.staged .done-banner{font-family:var(--display);font-weight:400;font-size:90px;padding:6px 120px}
+html.staged .done-name{font-size:44px;padding:6px 80px}
+html.staged .done-dish{width:900px}
+html.staged .done-actions{gap:24px}
+html.staged .done-actions .big-cta{font-size:52px;padding:18px 90px}
+html.staged .done-actions .secondary{font-size:30px;padding:16px 40px}
+html.staged .eval-title{font-family:var(--display);font-weight:400;font-size:40px;padding:8px 50px}
+html.staged .eval-head .emblem-rank{font-size:150px}
+html.staged .eval-total strong{font-size:70px}
+html.staged .eval-row{grid-template-columns:250px 1fr 54px;font-size:24px;padding:7px 0}
+html.staged .eval-row strong{font-size:28px}
+html.staged .eval-bar{height:22px}
+html.staged .eval-face{width:96px;height:96px}
+html.staged .eval-voice p{font-size:24px}
+
+/* ----- tasting (mockup 04) / result (05) / upgrades ----- */
+html.staged .emblem-rank{font-family:var(--display);font-weight:400;font-size:220px}
+html.staged .emblem-ribbon{font-size:30px;padding:6px 40px}
+html.staged .crown{font-size:70px}
+html.staged .taster-img{width:720px}
+html.staged .rank-dish{width:560px}
+html.staged .speech strong{font-size:40px}
+html.staged .speech p{font-size:26px}
+html.staged .verdict-stats span{font-size:24px}
+html.staged .tasting-owner{width:270px}
+html.staged .result-layout{max-width:1300px;gap:28px}
+html.staged .ledger-row{font-size:28px;padding:12px 8px}
+html.staged .ledger-row strong{font-size:32px}
+html.staged .ledger-row.profit strong{font-size:40px}
+html.staged .rep-head .stars{font-size:48px}
+html.staged .upgrade-grid{max-width:1300px}
+html.staged .story-portrait{width:260px;height:380px}
+
+/* cooking: owner overlaps behind the order panel like the P3 mockup, giving the pan more room */
+html.staged .stage.with-owner:has(.cook-layout){padding-left:300px}
+html.staged .stage:has(.cook-layout) .owner-stand{height:700px;left:-60px}
+html.staged .stage:has(.cook-layout) .owner-bubble{width:330px}
+html.staged .cook-layout{grid-template-columns:330px 1fr 440px}
+html.staged .work.fry-mode .stage-photo{display:none}
+html.staged .fry-card .big-cta{font-size:34px;padding:16px 10px;white-space:nowrap}
+html.staged .eval-head{justify-content:space-between}
+html.staged .eval-head .emblem-rank{font-size:140px}
+html.staged .eval-head.rank-SSS .emblem-rank{font-size:96px;letter-spacing:-.02em}
+html.staged .eval-head.rank-S .emblem-rank,html.staged .eval-head.rank-A .emblem-rank,html.staged .eval-head.rank-B .emblem-rank,html.staged .eval-head.rank-C .emblem-rank,html.staged .eval-head.rank-F .emblem-rank{font-size:150px}
+html.staged .eval-total{flex:none}
+html.staged .stage{overflow-x:hidden}
+html.staged .done-dish .rank-dish{width:100%}
+html.staged .complete-stage .done-dish{width:940px;margin:-10px 0 -20px}
+html.staged .complete-layout{grid-template-columns:minmax(0,1fr) 540px}
+html.staged .complete-stage .done-dish{width:min(100%,860px);margin:-16px 0 -24px}
+html.staged .complete-stage .done-center{gap:10px}
+html.staged .stage.with-owner.complete-stage{padding-left:360px}
+html.staged .done-banner{font-size:76px;padding:4px 90px;white-space:nowrap}
+html.staged .done-name{font-size:38px;padding:4px 70px}
+html.staged .complete-stage .done-dish{width:min(100%,800px);margin:-20px 0 -30px}
+html.staged .done-actions .big-cta{font-size:46px;padding:14px 80px}
+
+/* tasting: emblem on top, dish left / speech + stats + button right (fits 1080 like mockup 04) */
+html.staged .tasting{grid-template-columns:minmax(0,.95fr) minmax(0,1.25fr);padding:0 10px}
+html.staged .tasting .verdict{display:grid;grid-template-columns:500px minmax(0,1fr);grid-template-areas:"em em" "dish sp" "dish st" "dish bt";gap:14px 22px;align-items:center;justify-items:center}
+html.staged .tasting .verdict>.emblem{grid-area:em}
+html.staged .tasting .verdict>.rank-dish{grid-area:dish;width:500px}
+html.staged .tasting .verdict>.speech{grid-area:sp}
+html.staged .tasting .verdict>.verdict-stats{grid-area:st}
+html.staged .tasting .verdict>button{grid-area:bt;font-size:36px;padding:14px 40px}
+html.staged .tasting .emblem-rank{font-size:200px}
+html.staged .tasting .crown{font-size:56px}
+html.staged .tasting .speech::before{top:30%}
+html.staged .taster-img{width:640px}
+html.staged .tasting .verdict{padding-right:170px}
+html.staged .tasting-owner{width:230px;right:-30px;bottom:-60px}
+html.staged .tasting{grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr)}
+html.staged .tasting .verdict{grid-template-columns:450px minmax(0,1fr);padding-right:140px}
+html.staged .tasting .verdict>.rank-dish{width:450px}
+html.staged .tasting .verdict>button{white-space:nowrap}
+html.staged .taster-img{width:600px}
+html.staged .stage.tasting-stage{overflow:hidden}
+
+/* ---------- SVG icon set (src/icons.mjs swaps emoji for these) ---------- */
+.ico{display:inline-block;width:1.2em;height:1.2em;vertical-align:-.22em;line-height:0;flex:none}
+.ico svg{width:100%;height:100%;display:block;overflow:visible}
+button .ico{margin-right:.15em}
+.step-ico .ico{width:1.6em;height:1.6em}
+.chip .ico{width:1.1em;height:1.1em}
+
+/* ===================== title v3 (premium pass after the revision brief) ===================== */
+/* background: slightly softened so character and dish lead; warm vignette for UI contrast */
+.title-v2{isolation:isolate}
+.title-v2::before{content:"";position:absolute;inset:-12px;z-index:-2;background:inherit;filter:blur(2px) saturate(1.12) brightness(1.04)}
+.title-v2::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 70% 30%,transparent 45%,#3a1a0f55 100%),linear-gradient(transparent 70%,#3a1a0f66)}
+
+/* logo: red gradient face + white rim + gold outer rim + extruded shadow */
+.kat-title{position:relative;color:#fff;-webkit-text-stroke:.16em #e9b13c;paint-order:stroke fill;background:none;filter:drop-shadow(0 .05em 0 #7a1410) drop-shadow(0 .09em 0 #5a0c0c) drop-shadow(0 .14em .12em #0007)}
+.kat-title::before,.kat-title::after{content:attr(data-text);position:absolute;inset:0;pointer-events:none}
+.kat-title::before{z-index:1;color:#fff;-webkit-text-stroke:.085em #fff;paint-order:stroke fill}
+.kat-title::after{z-index:2;-webkit-text-stroke:0;color:transparent;background:linear-gradient(#ff8a6a 0%,#f2402e 30%,#c8161c 62%,#8a0a12 100%);-webkit-background-clip:text;background-clip:text}
+.kat-ribbon{background:linear-gradient(#e2473a,#a8161a 60%,#7a0c10);box-shadow:inset 0 2px 0 #ff9a7a,inset 0 -3px 0 #5a0808,0 6px 12px #0005;text-shadow:0 2px 0 #5a0808;letter-spacing:.16em}
+.kat-sub{font-family:var(--round);font-weight:900;letter-spacing:.14em;color:#8a1414;background:linear-gradient(#fffdf6,#f6e4bc);border:3px solid #c9902f;border-radius:999px;box-shadow:inset 0 2px 0 #fff,0 0 0 3px #fff6dd,0 6px 12px #0004;padding:.15em 1.2em}
+
+/* dish: thin sliced beef cutlet on a large white plate, gloss + steam */
+.kat-dish{isolation:isolate}
+.kat-plate{position:absolute;left:-3%;right:-3%;top:16%;bottom:-6%;z-index:-1;border-radius:50%;background:radial-gradient(ellipse at 50% 45%,#fff 0 58%,#f3eee6 66%,#fff 70%,#e6dfd2 86%,#cfc6b6 100%);box-shadow:0 18px 28px #0006,inset 0 -6px 14px #0001}
+.kat-dish-img{position:relative;width:96%;margin:0 2%;-webkit-mask-image:linear-gradient(90deg,#000 90%,transparent 99%);mask-image:linear-gradient(90deg,#000 90%,transparent 99%);filter:saturate(1.12) contrast(1.05) drop-shadow(0 6px 6px #0004)}
+.steam{position:absolute;top:-8%;width:9%;height:46%;border-radius:50%;background:radial-gradient(ellipse at 50% 60%,#fffd 0,#fff8 30%,transparent 70%);filter:blur(10px);opacity:0;animation:katSteam 4.2s ease-in-out infinite;pointer-events:none}
+.steam.s1{left:30%}.steam.s2{left:46%;animation-delay:1.4s}.steam.s3{left:60%;animation-delay:2.8s}
+@keyframes katSteam{0%{opacity:0;transform:translateY(30%) scaleX(.8)}30%{opacity:.75}100%{opacity:0;transform:translateY(-40%) scaleX(1.3)}}
+
+/* menu: premium bevelled buttons with icon medallions and hover glow + shine */
+.kat-menu button{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:flex-start;gap:.7em;padding:.5em .9em;text-align:left;color:#5a2414;font-weight:900;letter-spacing:.08em;border-radius:18px;border:3px solid #b9802f;
+  background:linear-gradient(#fffef8,#fbefd2 50%,#efd7a4);box-shadow:inset 0 2px 0 #fff,inset 0 -4px 0 #dcb878,0 0 0 2px #fff3d2,0 5px 0 #8a5a22,0 10px 18px #0005;transition:transform .15s,box-shadow .15s,filter .15s}
+.kat-menu button .ico{width:1.65em;height:1.65em;padding:.28em;margin:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#a8402e,#6a1e14);color:#fff3dc;box-shadow:inset 0 1px 0 #fff5,0 2px 3px #0004}
+.kat-menu button.primary{color:#fff;border-color:#f2c14e;text-shadow:0 2px 0 #5a0c0c;background:linear-gradient(#f05a48,#c8221c 50%,#8f1410);box-shadow:inset 0 2px 0 #ff9a84,inset 0 -4px 0 #6a0c0c,0 0 0 2px #fff0c0,0 0 22px #ffd65a99,0 5px 0 #5a0c0c,0 12px 20px #0006}
+.kat-menu button.primary .ico{background:radial-gradient(circle at 35% 30%,#fffaf0,#f2d9a8);color:#a3141a}
+.kat-menu button::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,#fff9,transparent);transform:skewX(-20deg);transition:left .5s;pointer-events:none}
+.kat-menu button:hover:not(:disabled){transform:translateY(-3px);filter:brightness(1.06);box-shadow:inset 0 2px 0 #fff,inset 0 -4px 0 #dcb878,0 0 0 2px #fff3d2,0 0 20px #ffd65acc,0 8px 0 #8a5a22,0 14px 22px #0005}
+.kat-menu button.primary:hover:not(:disabled){box-shadow:inset 0 2px 0 #ff9a84,inset 0 -4px 0 #6a0c0c,0 0 0 2px #fff0c0,0 0 30px #ffd65a,0 8px 0 #5a0c0c,0 14px 22px #0006}
+.kat-menu button:hover:not(:disabled)::after{left:130%}
+.kat-menu button:disabled{opacity:.6;filter:grayscale(.3)}
+
+/* footer hint bar */
+.kat-footer{position:absolute;left:0;right:0;bottom:0;z-index:6;display:flex;justify-content:space-between;gap:1rem;padding:.45em 1.4em;font-size:.85rem;font-weight:800;color:#fff3dc;background:linear-gradient(#3a1a0fcc,#2a1208ee);border-top:2px solid #d9a441}
+.kat-footer .ico{width:1.3em;height:1.3em}
+.title-v2 .kat-note{bottom:3.2rem}
+
+/* staged (1920x1080) sizes */
+html.staged .kat-owner{height:1160px;left:-60px;bottom:-110px}
+html.staged .kat-dish{left:560px;bottom:20px;width:1000px}
+html.staged .kat-logo{left:640px;right:60px;top:30px}
+html.staged .kat-ribbon{font-size:46px;padding:8px 80px}
+html.staged .kat-title{font-size:250px;line-height:1.05}
+html.staged .kat-sub{font-size:40px;margin-top:6px}
+html.staged .kat-menu{right:56px;top:470px;width:430px;gap:16px}
+html.staged .kat-menu button{height:78px;font-size:31px}
+html.staged .kat-menu button.primary{height:92px;font-size:38px}
+html.staged .kat-footer{font-size:20px;padding:10px 30px}
+html.staged .title-v2 .kat-note{bottom:62px}
+html.staged .kat-owner{height:1010px;left:-30px;bottom:-40px}
+@media(max-width:900px){
+  .kat-footer{font-size:.72rem;padding:.35em .8em}
+  .kat-footer span:last-child{display:none}
+  .kat-menu{bottom:6.4rem!important;gap:.4rem!important}
+  .kat-menu button{padding:.42em .8em}
+  .title-v2 .kat-note{bottom:2.4rem;font-size:.72rem}
+}

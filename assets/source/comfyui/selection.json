@@ -403,7 +403,7 @@
   },
   {
    "id": "char_owner_shop_invite",
-   "source": "town_game_assets/char_owner_shop_invite_v103_00001_.png",
+   "source": "town_game_assets/char_owner_invite2_owner_aesthetic_v204_00001_.png",
    "path": "characters/owner/shop/invite.webp",
    "type": "character",
    "cutout": true,

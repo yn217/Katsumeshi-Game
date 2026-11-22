@@ -779,5 +779,87 @@
    "prompt": "original animated game background, no people, clean bright painterly 2D anime background illustration, full bleed, sunny early summer day at a wide river in a small Japanese city, a long low concrete bridge crossing the river in the middle distance, green rounded mountains and a few white buildings on the far bank, vivid blue sky with fluffy white clouds, fresh green tree leaves framing the top corners, in the foreground at the bottom a cafe table covered with a red and white gingham checkered tablecloth, blue and purple hydrangea flowers at the bottom right corner, the edge of a wooden shop front with a plain red curtain at the far left, eye-level view",
    "negative_extra": ", people, characters, food, plates, readable text, letters, lettering, signboard text, vignette, white border, letterbox, black bars"
   }
+ ],
+ "title2": [
+  {
+   "id": "char_owner_invite2_owner_v201",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 84001,
+   "cutout": true,
+   "prompt": "white blouse with short puffed sleeves and a small wine red ribbon at the collar, wine red bib apron with a small heart emblem on the chest, big bow tied at the waist, upper body to hips, leaning slightly forward and reaching one open hand toward the viewer in a warm welcoming gesture, other hand near the chest, bright friendly open-mouth smile, sparkling eyes, highly detailed anime key visual illustration, detailed glossy hair with soft highlights and strands, detailed eyes with highlights, rich soft cel shading with rim light, polished commercial game character art, plain white background",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, fused fingers, bad hands, deformed hands, holding object, denim"
+  },
+  {
+   "id": "char_owner_invite2_owner_v202",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 84002,
+   "cutout": true,
+   "prompt": "white blouse with short puffed sleeves and a small wine red ribbon at the collar, wine red bib apron with a small heart emblem on the chest, big bow tied at the waist, upper body to hips, leaning slightly forward and reaching one open hand toward the viewer in a warm welcoming gesture, other hand near the chest, bright friendly open-mouth smile, sparkling eyes, highly detailed anime key visual illustration, detailed glossy hair with soft highlights and strands, detailed eyes with highlights, rich soft cel shading with rim light, polished commercial game character art, plain white background",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, fused fingers, bad hands, deformed hands, holding object, denim"
+  },
+  {
+   "id": "char_owner_invite2_owner_v203",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 84003,
+   "cutout": true,
+   "prompt": "white blouse with short puffed sleeves and a small wine red ribbon at the collar, wine red bib apron with a small heart emblem on the chest, big bow tied at the waist, upper body to hips, leaning slightly forward and reaching one open hand toward the viewer in a warm welcoming gesture, other hand near the chest, bright friendly open-mouth smile, sparkling eyes, highly detailed anime key visual illustration, detailed glossy hair with soft highlights and strands, detailed eyes with highlights, rich soft cel shading with rim light, polished commercial game character art, plain white background",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, fused fingers, bad hands, deformed hands, holding object, denim"
+  },
+  {
+   "id": "char_owner_invite2_owner_v204",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 84004,
+   "cutout": true,
+   "prompt": "white blouse with short puffed sleeves and a small wine red ribbon at the collar, wine red bib apron with a small heart emblem on the chest, big bow tied at the waist, upper body to hips, leaning slightly forward and reaching one open hand toward the viewer in a warm welcoming gesture, other hand near the chest, bright friendly open-mouth smile, sparkling eyes, highly detailed anime key visual illustration, detailed glossy hair with soft highlights and strands, detailed eyes with highlights, rich soft cel shading with rim light, polished commercial game character art, plain white background",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, fused fingers, bad hands, deformed hands, holding object, denim"
+  },
+  {
+   "id": "char_owner_invite2_owner_aesthetic_v201",
+   "preset": "owner_aesthetic",
+   "w": 896,
+   "h": 1152,
+   "seed": 84001,
+   "cutout": true,
+   "prompt": "white blouse with short puffed sleeves and a small wine red ribbon at the collar, wine red bib apron with a small heart emblem on the chest, big bow tied at the waist, upper body to hips, leaning slightly forward and reaching one open hand toward the viewer in a warm welcoming gesture, other hand near the chest, bright friendly open-mouth smile, sparkling eyes, highly detailed anime key visual illustration, detailed glossy hair with soft highlights and strands, detailed eyes with highlights, rich soft cel shading with rim light, polished commercial game character art, plain white background",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, fused fingers, bad hands, deformed hands, holding object, denim"
+  },
+  {
+   "id": "char_owner_invite2_owner_aesthetic_v202",
+   "preset": "owner_aesthetic",
+   "w": 896,
+   "h": 1152,
+   "seed": 84002,
+   "cutout": true,
+   "prompt": "white blouse with short puffed sleeves and a small wine red ribbon at the collar, wine red bib apron with a small heart emblem on the chest, big bow tied at the waist, upper body to hips, leaning slightly forward and reaching one open hand toward the viewer in a warm welcoming gesture, other hand near the chest, bright friendly open-mouth smile, sparkling eyes, highly detailed anime key visual illustration, detailed glossy hair with soft highlights and strands, detailed eyes with highlights, rich soft cel shading with rim light, polished commercial game character art, plain white background",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, fused fingers, bad hands, deformed hands, holding object, denim"
+  },
+  {
+   "id": "char_owner_invite2_owner_aesthetic_v203",
+   "preset": "owner_aesthetic",
+   "w": 896,
+   "h": 1152,
+   "seed": 84003,
+   "cutout": true,
+   "prompt": "white blouse with short puffed sleeves and a small wine red ribbon at the collar, wine red bib apron with a small heart emblem on the chest, big bow tied at the waist, upper body to hips, leaning slightly forward and reaching one open hand toward the viewer in a warm welcoming gesture, other hand near the chest, bright friendly open-mouth smile, sparkling eyes, highly detailed anime key visual illustration, detailed glossy hair with soft highlights and strands, detailed eyes with highlights, rich soft cel shading with rim light, polished commercial game character art, plain white background",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, fused fingers, bad hands, deformed hands, holding object, denim"
+  },
+  {
+   "id": "char_owner_invite2_owner_aesthetic_v204",
+   "preset": "owner_aesthetic",
+   "w": 896,
+   "h": 1152,
+   "seed": 84004,
+   "cutout": true,
+   "prompt": "white blouse with short puffed sleeves and a small wine red ribbon at the collar, wine red bib apron with a small heart emblem on the chest, big bow tied at the waist, upper body to hips, leaning slightly forward and reaching one open hand toward the viewer in a warm welcoming gesture, other hand near the chest, bright friendly open-mouth smile, sparkling eyes, highly detailed anime key visual illustration, detailed glossy hair with soft highlights and strands, detailed eyes with highlights, rich soft cel shading with rim light, polished commercial game character art, plain white background",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, fused fingers, bad hands, deformed hands, holding object, denim"
+  }
  ]
 }

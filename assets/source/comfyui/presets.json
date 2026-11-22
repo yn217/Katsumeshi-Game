@@ -50,6 +50,21 @@
       "loras": [],
       "prefix": "masterpiece, best quality, ",
       "negative": "worst quality, low quality, blurry, photorealistic, 3d render, readable text, lettering, logos, watermark, signature"
+    },
+    "owner_aesthetic": {
+      "loras": [
+        [
+          "Koharu-Koharu-epoch100.safetensors",
+          0.8
+        ],
+        [
+          "anima-style-epoch35-lr5e5.safetensors",
+          0.8
+        ]
+      ],
+      "prefix": "koharu_rikka, anima_style, masterpiece, best quality, 1girl, solo, Koharu Rikka, silver gray hair, medium hair with bangs, double bun, two small hair buns on top of head, pink heart hairpin, pink eyes, ",
+      "negative": "worst quality, low quality, blurry, photorealistic, 3d render, bad anatomy, extra fingers, missing fingers, fused fingers, deformed hands, extra limbs, duplicate girl, multiple girls, wrong hair color, long hair, ribbon bow tie, washed out colors, overexposure, real brand logos, text, letters, gibberish text, watermark, signature, denim, overalls, suspenders, shoulder straps, blue clothes, jeans",
+      "unet": "Anima-Aesthetic-v1.1.safetensors"
     }
   },
   "outfits": {

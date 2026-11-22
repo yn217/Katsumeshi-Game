@@ -1069,9 +1069,9 @@
     "title"
    ],
    "status": "draft",
-   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_invite_v103",
-   "generationSeed": 82003,
-   "model": "Anima-Base-v1.0.safetensors",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_invite2_owner_aesthetic_v204",
+   "generationSeed": 84004,
+   "model": "Anima-Aesthetic-v1.1.safetensors",
    "loraList": [
     [
      "Koharu-Koharu-epoch100.safetensors",

@@ -18,7 +18,7 @@ def workflow(job):
     preset = PRESETS["presets"][job["preset"]]
     loras = preset.get("loras", [])
     wf = {
-        "1": {"class_type": "UNETLoader", "inputs": {"unet_name": PRESETS["base"]["unet"], "weight_dtype": "default"}},
+        "1": {"class_type": "UNETLoader", "inputs": {"unet_name": preset.get("unet", PRESETS["base"]["unet"]), "weight_dtype": "default"}},
         "2": {"class_type": "CLIPLoader", "inputs": {"clip_name": PRESETS["base"]["clip"], "type": "qwen_image"}},
         "5": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": preset["prefix"] + job["prompt"]}},
         "6": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": preset["negative"] + job.get("negative_extra", "")}},
