@@ -240,3 +240,69 @@ html.staged .kat-owner{height:1010px;left:-30px;bottom:-40px}
   .kat-menu button{padding:.42em .8em}
   .title-v2 .kat-note{bottom:2.4rem;font-size:.72rem}
 }
+
+/* ===================== morning / shop / result → mockups 01 / 02 / 05 ===================== */
+/* red-filled sliders with a cream knob (mockup 01) */
+.slider-row input[type=range]{-webkit-appearance:none;appearance:none;height:14px;border-radius:999px;background:linear-gradient(90deg,#d23a2e,#9b1c18) 0/var(--v,50%) 100% no-repeat,#eadfca;border:2px solid #c9a46a;box-shadow:inset 0 1px 2px #0003;cursor:pointer}
+.slider-row input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fffef6,#f2dcae);border:3px solid #b9802f;box-shadow:0 3px 5px #0005}
+.slider-row input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fffef6,#f2dcae);border:3px solid #b9802f}
+.sauce-note{display:flex;align-items:center;gap:.7rem;margin-top:.8rem;padding:.6rem .8rem;border-radius:12px;background:#fffaf0;border:1px solid #e2c99e}
+.sauce-note-ico .ico{width:2.6em;height:2.6em}
+.sauce-note p{margin:0;font-weight:700;line-height:1.5}
+.sauce-note b{color:var(--red)}
+.preset-chip.active{box-shadow:0 0 0 3px #ffd65a}
+.inv-icon img,.inv-ingredient-icon{width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 2px 3px #0003)}
+.cols-3 .card-title .ico{width:1.3em;height:1.3em}
+
+/* shop: guest column (mockup 02 "待ち客") + big 調理へ */
+.shop-layout.has-guests{grid-template-columns:240px minmax(0,1fr) minmax(320px,420px)}
+.guests .card-body{display:flex;flex-direction:column;gap:.5rem;max-height:100%;overflow:auto}
+.guest-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.5rem;padding:.4rem;border-radius:12px;background:linear-gradient(#fffdf6,#f6e7c6);border:2px solid #d8b47a;font-weight:800;font-size:.9rem}
+.guest-card.done{opacity:.85}
+.guest-face{width:52px;height:52px}
+.guest-card em{font-style:normal;font-size:.75rem;padding:.1rem .5rem;border-radius:999px;background:#7a2a1e;color:#fff}
+.rank-chip.rank-SSS,.rank-chip.rank-S{background:linear-gradient(#f6cf4f,#c98a1b);color:#5a2a08}
+.rank-chip.rank-C,.rank-chip.rank-F{background:#8a8279}
+.shop-cta{position:absolute;right:34px;bottom:24px;z-index:5;min-width:360px}
+.order .order-no{box-shadow:0 2px 0 #5a120f}
+
+/* result: action row (mockup 05: 詳細 / アップグレード / 次の日へ) */
+.result-actions{gap:1.2rem;align-items:center}
+.result-actions .secondary{font-size:1.15rem;padding:.75rem 1.6rem}
+.ledger-row.profit{box-shadow:inset 0 2px 0 #ff8a7a,0 4px 10px #0004}
+.voices li{background:#fff;border:1px solid #ecdcbc;border-radius:10px;padding:.35rem .5rem}
+
+/* staged sizes */
+html.staged .cols-3{grid-template-columns:1fr 1.1fr .95fr}
+html.staged .inv-icon img,html.staged .inv-ingredient-icon{width:64px;height:64px}
+html.staged .inv-name{font-size:26px}
+html.staged .inv-row strong{font-size:28px}
+html.staged .slider-row{font-size:26px}
+html.staged .slider-row input[type=range]{height:18px}
+html.staged .slider-row input[type=range]::-webkit-slider-thumb{width:40px;height:40px}
+html.staged .slider-row output{font-size:30px}
+html.staged .sauce-note p{font-size:21px}
+html.staged .cta-row .big-cta{min-width:640px;font-size:44px;padding:18px 60px}
+html.staged .shop-layout.has-guests{grid-template-columns:300px minmax(0,1fr) 560px}
+html.staged .guest-face{width:72px;height:72px}
+html.staged .guest-card{font-size:22px}
+html.staged .guest-card em{font-size:17px}
+html.staged .shop-owner{height:640px}
+html.staged .shop-guest{width:330px}
+html.staged .shop-cta{min-width:460px;font-size:46px;right:40px;bottom:30px}
+html.staged .orders .card-body{padding-bottom:140px}
+html.staged .result-layout{margin:0 auto;max-width:1380px;grid-template-columns:1.1fr 1fr}
+html.staged .result-actions .secondary{font-size:30px;padding:16px 40px}
+html.staged .result-actions .big-cta{min-width:480px}
+html.staged .voices li{font-size:22px}
+html.staged .voice-face{width:52px;height:52px}
+@media(max-width:900px){.shop-layout.has-guests{grid-template-columns:1fr}.guests{order:3}.shop-cta{position:static;width:100%}}
+.cols-3 .inv-row{grid-template-columns:64px 1fr auto}
+.cols-3 .inv-row .inv-icon{display:grid;place-items:center}
+.cols-3 .inv-row .inv-icon img.inv-ingredient-icon{width:56px;height:56px;max-width:none}
+html.staged .cols-3 .inv-row{grid-template-columns:84px 1fr auto;column-gap:14px}
+html.staged .cols-3 .inv-row .inv-icon img.inv-ingredient-icon{width:76px;height:76px}
+.cols-3 .inv-row .inv-icon{width:auto;height:auto}
+html.staged .guests .card-title{font-size:22px;white-space:nowrap}
+html.staged .stage:has(.result-layout){justify-content:center}
+html.staged .stage:has(.result-layout) .cta-row{margin-top:10px}
