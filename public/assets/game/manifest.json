@@ -1032,6 +1032,30 @@
    "loraList": [],
    "licenseNote": "User-provided image (2026-11-22). Plate removed by birefnet; plate drawn in CSS. Confirm usage rights before release.",
    "reviewedAt": null
+  },
+  {
+   "id": "cooking_fry_scene",
+   "path": "public/assets/game/cooking/fry.webp",
+   "type": "background",
+   "width": 1448,
+   "height": 1086,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "COOK",
+    "P3"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/food/frying_user.webp",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "User-provided image (2026-11-22). Confirm usage rights before release.",
+   "reviewedAt": null
   }
+ ],
+ "includes": [
+  "public/assets/game/food/v02/manifest.json"
  ]
 }

@@ -1,0 +1,138 @@
+{
+  "version": "v02",
+  "date": "2026-11-22",
+  "status": "concept_review",
+  "subject": "Katsumeshi — thin flattened beef cutlet with softened boiled cabbage, not raw shredded cabbage",
+  "sourceAttribution": "OpenAI-generated project asset candidates; composite images cropped into individual files",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "path": "ranks/katsumeshi_sss_v02.webp",
+      "width": 768,
+      "height": 540,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "REACTION"
+    },
+    {
+      "path": "ranks/katsumeshi_s_v02.webp",
+      "width": 768,
+      "height": 540,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "REACTION"
+    },
+    {
+      "path": "ranks/katsumeshi_a_v02.webp",
+      "width": 768,
+      "height": 540,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "REACTION"
+    },
+    {
+      "path": "ranks/katsumeshi_b_v02.webp",
+      "width": 768,
+      "height": 540,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "REACTION"
+    },
+    {
+      "path": "ranks/katsumeshi_c_v02.webp",
+      "width": 768,
+      "height": 540,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "REACTION"
+    },
+    {
+      "path": "ranks/katsumeshi_f_v02.webp",
+      "width": 768,
+      "height": 540,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "REACTION"
+    },
+    {
+      "path": "ranks/katsumeshi_sss_hero_v02.webp",
+      "width": 1671,
+      "height": 941,
+      "approval": "concept_review",
+      "origin": "standalone_generated",
+      "usage": "REACTION"
+    },
+    {
+      "path": "ingredients/beef_flattened_raw_v02.webp",
+      "width": 640,
+      "height": 480,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "COOK / food pieces"
+    },
+    {
+      "path": "ingredients/flour_coated_beef_v02.webp",
+      "width": 640,
+      "height": 480,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "COOK / food pieces"
+    },
+    {
+      "path": "ingredients/breading_panko_v02.webp",
+      "width": 640,
+      "height": 480,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "COOK / food pieces"
+    },
+    {
+      "path": "ingredients/fried_cutlet_thin_v02.webp",
+      "width": 640,
+      "height": 480,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "COOK / food pieces"
+    },
+    {
+      "path": "ingredients/boiled_cabbage_v02.webp",
+      "width": 640,
+      "height": 480,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "COOK / food pieces"
+    },
+    {
+      "path": "ingredients/steamed_rice_v02.webp",
+      "width": 640,
+      "height": 480,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "COOK / food pieces"
+    },
+    {
+      "path": "ingredients/demiglace_sauce_v02.webp",
+      "width": 640,
+      "height": 480,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "COOK / food pieces"
+    },
+    {
+      "path": "ingredients/plated_katsumeshi_v02.webp",
+      "width": 640,
+      "height": 480,
+      "approval": "concept_review",
+      "origin": "extracted_from_ai_composite",
+      "usage": "COOK / food pieces"
+    },
+    {
+      "path": "process/frying_thin_cutlet_v02.webp",
+      "width": 1024,
+      "height": 1024,
+      "approval": "concept_review",
+      "origin": "previous_standalone_generated",
+      "usage": "COOK P3"
+    }
+  ]
+}

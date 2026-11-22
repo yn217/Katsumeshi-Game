@@ -257,3 +257,20 @@ select{border-radius:8px;background:#fffaf0;border:2px solid var(--gold);padding
 .tasting-dish{width:min(100%,380px);margin:-.4rem 0 -.2rem}
 @media(max-width:900px){.title-dish{display:none}}
 @media(max-width:640px){.order-dish{display:none}}
+
+/* ---------- P3 frying scene (user-provided image; colour follows fry progress) ---------- */
+.fry-scene{position:relative;width:min(100%,620px);aspect-ratio:4/3;border-radius:18px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 12px 22px #0005;display:grid;place-items:end center}
+.fry-img{position:absolute;inset:0;background:center/cover no-repeat;transition:filter .25s}
+.fry-scene:not(.active) .fry-img{opacity:.92}
+.fry-scene .pot-timer{position:relative;margin-bottom:5%;background:#2a1712aa;border:2px solid var(--gold);border-radius:14px;padding:.1rem 1rem}
+
+/* ---------- food v02 (rank dishes / step photos, concept_review) ---------- */
+.work .card-body{position:relative}
+.stage-photo{position:absolute;top:.7rem;right:.7rem;margin:0;width:150px;background:#fffaf0;border:3px solid var(--gold);border-radius:12px;overflow:hidden;box-shadow:0 6px 12px #0004;z-index:1}
+.stage-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.stage-photo figcaption{font-size:.72rem;font-weight:900;text-align:center;background:var(--red-d);color:#fff3dc;padding:.1rem 0;position:relative}
+.rank-dish{width:min(100%,400px);aspect-ratio:768/540;border-radius:18px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 12px 22px #0005;background:#fff}
+.rank-dish-img{display:block;width:108%;height:108%;max-width:none;margin:-4% 0 0 -4%;object-fit:cover}
+.rank-dish.hero{border:0;box-shadow:none;background:none;overflow:visible;aspect-ratio:auto}
+.rank-dish.hero .rank-dish-img{width:100%;height:auto;margin:0;filter:drop-shadow(0 12px 16px #0006)}
+@media(max-width:640px){.stage-photo{width:96px}}
