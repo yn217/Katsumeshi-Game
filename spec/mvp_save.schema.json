@@ -1,0 +1,1000 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yn217/Katsumeshi-Game/blob/main/spec/mvp_save.schema.json",
+  "title": "Katsumeshi save version 1: structural validation only; cross-field invariants require domain validation",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "savedAtIso": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "rngState": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "day": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "nextOrderSequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "phase": {
+      "enum": [
+        "MORNING",
+        "OPEN",
+        "COOK",
+        "REACTION",
+        "RESULT",
+        "UPGRADE"
+      ]
+    },
+    "overlay": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "enum": [
+                "PAUSE",
+                "EVENT"
+              ]
+            },
+            "eventId": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "openingRemainingSeconds": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 600
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "businessElapsedSeconds": {
+      "type": "number",
+      "minimum": 0
+    },
+    "remainingArrivals": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "nextArrivalIndex": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "arrivalSeconds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 600
+      }
+    },
+    "tutorialNextOrderIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 8
+    },
+    "tutorialFirstServed": {
+      "type": "boolean"
+    },
+    "dayClosed": {
+      "type": "boolean"
+    },
+    "dayOverheadSettled": {
+      "type": "boolean"
+    },
+    "aidGrantedDay": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cashYen": {
+      "type": "integer"
+    },
+    "reputation": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "inventory": {
+      "type": "object",
+      "properties": {
+        "beef": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 99
+        },
+        "rice": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 99
+        },
+        "coating": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 99
+        },
+        "sauce": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 99
+        },
+        "cabbage": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 99
+        }
+      },
+      "required": [
+        "beef",
+        "rice",
+        "coating",
+        "sauce",
+        "cabbage"
+      ],
+      "additionalProperties": false
+    },
+    "unlockedRecipeIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "unlockedUpgradeIds": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fryer",
+          "chairs"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "sauces": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "taste": {
+            "type": "object",
+            "properties": {
+              "sweetness": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100,
+                "multipleOf": 10
+              },
+              "richness": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100,
+                "multipleOf": 10
+              },
+              "acidity": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100,
+                "multipleOf": 10
+              }
+            },
+            "required": [
+              "sweetness",
+              "richness",
+              "acidity"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "taste"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "customerAffinity": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "customerId": {
+            "enum": [
+              "regular",
+              "student",
+              "worker",
+              "tourist"
+            ]
+          },
+          "recipeId": {
+            "const": "beef_katsumeshi"
+          },
+          "state": {
+            "enum": [
+              "queued",
+              "cooking",
+              "served",
+              "cancelled",
+              "expired"
+            ]
+          },
+          "createdAtGameSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "queuedWaitRemainingSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "priceYenSnapshot": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "ingredientCostYenSnapshot": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sauceSnapshot": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "sweetness": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "multipleOf": 10
+                  },
+                  "richness": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "multipleOf": 10
+                  },
+                  "acidity": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "multipleOf": 10
+                  }
+                },
+                "required": [
+                  "sweetness",
+                  "richness",
+                  "acidity"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ingredientsConsumed": {
+            "type": "boolean"
+          },
+          "cookingScore": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rank": {
+            "anyOf": [
+              {
+                "enum": [
+                  "SSS",
+                  "S",
+                  "A",
+                  "B",
+                  "C",
+                  "F"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "settled": {
+            "type": "boolean"
+          },
+          "appliedActionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "customerId",
+          "recipeId",
+          "state",
+          "createdAtGameSeconds",
+          "queuedWaitRemainingSeconds",
+          "priceYenSnapshot",
+          "ingredientCostYenSnapshot",
+          "sauceSnapshot",
+          "ingredientsConsumed",
+          "cookingScore",
+          "rank",
+          "settled",
+          "appliedActionIds"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "activeOrderId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cookingSession": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "orderId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stageIndex": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "completedScores": {
+              "type": "object",
+              "properties": {
+                "P1": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 15
+                },
+                "P2": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 15
+                },
+                "P3": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 30
+                },
+                "P4": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 20
+                },
+                "P5": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "P6": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 10
+                }
+              },
+              "required": [],
+              "additionalProperties": false
+            },
+            "selectedSauceId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sauceSnapshot": {
+              "type": "object",
+              "properties": {
+                "sweetness": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100,
+                  "multipleOf": 10
+                },
+                "richness": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100,
+                  "multipleOf": 10
+                },
+                "acidity": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100,
+                  "multipleOf": 10
+                }
+              },
+              "required": [
+                "sweetness",
+                "richness",
+                "acidity"
+              ],
+              "additionalProperties": false
+            },
+            "retriesRemaining": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "unlimitedRetry": {
+              "type": "boolean"
+            },
+            "stageInput": {
+              "type": "object",
+              "properties": {
+                "elapsedSeconds": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "timerStarted": {
+                  "type": "boolean"
+                },
+                "taps": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 3
+                },
+                "strikeXs": {
+                  "type": "array",
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                },
+                "thicknessError01": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "coatCoverage01": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                },
+                "coatCellMask": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1023
+                  }
+                },
+                "placedComponentIds": {
+                  "type": "array",
+                  "maxItems": 4,
+                  "items": {
+                    "enum": [
+                      "rice",
+                      "cutlet",
+                      "sauce",
+                      "cabbage"
+                    ]
+                  },
+                  "uniqueItems": true
+                },
+                "placedSlotIds": {
+                  "type": "array",
+                  "maxItems": 4,
+                  "items": {
+                    "enum": [
+                      "rice",
+                      "cutlet",
+                      "sauce",
+                      "cabbage"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "elapsedSeconds",
+                "timerStarted",
+                "taps",
+                "strikeXs",
+                "thicknessError01",
+                "coatCoverage01",
+                "coatCellMask",
+                "placedComponentIds",
+                "placedSlotIds"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "orderId",
+            "stageIndex",
+            "completedScores",
+            "selectedSauceId",
+            "sauceSnapshot",
+            "retriesRemaining",
+            "unlimitedRetry",
+            "stageInput"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "seenStoryEventIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "appliedCommandIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "dailyLedger": {
+      "type": "object",
+      "properties": {
+        "salesYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ingredientConsumedYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wasteYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "purchasesYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "upgradePurchasesYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "overheadYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "payrollYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "providedCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cancelledCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expiredCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "skippedCandidates": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "salesYen",
+        "ingredientConsumedYen",
+        "wasteYen",
+        "purchasesYen",
+        "upgradePurchasesYen",
+        "overheadYen",
+        "payrollYen",
+        "providedCount",
+        "cancelledCount",
+        "expiredCount",
+        "skippedCandidates"
+      ],
+      "additionalProperties": false
+    },
+    "lastServedOrderId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "lastReactionRank": {
+      "anyOf": [
+        {
+          "enum": [
+            "SSS",
+            "S",
+            "A",
+            "B",
+            "C",
+            "F"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "revision",
+    "savedAtIso",
+    "seed",
+    "rngState",
+    "day",
+    "nextOrderSequence",
+    "phase",
+    "overlay",
+    "openingRemainingSeconds",
+    "businessElapsedSeconds",
+    "remainingArrivals",
+    "nextArrivalIndex",
+    "arrivalSeconds",
+    "tutorialNextOrderIndex",
+    "tutorialFirstServed",
+    "dayClosed",
+    "dayOverheadSettled",
+    "aidGrantedDay",
+    "cashYen",
+    "reputation",
+    "inventory",
+    "unlockedRecipeIds",
+    "unlockedUpgradeIds",
+    "sauces",
+    "customerAffinity",
+    "orders",
+    "activeOrderId",
+    "cookingSession",
+    "seenStoryEventIds",
+    "appliedCommandIds",
+    "dailyLedger",
+    "lastServedOrderId",
+    "lastReactionRank"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "COOK"
+          }
+        },
+        "required": [
+          "phase"
+        ]
+      },
+      "then": {
+        "properties": {
+          "activeOrderId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cookingSession": {
+            "type": "object",
+            "properties": {
+              "orderId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "stageIndex": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 5
+              },
+              "completedScores": {
+                "type": "object",
+                "properties": {
+                  "P1": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 15
+                  },
+                  "P2": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 15
+                  },
+                  "P3": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 30
+                  },
+                  "P4": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 20
+                  },
+                  "P5": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 10
+                  },
+                  "P6": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 10
+                  }
+                },
+                "required": [],
+                "additionalProperties": false
+              },
+              "selectedSauceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sauceSnapshot": {
+                "type": "object",
+                "properties": {
+                  "sweetness": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "multipleOf": 10
+                  },
+                  "richness": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "multipleOf": 10
+                  },
+                  "acidity": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "multipleOf": 10
+                  }
+                },
+                "required": [
+                  "sweetness",
+                  "richness",
+                  "acidity"
+                ],
+                "additionalProperties": false
+              },
+              "retriesRemaining": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "unlimitedRetry": {
+                "type": "boolean"
+              },
+              "stageInput": {
+                "type": "object",
+                "properties": {
+                  "elapsedSeconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "timerStarted": {
+                    "type": "boolean"
+                  },
+                  "taps": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 3
+                  },
+                  "strikeXs": {
+                    "type": "array",
+                    "maxItems": 3,
+                    "items": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  },
+                  "thicknessError01": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "coatCoverage01": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  },
+                  "coatCellMask": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 1023
+                    }
+                  },
+                  "placedComponentIds": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "items": {
+                      "enum": [
+                        "rice",
+                        "cutlet",
+                        "sauce",
+                        "cabbage"
+                      ]
+                    },
+                    "uniqueItems": true
+                  },
+                  "placedSlotIds": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "items": {
+                      "enum": [
+                        "rice",
+                        "cutlet",
+                        "sauce",
+                        "cabbage"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "elapsedSeconds",
+                  "timerStarted",
+                  "taps",
+                  "strikeXs",
+                  "thicknessError01",
+                  "coatCoverage01",
+                  "coatCellMask",
+                  "placedComponentIds",
+                  "placedSlotIds"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "orderId",
+              "stageIndex",
+              "completedScores",
+              "selectedSauceId",
+              "sauceSnapshot",
+              "retriesRemaining",
+              "unlimitedRetry",
+              "stageInput"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "activeOrderId": {
+            "type": "null"
+          },
+          "cookingSession": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "REACTION"
+          }
+        },
+        "required": [
+          "phase"
+        ]
+      },
+      "then": {
+        "properties": {
+          "lastServedOrderId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lastReactionRank": {
+            "enum": [
+              "SSS",
+              "S",
+              "A",
+              "B",
+              "C",
+              "F"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

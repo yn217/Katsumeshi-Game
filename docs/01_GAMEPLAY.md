@@ -75,3 +75,8 @@ T01 タイトル開始 → T02 仕込み画面の見方 → T03 最初の注文 
 
 ## v0.4補足仕様への参照
 通常日の来客候補生成、同時イベント、Day1の8件発行方法、時間切れ/閉店の例外は [12_MVP_SIMULATION_SPEC.md](12_MVP_SIMULATION_SPEC.md) を正とする。Day1は各客順次1件ずつ生成。MVPのストーリーDay1〜7は [15_NARRATIVE_CHARACTER_AUDIO.md](15_NARRATIVE_CHARACTER_AUDIO.md)、画面操作は[13](13_SCREEN_INTERACTION_SPEC.md)。
+
+## v0.5 補足：チュートリアルと設備の順序
+- Day1の最初の注文は必ず提供とREACTIONを経験してから次へ進む。初回だけCANCEL_ORDERを無効化。
+- Day1結果→UPGRADE（まだday=1）で **Day2から有効なフライヤーを購入できる**。椅子はDay2結果→UPGRADEで初めて購入可。設備のunlockDayは使用開始日。
+- コマンド・時刻・保存の正規順序は[20](20_EVENT_STATE_PROTOCOL.md)が優先。

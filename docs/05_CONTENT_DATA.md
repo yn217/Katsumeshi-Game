@@ -146,3 +146,6 @@
 
 ## v0.4データ契約
 本書の旧TypeScript断片は初期概念例であり、調理途中の入出力、到着予定や設備購入元帳、救済フラグを全て列挙していない。MVP実装時の必要フィールド・状態不変条件・精算契約は [16_SAVE_DATA_AND_BALANCE.md](16_SAVE_DATA_AND_BALANCE.md)、単位/数値は [spec/mvp_config.json](../spec/mvp_config.json) が優先。コードにする際はZod/JSON Schemaを作成してから旧例を削除・整理する。
+
+## v0.5 セーブスキーマの正式な検証入口
+`spec/mvp_save.schema.json`がSaveGame v1の**最低限のJSON構造**、`spec/mvp_save_example.json`がDay1/MORNINGの整合サンプル。旧TypeScript断片よりもこのschemaを優先する。さらに「phase=COOKかつcooking注文が1つ」等の複数項目にまたがる条件は[20](20_EVENT_STATE_PROTOCOL.md)のドメイン検証で行う。命令ID集合 `appliedCommandIds`、Day1初回提供 `tutorialFirstServed`、設備投資元帳、支援取得日 `aidGrantedDay`を保存する。

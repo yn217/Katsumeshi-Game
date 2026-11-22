@@ -8,7 +8,7 @@ docs/03_MANAGEMENT.md / docs/05_CONTENT_DATA.mdの**型定義を実装に必要�
 - 仕入時は各材料を1/5/10単位で選択でき、所持上限99、購入後現金が負になる購入は拒否。負の現金残高からの新規購入は不可。
 - たれ配合値は0,10,...,100の整数。初期プリセット `basic=(50,60,40)`。保存可能なプリセットは計3件。
 - 価格変更、スタッフ人件費、割引、複数皿注文、材料の廃棄期限はMVP外。
-- 設備は fryer(8,000円,Day2以降) と chairs(5,000円,Day3以降) のみ。Day1では設備購入不可。
+- 設備は fryer(8,000円、Day2から有効) と chairs(5,000円、Day3から有効) のみ。**Day1結果後のUPGRADEでは翌Day2用フライヤー購入可**、椅子はDay2結果後から購入可。
 
 ## 2. ドメインモデル（実装で満たす）
 ```ts
@@ -53,7 +53,8 @@ type GameSave = {
  phase:Phase; overlay:null|{kind:"PAUSE"|"EVENT";eventId?:string};
  openingRemainingSeconds:number|null; businessElapsedSeconds:number;
  remainingArrivals:number; nextArrivalIndex:number; arrivalSeconds:number[];
- tutorialNextOrderIndex:number; dayClosed:boolean; dayOverheadSettled:boolean;
+ tutorialNextOrderIndex:number; tutorialFirstServed:boolean;
+ dayClosed:boolean; dayOverheadSettled:boolean;
  aidGrantedDay:number|null; // 同日に二度の支援を受けられない
  cashYen:number; reputation:number; inventory:IngredientUnits;
  unlockedRecipeIds:string[]; unlockedUpgradeIds:string[];
@@ -61,7 +62,8 @@ type GameSave = {
  customerAffinity:Record<string,number>;
  orders:Order[]; activeOrderId:string|null;
  cookingSession:CookingSession|null;
- seenStoryEventIds:string[]; dailyLedger:DailyLedger;
+ seenStoryEventIds:string[]; appliedCommandIds:string[];
+ dailyLedger:DailyLedger;
  lastServedOrderId:string|null; lastReactionRank:Rank|null;
 };
 ```
@@ -80,8 +82,8 @@ type GameSave = {
 - `CANCEL_ORDER` (COOK): 既消費なら `ledger.wasteYen+=ingredientCostYenSnapshot`、`state=cancelled`、`phase=OPEN`。ingredientConsumedYenは消費時点で加算済みなので**追加で原価減算しない**。
 - `EXPIRE_ORDER` (queued): `state=expired`、`reputation-=2`、`ledger.expiredCount+=1`、`inventory`は不変。
 - `CLOSE_DAY`: `dayOverheadSettled` がfalseなら `overheadYen+=2200`、`cashYen-=2200`、trueにする。重複実行は無視。
-- `BUY_UPGRADE` (UPGRADE): 解放日・未購入・支払可能を満たせば現金減額とID解放を原子的に更新。
-- `NEXT_DAY`: UPGRADE以外から拒否。日次ledgerとday flagsを初期化し、評判は継続。
+- `BUY_UPGRADE` (UPGRADE): `day+1>=unlockDay`・未購入・支払可能を満たせば現金減額とID解放を原子的に更新。効果は翌日OPENから有効。
+- `NEXT_DAY`: UPGRADE以外から拒否。日次ledgerとday flagsを初期化し、評判、在庫、設備、たれ、既読会話を継続。購入済みの設備は翌日の開始時点で効力がある。
 
 ## 4. 会計の検算式
 ```
@@ -94,7 +96,7 @@ cashDelta = salesYen - purchasesYen - overheadYen - payrollYen - upgradePurchase
 - Day1基準: 初期現金30,000+売上7,840-固定費2,200=35,640。原価3,440は開業支給在庫からの消費のため当日現金減額しない。
 
 ## 5. 救済/進行不能防止
-- MORNINGにて「必要5材料が1食分も揃わず」「不足材料を1食分揃える購入が現金不足で不可能」な場合、**立て直し支援**ボタンを1日1回表示。条件は `!every(inventory[id]>=1) && cashYen < sum(cost[id] for inventory[id]<1)`。押すと全5種を各4食分相当追加（無料の現物支給、ただし99上限でclamp）、仕入支払や原価計上なし。 `aidGrantedDay=day` を永続化する。
+- MORNINGにて「必要5材料が1食分も揃わず」「不足材料を1食分揃える購入が現金不足で不可能」な場合、**立て直し支援**ボタンを1日1回表示。条件は `!every(inventory[id]>=1) && cashYen < sum(cost[id] for inventory[id]<1)`。押すと各食材の在庫を `max(current,4)` に補填（不足品以外は実質無変更。無料の現物支給、上限99）、仕入支払や原価計上なし。 `aidGrantedDay=day` を永続化する。
 - 支援でも通常通り料理開始時に原価計上する。現金が負でも支援は受けられる。Day1の初期10食分では表示されない。
 - 無償支援は明示的な救済機能であり通常の仕入の代わりとして利用できない条件判定をテストする。
 
@@ -120,3 +122,8 @@ cashDelta = salesYen - purchasesYen - overheadYen - payrollYen - upgradePurchase
 - Day2の買い足し5種各1の現金減430、販売時現金+980、原価+430。
 - 購入対象が保有99食の時、1以上の追加を拒否。
 - 立て直し支援を同日二度押しても2回目は無変更。
+
+## v0.5 スキーマと契約の統一
+- `spec/mvp_save.schema.json`がJSON構造、`spec/mvp_save_example.json`がDay1初期セーブの例、`spec/mvp_config.json`が初期値の正。本文の型は説明であり競合時はschemaを優先。
+- `appliedCommandIds`を保存し、支援/購入/受付/提供/設備購入/閉店/日付遷移に付けたcommandIdの重複適用を禁止。二重適用防止の範囲やタイムステップ順序は[20](20_EVENT_STATE_PROTOCOL.md)で定義。
+- 初日初回キャンセルを拒否、`tutorialFirstServed`を保存する。無料支援は各食材を最低4食分へ補充し、在庫に4を無条件加算しない。

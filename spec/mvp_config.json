@@ -1,5 +1,5 @@
 {
-  "schema": "katsumeshi-mvp-config/v0.4",
+  "schema": "katsumeshi-mvp-config/v0.5",
   "status": "design-provisional",
   "day1": {
     "tutorial": true,
@@ -77,7 +77,9 @@
     "min": 0,
     "max": 100,
     "step": 10,
-    "maxPresets": 3
+    "maxPresets": 3,
+    "immutablePresetId": "basic",
+    "customSlots": 2
   },
   "cooking": {
     "maxRetriesPerDish": 1,
@@ -120,7 +122,8 @@
       "B": 55,
       "C": 40,
       "F": 0
-    }
+    },
+    "p2KeyboardHoldSeconds": 0.6
   },
   "customer": {
     "regular": {
@@ -168,8 +171,8 @@
   "economy": {
     "overheadYenPerDay": 2200,
     "payrollYenPerDay": 0,
-    "startOfDayAidUnitsEach": 4,
-    "aidLimitPerDay": 1
+    "aidLimitPerDay": 1,
+    "aidMinimumStockPerIngredient": 4
   },
   "upgrades": [
     {
@@ -196,6 +199,8 @@
   "notes": [
     "Values are initial game balance candidates, not real-world cooking temperatures or prices.",
     "Oil temperature is display-only in MVP.",
-    "High-resolution v0.3 UI mockups are concept art, not reusable game UI controls."
+    "High-resolution v0.3 UI mockups are concept art, not reusable game UI controls.",
+    "Upgrade unlockDay means first EFFECTIVE business day; purchases occur on previous day's UPGRADE screen.",
+    "Free stock aid raises each deficient ingredient to 4 units; does not add 4 units across all inventory."
   ]
 }

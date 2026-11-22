@@ -114,3 +114,6 @@ Web版はユーザーがすぐ触れる試作を優先。ゲームロジック�
 
 ## v0.4 ドメイン境界と検証
 ドメイン時刻・来客スケジュールは[12](12_MVP_SIMULATION_SPEC.md)、調理入力は[14](14_COOKING_INPUT_CONTRACT.md)、GameSave契約は[16](16_SAVE_DATA_AND_BALANCE.md)、画面操作は[13](13_SCREEN_INTERACTION_SPEC.md)。店舗/調理/会計はUIの画像・画風から独立した純粋計算とする。設定画面はプレイセーブとは独立した永続キーを用い、設定変更で日次計算を再実行しない。
+
+## v0.5 実装時のコマンドプロトコル
+ドメインの正規順序は[20](20_EVENT_STATE_PROTOCOL.md)。1tick中の期限切れ→来店→入力コマンド→閉店判定。すべてのUI操作にcommandIdを持たせ、適用済みcommandIdをセーブしてリロード後の重複効果を排除。IndexedDBのmain/backupは原子的transactionで扱う。JSON Schemaは静的検査、相互状態の不変条件はドメイン側で検査する。

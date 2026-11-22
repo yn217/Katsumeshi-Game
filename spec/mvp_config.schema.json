@@ -1,0 +1,816 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yn217/Katsumeshi-Game/blob/main/spec/mvp_config.schema.json",
+  "title": "Katsumeshi MVP config v0.5",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "katsumeshi-mvp-config/v0.5"
+    },
+    "status": {
+      "const": "design-provisional"
+    },
+    "day1": {
+      "type": "object",
+      "properties": {
+        "tutorial": {
+          "const": true
+        },
+        "orderTypes": {
+          "type": "array",
+          "minItems": 8,
+          "maxItems": 8,
+          "items": {
+            "enum": [
+              "regular",
+              "student",
+              "worker",
+              "tourist"
+            ]
+          }
+        },
+        "queueMax": {
+          "const": 1
+        },
+        "businessSeconds": {
+          "type": "null"
+        },
+        "patienceEnabled": {
+          "const": false
+        }
+      },
+      "required": [
+        "tutorial",
+        "orderTypes",
+        "queueMax",
+        "businessSeconds",
+        "patienceEnabled"
+      ],
+      "additionalProperties": false
+    },
+    "normalDay": {
+      "type": "object",
+      "properties": {
+        "businessSeconds": {
+          "const": 600
+        },
+        "queuedMax": {
+          "const": 3
+        },
+        "cookingMax": {
+          "const": 1
+        },
+        "basePatienceSeconds": {
+          "const": 180
+        },
+        "arrivalBase": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "arrivalPerReputationStep": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "arrivalMaximum": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "arrivalFirstSecond": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 599
+        },
+        "arrivalSpreadSeconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 579
+        },
+        "arrivalWeights": {
+          "type": "object",
+          "properties": {
+            "regular": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "student": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "worker": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "tourist": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "required": [
+            "regular",
+            "student",
+            "worker",
+            "tourist"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "businessSeconds",
+        "queuedMax",
+        "cookingMax",
+        "basePatienceSeconds",
+        "arrivalBase",
+        "arrivalPerReputationStep",
+        "arrivalMaximum",
+        "arrivalFirstSecond",
+        "arrivalSpreadSeconds",
+        "arrivalWeights"
+      ],
+      "additionalProperties": false
+    },
+    "starting": {
+      "type": "object",
+      "properties": {
+        "cashYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reputation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "inventoryEachIngredient": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 99
+        },
+        "sauceId": {
+          "const": "basic"
+        },
+        "sauceTaste": {
+          "type": "object",
+          "properties": {
+            "sweetness": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100,
+              "multipleOf": 10
+            },
+            "richness": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100,
+              "multipleOf": 10
+            },
+            "acidity": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100,
+              "multipleOf": 10
+            }
+          },
+          "required": [
+            "sweetness",
+            "richness",
+            "acidity"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "cashYen",
+        "reputation",
+        "inventoryEachIngredient",
+        "sauceId",
+        "sauceTaste"
+      ],
+      "additionalProperties": false
+    },
+    "recipe": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "beef_katsumeshi"
+        },
+        "priceYen": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ingredientUnitsPerDish": {
+          "type": "object",
+          "properties": {
+            "beef": {
+              "const": 1
+            },
+            "rice": {
+              "const": 1
+            },
+            "coating": {
+              "const": 1
+            },
+            "sauce": {
+              "const": 1
+            },
+            "cabbage": {
+              "const": 1
+            }
+          },
+          "required": [
+            "beef",
+            "rice",
+            "coating",
+            "sauce",
+            "cabbage"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "priceYen",
+        "ingredientUnitsPerDish"
+      ],
+      "additionalProperties": false
+    },
+    "ingredientCostsYen": {
+      "type": "object",
+      "properties": {
+        "beef": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rice": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coating": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sauce": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cabbage": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "beef",
+        "rice",
+        "coating",
+        "sauce",
+        "cabbage"
+      ],
+      "additionalProperties": false
+    },
+    "inventory": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "const": "meal_equivalent"
+        },
+        "maxUnitsPerIngredient": {
+          "const": 99
+        },
+        "purchaseQuantities": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 99
+          },
+          "minItems": 3,
+          "maxItems": 3,
+          "uniqueItems": true
+        },
+        "spoilageEnabled": {
+          "const": false
+        }
+      },
+      "required": [
+        "unit",
+        "maxUnitsPerIngredient",
+        "purchaseQuantities",
+        "spoilageEnabled"
+      ],
+      "additionalProperties": false
+    },
+    "sauce": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "const": 0
+        },
+        "max": {
+          "const": 100
+        },
+        "step": {
+          "const": 10
+        },
+        "maxPresets": {
+          "const": 3
+        },
+        "immutablePresetId": {
+          "const": "basic"
+        },
+        "customSlots": {
+          "const": 2
+        }
+      },
+      "required": [
+        "min",
+        "max",
+        "step",
+        "maxPresets",
+        "immutablePresetId",
+        "customSlots"
+      ],
+      "additionalProperties": false
+    },
+    "cooking": {
+      "type": "object",
+      "properties": {
+        "maxRetriesPerDish": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "p1TargetsX": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "p1ErrorDenominator": {
+          "type": "number",
+          "minimum": 0.000001,
+          "maximum": 1
+        },
+        "p2Zones": {
+          "const": 3
+        },
+        "p2CellsPerZone": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "p2KeyboardHoldSeconds": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 5
+        },
+        "p3TargetSeconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 120
+        },
+        "p3PenaltyWindowSeconds": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 120
+        },
+        "p3UpgradedWindowSeconds": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 120
+        },
+        "p5TargetSeconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 120
+        },
+        "p5PenaltyWindowSeconds": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 120
+        },
+        "p6Parts": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "rice"
+            },
+            {
+              "const": "cutlet"
+            },
+            {
+              "const": "sauce"
+            },
+            {
+              "const": "cabbage"
+            }
+          ],
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "fixedSauceQualityPoints": {
+          "const": 20
+        },
+        "stageMaxPoints": {
+          "type": "object",
+          "properties": {
+            "P1": {
+              "const": 15
+            },
+            "P2": {
+              "const": 15
+            },
+            "P3": {
+              "const": 30
+            },
+            "P4": {
+              "const": 20
+            },
+            "P5": {
+              "const": 10
+            },
+            "P6": {
+              "const": 10
+            }
+          },
+          "required": [
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "P6"
+          ],
+          "additionalProperties": false
+        },
+        "customerSauceCorrection": {
+          "type": "object",
+          "properties": {
+            "max": {
+              "const": 15
+            },
+            "distanceCoefficient": {
+              "const": 0.3
+            }
+          },
+          "required": [
+            "max",
+            "distanceCoefficient"
+          ],
+          "additionalProperties": false
+        },
+        "rankMinimum": {
+          "type": "object",
+          "properties": {
+            "SSS": {
+              "const": 95
+            },
+            "S": {
+              "const": 85
+            },
+            "A": {
+              "const": 70
+            },
+            "B": {
+              "const": 55
+            },
+            "C": {
+              "const": 40
+            },
+            "F": {
+              "const": 0
+            }
+          },
+          "required": [
+            "SSS",
+            "S",
+            "A",
+            "B",
+            "C",
+            "F"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "maxRetriesPerDish",
+        "p1TargetsX",
+        "p1ErrorDenominator",
+        "p2Zones",
+        "p2CellsPerZone",
+        "p2KeyboardHoldSeconds",
+        "p3TargetSeconds",
+        "p3PenaltyWindowSeconds",
+        "p3UpgradedWindowSeconds",
+        "p5TargetSeconds",
+        "p5PenaltyWindowSeconds",
+        "p6Parts",
+        "fixedSauceQualityPoints",
+        "stageMaxPoints",
+        "customerSauceCorrection",
+        "rankMinimum"
+      ],
+      "additionalProperties": false
+    },
+    "customer": {
+      "type": "object",
+      "properties": {
+        "regular": {
+          "type": "object",
+          "properties": {
+            "taste": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "patienceMultiplier": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 10
+            }
+          },
+          "required": [
+            "taste",
+            "patienceMultiplier"
+          ],
+          "additionalProperties": false
+        },
+        "student": {
+          "type": "object",
+          "properties": {
+            "taste": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "patienceMultiplier": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 10
+            }
+          },
+          "required": [
+            "taste",
+            "patienceMultiplier"
+          ],
+          "additionalProperties": false
+        },
+        "worker": {
+          "type": "object",
+          "properties": {
+            "taste": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "patienceMultiplier": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 10
+            }
+          },
+          "required": [
+            "taste",
+            "patienceMultiplier"
+          ],
+          "additionalProperties": false
+        },
+        "tourist": {
+          "type": "object",
+          "properties": {
+            "taste": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "patienceMultiplier": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 10
+            }
+          },
+          "required": [
+            "taste",
+            "patienceMultiplier"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "regular",
+        "student",
+        "worker",
+        "tourist"
+      ],
+      "additionalProperties": false
+    },
+    "reputationDelta": {
+      "type": "object",
+      "properties": {
+        "SSS": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "S": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "A": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "B": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "C": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "F": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "expired": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "SSS",
+        "S",
+        "A",
+        "B",
+        "C",
+        "F",
+        "expired"
+      ],
+      "additionalProperties": false
+    },
+    "economy": {
+      "type": "object",
+      "properties": {
+        "overheadYenPerDay": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "payrollYenPerDay": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "aidMinimumStockPerIngredient": {
+          "const": 4
+        },
+        "aidLimitPerDay": {
+          "const": 1
+        }
+      },
+      "required": [
+        "overheadYenPerDay",
+        "payrollYenPerDay",
+        "aidMinimumStockPerIngredient",
+        "aidLimitPerDay"
+      ],
+      "additionalProperties": false
+    },
+    "upgrades": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "enum": [
+              "fryer",
+              "chairs"
+            ]
+          },
+          "unlockDay": {
+            "type": "integer",
+            "minimum": 2
+          },
+          "costYen": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "effect": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "p3WindowSeconds": {
+                    "type": "number",
+                    "minimum": 0.1,
+                    "maximum": 120
+                  }
+                },
+                "required": [
+                  "p3WindowSeconds"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "patienceMultiplier": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 10
+                  }
+                },
+                "required": [
+                  "patienceMultiplier"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "unlockDay",
+          "costYen",
+          "effect"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "mvpMilestone": {
+      "type": "object",
+      "properties": {
+        "day": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "canContinueAfter": {
+          "const": true
+        }
+      },
+      "required": [
+        "day",
+        "canContinueAfter"
+      ],
+      "additionalProperties": false
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 0
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "status",
+    "day1",
+    "normalDay",
+    "starting",
+    "recipe",
+    "ingredientCostsYen",
+    "inventory",
+    "sauce",
+    "cooking",
+    "customer",
+    "reputationDelta",
+    "economy",
+    "upgrades",
+    "mvpMilestone",
+    "notes"
+  ],
+  "additionalProperties": false
+}

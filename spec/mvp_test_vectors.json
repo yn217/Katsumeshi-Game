@@ -1,5 +1,5 @@
 {
-  "schema": "katsumeshi-qa-v0.4",
+  "schema": "katsumeshi-qa-v0.5",
   "fixtures": [
     {
       "id": "mvp_day1_all_served",
@@ -65,6 +65,113 @@
       "tasteDistance": 50,
       "finalScore": 85,
       "rank": "S"
+    },
+    {
+      "id": "upgrade_fryer_first_purchase",
+      "completedDay": 1,
+      "phase": "UPGRADE",
+      "nextDay": 2,
+      "upgradeId": "fryer",
+      "unlockDay": 2,
+      "purchaseAllowed": true,
+      "effectiveDay": 2,
+      "cashBeforeYen": 35640,
+      "cashAfterYen": 27640,
+      "investmentYen": 8000
+    },
+    {
+      "id": "upgrade_chair_too_early",
+      "completedDay": 1,
+      "phase": "UPGRADE",
+      "nextDay": 2,
+      "upgradeId": "chairs",
+      "unlockDay": 3,
+      "purchaseAllowed": false
+    },
+    {
+      "id": "upgrade_chair_first_purchase",
+      "completedDay": 2,
+      "phase": "UPGRADE",
+      "nextDay": 3,
+      "upgradeId": "chairs",
+      "unlockDay": 3,
+      "purchaseAllowed": true
+    },
+    {
+      "id": "aid_only_missing_ingredient",
+      "day": 3,
+      "cashBeforeYen": 0,
+      "inventoryBefore": {
+        "beef": 0,
+        "rice": 10,
+        "coating": 10,
+        "sauce": 10,
+        "cabbage": 10
+      },
+      "inventoryAfter": {
+        "beef": 4,
+        "rice": 10,
+        "coating": 10,
+        "sauce": 10,
+        "cabbage": 10
+      },
+      "cashAfterYen": 0,
+      "aidGrantedDay": 3
+    },
+    {
+      "id": "aid_not_available_if_can_buy",
+      "day": 3,
+      "cashBeforeYen": 250,
+      "inventoryBefore": {
+        "beef": 0,
+        "rice": 10,
+        "coating": 10,
+        "sauce": 10,
+        "cabbage": 10
+      },
+      "aidAllowed": false
+    },
+    {
+      "id": "day1_first_cancellation_rejected",
+      "day": 1,
+      "tutorialFirstServed": false,
+      "orderIndex": 0,
+      "action": "CANCEL_ORDER",
+      "accepted": false,
+      "stateUnchanged": true
+    },
+    {
+      "id": "same_tick_expire_before_accept",
+      "phase": "OPEN",
+      "queuedWaitBeforeSeconds": 0.01,
+      "tickDeltaSeconds": 0.03333333333333333,
+      "action": "ACCEPT_ORDER",
+      "orderStateAfter": "expired",
+      "inventoryConsumed": false,
+      "reputationDelta": -2
+    },
+    {
+      "id": "basic_preset_immutable",
+      "phase": "MORNING",
+      "sauceId": "basic",
+      "action": "EDIT_SAUCE",
+      "accepted": false
+    },
+    {
+      "id": "no_duplicate_charge_on_replay",
+      "phase": "REACTION",
+      "orderId": "d1_o1",
+      "action": "SERVE",
+      "repeat": 2,
+      "salesIncrements": 1,
+      "ingredientConsumptionIncrements": 1
+    },
+    {
+      "id": "reputation_clamp",
+      "reputationBefore": 99,
+      "rank": "SSS",
+      "rawDelta": 4,
+      "reputationAfter": 100
     }
   ],
   "expectedProperties": [
@@ -75,6 +182,12 @@
     "P3 oil temperature display does not affect score",
     "restore keeps RNG state and unprocessed arrival schedule",
     "inventory is meal-equivalent integer units",
-    "loss is included in consumed ingredient cost, never subtracted twice"
+    "loss is included in consumed ingredient cost, never subtracted twice",
+    "UPGRADE unlock compares completedDay+1 to unlockDay",
+    "aid increases each deficient ingredient only up to 4 units",
+    "Day1 first order cannot be cancelled before first served reaction",
+    "same tick expiry precedes accept and closing decision happens last",
+    "basic sauce preset cannot be modified or deleted",
+    "save and config satisfy JSON Schema 2020-12"
   ]
 }

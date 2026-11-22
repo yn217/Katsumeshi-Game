@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "revision": 0,
+  "savedAtIso": "2026-11-22T00:00:00.000Z",
+  "seed": 123456789,
+  "rngState": 123456789,
+  "day": 1,
+  "nextOrderSequence": 0,
+  "phase": "MORNING",
+  "overlay": null,
+  "openingRemainingSeconds": null,
+  "businessElapsedSeconds": 0,
+  "remainingArrivals": 8,
+  "nextArrivalIndex": 0,
+  "arrivalSeconds": [],
+  "tutorialNextOrderIndex": 0,
+  "tutorialFirstServed": false,
+  "dayClosed": false,
+  "dayOverheadSettled": false,
+  "aidGrantedDay": null,
+  "cashYen": 30000,
+  "reputation": 30,
+  "inventory": {
+    "beef": 10,
+    "rice": 10,
+    "coating": 10,
+    "sauce": 10,
+    "cabbage": 10
+  },
+  "unlockedRecipeIds": [
+    "beef_katsumeshi"
+  ],
+  "unlockedUpgradeIds": [],
+  "sauces": [
+    {
+      "id": "basic",
+      "taste": {
+        "sweetness": 50,
+        "richness": 60,
+        "acidity": 40
+      }
+    }
+  ],
+  "customerAffinity": {
+    "regular": 0,
+    "student": 0,
+    "worker": 0,
+    "tourist": 0
+  },
+  "orders": [],
+  "activeOrderId": null,
+  "cookingSession": null,
+  "seenStoryEventIds": [],
+  "appliedCommandIds": [],
+  "dailyLedger": {
+    "salesYen": 0,
+    "ingredientConsumedYen": 0,
+    "wasteYen": 0,
+    "purchasesYen": 0,
+    "upgradePurchasesYen": 0,
+    "overheadYen": 0,
+    "payrollYen": 0,
+    "providedCount": 0,
+    "cancelledCount": 0,
+    "expiredCount": 0,
+    "skippedCandidates": 0
+  },
+  "lastServedOrderId": null,
+  "lastReactionRank": null
+}
