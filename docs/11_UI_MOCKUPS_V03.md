@@ -23,10 +23,23 @@
 
 ## 画像管理と登録状況
 - 画像は今回のChatGPT作業で作成され、**ローカルにまとめたZIP**がある。
-- このリポジトリへの画像バイナリのコミットについては、別途確認が必要。**本ドキュメントのコミットが画像ファイル自体の登録完了を意味しない。**
+- **軽量WebPプレビュー6ファイルはGitHubに登録済み**（160×90px、詳細確認には不向き）。高解像度PNGは**GitHubには未登録**で、ChatGPTからダウンロードできるZIP内にまとめている。
 - 画面ごとの高解像度レビュー用画像は、5画面の生成コンセプトを切り出して16:9キャンバスに配置したもの。**元のパネル分割画像のため、個別画面を独立生成したものではない**。
-- リポジトリにバイナリを登録する場合は `public/assets/mockups/v03/` を保存先とする。
+- 軽量画像の登録先は `public/assets/mockups/v03/previews/`、高解像度画像の想定先は `public/assets/mockups/v03/`。
 - WindowsでZIPを取得後に登録するスクリプト: `scripts/import_mockups.ps1`。
+
+## GitHubプレビュー（軽量版のみ登録済み）
+
+| 画面 | 軽量プレビュー |
+| --- | --- |
+| タイトル | ![タイトル](../public/assets/mockups/v03/previews/00_title.webp) |
+| 朝の準備 | ![朝の準備](../public/assets/mockups/v03/previews/01_morning_prep.webp) |
+| 店舗営業 | ![店舗営業](../public/assets/mockups/v03/previews/02_shop_open.webp) |
+| 調理・揚げ | ![揚げ工程](../public/assets/mockups/v03/previews/03_cooking_frying.webp) |
+| SSS試食 | ![試食評価](../public/assets/mockups/v03/previews/04_tasting_sss.webp) |
+| 営業結果 | ![営業結果](../public/assets/mockups/v03/previews/05_day_result.webp) |
+
+プレビューはファイルの実在確認と一覧表示を目的とした160×90px版。ゲームのUI実装やアセット品質判定には高解像度版を使用すること。
 
 ## 仕様書との差異：実装では必ず修正
 1. 自動生成画像内の売上・来客数・残り時間・価格等は**演出用の数値で、ゲーム仕様ではない**。ゲームロジックは02/03/05/07のv0.2を参照。
