@@ -1,0 +1,55 @@
+{
+  "schema": "katsumeshi-chatgpt-background-manifest/v1",
+  "version": "v06",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceAttribution": "ChatGPT built-in image generation; no ComfyUI generation for non-character assets.",
+  "assets": [
+    {
+      "id": "title_riverside_chatgpt_v02",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v06/title_riverside_chatgpt_v02.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v05/backgrounds/title_riverside_chatgpt_v02.png",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "title",
+        "kakogawa",
+        "anime"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "ChatGPT image generation. Wide 16:9 background illustration for a Japanese neighborhood restaurant management game: a small welcoming local diner in Kakogawa, Hyogo beside a calm riverside promenade on a clear spring morning, modest wood-front storefront and noren, riverbank, greenery, distant low town buildings, bright soft daylight. Hand-painted 2D anime environment art, polished game background, no photorealism. Keep center and upper middle calm for title/menu overlays. Full-bleed, coherent perspective. No people, no characters, no food, no dishes, no readable signs, no letters, no logo, no watermark.",
+      "status": "concept_review",
+      "licenseNote": "Review applicable distribution terms before release.",
+      "reviewNote": "Scene subject and overlay negative space visually checked; in-game crop/composition review pending.",
+      "reviewedAt": null
+    },
+    {
+      "id": "result_evening_chatgpt_v02",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v06/result_evening_chatgpt_v02.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v05/backgrounds/result_evening_chatgpt_v02.png",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "result",
+        "kakogawa",
+        "anime"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "ChatGPT image generation. Wide 16:9 background illustration for the closing results screen of a Japanese neighborhood restaurant management game: interior of the same modest wood-front local diner in Kakogawa, Hyogo after closing at early evening, chairs tucked beside small tables, clean wooden counter, warm pendant lights, gentle orange-pink twilight through windows, quiet welcoming mood. Hand-painted 2D anime environment art matching polished game background illustration. Full-bleed, coherent perspective, keep center calm for result panels/text. No people, no characters, no food, no dishes, no readable signs, no lettering, no logo, no watermark.",
+      "status": "concept_review",
+      "licenseNote": "Review applicable distribution terms before release.",
+      "reviewNote": "Scene subject and overlay negative space visually checked; in-game crop/composition review pending.",
+      "reviewedAt": null
+    }
+  ]
+}

@@ -404,3 +404,37 @@ html.staged .cook-v3.g1 .fry-tap{max-height:520px;aspect-ratio:auto;height:520px
 .cook-v3 .work .card-body{min-height:min(56vh,600px)}
 .cook-v3.g1 .work .card-body{min-height:0}
 .title-v4 .kat-note{white-space:normal;line-height:1.4}
+
+/* ===== kitchen-centred service: order ticket rail + idle kitchen ===== */
+.kitchen-rail{display:flex;align-items:stretch;gap:12px;margin:0 auto 10px;max-width:1500px;padding:8px 12px;border-radius:14px;background:linear-gradient(#5a2a16ee,#3a1a0eee);box-shadow:inset 0 2px 0 #ffffff22,0 6px 14px #0005;color:#fff3dc}
+.rail-head{display:flex;flex-direction:column;justify-content:center;gap:2px;min-width:120px;padding-right:12px;border-right:2px dashed #ffffff33;font-size:.85em;white-space:nowrap}
+.rail-head strong{font-size:1.1em}
+.rail-tickets{display:flex;gap:10px;overflow-x:auto;flex:1;align-items:center}
+.rail-empty{margin:0;opacity:.8}
+.ticket{position:relative;display:flex;align-items:center;gap:8px;min-width:190px;padding:6px 10px 6px 6px;border-radius:8px;background:#fffaf0;color:#4a2412;box-shadow:0 3px 0 #c9a46a,0 5px 8px #0004;transform:rotate(-.6deg);animation:ticketIn .35s ease-out}
+.ticket:nth-child(even){transform:rotate(.6deg)}
+.ticket::before{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff8a6a,#a8161a);box-shadow:0 2px 2px #0005}
+.ticket.cooking{background:#fff1c8;box-shadow:0 0 0 3px #f2c14e,0 5px 10px #0005}
+.ticket.next{box-shadow:0 0 0 2px #e2473a,0 5px 8px #0004}
+.ticket.hurry{animation:ticketHurry .8s ease-in-out infinite}
+.ticket-face{width:44px;height:44px;border-radius:50%;flex:none;background-size:cover;background-position:center 15%}
+.ticket-main{display:flex;flex-direction:column;gap:2px;min-width:0;font-size:.85em}
+.ticket-main strong{font-size:1.05em}
+.ticket-tag{font-weight:800;color:#a8161a}
+.ticket-wait{height:6px;border-radius:999px;background:#0001;overflow:hidden;width:110px}
+.ticket-wait i{display:block;height:100%;background:linear-gradient(90deg,#d9362a,#f2c14e 40%,#3fbf5f)}
+.ticket.hurry .ticket-wait i{background:#d9362a}
+.ticket-main em{font-style:normal;font-size:.85em;opacity:.75}
+@keyframes ticketIn{from{transform:translateY(-30px) rotate(-4deg);opacity:0}}
+@keyframes ticketHurry{50%{transform:rotate(1.5deg)}}
+.kitchen-center{display:grid;place-items:center;min-height:min(60vh,640px)}
+.kitchen-idle{display:flex;flex-direction:column;align-items:center;gap:10px;min-width:min(560px,90vw);padding:28px 40px;border-radius:22px;background:#fffaf0ee;box-shadow:inset 0 0 0 3px #e9d7a8,0 12px 26px #0006;text-align:center;color:#4a2412}
+.kitchen-idle h2{margin:0;font-size:1.8em}
+.kitchen-idle p{margin:0}
+.kitchen-idle.incoming{box-shadow:inset 0 0 0 4px #f2c14e,0 0 30px #ffd65a99,0 12px 26px #0006;animation:ticketIn .35s ease-out}
+.kitchen-idle.warn{box-shadow:inset 0 0 0 4px #d9362a,0 12px 26px #0006}
+.idle-face{width:110px;height:110px;border-radius:50%;background-size:cover;background-position:center 15%;box-shadow:0 0 0 4px #fff,0 0 0 7px #f2c14e}
+.idle-served{display:flex;gap:12px;margin-top:6px}
+.idle-served span{position:relative}
+.idle-served-face{display:block;width:56px;height:56px;border-radius:50%;background-size:cover;background-position:center 15%}
+.idle-served .rank-chip{position:absolute;right:-6px;bottom:-4px}

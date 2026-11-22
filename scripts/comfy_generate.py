@@ -1,4 +1,4 @@
-"""Queue Katsumeshi asset generations on the local ComfyUI (127.0.0.1:8189).
+"""Queue character-only Katsumeshi generations on the local ComfyUI (127.0.0.1:8189).
 
 Recipe taken from output/town_game (koharu_rikka) PNG metadata:
   Anima-Base-v1.0 + qwen_3_06b_base (qwen_image) + qwen_image_vae
@@ -6,7 +6,7 @@ Recipe taken from output/town_game (koharu_rikka) PNG metadata:
   euler / simple, 24 steps, CFG 4.5, birefnet background removal for sprites.
 The original denim-overalls outfit is intentionally NOT reused.
 
-usage: python scripts/comfy_generate.py <job_set> [--only id1,id2]
+usage: python scripts/comfy_generate.py <character_job_set> [--only id1,id2]
 """
 import json, sys, time, urllib.request
 
@@ -62,7 +62,16 @@ def wait(ids):
 
 
 if __name__ == "__main__":
-    jobs = json.load(open(__file__.replace("comfy_generate.py", "../assets/source/comfyui/jobs.json"), encoding="utf-8"))[sys.argv[1]]
+    if len(sys.argv) < 2:
+        raise SystemExit("usage: python scripts/comfy_generate.py <character_job_set> [--only id1,id2]")
+    job_set = sys.argv[1]
+    allowed_job_sets = {"test", "owner", "customers", "owner_reference", "owner_reference_back"}
+    if job_set not in allowed_job_sets:
+        raise SystemExit(f"ComfyUI generation is restricted to character assets; disabled set: {job_set}")
+    all_jobs = json.load(open(__file__.replace("comfy_generate.py", "../assets/source/comfyui/jobs.json"), encoding="utf-8"))
+    jobs = all_jobs[job_set]
+    if not jobs or any(not (job["id"].startswith("char_") or job["id"].startswith("test_owner_")) for job in jobs):
+        raise SystemExit(f"Refusing non-character generation jobs in set: {job_set}")
     only = None
     if "--only" in sys.argv:
         only = set(sys.argv[sys.argv.index("--only") + 1].split(","))

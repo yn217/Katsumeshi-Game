@@ -1,0 +1,33 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v04",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "subject": "Standalone P2 breading tray with panko crumbs; not a plated or finished dish.",
+  "sourceAttribution": "ChatGPT built-in image generation; transparent PNG master retained in assets/source/imagegen/chatgpt/v05/tools/.",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "cooking_tool_breading_tray_chatgpt_v01",
+      "path": "public/assets/game/cooking/v04/chatgpt/breading_tray_chatgpt_v01.webp",
+      "type": "cooking_tool",
+      "width": 1536,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "breading_tray",
+        "panko"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "Game asset illustration, single isolated cooking tool icon: a shallow rectangular stainless-steel breading tray seen from a slightly elevated three-quarter angle, filled with visibly coarse, separate golden panko flakes. Whole tray centered with generous clear margins; tray rim, corners, and crumbs all fully visible. Hand-painted 2D anime game art, soft cel shading and fine painterly highlights, warm cream and gold palette, crisp readable silhouette at small UI size. Clean transparent background. No meat, no cutlet, no plate, no table, no hands, no person, no text, no label, no logo, no watermark.",
+      "status": "concept_review",
+      "licenseNote": "Review applicable distribution terms before release.",
+      "reviewNote": "Distinct coarse panko flakes, full tray visible, and transparent background checked; final in-game scale review pending.",
+      "reviewedAt": null
+    }
+  ]
+}

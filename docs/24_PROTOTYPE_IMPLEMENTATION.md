@@ -1,5 +1,7 @@
 # 24. 初期操作プロトタイプ実装状況（2026-11-23）
 
+- 2026-11-23: 食材/工程アセットをChatGPT画像生成v06のイラスト候補へ切替。生肉、衣付き肉、パン粉、揚げカツ、たれ、茹でキャベツ、ご飯の7点を在庫/調理工程のプレビューへ接続。生成マスターと切り出しPNGは `assets/source/imagegen/chatgpt/v06/food/`、WebPとmanifestは `public/assets/game/food/v06/`。完成料理画像は生成していない。素材状態はconcept_review。
+
 ## 実装の目的
 現行設計のv0.5を、まず操作可能なブラウザ画面と独立したゲームコアとして試す。**実装形式は依存不要のJavaScript ES Modules**。企画の推奨構成（Vite/React/PixiJS）と異なるのは、初期検証とセットアップの単純さを優先するため。完成版のフレームワーク選定は未確定。
 
@@ -59,8 +61,8 @@
 - 店主と顧客4タイプ×6ランクのランタイム参照先はComfyUI＋LoRAのv05へ切替済み。店主は表情6種と店舗服/私服の全身2枚、顧客は24枚。原本PNG・BirefNetマスクはComfyUI outputに保持し、透過WebPは `public/assets/game/characters/**/v05/`、LoRA/seed/source記録は `public/assets/game/characters/v05/manifest.json` に保存。店主のKoharu LoRAと画風LoRA、顧客の画風LoRAを使用し、参考画像の白シャツ＋デニム服は負例指定して別衣装にした。画像はすべて `concept_review` で、最終採用判定とゲーム画面での合成確認は未了。ChatGPT生成版は比較用候補として残す。
 - 仕様17 §3の店主リファレンス候補を追加。ComfyUI＋店主LoRA/画風LoRAで顔・髪・ヘアピンの拡大、店舗服正面、背面/横、私服を生成し、色メモ付きレビュー板へ構成。原本と再現条件は `assets/source/comfyui/references/manifest.json` に記録済み。レビュー候補でランタイム未投入、承認前。
 - 料理（かつめし）の生成画像は不採用。代わりにユーザー提供画像2枚（`assets/source/food/`）をbirefnetで切り抜き、`public/assets/game/food/beef_katsumeshi/whole.webp`（使用中）・`sliced.webp`（予備、右端が元画像で切れている）として登録。皿はCSSで描画し、タイトル・注文カード・完成時・試食評価に表示。ランク別の不正確なAI生成皿は現行画面とプレビュー配布対象から除外し、すべてwhole素材へ統一。盛り付け工程の部品表示は絵文字のまま。利用権の確認が必要。食材・設備アイコンも絵文字。
-- 先行版ではタイトル、朝準備、営業、P3揚げ、結果の5背景をChatGPT画像生成で作成した。現行では朝準備/営業/P3厨房だけComfyUI＋anima-style LoRAの候補に切替済み。タイトル/結果は既存候補を維持。原本PNGとプロンプトは `assets/source/imagegen/chatgpt/v04/backgrounds/` と `prompts.json`、実行用WebPと台帳は `public/assets/game/backgrounds/v04/manifest.json` に保存。生成原本は1672×941、実行用は2560×1440へ拡大変換しているため、原本は `docs/06` のネイティブ解像度基準を満たさない。候補状態は `concept_review`。ゲーム画面の合成レビューは未実施。
-- 背景の朝準備/営業/P3厨房をComfyUI＋anima-style LoRAの2560×1440原本へ切替。マスターPNG、再現ジョブ、LoRA/seed記録は `assets/source/comfyui/backgrounds/`、ランタイムWebPとreview manifestは `public/assets/game/backgrounds/v05/`。全て `concept_review` で最終採用・合成レビューは未了。タイトル/結果は既存候補を維持。
+- 先行版ではタイトル、朝準備、営業、P3揚げ、結果の5背景をChatGPT画像生成で作成した。現行は全てChatGPT生成背景を参照する。ComfyUI製非キャラクター背景はユーザー指示に従って参照解除し、プレビュー出力から除外。原本PNGとプロンプトは `assets/source/imagegen/chatgpt/v04/backgrounds/` と `prompts.json`、実行用WebPと台帳は `public/assets/game/backgrounds/v04/manifest.json` に保存。生成原本は1672×941、実行用は2560×1440へ拡大変換しているため、原本は `docs/06` のネイティブ解像度基準を満たさない。候補状態は `concept_review`。ゲーム画面の合成レビューは未実施。
+- 背景の朝準備/営業/P3厨房は以前ComfyUI＋anima-style LoRAの候補へ切替えたが、ユーザー指示により現在はChatGPT生成版を参照する。ComfyUI製の非キャラクター背景はプレビュー出力から除外。タイトル/結果はChatGPT画像生成のv06候補（1672×941）へ更新。画面合成確認と2560×1440原寸基準への品質判断は未了。
 - GitHub登録済みの画面モックをボタン付き一枚絵として転用していない。
 - P2は30セルの被覆状態を描画し、ドラッグ中に通過したセルを一括確定する。ストロークはpointerupで確定し、pointercancel/領域外pointerupでは破棄する。クリックは1セル、キーボードEnter/Spaceは0.6秒長押しで区画をまとめ塗りする。
 - セーブ読み込み/書き込み時に `spec/mvp_save.schema.json` の構造を検査し、注文状態・調理中注文・日次台帳・現金残高の相互整合を追加検査する。mainが不正でbackupが有効な場合は復旧確認を出し、不正なmainをbackupへ上書きしない。
@@ -83,7 +85,7 @@
 
 ## 生成アセット（2026-11-22）
 - 音響素材: docs/15 §7に基づき、オリジナルのループBGM4曲（title/shop/cooking/result）とSE11種（click/purchase/fry/serve/各ランク5段階/error）をWAVで作成。Web Audioで音量設定を維持して再生し、P3中のfryだけloop再生。manifestは `public/assets/game/audio/manifest.json`、生成仕様は `assets/source/audio/v03/design.json`。聴取レビュー待ち。
-- ChatGPT画像生成で食材・調理状態7点（生牛肉、炊いた米、パン粉、煮キャベツ、デミグラスソース、衣付きカツ、揚げカツ）、調理道具5点（肉たたき、パン粉トレイ、ソースレードル、キャベツ鍋、しゃもじ）、設備2点（フライヤー、椅子）、演出3点（湯気、油はね、金色のきらめき）、Day7用背景1点を制作。ランク表示用のSSS/S/A/B/C/Fバッジ6点も生成し、試食・調理評価画面へ接続。画像は文字なしで、ランク文字はHTML重ね表示。透過PNGマスターは `assets/source/imagegen/v03/`、実行用WebPは `public/assets/game/food/v03/`、`equipment/v03/`、`effects/v03/`、`backgrounds/v03/`、道具旧候補は `assets/source/imagegen/v03/tools/`、現行のComfyUI＋LoRA候補WebPは `public/assets/game/cooking/v04/tools/`（`concept_review`）、`ui/ranks/v03/`、`ui/panels/v03/`、プロンプトとレビュー状態は各manifestに保存。9-sliceカード枠はSVGで作成し、カードへ適用。ボタン状態（通常/hover/押下/focus/disabled）はCSSで描画。在庫画面アイコン、P1〜P6の工程見本（P1/P2/P4/P5/P6に道具アイコン付き）、設備購入カード、P3/P5の調理中、SSS評価、Day7のRESULT/UPGRADE背景に接続済み。完成皿とキャラクターは今回の生成対象に含めていない。
+- ChatGPT画像生成で食材・調理状態7点（生牛肉、炊いた米、パン粉、煮キャベツ、デミグラスソース、衣付きカツ、揚げカツ）、調理道具5点（肉たたき、パン粉トレイ、ソースレードル、キャベツ鍋、しゃもじ）、設備2点（フライヤー、椅子）、演出3点（湯気、油はね、金色のきらめき）、Day7用背景1点を制作。ランク表示用のSSS/S/A/B/C/Fバッジ6点も生成し、試食・調理評価画面へ接続。画像は文字なしで、ランク文字はHTML重ね表示。透過PNGマスターは `assets/source/imagegen/v03/`、実行用WebPは `public/assets/game/food/v03/`、`equipment/v03/`、`effects/v03/`、`backgrounds/v03/`、道具旧候補は `assets/source/imagegen/v03/tools/`、現行プレビューはChatGPT生成候補WebPをP2トレイに使用し、他の道具はv03 ChatGPT素材を使用。ComfyUI製道具候補は参照解除、`ui/ranks/v03/`、`ui/panels/v03/`、プロンプトとレビュー状態は各manifestに保存。9-sliceカード枠はSVGで作成し、カードへ適用。ボタン状態（通常/hover/押下/focus/disabled）はCSSで描画。在庫画面アイコン、P1〜P6の工程見本（P1/P2/P4/P5/P6に道具アイコン付き）、設備購入カード、P3/P5の調理中、SSS評価、Day7のRESULT/UPGRADE背景に接続済み。完成皿とキャラクターは今回の生成対象に含めていない。
 - 生成手順: `assets/source/comfyui/presets.json`（モデル/LoRA/サンプラー）、`jobs.json`（プロンプト・seed）、`scripts/comfy_generate.py <set>` でローカルComfyUI（127.0.0.1:8189）へ投入。
 - 店主の設定はComfyUI `output/town_game` の koharu_rikka 生成画像PNGメタデータから取得: Anima-Base-v1.0 / qwen_3_06b_base / qwen_image_vae、LoRA `Koharu-Koharu-epoch100` 0.8 → `anima-style-epoch35-lr5e5` 0.8、euler/simple 24step CFG4.5。**元画像の白シャツ＋デニムオーバーオールは使わず**、クリーム色ブラウス＋深紅エプロン（店舗服）、ピンクのカーディガン（私服）に変更。
 - 顧客4人は店主LoRAを外し、画風LoRAのみで生成（旧 `town_game_specs` の学生は店主LoRAが混入して店主と同じ顔だったため不採用）。各客はseed固定で6ランクの表情差分。

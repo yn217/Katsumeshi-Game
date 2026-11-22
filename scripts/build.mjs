@@ -13,23 +13,23 @@ if (config.schema !== "katsumeshi-mvp-config/v0.5") throw Error("Unexpected conf
 
 const ranks = ["sss", "s", "a", "b", "c", "f"];
 const runtimeAssets = [
-  ...["title_riverside_chatgpt_v01", "result_chatgpt_v01"]
-    .map(name => `backgrounds/${name}.webp`),
+  "backgrounds/v06/title_riverside_chatgpt_v02.webp",
+  "backgrounds/v06/result_evening_chatgpt_v02.webp",
   "backgrounds/v03/day7_evening_v03.webp",
-  ...["morning_prep_v106", "shop_day_v106", "kitchen_cooking_v103"]
-    .map(name => `backgrounds/v05/${name}.webp`),
+  ...["morning_chatgpt_v01", "shop_chatgpt_v01", "kitchen_frying_chatgpt_v01"]
+    .map(name => `backgrounds/${name}.webp`),
   ...["normal", "encourage", "happy", "sad", "surprised", "thinking"]
     .map(name => `characters/owner/v05/emotions/${name}_v01.webp`),
   "characters/owner/v05/shop_full_v01.webp",
   "characters/owner/v05/casual_full_v01.webp",
   ...["regular", "student", "worker", "tourist"].flatMap(type => ranks.map(rank => `characters/${type}/v05/${rank}.webp`)),
   "food/beef_katsumeshi/whole.webp",
-  "food/v02_trim/ingredients/flour_coated_beef_v02.webp",
-  "food/v02_trim/ingredients/fried_cutlet_thin_v02.webp",
-  ...["raw_beef", "breaded_cutlet", "fried_cutlet", "demiglace", "boiled_cabbage", "steamed_rice", "panko"]
-    .map(name => `food/v03/ingredients/${name}_v03.webp`),
-  ...["meat_mallet", "breading_tray", "sauce_ladle", "cabbage_pot", "rice_paddle"]
-    .map(name => `cooking/v04/tools/${name}_v04.webp`),
+  "cooking/fry.webp",
+  ...["raw_beef_flattened", "breaded_beef", "panko_crumbs", "fried_cutlet", "demi_glace_sauce", "boiled_cabbage", "steamed_rice"]
+    .map(name => `food/v06/${name}_chatgpt_v06.webp`),
+  ...["meat_mallet", "sauce_ladle", "cabbage_pot", "rice_paddle"]
+    .map(name => `cooking/v03/tools/${name}_v03.webp`),
+  "cooking/v04/chatgpt/breading_tray_chatgpt_v01.webp",
   "equipment/v03/fryer_v03.webp",
   "equipment/v03/chair_v03.webp",
   ...["steam_wisps", "frying_sizzle", "golden_sparkle"].map(name => `effects/v03/${name}_v03.webp`),
@@ -82,6 +82,23 @@ function assetReviewRecords() {
   return records;
 }
 
+function nonCharacterComfyCandidates() {
+  const candidates = new Set();
+  for (const manifestFile of findManifests(GAME_ASSETS)) {
+    const manifest = JSON.parse(readFileSync(manifestFile, "utf8"));
+    for (const collection of [manifest.assets, manifest.files]) {
+      if (!Array.isArray(collection)) continue;
+      for (const asset of collection) {
+        if (!/comfyui/i.test(String(asset.sourceWorkflow || ""))) continue;
+        const key = normalizeAssetPath(manifestFile, asset.path);
+        if (!key || /(^|\/)characters(\/|$)/i.test(key)) continue;
+        candidates.add(key);
+      }
+    }
+  }
+  return candidates;
+}
+
 function checkReleaseAssets() {
   const records = assetReviewRecords();
   const failures = [];
@@ -129,8 +146,15 @@ mkdirSync(DIST, { recursive: true });
 copyShell();
 
 if (mode === "preview") {
-  cpSync(GAME_ASSETS, path.join(DIST, "public/assets/game"), { recursive: true });
-  console.log("Preview build ready: dist-preview/ (includes concept-review assets; do not publish)");
+  const excludedComfyCandidates = nonCharacterComfyCandidates();
+  cpSync(GAME_ASSETS, path.join(DIST, "public/assets/game"), {
+    recursive: true,
+    filter(source) {
+      const relative = path.relative(GAME_ASSETS, source).replaceAll("\\", "/");
+      return !excludedComfyCandidates.has(relative);
+    },
+  });
+  console.log(`Preview build ready: dist-preview/ (concept-review assets included; ${excludedComfyCandidates.size} non-character ComfyUI candidates excluded; do not publish)`);
 } else {
   for (const relativePath of runtimeAssets) {
     const source = path.join(GAME_ASSETS, relativePath);
