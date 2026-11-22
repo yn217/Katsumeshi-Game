@@ -701,5 +701,83 @@
    "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
    "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
   }
+ ],
+ "title": [
+  {
+   "id": "char_owner_shop_invite_v101",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 82001,
+   "cutout": true,
+   "prompt": "cream white blouse with short puffed sleeves, deep crimson red bib apron with a big bow at the waist, upper body to thighs, leaning slightly toward viewer, reaching one open hand toward the viewer in a welcoming inviting gesture, other arm relaxed, big bright open-mouth smile, sparkling eyes, three-quarter view, simple plain white background, visual novel character sprite, clean lineart, soft cel shading",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, bad hands, holding object"
+  },
+  {
+   "id": "char_owner_shop_invite_v102",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 82002,
+   "cutout": true,
+   "prompt": "cream white blouse with short puffed sleeves, deep crimson red bib apron with a big bow at the waist, upper body to thighs, leaning slightly toward viewer, reaching one open hand toward the viewer in a welcoming inviting gesture, other arm relaxed, big bright open-mouth smile, sparkling eyes, three-quarter view, simple plain white background, visual novel character sprite, clean lineart, soft cel shading",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, bad hands, holding object"
+  },
+  {
+   "id": "char_owner_shop_invite_v103",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 82003,
+   "cutout": true,
+   "prompt": "cream white blouse with short puffed sleeves, deep crimson red bib apron with a big bow at the waist, upper body to thighs, leaning slightly toward viewer, reaching one open hand toward the viewer in a welcoming inviting gesture, other arm relaxed, big bright open-mouth smile, sparkling eyes, three-quarter view, simple plain white background, visual novel character sprite, clean lineart, soft cel shading",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, bad hands, holding object"
+  },
+  {
+   "id": "char_owner_shop_invite_v104",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 82004,
+   "cutout": true,
+   "prompt": "cream white blouse with short puffed sleeves, deep crimson red bib apron with a big bow at the waist, upper body to thighs, leaning slightly toward viewer, reaching one open hand toward the viewer in a welcoming inviting gesture, other arm relaxed, big bright open-mouth smile, sparkling eyes, three-quarter view, simple plain white background, visual novel character sprite, clean lineart, soft cel shading",
+   "negative_extra": ", detailed background, scenery, props, cropped head, extra fingers, bad hands, holding object"
+  },
+  {
+   "id": "bg_title_riverside_v101",
+   "preset": "scene",
+   "w": 1536,
+   "h": 864,
+   "seed": 83001,
+   "prompt": "original animated game background, no people, clean bright painterly 2D anime background illustration, full bleed, sunny early summer day at a wide river in a small Japanese city, a long low concrete bridge crossing the river in the middle distance, green rounded mountains and a few white buildings on the far bank, vivid blue sky with fluffy white clouds, fresh green tree leaves framing the top corners, in the foreground at the bottom a cafe table covered with a red and white gingham checkered tablecloth, blue and purple hydrangea flowers at the bottom right corner, the edge of a wooden shop front with a plain red curtain at the far left, eye-level view",
+   "negative_extra": ", people, characters, food, plates, readable text, letters, lettering, signboard text, vignette, white border, letterbox, black bars"
+  },
+  {
+   "id": "bg_title_riverside_v102",
+   "preset": "scene",
+   "w": 1536,
+   "h": 864,
+   "seed": 83002,
+   "prompt": "original animated game background, no people, clean bright painterly 2D anime background illustration, full bleed, sunny early summer day at a wide river in a small Japanese city, a long low concrete bridge crossing the river in the middle distance, green rounded mountains and a few white buildings on the far bank, vivid blue sky with fluffy white clouds, fresh green tree leaves framing the top corners, in the foreground at the bottom a cafe table covered with a red and white gingham checkered tablecloth, blue and purple hydrangea flowers at the bottom right corner, the edge of a wooden shop front with a plain red curtain at the far left, eye-level view",
+   "negative_extra": ", people, characters, food, plates, readable text, letters, lettering, signboard text, vignette, white border, letterbox, black bars"
+  },
+  {
+   "id": "bg_title_riverside_v103",
+   "preset": "scene",
+   "w": 1536,
+   "h": 864,
+   "seed": 83003,
+   "prompt": "original animated game background, no people, clean bright painterly 2D anime background illustration, full bleed, sunny early summer day at a wide river in a small Japanese city, a long low concrete bridge crossing the river in the middle distance, green rounded mountains and a few white buildings on the far bank, vivid blue sky with fluffy white clouds, fresh green tree leaves framing the top corners, in the foreground at the bottom a cafe table covered with a red and white gingham checkered tablecloth, blue and purple hydrangea flowers at the bottom right corner, the edge of a wooden shop front with a plain red curtain at the far left, eye-level view",
+   "negative_extra": ", people, characters, food, plates, readable text, letters, lettering, signboard text, vignette, white border, letterbox, black bars"
+  },
+  {
+   "id": "bg_title_riverside_v104",
+   "preset": "scene",
+   "w": 1536,
+   "h": 864,
+   "seed": 83004,
+   "prompt": "original animated game background, no people, clean bright painterly 2D anime background illustration, full bleed, sunny early summer day at a wide river in a small Japanese city, a long low concrete bridge crossing the river in the middle distance, green rounded mountains and a few white buildings on the far bank, vivid blue sky with fluffy white clouds, fresh green tree leaves framing the top corners, in the foreground at the bottom a cafe table covered with a red and white gingham checkered tablecloth, blue and purple hydrangea flowers at the bottom right corner, the edge of a wooden shop front with a plain red curtain at the far left, eye-level view",
+   "negative_extra": ", people, characters, food, plates, readable text, letters, lettering, signboard text, vignette, white border, letterbox, black bars"
+  }
  ]
 }

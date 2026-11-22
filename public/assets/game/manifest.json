@@ -1053,6 +1053,62 @@
    "loraList": [],
    "licenseNote": "User-provided image (2026-11-22). Confirm usage rights before release.",
    "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_invite",
+   "path": "public/assets/game/characters/owner/shop/invite.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "invite",
+    "title"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_invite_v103",
+   "generationSeed": 82003,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_title_riverside",
+   "path": "public/assets/game/backgrounds/title_riverside.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "title"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_title_riverside_v102",
+   "generationSeed": 83002,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
   }
  ],
  "includes": [

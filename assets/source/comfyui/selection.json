@@ -400,6 +400,28 @@
     "tourist",
     "F"
    ]
+  },
+  {
+   "id": "char_owner_shop_invite",
+   "source": "town_game_assets/char_owner_shop_invite_v103_00001_.png",
+   "path": "characters/owner/shop/invite.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "invite",
+    "title"
+   ]
+  },
+  {
+   "id": "bg_title_riverside",
+   "source": "town_game_assets/bg_title_riverside_v102_00001_.png",
+   "path": "backgrounds/title_riverside.webp",
+   "type": "background",
+   "cutout": false,
+   "tags": [
+    "title"
+   ]
   }
  ]
 }
