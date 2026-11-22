@@ -51,6 +51,10 @@
       queuedWaitRemainingSeconds: number; // queuedの間だけ減らす
       cookingScore?: number;
       ingredientsConsumed: boolean;
+      priceYenSnapshot: number;           // 受付時の価格
+      ingredientCostYenSnapshot: number;  // 受付時の原価
+      sauceSnapshot: {sweetness:number; richness:number; acidity:number} | null;
+      appliedActionIds: string[];         // ACCEPT_ORDER/SERVE等の重複防止
       settled: boolean; // 提供・売上・評判確定時にtrue
     };
 
