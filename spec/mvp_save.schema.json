@@ -566,6 +566,9 @@
                       "cabbage"
                     ]
                   }
+                },
+                "timerStopped": {
+                  "type": "boolean"
                 }
               },
               "required": [
@@ -577,7 +580,8 @@
                 "coatCoverage01",
                 "coatCellMask",
                 "placedComponentIds",
-                "placedSlotIds"
+                "placedSlotIds",
+                "timerStopped"
               ],
               "additionalProperties": false
             }

@@ -1,0 +1,12 @@
+{
+  "name": "katsumeshi-game-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free browser prototype for Katsumeshi Game",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "test": "node --test tests/domain.test.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
