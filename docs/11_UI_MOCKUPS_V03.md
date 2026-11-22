@@ -22,13 +22,13 @@
 | 07 | 拡張構想 | 07_ui_extended_concepts.png | 今後の画面案。MVPに含まないものもあり |
 
 ## 画像管理と登録状況
-- 画像は今回のChatGPT作業で作成され、**ローカルにまとめたZIP**がある。
-- **軽量WebPプレビュー6ファイルはGitHubに登録済み**（160×90px、詳細確認には不向き）。高解像度PNGは**GitHubには未登録**で、ChatGPTからダウンロードできるZIP内にまとめている。
+- 2026-11-22、高解像度PNG 8枚（00〜07）を `public/assets/mockups/v03/` に追加。ZIP内manifestのSHA-256・寸法・容量と照合済み。
+- 軽量WebPプレビュー6ファイルは `public/assets/mockups/v03/previews/` に登録済み（160×90px）。
 - 画面ごとの高解像度レビュー用画像は、5画面の生成コンセプトを切り出して16:9キャンバスに配置したもの。**元のパネル分割画像のため、個別画面を独立生成したものではない**。
-- 軽量画像の登録先は `public/assets/mockups/v03/previews/`、高解像度画像の想定先は `public/assets/mockups/v03/`。
-- WindowsでZIPを取得後に登録するスクリプト: `scripts/import_mockups.ps1`。
+- 参照用の `character_reference_user.png` は公開対象から除外。登録manifestも公開画像8枚だけを記録。
+- ZIPから再取り込みする場合は `scripts/import_mockups.ps1` を使用。
 
-## GitHubプレビュー（軽量版のみ登録済み）
+## GitHubプレビュー（軽量版）
 
 | 画面 | 軽量プレビュー |
 | --- | --- |
@@ -40,6 +40,19 @@
 | 営業結果 | ![営業結果](../public/assets/mockups/v03/previews/05_day_result.webp) |
 
 プレビューはファイルの実在確認と一覧表示を目的とした160×90px版。ゲームのUI実装やアセット品質判定には高解像度版を使用すること。
+
+## 高解像度レビュー画像
+
+| 画面 | PNG |
+| --- | --- |
+| タイトル | [00_title.png](../public/assets/mockups/v03/00_title.png) |
+| 朝の準備 | [01_morning_prep.png](../public/assets/mockups/v03/01_morning_prep.png) |
+| 店舗営業 | [02_shop_open.png](../public/assets/mockups/v03/02_shop_open.png) |
+| 調理・揚げ | [03_cooking_frying.png](../public/assets/mockups/v03/03_cooking_frying.png) |
+| SSS試食 | [04_tasting_sss.png](../public/assets/mockups/v03/04_tasting_sss.png) |
+| 営業結果 | [05_day_result.png](../public/assets/mockups/v03/05_day_result.png) |
+| 画面一覧 | [06_ui_overview.png](../public/assets/mockups/v03/06_ui_overview.png) |
+| 拡張構想 | [07_ui_extended_concepts.png](../public/assets/mockups/v03/07_ui_extended_concepts.png) |
 
 ## 仕様書との差異：実装では必ず修正
 1. 自動生成画像内の売上・来客数・残り時間・価格等は**演出用の数値で、ゲーム仕様ではない**。ゲームロジックは02/03/05/07のv0.2を参照。

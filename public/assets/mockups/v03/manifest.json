@@ -1,0 +1,63 @@
+{
+  "version": "0.3",
+  "generated": "2026-11-22",
+  "status": "concept review only",
+  "files": [
+    {
+      "file": "00_title.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a7ae1819bc6d01a393c941dc124d70dca60591c29406821f19e58271ca50a5ec",
+      "bytes": 2350800
+    },
+    {
+      "file": "01_morning_prep.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c17728eacea1447792a46a3dfc72fe4cc3aca0cf3826d508d581df6ce9adc048",
+      "bytes": 1362483
+    },
+    {
+      "file": "02_shop_open.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7d4f30447175e055849809bcfce60f2a0d1f254c182b1ee94a27f83545c2c3ca",
+      "bytes": 1554263
+    },
+    {
+      "file": "03_cooking_frying.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "fd5c7d73d34c6e0bb2c5811ee87dd7d4d691d47c76c88762cbb61b98e0a6e874",
+      "bytes": 1374413
+    },
+    {
+      "file": "04_tasting_sss.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "afdc7139c730f5a731b60fcd92f7d9243d63df7a1636c560ad6c5e40745da186",
+      "bytes": 1456172
+    },
+    {
+      "file": "05_day_result.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4f119e0423c0a1b2d1676a0b3659cd11e7a766f059678492dffb08a385031244",
+      "bytes": 973874
+    },
+    {
+      "file": "06_ui_overview.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b31cb62397656814a5ad369961752e2a334963e82082f67a6d29b18131a32eba",
+      "bytes": 2478541
+    },
+    {
+      "file": "07_ui_extended_concepts.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "b54d9c43924306a17b12ab3d32174b2e099b09049e7a0fafa6ff58bba9c6ce38",
+      "bytes": 2791606
+    }
+  ]
+}

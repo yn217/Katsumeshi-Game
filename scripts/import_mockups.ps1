@@ -18,7 +18,11 @@ try {
     Get-ChildItem -Path $src -Filter '*.png' | Where-Object {
         $_.BaseName -match '^0[0-7]_' 
     } | Copy-Item -Destination $dest -Force
-    Copy-Item -Path (Join-Path $src 'manifest.json') -Destination $dest -Force
+    # Keep the public manifest aligned with the generated mockups copied above.
+    # In particular, exclude character_reference_user.png from both file export and manifest.
+    $manifest = Get-Content -LiteralPath (Join-Path $src 'manifest.json') -Raw -Encoding utf8 | ConvertFrom-Json
+    $manifest.files = @($manifest.files | Where-Object { $_.file -match '^0[0-7]_.+\.png$' })
+    $manifest | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $dest 'manifest.json') -Encoding utf8NoBOM
     Copy-Item -Path (Join-Path $src 'README.md') -Destination $dest -Force
     Write-Host "Copied UI mockup assets to $dest"
     Write-Host "To register on GitHub, review assets and run:"
