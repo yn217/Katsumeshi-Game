@@ -333,3 +333,32 @@ select{border-radius:8px;background:#fffaf0;border:2px solid var(--gold);padding
 .fry-meta .q0{color:#b07a10}.fry-meta .q1{color:#c4231b;font-size:1.6rem}.fry-meta .q2{color:#6a2a10}
 .fry-card .big-cta{font-size:1.4rem;padding:.7rem 1rem}
 @media(max-width:640px){.step{min-width:4.8rem;font-size:.72rem;padding:.25rem .5rem .25rem .8rem}.step-ico{font-size:1.1rem}.step-arrow{display:none}}
+
+/* ---------- cooking complete (after P6; mockup "調理完了！") ---------- */
+.stage.complete-stage{backdrop-filter:blur(4px) brightness(1.05)}
+.complete-layout{position:relative;z-index:2;flex:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,400px);gap:1.2rem;align-items:start}
+.done-center{display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.done-banner{font-size:clamp(2rem,4.2vw,3.6rem);font-weight:900;color:#fff3c4;letter-spacing:.08em;padding:.15em 1.6em;background:linear-gradient(#d4473c,var(--red-d));border:4px solid var(--gold);box-shadow:0 8px 18px #0006;text-shadow:0 3px 0 #5a120f;clip-path:polygon(0 0,100% 0,94% 50%,100% 100%,0 100%,6% 50%)}
+.done-name{font-size:clamp(1.2rem,2vw,1.8rem);font-weight:900;padding:.2em 2em;border-radius:999px;background:linear-gradient(#fffaf0,#f2ddb5);border:3px solid var(--gold);box-shadow:0 4px 10px #0004}
+.done-dish{width:min(100%,640px);position:relative;filter:drop-shadow(0 0 30px #fff3b0)}
+.done-dish .rank-dish{width:100%}
+.done-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;justify-content:center}
+.done-actions .big-cta{font-size:1.8rem;padding:.7rem 3.2rem}
+.eval-card{overflow:visible;margin-top:1.2rem}
+.eval-title{margin:-1.2rem auto 0;width:max-content;max-width:100%;padding:.35rem 1.6rem;font-size:1.4rem;font-weight:900;color:#fff3dc;background:linear-gradient(#a3342b,var(--red-d));border:3px solid var(--gold);clip-path:polygon(0 0,100% 0,94% 50%,100% 100%,0 100%,6% 50%)}
+.eval-head{display:flex;align-items:center;justify-content:space-around;gap:.5rem;padding:.3rem 0 .6rem;border-bottom:2px solid #e2c99e;margin-bottom:.5rem}
+.eval-head .emblem-rank{font-size:clamp(4rem,6vw,5.5rem)}
+.eval-total{display:flex;flex-direction:column;align-items:center;background:#fffaf0;border:1px solid #e2c99e;border-radius:12px;padding:.4rem 1rem}
+.eval-total span{font-weight:900}
+.eval-total strong{font-size:2.6rem;line-height:1.1}
+.eval-total small{font-size:.45em}
+.eval-row{display:grid;grid-template-columns:9.2rem 1fr 2.2rem;align-items:center;gap:.5rem;padding:.28rem 0;font-weight:800;font-size:.92rem}
+.eval-row strong{text-align:right;font-size:1.05rem}
+.eval-bar{height:14px;border-radius:999px;background:#eadfca;border:1px solid #d8c29a;overflow:hidden}
+.eval-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(#ffb347,#e67a1e)}
+.eval-voice{display:flex;align-items:center;gap:.6rem;background:#fffaf0;border:1px solid #e2c99e;border-radius:12px;padding:.5rem}
+.eval-face{width:64px;height:64px}
+.eval-voice p{margin:0;font-weight:900;background:#fff;border:2px solid var(--gold);border-radius:14px;padding:.4rem .7rem;position:relative}
+.bubble-name{display:inline-block;margin:-1.4rem 0 .3rem -.4rem;padding:.05rem .9rem;border-radius:999px;background:linear-gradient(#c33a30,var(--red-d));color:#fff;border:2px solid var(--gold);font-size:.95rem}
+.owner-bubble .bubble-name{display:table}
+@media(max-width:900px){.complete-layout{grid-template-columns:1fr}.done-actions .big-cta{font-size:1.4rem;padding:.6rem 2rem}}

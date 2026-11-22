@@ -1,4 +1,4 @@
-import { createGame, dispatch, profit, cashDelta, I, P, K } from "./domain.mjs";
+import { createGame, dispatch, grade, profit, cashDelta, I, P, K } from "./domain.mjs";
 const $=sel=>document.querySelector(sel);
 const app=$("#app"), yen=n=>Number(n||0).toLocaleString("ja-JP")+"円";
 const icons={beef:"🥩",rice:"🍚",coating:"🍞",sauce:"🥣",cabbage:"🥬"};
@@ -50,6 +50,14 @@ const orders=q.length?q.map((o,n)=>'<article class="order"><span class="order-no
 const body='<div class="shop-layout">'+scene+card("🧾 注文（最大3件）",orders+'<p class="sub">'+(game.openingRemainingSeconds===0?'新規来店は終了。残りの注文に対応しよう。':'お客さんの好み（甘さ・コク・酸味）を見て注文を選ぼう。')+'</p>',"orders")+'</div>';
 return shell(body,{bg:"shop",hint:"調理中も他のお客さんの待ち時間は進みます。"});
 }
+function cookComplete(ses,where){
+const q=K.reduce((v,k)=>v+(ses.completedScores[k]||0),0),r=grade(q,ses.sauceSnapshot,where.customerId,config),rank=r.rank,max=config.cooking.stageMaxPoints;
+const rows=[["P1","🥩","肉の伸ばし"],["P2","🍞","衣の付き"],["P3","🍳","揚げ具合"],["P4","🥣","ソースの仕上がり"],["P5","🥬","キャベツの加減"],["P6","✨","盛り付け"]].map(([k,ic,l])=>{const v=Math.round((ses.completedScores[k]||0)/max[k]*100);return '<div class="eval-row"><span>'+ic+' '+l+'</span><div class="eval-bar"><i style="width:'+v+'%"></i></div><strong>'+v+'</strong></div>';}).join('');
+const line=(typeof customerDialogue!=="undefined"&&customerDialogue?.customers?.[where.customerId]?.ranks?.[rank])||voice[rank];
+const evalCard='<aside class="card eval-card"><h2 class="eval-title">🌿 調理評価 🌿</h2><div class="card-body"><div class="eval-head rank-'+rank+'"><span class="emblem-rank">'+rank+'</span><div class="eval-total"><span>総合評価</span><strong>'+r.score+'<small> 点</small></strong></div></div>'+rows+'<h3 class="mini-title">💬 お客さんの反応</h3><div class="eval-voice">'+face(art.customer(where.customerId,rank),"eval-face",labels[where.customerId])+'<p>'+escapeHTML(line)+'</p></div></div></aside>';
+const center='<section class="done-center"><div class="done-banner">🍳 調理完了！</div><div class="done-name">ビーフかつめし</div><div class="done-dish">'+rankDishHtml(rank)+'</div><div class="done-actions">'+btn("↻ やり直す","retry",'class="secondary"')+btn("🛎️ 提供する","serve",'class="primary big-cta"')+'</div></section>';
+return shell('<div class="complete-layout">'+center+evalCard+'</div>',{bg:"shop",cls:"complete-stage",owner:"happy",ownerLine:'<b class="bubble-name">小春</b>できました！ ビーフかつめしです！ '+(["SSS","S","A"].includes(rank)?'いい色に揚がって、ソースもばっちり！':'次はもっとおいしくできるはず！'),hint:"提供すると評価と売上が確定します。"});
+}
 function cooking(){
 const ses=game.cookingSession,n=ses.stageIndex,i=ses.stageInput,done=ses.completedScores[K[n]]!==undefined,where=game.orders.find(o=>o.id===ses.orderId);
 const stepShort=["肉を伸ばす","衣付け","揚げる","ソース","キャベツ","盛付け"],stepIcon=["🥩","🍞","🍳","🥣","🥬","🍽️"];
@@ -70,6 +78,7 @@ else if(n===5){const placed=i.placedComponentIds||[];work=(done?'':plate(i.place
 if(done&&n===5)work+='<div class="finish">'+dish("finish-dish")+'🎉 かつめしが完成！'+btn("できあがりを提供！","serve",'class="primary big-cta"')+'</div>';
 const order=card("📋 注文内容",dish("memo-dish")+'<div class="memo-dish-name">ビーフかつめし</div><div class="memo-head">'+face(art.customer(where.customerId,"B"),"memo-face",labels[where.customerId])+'<div><strong>'+labels[where.customerId]+'</strong><span>ビーフかつめし ×1</span></div></div><h3 class="mini-title">👤 お客さんの好み</h3>'+tasteBars(config.customer[where.customerId].taste)+'<div class="retry">やり直し：'+(ses.unlimitedRetry?'無制限':ses.retriesRemaining+'回')+'</div>',"memo");
 const scores=card("📊 工程得点",K.map((k,x)=>'<div class="scoreline"><span>P'+(x+1)+' '+stageNames[x]+'</span><strong>'+(ses.completedScores[k]===undefined?'—':ses.completedScores[k].toFixed(1))+'</strong></div>').join('')+'<div class="action-col">'+(done&&n===5?'':btn("次の工程へ ▶","complete",'class="primary"'))+btn("この工程をやり直す","retry",'class="secondary"')+btn("調理を破棄","cancel",'class="danger"')+'</div>',"scores");
+if(done&&n===5)return cookComplete(ses,where);
 return shell(steps+'<div class="cook-layout">'+order+'<section class="work card'+(n===2?' fry-mode':'')+'"><div class="card-body">'+stagePhoto(n)+''+work+'</div></section><div class="cook-side">'+side+scores+'</div></div>',{bg:"kitchen",owner:"encourage",ownerLine:ownerLines[n],hint:"時計は調理中も進みます（初日は時間無制限）。　R キーでやり直し"});
 }
 function reaction(){
