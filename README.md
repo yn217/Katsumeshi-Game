@@ -93,3 +93,6 @@ npm run build
 - [spec/mvp_config.schema.json](spec/mvp_config.schema.json)・[spec/mvp_save.schema.json](spec/mvp_save.schema.json)・[spec/mvp_save_example.json](spec/mvp_save_example.json) でデータ型を検証する。[scripts/validate_specs.py](scripts/validate_specs.py)を使った静的チェックは実行可能な準備が整った段階で検証する。
 
 **仕様優先順位:** v0.5の[19](docs/19_REVIEW_V05.md)を参照。v0.4の旧説明・v0.3の画像に矛盾する値があれば20〜23とspec JSONを優先する。ゲームコードやE2Eはまだ未実装。
+
+## 料理アセット v02
+完成料理の評価6ランク、揚げ工程、食材画像を各WebPファイルとして `public/assets/game/food/v02/` に登録し、Web試作版の調理/評価画面から参照する。**薄く伸ばした牛カツ＋茹でキャベツ**が必須条件。ランク別6枚と食材8点は生成一覧からの個別切り出しのため、原画品質レビュー前の候補として扱う。詳しくは[アセットREADME](public/assets/game/food/v02/README.md)。
