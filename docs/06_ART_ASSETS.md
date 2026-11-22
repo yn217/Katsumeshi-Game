@@ -73,13 +73,13 @@
 必須manifestメタデータ: id, path, type, width, height, anchorX, anchorY, scaleHint, tags, status, sourceWorkflow, generationSeed, model, loraList, licenseNote, reviewedAt。
 
 ## ComfyUI制作ワークフロー
-ユーザーのローカルComfyUI（http://127.0.0.1:8189/）と既存output/town_game画像の生成情報を後で確認する想定。**この仕様策定時点ではローカルComfyUI・Windowsフォルダにアクセスしていない。** 既存PNGのWorkflow/Promptメタデータ、チェックポイント・LoRA設定の取り込みは別タスクとする。
+2026-11-23にユーザー環境のComfyUI `output/town_game` PNGメタデータを調査し、店主LoRAと画風LoRA、checkpoint、seed等を確認した。生成条件は `assets/source/comfyui/presets.json`、`jobs.json`、キャラクターmanifestに保存済み。キャラクター候補はComfyUI＋LoRAで制作し、元画像の服装は模倣していない。権利・デザイン・画面合成レビューは別途必要。
 
 1. 既存PNGの埋め込みworkflow/生成パラメータを読み取り、checkpoint、LoRA、強度、seed、解像度を棚卸し。
 2. 採用できる設定を presets/character.json / presets/food.json / presets/background.json に記録。
 3. キャラの参照絵・スタイル資料を揃え、まずキャラ1体×SSS/S/A/B/C/F差分を出す。
-4. ビーフかつめしの完成形1枚を確定し、プレート・たれ量・光源・カメラを固定して差分を作る。
-5. 背景/小物を制作し、ブラウザの実表示サイズでレビュー。
+4. ビーフかつめしの完成形はユーザー指示により現在の生成手法で新規制作しない。ユーザー提供の実物写真切り抜きを仮の全画面共通素材として使い、たれ差分も保留する。
+5. 背景/小物は作成済み候補を画面合成してレビュー。タイトル/結果の解像度不足候補は要改善。
 6. 異常検査（透過、切れ、手指、皿の整合性、ライセンス）後、確定アセットのみゲームへ組み込む。
 
 ### ComfyUIプロンプト方針
@@ -99,6 +99,18 @@
 - 同じ画面で複数素材を重ねても不自然な遠近・影・縮尺が生じない
 - 個別レビュー時にはサムネイル一覧＋ゲーム画面上での合成検査を行う
 
+## ChatGPT生成 食材候補 v03（2026-11-22）
+- `public/assets/game/food/v03/manifest.json` に牛肉・ご飯・パン粉・煮キャベツ・デミグラスソース、衣付きカツ・揚げカツの7素材を登録。生成PNGマスターと使用プロンプトは `assets/source/imagegen/v03/ingredients/` と `assets/source/imagegen/v03/prompts.json` に保存。
+- 食材在庫画面のアイコンとP1〜P6の工程見本にv03素材を接続。工程見本では完成皿を使わず、ご飯など個別の食材を表示する。完成かつめし画像・キャラクターはこのセットに含めない。
+- 設備画面用にフライヤー・椅子の単体アイコンも生成し、`public/assets/game/equipment/v03/manifest.json` に登録。購入カードへ接続し、PNGマスターとプロンプトは同じv03ソース配下に保存。
+- 演出用に湯気・揚げ油の気泡・金色のきらめきを作成し、`public/assets/game/effects/v03/manifest.json` に登録。P3/P5の調理中とSSS評価へ接続。
+- Day7の節目用に夕暮れの店外背景を作成し、`public/assets/game/backgrounds/v03/manifest.json` に登録。Day7のRESULT/UPGRADEで使う。
+
+- 調理工程P1肉たたき・P2パン粉トレイ・P4ソースレードル・P5キャベツ鍋・P6しゃもじの補助アイコンを作成し、`public/assets/game/cooking/v03/tools/manifest.json` に登録。各工程の食材イメージ上に道具アイコンを重ねて表示。P3は既存の揚げ画面のイメージを使う。
+- クリーム色・金縁の9-slice UIパネル枠をSVGで作成し、`public/assets/game/ui/panels/v03/manifest.json` に登録。カードへ適用済み。ボタンの通常・hover・押下・focus・disabledは既存CSSで描画し、文字入りボタン画像は作らない。
+- 評価用の透過ランク枠6種（SSS/S/A/B/C/F）を生成し、`public/assets/game/ui/ranks/v03/manifest.json` に登録。PNG原本とプロンプトは `assets/source/imagegen/v03/ranks/` と `prompts.json` に保存。試食・調理評価のランク文字の背面に表示し、文字自体はHTMLで重ねる。状態は `concept_review`。
+- ステータスは `concept_review`。透明背景を保持したPNG/WebPであることと全体表示を確認したが、ゲーム内縮小表示の見え方や最終採用はレビュー待ち。
+
 ## 合成とアセット検査（v0.2）
 - 代表完成形の皿/料理をcanonicalマスターとし、0〜1正規化座標でアンカーを管理。元画像をcropして位置を合わせる方式は採用しない。
 - 描画順は **皿・影→ご飯→カツ→たれ→茹でキャベツ→湯気・ハイライト** を基準とする。重なりが不自然な部品にはマスクを導入する。
@@ -110,3 +122,7 @@
 
 ## v0.4の主人公デザインと正式素材の扱い
 ユーザー指定キャラクター（銀髪の双お団子・ピンク瞳/ヘアピン）を主役/店主役とする。参照画像のデニム服装は再利用しない。評価ランクに応じる顧客4人の感情差分が必要。詳細は[15](15_NARRATIVE_CHARACTER_AUDIO.md)と[17](17_ASSET_PRODUCTION_PLAN.md)。v0.3の高解像度8枚はGitHub登録済みだがランタイムの背景・UI・人物を分離した完成アセットではない。
+
+## 2026-11-23 実装状況の追記
+- キャラクター候補はComfyUI＋LoRAで生成し、衣装は参照画像から変更。生成情報をmanifestへ記録した。候補段階であり承認済みではない。
+- 朝準備・店舗・厨房背景はComfyUI＋画風LoRAの2560×1440候補へランタイム参照を切替。タイトル/結果背景、完成料理の新規制作、たれ差分、最終画面レビューとライセンス確認は未完。詳細は `docs/25_ASSET_REQUIREMENTS_AUDIT.md` を参照。

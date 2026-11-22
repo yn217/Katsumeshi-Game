@@ -1,0 +1,169 @@
+{
+  "schema": "katsumeshi-comfy-cooking-tools-candidates/v1",
+  "generatedAt": "2026-11-23",
+  "reviewStatus": "concept_review",
+  "description": "ComfyUI anime-style LoRA candidates for stage-specific cooking tools P1/P2/P4/P5/P6. Not license-approved; only selected as preview candidates.",
+  "assets": [
+    {
+      "id": "tool_meat_mallet_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_tools_v04/tool_meat_mallet_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_tools_v04/tool_meat_mallet_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 98201,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04/tool_meat_mallet_anime_v401",
+      "status": "concept_review",
+      "reviewNote": "Recognizable wooden meat tenderizer; stage-scale review pending.",
+      "runtimePath": "public/assets/game/cooking/v04/tools/meat_mallet_v04.webp"
+    },
+    {
+      "id": "tool_breading_tray_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_tools_v04/tool_breading_tray_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_tools_v04/tool_breading_tray_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 98202,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04/tool_breading_tray_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected: breadcrumbs read as fine powder rather than coarse panko.",
+      "runtimePath": null
+    },
+    {
+      "id": "tool_sauce_ladle_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_tools_v04/tool_sauce_ladle_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_tools_v04/tool_sauce_ladle_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 98203,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04/tool_sauce_ladle_anime_v401",
+      "status": "concept_review",
+      "reviewNote": "Recognizable sauce ladle; bowl-to-handle proportions and stage-scale review pending.",
+      "runtimePath": "public/assets/game/cooking/v04/tools/sauce_ladle_v04.webp"
+    },
+    {
+      "id": "tool_cabbage_pot_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_tools_v04/tool_cabbage_pot_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_tools_v04/tool_cabbage_pot_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 98204,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04/tool_cabbage_pot_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected: cabbage leaves too small and indistinct.",
+      "runtimePath": null
+    },
+    {
+      "id": "tool_rice_paddle_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_tools_v04/tool_rice_paddle_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_tools_v04/tool_rice_paddle_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 98205,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04/tool_rice_paddle_anime_v401",
+      "status": "concept_review",
+      "reviewNote": "Recognizable wooden paddle; handle hole is unusual, review at game scale.",
+      "runtimePath": "public/assets/game/cooking/v04/tools/rice_paddle_v04.webp"
+    },
+    {
+      "id": "tool_breading_tray_anime_v402",
+      "sourceImage": "assets/source/comfyui/cooking_tools_v04/tool_breading_tray_anime_v402_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_tools_v04/tool_breading_tray_anime_v402_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 98211,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04_iter2/tool_breading_tray_anime_v402",
+      "status": "concept_review",
+      "reviewNote": "Concept candidate: coarse crumbs read clearly as panko; review tray perspective at game scale.",
+      "runtimePath": "public/assets/game/cooking/v04/tools/breading_tray_v04.webp"
+    },
+    {
+      "id": "tool_cabbage_pot_anime_v402",
+      "sourceImage": "assets/source/comfyui/cooking_tools_v04/tool_cabbage_pot_anime_v402_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_tools_v04/tool_cabbage_pot_anime_v402_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 98212,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04_iter2/tool_cabbage_pot_anime_v402",
+      "status": "concept_review",
+      "reviewNote": "Concept candidate: broad cabbage leaves are recognizable in pot; review animation/layout at game scale.",
+      "runtimePath": "public/assets/game/cooking/v04/tools/cabbage_pot_v04.webp"
+    }
+  ]
+}

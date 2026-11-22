@@ -1,0 +1,151 @@
+{
+  "schema": "katsumeshi-imagegen-prompts/v1",
+  "createdAt": "2026-11-22",
+  "tool": "ChatGPT built-in image generation",
+  "transparentBackground": true,
+  "assets": {
+    "raw_beef": {
+      "sourcePng": "assets/source/imagegen/v03/ingredients/raw_beef_v03.png",
+      "runtimeWebp": "public/assets/game/food/v03/ingredients/raw_beef_v03.webp",
+      "prompt": "Create one standalone 2D game ingredient asset: a single thin, flattened oval slice of raw beef, fresh pink-red meat with delicate white marbling, viewed from a gentle three-quarter overhead angle. Warm polished Japanese anime food illustration, clean readable silhouette, soft painterly shading and restrained detail, cohesive hand-painted game art. Centered, full object visible, generous transparent margin, faint contact shadow only. Genuine transparent background. No plate, no cutting board, no utensils, no hands, no text, no labels, no watermark, no extra food, no characters."
+    },
+    "steamed_rice": {
+      "sourcePng": "assets/source/imagegen/v03/ingredients/steamed_rice_v03.png",
+      "runtimeWebp": "public/assets/game/food/v03/ingredients/steamed_rice_v03.webp",
+      "prompt": "Create one standalone 2D game ingredient asset: a compact neat mound of glossy freshly steamed Japanese short-grain white rice, individual grains softly visible, viewed from a gentle three-quarter overhead angle. Warm polished Japanese anime food illustration, clean readable silhouette, soft painterly shading and restrained detail, cohesive hand-painted game art. Centered, full object visible, generous transparent margin, faint contact shadow only. Genuine transparent background. No bowl, no plate, no cutting board, no utensils, no text, no labels, no watermark, no extra food, no characters."
+    },
+    "panko": {
+      "sourcePng": "assets/source/imagegen/v03/ingredients/panko_v03.png",
+      "runtimeWebp": "public/assets/game/food/v03/ingredients/panko_v03.webp",
+      "prompt": "Create one standalone 2D game ingredient asset: a small loose mound of coarse Japanese panko breadcrumbs, irregular airy golden-ivory flakes with a few individual crumbs nearby, viewed from a gentle three-quarter overhead angle. Warm polished Japanese anime food illustration, clean readable silhouette, soft painterly shading and restrained detail, cohesive hand-painted game art. Centered, full object visible, generous transparent margin, faint contact shadow only. Genuine transparent background. No bowl, no plate, no cutting board, no utensils, no text, no labels, no watermark, no extra food, no characters."
+    },
+    "boiled_cabbage": {
+      "sourcePng": "assets/source/imagegen/v03/ingredients/boiled_cabbage_v03.png",
+      "runtimeWebp": "public/assets/game/food/v03/ingredients/boiled_cabbage_v03.webp",
+      "prompt": "Create one standalone 2D game ingredient asset: a small tidy mound of softly boiled Japanese cabbage leaves, tender pale yellow-green ribbons and folded pieces, glossy but not raw shredded salad, viewed from a gentle three-quarter overhead angle. Warm polished Japanese anime food illustration, clean readable silhouette, soft painterly shading and restrained detail, cohesive hand-painted game art. Centered, full object visible, generous transparent margin, faint contact shadow only. Genuine transparent background. No bowl, no plate, no cutting board, no utensils, no text, no labels, no watermark, no extra food, no characters."
+    },
+    "demiglace": {
+      "sourcePng": "assets/source/imagegen/v03/ingredients/demiglace_v03.png",
+      "runtimeWebp": "public/assets/game/food/v03/ingredients/demiglace_v03.webp",
+      "prompt": "Create one standalone 2D game ingredient asset: a small portion of thick glossy deep-brown demi-glace sauce, shaped as a smooth appetizing spoonless puddle with a few highlights, viewed from a gentle three-quarter overhead angle. Warm polished Japanese anime food illustration, clean readable silhouette, soft painterly shading and restrained detail, cohesive hand-painted game art. Centered, full object visible, generous transparent margin, faint contact shadow only. Genuine transparent background. No bowl, no plate, no spoon, no text, no labels, no watermark, no extra food, no characters."
+    },
+    "breaded_cutlet": {
+      "sourcePng": "assets/source/imagegen/v03/ingredients/breaded_cutlet_v03.png",
+      "runtimeWebp": "public/assets/game/food/v03/ingredients/breaded_cutlet_v03.webp",
+      "prompt": "Standalone 2D game cooking-stage food asset: one thin, flattened oval beef cutlet completely coated in an even layer of coarse pale-golden Japanese panko, uncooked breaded cutlet ready for frying, no wet spots, gentle three-quarter overhead view. Warm polished Japanese anime food illustration matching a cohesive hand-painted cooking game, crisp readable silhouette, detailed irregular breadcrumb texture, subtle soft shading. Center the entire cutlet with generous transparent margin and only a faint contact shadow. Genuine transparent background. No plate, no tray, no cutting board, no utensils, no hands, no text, no label, no watermark, no extra food, no characters."
+    },
+    "fried_cutlet": {
+      "sourcePng": "assets/source/imagegen/v03/ingredients/fried_cutlet_v03.png",
+      "runtimeWebp": "public/assets/game/food/v03/ingredients/fried_cutlet_v03.webp",
+      "prompt": "Standalone 2D game cooking-stage food asset: one thin, flattened oval beef cutlet, freshly fried to a crisp even golden-brown color, lightly textured panko crust, shown whole and uncut with no sauce, gentle three-quarter overhead view. Warm polished Japanese anime food illustration matching a cohesive hand-painted cooking game, appetizing but clearly thin and flat, crisp readable silhouette, subtle soft shading. Center the entire cutlet with generous transparent margin and only a faint contact shadow. Genuine transparent background. No plate, no rice, no cabbage, no sauce, no tray, no cutting board, no utensils, no hands, no text, no label, no watermark, no extra food, no characters."
+    },
+    "fryer": {
+      "sourcePng": "assets/source/imagegen/v03/equipment/fryer_v03.png",
+      "runtimeWebp": "public/assets/game/equipment/v03/fryer_v03.webp",
+      "prompt": "Create a single standalone game asset icon of a compact stainless-steel countertop deep fryer used in a small Japanese diner. Show the whole fryer with rectangular oil basin, side handles, wire basket with handle, simple temperature dial, clean well-maintained metal, gentle three-quarter view. Warm polished 2D anime-background illustration with soft painterly shading, clean silhouette, restrained detail consistent with a cozy cooking simulation game. Centered on a genuinely transparent background, generous margin, subtle contact shadow. No food, no steam plume, no person, no hands, no lettering, no logo, no watermark, no extra objects."
+    },
+    "chair": {
+      "sourcePng": "assets/source/imagegen/v03/equipment/chair_v03.png",
+      "runtimeWebp": "public/assets/game/equipment/v03/chair_v03.webp",
+      "prompt": "Create a single standalone game asset icon of one sturdy wooden dining chair for a cozy small Japanese neighborhood diner. Simple warm oak frame, dark red upholstered seat, modest curved backrest, shown fully from a gentle three-quarter view. Warm polished 2D anime-background illustration with soft painterly shading, clean readable silhouette, restrained detail consistent with a cozy cooking simulation game. Centered on a genuinely transparent background, generous margin, subtle contact shadow. No table, no people, no hands, no lettering, no logo, no watermark, no extra objects."
+    },
+    "steam_wisps": {
+      "sourcePng": "assets/source/imagegen/v03/effects/steam_wisps_v03.png",
+      "runtimeWebp": "public/assets/game/effects/v03/steam_wisps_v03.webp",
+      "prompt": "Create a standalone 2D game visual effect sprite: three delicate rising wisps of warm white steam, thin curling ribbons that fade softly at the tips, natural asymmetrical flow, subtle pale cream shading and a few faint translucent edges. Warm hand-painted anime game effect, clean transparent cutout. Keep the steam centered and contained with generous transparent padding. Genuine transparent background. No food, no pan, no bowl, no background, no people, no text, no watermark."
+    },
+    "frying_sizzle": {
+      "sourcePng": "assets/source/imagegen/v03/effects/frying_sizzle_v03.png",
+      "runtimeWebp": "public/assets/game/effects/v03/frying_sizzle_v03.webp",
+      "prompt": "Create a standalone 2D game visual effect sprite: a small cluster of golden oil sizzle bubbles and a few tiny droplets, bright but restrained, varied circular sizes, subtle highlights, no flames. Warm hand-painted anime game effect with crisp edges and soft glow kept close to the bubbles. Centered with generous transparent padding on a genuinely transparent background. No pan, no food, no background, no people, no text, no watermark."
+    },
+    "golden_sparkle": {
+      "sourcePng": "assets/source/imagegen/v03/effects/golden_sparkle_v03.png",
+      "runtimeWebp": "public/assets/game/effects/v03/golden_sparkle_v03.webp",
+      "prompt": "Create a standalone 2D game visual effect sprite: a tasteful cluster of five small golden star glints and tiny warm light flecks for a high-rank cooking result, elegant and restrained, varied sizes, fine tapered rays, warm hand-painted anime game effect. Transparent cutout, centered with generous empty margins. Genuine transparent background. No food, no plate, no character, no text, no background, no watermark."
+    },
+    "day7_evening_background": {
+      "sourcePng": "assets/source/imagegen/v03/backgrounds/day7_evening_v03.png",
+      "runtimeWebp": "public/assets/game/backgrounds/v03/day7_evening_v03.webp",
+      "prompt": "Wide 16:9 hand-painted 2D anime game background for the Day 7 milestone of a cozy Japanese neighborhood diner inspired by Kakogawa, Japan. Exterior street view at blue-hour dusk: a small warm wooden diner facade with glowing amber windows and a simple blank fabric noren, a quiet sidewalk and a few plants, deep indigo evening sky, gentle celebratory warmth after a successful week. Match polished Japanese visual-novel background art, painterly but clean, appealing cinematic composition. Leave the center and lower-middle relatively uncluttered and lower contrast so game UI can sit on top. No people, no characters, no food, no plates, no readable signs, no lettering, no logos, no watermark."
+    },
+    "rank_sss_badge": {
+      "sourcePng": "assets/source/imagegen/v03/ranks/rank_sss_badge_v03.png",
+      "runtimeWebp": "public/assets/game/ui/ranks/v03/rank_sss_badge_v03.webp",
+      "description": "SSS Japanese gold/red three-star laurel emblem with solid ivory center.",
+      "status": "concept_review",
+      "prompt": "Create one square transparent-background UI emblem frame for the SSS rank in the same cozy Japanese diner game style as a premium hand-painted anime game. Circular ornamental medal frame, bright warm gold rim, rich deep red accents, small three-star crest at top, balanced laurel leaves around edge, large plain light-ivory solid center for HTML text overlay. Keep all decoration near the perimeter, symmetrical, clean readable silhouette, centered and fully visible. No letters, no numbers, no words, no food, no character, no background, no dark hole or transparent center."
+    },
+    "rank_s_badge": {
+      "sourcePng": "assets/source/imagegen/v03/ranks/rank_s_badge_v03.png",
+      "runtimeWebp": "public/assets/game/ui/ranks/v03/rank_s_badge_v03.webp",
+      "description": "S Japanese gold/ivory laurel emblem with solid ivory center.",
+      "status": "concept_review",
+      "prompt": "A polished 2D game UI rank emblem frame for a Japanese cozy restaurant management game, square composition, transparent background. S rank: elegant gold and ivory circular medallion with modest laurel leaves and clean symmetrical ornamentation, clear empty center area for HTML text overlay, crisp hand-painted anime game UI illustration, warm amber highlights, restrained premium design, centered, isolated. No letters, no numbers, no words, no food, no characters, no shadow outside the emblem. Ensure the center is solid light ivory, no holes, no dark voids, no transparency within the badge."
+    },
+    "rank_a_badge": {
+      "sourcePng": "assets/source/imagegen/v03/ranks/rank_a_badge_v03.png",
+      "runtimeWebp": "public/assets/game/ui/ranks/v03/rank_a_badge_v03.webp",
+      "description": "A bronze-gold red/cream one-star medal with solid ivory center.",
+      "status": "concept_review",
+      "prompt": "Square transparent UI emblem frame for rank A in the same cozy Japanese restaurant game visual set: circular medal with polished bronze-gold trim, muted vermilion and cream accents, a single small gold star crest at top, restrained laurel leaves and Japanese seigaiha wave details around perimeter. Large plain light-ivory solid center reserved for HTML rank text. Hand-painted anime game UI illustration, centered, whole emblem visible, visually below S rank. No letters, numbers, words, food, character, background, dark hole, opaque center."
+    },
+    "rank_b_badge": {
+      "sourcePng": "assets/source/imagegen/v03/ranks/rank_b_badge_v03.png",
+      "runtimeWebp": "public/assets/game/ui/ranks/v03/rank_b_badge_v03.webp",
+      "description": "B silver/navy/cream medal with simple wave motifs and solid ivory center.",
+      "status": "concept_review",
+      "prompt": "Square transparent UI emblem frame for rank B in the same cozy Japanese restaurant game visual set: circular medal with polished silver and pale gold trim, navy blue and cream accents, no star crest, small simple cloud and seigaiha wave motifs around the perimeter, modest laurel sprigs. Large plain light-ivory solid center reserved for HTML rank text. Hand-painted anime game UI illustration, centered, whole emblem visible, visually simpler and less prestigious than a one-star badge. No letters, numbers, words, food, character, background, dark hole, opaque center."
+    },
+    "rank_c_badge": {
+      "sourcePng": "assets/source/imagegen/v03/ranks/rank_c_badge_v03.png",
+      "runtimeWebp": "public/assets/game/ui/ranks/v03/rank_c_badge_v03.webp",
+      "description": "C sage-green and silver rice-sprout medal with solid ivory center.",
+      "status": "concept_review",
+      "prompt": "A clean intact square transparent-background game UI rank plaque frame for rank C. Cozy Japanese diner game, hand-painted anime interface art. Compact circular enamel badge in muted sage green, warm ivory and subtle aged silver, thin neat rim, small rice-sprout icon at the top and a few short leaf accents at sides. Keep entire central area one uninterrupted smooth opaque pale ivory color so HTML text is readable. Centered, balanced, high contrast edge, generous transparent area outside frame. Absolutely no symbols, stains, shadows, text, holes, transparent pixels, blur, food or characters inside the central ivory field; no letters or numbers anywhere."
+    },
+    "rank_f_badge": {
+      "sourcePng": "assets/source/imagegen/v03/ranks/rank_f_badge_v03.png",
+      "runtimeWebp": "public/assets/game/ui/ranks/v03/rank_f_badge_v03.webp",
+      "description": "F subdued gray-brown medal with crossed spatulas and repaired solid ivory center.",
+      "status": "concept_review",
+      "note": "Repaired with image edit after the first two generations contained a black center hole.",
+      "prompt": "Edit the generated F badge to repair the central defect only. Keep the entire medal border, crossed spatulas, colors, shape, composition, transparent exterior, and style unchanged. Replace the black irregular hole and dark halo in the center with a seamless continuation of the surrounding pale ivory opaque center, smooth and blank for overlay text. Preserve alpha transparency only outside the badge silhouette. Do not add text or symbols."
+    },
+    "meat_mallet": {
+      "sourcePng": "assets/source/imagegen/v03/tools/meat_mallet_v03.png",
+      "runtimeWebp": "public/assets/game/cooking/v03/tools/meat_mallet_v03.webp",
+      "prompt": "Standalone game asset icon for cooking stage P1: one small wooden meat tenderizer mallet used to flatten a beef cutlet, simple rounded wooden handle and compact square textured head. Warm hand-painted Japanese anime cooking-game illustration, soft painterly shading and clean readable silhouette, match cozy diner ingredient icon art, gentle three-quarter overhead view. Entire mallet centered, diagonal placement, fully visible with generous transparent margin, faint contact shadow only, genuine transparent background. No hand, no meat, no board, no text, no label, no watermark, no extra objects.",
+      "status": "concept_review",
+      "stage": "P1 木製肉たたき"
+    },
+    "breading_tray": {
+      "sourcePng": "assets/source/imagegen/v03/tools/breading_tray_v03.png",
+      "runtimeWebp": "public/assets/game/cooking/v03/tools/breading_tray_v03.webp",
+      "prompt": "Standalone game asset icon for cooking stage P2: one shallow rectangular stainless-steel breading tray seen from a gentle three-quarter overhead angle, filled with an even layer of coarse pale-golden Japanese panko breadcrumbs, neat raised rim, a few crumbs at the edge only. Warm hand-painted Japanese anime cooking-game illustration, soft painterly shading and clean readable silhouette, matching cozy diner ingredient icon art. Center the whole tray with generous transparent margin, subtle contact shadow, genuine transparent background. No meat, no hands, no extra bowls or utensils, no text, no label, no watermark.",
+      "status": "concept_review",
+      "stage": "P2 パン粉トレイ"
+    },
+    "sauce_ladle": {
+      "sourcePng": "assets/source/imagegen/v03/tools/sauce_ladle_v03.png",
+      "runtimeWebp": "public/assets/game/cooking/v03/tools/sauce_ladle_v03.webp",
+      "prompt": "Standalone game asset icon for cooking stage P4: one small stainless-steel ladle holding a modest spoonful of glossy deep-brown demi-glace sauce, with short handle and simple clean shape, gentle three-quarter overhead view. Warm hand-painted Japanese anime cooking-game illustration, soft painterly shading and clean readable silhouette, matching cozy diner ingredient art. Entire ladle centered diagonally, fully visible with generous transparent margin, faint contact shadow, genuine transparent background. No hand, no bowl, no plate, no text, no label, no watermark, no extra objects.",
+      "status": "concept_review",
+      "stage": "P4 ソースレードル"
+    },
+    "cabbage_pot": {
+      "sourcePng": "assets/source/imagegen/v03/tools/cabbage_pot_v03.png",
+      "runtimeWebp": "public/assets/game/cooking/v03/tools/cabbage_pot_v03.webp",
+      "prompt": "Standalone game asset icon for cooking stage P5: one small open stainless-steel Japanese stock pot, gently tapered cylindrical body with two side handles, viewed from a three-quarter overhead angle, a small amount of pale yellow-green softly boiled cabbage leaves visible inside. Warm hand-painted Japanese anime cooking-game illustration, soft painterly shading and clean readable silhouette, matching cozy diner ingredient icon art. Whole pot centered, fully visible with generous transparent margin, faint contact shadow, genuine transparent background. No flame, no stove, no steam, no hand, no text, no label, no watermark, no extra utensils.",
+      "status": "concept_review",
+      "stage": "P5 キャベツの茹で鍋"
+    },
+    "rice_paddle": {
+      "sourcePng": "assets/source/imagegen/v03/tools/rice_paddle_v03.png",
+      "runtimeWebp": "public/assets/game/cooking/v03/tools/rice_paddle_v03.webp",
+      "prompt": "Standalone game asset icon for cooking stage P6: one traditional Japanese wooden rice paddle (shamoji), broad flat oval blade with a short gently curved handle, clean warm light-brown wood grain, viewed from a three-quarter overhead angle and placed diagonally. Warm hand-painted Japanese anime cooking-game illustration, soft painterly shading and clean readable silhouette, matching cozy diner ingredient icon art. Entire paddle centered and fully visible with generous transparent margin, faint contact shadow only, genuine transparent background. No rice, no bowl, no hand, no extra utensil, no text, no label, no watermark.",
+      "status": "concept_review",
+      "stage": "P6 木製しゃもじ"
+    }
+  }
+}

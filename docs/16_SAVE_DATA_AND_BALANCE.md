@@ -1,6 +1,6 @@
 # 16. 保存データ・経済初期データ・検証契約（v0.4）
 
-docs/03_MANAGEMENT.md / docs/05_CONTENT_DATA.mdの**型定義を実装に必要な粒度に補完する**。本書は契約仕様であり、実際のTypeScript・JSON Schema/Zod・テストコードは未実装。
+docs/03_MANAGEMENT.md / docs/05_CONTENT_DATA.mdの**型定義を実装に必要な粒度に補完する**。本書は契約仕様。ゲーム状態はES Modulesで実装し、保存構造はJSON Schemaと`src/save-validation.mjs`で検証する。TypeScript/Zodは使用しない。テスト計画の実施状況はdocs/23を参照。
 
 ## 1. 固定データ（MVP）
 - 料理は `beef_katsumeshi` 1品、価格980円。材料は `beef=250, rice=60, coating=40, sauce=50, cabbage=30` 円/食分相当。計430円。
@@ -25,7 +25,7 @@ type Order = {
  queuedWaitRemainingSeconds:number;
  priceYenSnapshot:number; ingredientCostYenSnapshot:number;
  sauceSnapshot:SauceTaste|null; ingredientsConsumed:boolean;
- cookingScore:number|null; rank:Rank|null; settled:boolean;
+ cookingScore:number|null; qualityBreakdown:null|{stageScores:Record<"P1"|"P2"|"P3"|"P4"|"P5"|"P6",number>;quality:number;tasteDistance:number;tasteBonus:number;finalScore:number;rank:Rank}; rank:Rank|null; settled:boolean;
  appliedActionIds:string[];
 };
 type CookingSession = {
@@ -37,7 +37,7 @@ type CookingSession = {
    elapsedSeconds:number; timerStarted:boolean;
    taps:number; strikeXs:number[]; thicknessError01:number;
    coatCoverage01:number[]; coatCellMask:number[]; // 3 zone bitsets
-   placedComponentIds:string[]; placedSlotIds:string[];
+   placedComponentIds:string[]; placedSlotIds:string[]; selectedComponentId:string|null;
  };
 };
 type DailyLedger = {
@@ -50,7 +50,7 @@ type DailyLedger = {
 type GameSave = {
  schemaVersion:1; revision:number; savedAtIso:string;
  seed:number; rngState:number; day:number; nextOrderSequence:number;
- phase:Phase; overlay:null|{kind:"PAUSE"|"EVENT";eventId?:string};
+ phase:Phase; reactionStage:null|"intro"|"customerReaction"|"resultVisible"; overlay:null|{kind:"PAUSE"|"EVENT";eventId?:string};
  openingRemainingSeconds:number|null; businessElapsedSeconds:number;
  remainingArrivals:number; nextArrivalIndex:number; arrivalSeconds:number[];
  tutorialNextOrderIndex:number; tutorialFirstServed:boolean;
@@ -67,7 +67,7 @@ type GameSave = {
  lastServedOrderId:string|null; lastReactionRank:Rank|null;
 };
 ```
-- `GameSave`の上記は**必須項目の範囲**でありZod schemaが未実装。より厳密な注文ID順序等の詳細は実装時schemaへ移す。
+- `GameSave`はJSON Schemaで構造検証し、注文/フェーズ/台帳の相互条件を`src/save-validation.mjs`で追加検証する。
 - `openingRemainingSeconds=null` はDay1チュートリアルのみ。通常日は0..600。
 - `lastServedOrderId` はREACTION再表示での二重会計を防ぐため表示専用。独立した注文スナップショットをsource of truthとする。
 - `arrivalSeconds` と `nextArrivalIndex` は通常日の候補予定を保持。リロード後に同じ候補を再生成しない。MVPでは一日の開始時に配列を生成し永続化する。
@@ -78,7 +78,7 @@ type GameSave = {
 - `BUY_INGREDIENT` (MORNING): `cashYen>=price`、`inventory[id]+qty<=99` で `cash-=price`, `inventory+=qty`, `ledger.purchasesYen+=price`。原価消費は増やさない。
 - `ACCEPT_ORDER` (OPEN): 5種類の在庫を確認後 `inventory-=1`、`ledger.ingredientConsumedYen+=430`、`ingredientsConsumed=true`、`state=cooking` を一操作で記録。 `activeOrderId` と `CookingSession` を作成。
 - `COMPLETE_STAGE` (COOK): 当該工程の入力が確定済みなら一回だけ点数保存。P6完了までSERVE不可。
-- `SERVE` (COOK): 調理済・未settledなら価格スナップショットを売上と現金へ、評価ランク分を評判へ追加。 `settled=true`、`state=served`、`phase=REACTION`。
+- `SERVE` (COOK): 調理済・未settledなら価格スナップショットを売上と現金へ、評価ランク分を評判へ追加。 `settled=true`、`state=served`、`phase=REACTION`、`reactionStage=intro`。REACTION_NEXTで顧客反応・結果表示へ順に進み、REACTION_SKIPはresultVisibleへ進める。DISMISS_REACTIONはresultVisibleでのみ許可。
 - `CANCEL_ORDER` (COOK): 既消費なら `ledger.wasteYen+=ingredientCostYenSnapshot`、`state=cancelled`、`phase=OPEN`。ingredientConsumedYenは消費時点で加算済みなので**追加で原価減算しない**。
 - `EXPIRE_ORDER` (queued): `state=expired`、`reputation-=2`、`ledger.expiredCount+=1`、`inventory`は不変。
 - `CLOSE_DAY`: `dayOverheadSettled` がfalseなら `overheadYen+=2200`、`cashYen-=2200`、trueにする。重複実行は無視。

@@ -1,0 +1,95 @@
+{
+  "schema": "katsumeshi-story-events-ja/v1",
+  "events": [
+    {
+      "id": "day1_result",
+      "day": 1,
+      "trigger": "RESULT",
+      "priority": "mandatory_story",
+      "once": true,
+      "speakerId": "owner",
+      "speakerLabel": "店主",
+      "portraitAssetId": "happy",
+      "title": "Day 1　初めての一皿",
+      "text": "今日はありがとう。明日はもっとおいしくできるかも！最初の一日を終えたね。"
+    },
+    {
+      "id": "day2_morning",
+      "day": 2,
+      "trigger": "MORNING",
+      "priority": "mandatory_story",
+      "once": true,
+      "speakerId": "owner",
+      "speakerLabel": "店主",
+      "portraitAssetId": "encourage",
+      "title": "Day 2　揚げ方の工夫",
+      "text": "今日も一皿ずつ、揚げるタイミングをつかんでいこう。",
+      "textIfFryer": "昨日用意したフライヤーが今日から使えるよ。引き上げの目安に少し余裕ができたね。"
+    },
+    {
+      "id": "day3_morning",
+      "day": 3,
+      "trigger": "MORNING",
+      "priority": "mandatory_story",
+      "once": true,
+      "speakerId": "owner",
+      "speakerLabel": "店主",
+      "portraitAssetId": "happy",
+      "title": "Day 3　ゆったりした席",
+      "text": "今日もお客さんを迎えよう。待ち時間を見ながら順番に調理していこう。",
+      "textIfChairs": "昨日置いた椅子が今日から使えるよ。お客さんに少しゆっくり待ってもらえそう。"
+    },
+    {
+      "id": "day4_morning",
+      "day": 4,
+      "trigger": "MORNING",
+      "priority": "mandatory_story",
+      "once": true,
+      "speakerId": "regular",
+      "speakerLabel": "近所の常連",
+      "portraitAssetId": "B",
+      "title": "Day 4　いつもの顔",
+      "text": "おはよう。商店街を通るたび、お店のことが気になっていたんだ。今日も一皿お願いするよ。"
+    },
+    {
+      "id": "day5_morning",
+      "day": 5,
+      "trigger": "MORNING",
+      "priority": "mandatory_story",
+      "once": true,
+      "speakerId": "owner",
+      "speakerLabel": "店主",
+      "portraitAssetId": "thinking",
+      "title": "Day 5　たれを研究",
+      "text": "朝のうちに、保存したたれの配合を見直そう。お客さんの好みに合わせて選ぶのも楽しみだね。"
+    },
+    {
+      "id": "day6_morning",
+      "day": 6,
+      "trigger": "MORNING",
+      "priority": "mandatory_story",
+      "once": true,
+      "speakerId": "owner",
+      "speakerLabel": "店主",
+      "portraitAssetId": "encourage",
+      "title": "Day 6　口コミが広がる",
+      "text": "これまでのお客さんの声を思い出してみよう。評判は少しずつ積み重なっているよ。今日も一皿ずつ届けよう。"
+    },
+    {
+      "id": "day7_result",
+      "day": 7,
+      "trigger": "RESULT",
+      "priority": "mandatory_story",
+      "once": true,
+      "speakerId": "owner",
+      "speakerLabel": "店主",
+      "portraitAssetId": "happy",
+      "title": "Day 7　街の人気店へ",
+      "text": "7日間で{{provided}}皿を届けて、売上は{{sales}}円になったね。ここからも、この町でおいしいかつめしを作り続けよう！",
+      "textIfReputation80": "7日間で{{provided}}皿を届けて、累計売上は{{sales}}円。評判80を超える人気店になったね！この街のみんなに愛されているよ。",
+      "textIfReputation60": "7日間で{{provided}}皿を届けて、累計売上は{{sales}}円。評判60まで上がったね。常連さんも増えて、お店の名前が広がっているよ。",
+      "textIfReputation30": "7日間で{{provided}}皿を届けて、累計売上は{{sales}}円。評判30を保てたね。ここからも一皿ずつ、おいしさを届けていこう。",
+      "textIfReputationBelow30": "7日間で{{provided}}皿を届けて、累計売上は{{sales}}円。思うようにいかない日もあったけれど、ここから立て直していこう。"
+    }
+  ]
+}

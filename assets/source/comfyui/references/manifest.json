@@ -1,0 +1,126 @@
+{
+  "schema": "katsumeshi-owner-reference-manifest/v1",
+  "generatedAt": "2026-11-23",
+  "workflow": "assets/source/comfyui/jobs.json#owner,owner_reference,owner_reference_back",
+  "preset": "Anima-Base-v1.0 + Koharu-Koharu-epoch100@0.8 + anima-style-epoch35-lr5e5@0.8; euler/simple; 24 steps; CFG 4.5",
+  "promptPolicy": "Silver gray medium hair, twin buns, pink eyes and pink heart hairpin retained. Reference white shirt and denim outfit excluded. Shop/casual outfits recorded in the prompts.",
+  "reviewStatus": "concept_review",
+  "assets": [
+    {
+      "file": "owner_reference_portrait_v001.png",
+      "role": "owner_portrait",
+      "width": 896,
+      "height": 1152,
+      "seed": 81101,
+      "source": "ComfyUI output/town_game_assets/char_owner_shop_normal_v001_00001_.png",
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "Koharu-Koharu-epoch100.safetensors",
+          "strength": 0.8
+        },
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "reviewStatus": "concept_review"
+    },
+    {
+      "file": "owner_reference_sheet_v001.png",
+      "role": "generated_reference_sheet",
+      "width": 1536,
+      "height": 1024,
+      "seed": 81301,
+      "source": "ComfyUI output/town_game_assets/char_owner_reference_sheet_v001_00001_.png",
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "Koharu-Koharu-epoch100.safetensors",
+          "strength": 0.8
+        },
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "reviewStatus": "concept_review"
+    },
+    {
+      "file": "owner_reference_shop_front_v001.png",
+      "role": "owner_shop_front",
+      "width": 832,
+      "height": 1216,
+      "seed": 81201,
+      "source": "ComfyUI output/town_game_assets/char_owner_shop_full_front_v001_00001_.png",
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "Koharu-Koharu-epoch100.safetensors",
+          "strength": 0.8
+        },
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "reviewStatus": "concept_review"
+    },
+    {
+      "file": "owner_reference_back_v001.png",
+      "role": "owner_shop_back_three_quarter",
+      "width": 832,
+      "height": 1216,
+      "seed": 81302,
+      "source": "ComfyUI output/town_game_assets/char_owner_reference_back_v001_00001_.png",
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "Koharu-Koharu-epoch100.safetensors",
+          "strength": 0.8
+        },
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "reviewStatus": "concept_review"
+    },
+    {
+      "file": "owner_reference_casual_v001.png",
+      "role": "owner_casual_front",
+      "width": 832,
+      "height": 1216,
+      "seed": 81202,
+      "source": "ComfyUI output/town_game_assets/char_owner_casual_full_front_v001_00001_.png",
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "Koharu-Koharu-epoch100.safetensors",
+          "strength": 0.8
+        },
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "reviewStatus": "concept_review"
+    },
+    {
+      "file": "owner_character_reference_board_v001.png",
+      "role": "assembled_review_board",
+      "width": 1536,
+      "height": 2048,
+      "derivedFrom": [
+        "owner_reference_portrait_v001.png",
+        "owner_reference_sheet_v001.png",
+        "owner_reference_shop_front_v001.png",
+        "owner_reference_back_v001.png",
+        "owner_reference_casual_v001.png"
+      ],
+      "generator": "scripts/build_owner_reference_sheet.py",
+      "reviewStatus": "concept_review",
+      "runtimeAsset": false
+    }
+  ]
+}

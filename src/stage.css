@@ -34,7 +34,7 @@ html.staged .owner-bubble::after{left:46%;bottom:-18px;border-width:16px;border-
 html.staged .bubble-name{font-size:20px}
 
 /* cards / buttons a notch bigger, like the mockup panels */
-html.staged .card{border-width:4px;border-radius:20px}
+html.staged .card{border-width:8px;border-image-width:8px;border-radius:20px}
 html.staged .card-title{font-size:26px;padding:10px 20px}
 html.staged .card-body{padding:16px 20px}
 html.staged button{border-radius:16px}
@@ -103,7 +103,7 @@ html.staged .done-actions{gap:24px}
 html.staged .done-actions .big-cta{font-size:52px;padding:18px 90px}
 html.staged .done-actions .secondary{font-size:30px;padding:16px 40px}
 html.staged .eval-title{font-family:var(--display);font-weight:400;font-size:40px;padding:8px 50px}
-html.staged .eval-head .emblem-rank{font-size:150px}
+html.staged .eval-head .emblem-rank{font-size:68px}
 html.staged .eval-total strong{font-size:70px}
 html.staged .eval-row{grid-template-columns:250px 1fr 54px;font-size:24px;padding:7px 0}
 html.staged .eval-row strong{font-size:28px}
@@ -137,9 +137,9 @@ html.staged .cook-layout{grid-template-columns:330px 1fr 440px}
 html.staged .work.fry-mode .stage-photo{display:none}
 html.staged .fry-card .big-cta{font-size:34px;padding:16px 10px;white-space:nowrap}
 html.staged .eval-head{justify-content:space-between}
-html.staged .eval-head .emblem-rank{font-size:140px}
-html.staged .eval-head.rank-SSS .emblem-rank{font-size:96px;letter-spacing:-.02em}
-html.staged .eval-head.rank-S .emblem-rank,html.staged .eval-head.rank-A .emblem-rank,html.staged .eval-head.rank-B .emblem-rank,html.staged .eval-head.rank-C .emblem-rank,html.staged .eval-head.rank-F .emblem-rank{font-size:150px}
+html.staged .eval-head .emblem-rank{font-size:68px}
+html.staged .eval-head.rank-SSS .emblem-rank{font-size:48px;letter-spacing:-.02em}
+html.staged .eval-head.rank-S .emblem-rank,html.staged .eval-head.rank-A .emblem-rank,html.staged .eval-head.rank-B .emblem-rank,html.staged .eval-head.rank-C .emblem-rank,html.staged .eval-head.rank-F .emblem-rank{font-size:68px}
 html.staged .eval-total{flex:none}
 html.staged .stage{overflow-x:hidden}
 html.staged .done-dish .rank-dish{width:100%}
@@ -161,7 +161,8 @@ html.staged .tasting .verdict>.rank-dish{grid-area:dish;width:500px}
 html.staged .tasting .verdict>.speech{grid-area:sp}
 html.staged .tasting .verdict>.verdict-stats{grid-area:st}
 html.staged .tasting .verdict>button{grid-area:bt;font-size:36px;padding:14px 40px}
-html.staged .tasting .emblem-rank{font-size:200px}
+html.staged .tasting .emblem{width:300px}
+html.staged .tasting .emblem-rank{font-size:clamp(100px,9vw,150px)}
 html.staged .tasting .crown{font-size:56px}
 html.staged .tasting .speech::before{top:30%}
 html.staged .taster-img{width:640px}
@@ -306,3 +307,100 @@ html.staged .cols-3 .inv-row .inv-icon img.inv-ingredient-icon{width:76px;height
 html.staged .guests .card-title{font-size:22px;white-space:nowrap}
 html.staged .stage:has(.result-layout){justify-content:center}
 html.staged .stage:has(.result-layout) .cta-row{margin-top:10px}
+
+/* ===== cooking v3: three minigames (prep drag / fry timing / finish) ===== */
+.steps3 .step{display:flex;align-items:center;gap:.5em;padding:.45em 1.2em .45em .7em}
+.steps3 .step-t{display:flex;flex-direction:column;line-height:1.15;font-weight:800}
+.steps3 .step-t small{font-size:.72em;font-weight:600;opacity:.8}
+.cook-v3 .work .card-body{display:flex;flex-direction:column;gap:12px}
+.prep-head{display:flex;gap:10px;justify-content:center}
+.prep-step{padding:.3em 1em;border-radius:999px;background:#0000000f;font-weight:800;color:#8a6a4a}
+.prep-step.now{background:var(--red,#b8231f);color:#fff}
+.prep-step.done{background:#e9d7a8;color:#6a4a1a}
+.prep-pad{position:relative;flex:1;min-height:320px;border-radius:18px;background:radial-gradient(ellipse at 50% 55%,#f6e2b8 0,#d9b37a 70%,#c49a5c 100%);box-shadow:inset 0 0 0 4px #fff6,inset 0 6px 18px #0003;cursor:grab;touch-action:none;user-select:none;overflow:hidden;display:grid;place-items:center}
+.prep-pad.dragging{cursor:grabbing}
+.prep-pad:focus-visible{outline:4px solid var(--gold,#e8b74a);outline-offset:3px}
+.prep-meat{position:relative;width:58%;aspect-ratio:3/2;transform:scale(calc(.78 + var(--flat)*.32),calc(1.08 - var(--flat)*.22));transition:transform .18s ease-out;pointer-events:none}
+.prep-meat img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 10px 10px #0004)}
+.prep-coat{transition:opacity .2s}
+.prep-coat.z0{clip-path:inset(0 66.6% 0 0)}.prep-coat.z1{clip-path:inset(0 33.3% 0 33.3%)}.prep-coat.z2{clip-path:inset(0 0 0 66.6%)}
+.prep-guide{position:absolute;top:14px;left:50%;transform:translateX(-50%);display:flex;gap:.8em;align-items:center;padding:.35em 1.2em;border-radius:999px;background:#fffbeecc;font-weight:800;color:#6a3a14;pointer-events:none;white-space:nowrap}
+.prep-guide span{color:var(--red,#b8231f);animation:prepNudge 1.2s ease-in-out infinite}
+.prep-guide span:last-child{animation-direction:reverse}
+@keyframes prepNudge{50%{transform:translateX(-6px)}}
+.prep-pad.dragging .prep-guide{opacity:.35}
+.prep-meter{position:absolute;left:18px;right:18px;bottom:14px;display:flex;align-items:center;gap:10px;font-weight:800;color:#5a3412;pointer-events:none}
+.prep-meter div{flex:1;height:14px;border-radius:999px;background:#fff8;box-shadow:inset 0 1px 3px #0003;overflow:hidden}
+.prep-meter i{display:block;height:100%;background:linear-gradient(90deg,#f0b54a,#d9661f);transition:width .12s}
+.prep-next{align-self:center;min-width:260px}
+.fry-tap{display:block;position:relative;padding:0;border:0;border-radius:18px;overflow:hidden;cursor:pointer;width:100%;background:#000;transform:none!important}
+.fry-tap:disabled{cursor:default;opacity:1}
+.fry-tap .fry-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:filter .3s}
+.fry-call{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);padding:.5em 1.6em;border-radius:999px;background:#2a0f08cc;color:#fff;font-size:1.35em;font-weight:900;white-space:nowrap;box-shadow:0 0 0 3px #ffd65a88;animation:fryPulse 1s ease-in-out infinite}
+.fry-tap.stopped .fry-call{animation:none;background:#fffbeeee}
+@keyframes fryPulse{50%{box-shadow:0 0 0 8px #ffd65a33}}
+.fry-bubbles{position:absolute;inset:30% 12% 18%;pointer-events:none}
+.fry-bubbles i{position:absolute;left:var(--x);bottom:0;width:10px;height:10px;border-radius:50%;border:2px solid #fff9;animation:bubble var(--d) linear var(--t) infinite}
+.fry-bubbles.lvl0 i{width:16px;height:16px}.fry-bubbles.lvl2 i,.fry-bubbles.lvl3 i{width:6px;height:6px}
+@keyframes bubble{0%{transform:translateY(0) scale(.6);opacity:0}20%{opacity:1}100%{transform:translateY(-120px) scale(1.1);opacity:0}}
+.verdict{font-weight:900;font-size:1.2em;margin:0;text-align:center}
+.verdict.good{color:#1f8a3a}.verdict.ok{color:#c07a12}.verdict.bad{color:#b8231f}
+.fry-bar{position:relative}
+.fry-bar .sweet{position:absolute;top:0;bottom:0;background:#3fbf5f66;border-left:2px solid #2a9a48;border-right:2px solid #2a9a48}
+.fry-tip{margin:.4em 0;font-size:.9em;color:#6a4a2a}
+.finish-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px;flex:1}
+.fin-block{display:flex;flex-direction:column;gap:10px;padding:12px;border-radius:16px;background:#fffaf0;box-shadow:inset 0 0 0 2px #e9d7a8;opacity:.6;transition:opacity .2s,box-shadow .2s}
+.fin-block.active{opacity:1;box-shadow:inset 0 0 0 3px var(--gold,#e8b74a),0 0 18px #ffd65a66}
+.fin-block.done{opacity:.85}
+.fin-h{display:flex;align-items:center;gap:.5em;margin:0;font-size:1.1em}
+.fin-h b{display:grid;place-items:center;width:1.7em;height:1.7em;border-radius:50%;background:var(--red,#b8231f);color:#fff;font-size:.85em}
+.fin-note{margin:0;font-size:.85em;color:#7a5a3a}
+.finish-sauce .sauce-cards{display:flex;flex-direction:column;gap:8px}
+.finish-sauce .sauce-card{padding:8px 10px;text-align:left}
+.boil-pot{position:relative;height:170px;display:grid;place-items:center}
+.boil-pot-img{max-height:100%;max-width:100%;object-fit:contain}
+.boil-cabbage{position:absolute;width:44%;top:18%;left:28%;object-fit:contain;transition:transform .3s}
+.boil-pot.on .boil-cabbage{animation:boilBob .5s ease-in-out infinite}
+@keyframes boilBob{50%{transform:translateY(-6px) rotate(-3deg)}}
+.boil-btn{padding:1em .6em;font-size:1.1em;touch-action:none;user-select:none}
+.plate-up{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border:0;background:none;padding:0;cursor:pointer;transform:none!important}
+.plate-up:disabled{cursor:default;filter:grayscale(.6) opacity(.6)}
+.plate-up .dish{width:100%}
+.plate-up .dish-img{width:100%;height:auto}
+.plate-call{font-weight:900;color:var(--red,#b8231f)}
+.finish-plate.active .plate-up{animation:fryPulse 1.2s ease-in-out infinite;border-radius:16px}
+.cook-v3 .scoreline small{font-size:.7em;opacity:.7}
+html.staged .cook-v3 .work .card-body{min-height:600px}
+html.staged .cook-v3 .prep-pad{min-height:470px}
+html.staged .cook-v3.g1 .fry-tap{aspect-ratio:1448/1086;max-width:780px;margin:0 auto}
+@media (max-width:899px){.finish-grid{grid-template-columns:1fr}.prep-pad{min-height:260px}.prep-meat{width:80%}}
+.cook-v3 .work .card-body{align-items:stretch}
+.cook-v3 .prep-pad,.cook-v3 .finish-grid,.cook-v3 .fry-tap{width:100%;align-self:stretch}
+.cook-v3 .prep-head,.cook-v3 .work-note{align-self:center}
+html.staged .cook-v3.g1 .fry-tap{max-height:520px;aspect-ratio:auto;height:520px}
+.cook-v3.g1 .work .card-body{min-height:0}
+
+/* ===== title v4: tighter composition, whole plate visible, かつめし繁盛記 logo ===== */
+.title-v4 .kat-badge{display:inline-block;padding:.2em 1.4em;font-family:var(--display,inherit);color:#fff;letter-spacing:.14em;background:linear-gradient(#e2473a,#a8161a 60%,#7a0c10);clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%);text-shadow:0 2px 0 #5a0808;box-shadow:inset 0 2px 0 #ff9a7a}
+.title-v4 .kat-logo{display:flex;flex-direction:column;align-items:center;text-align:center}
+.title-v4 .kat-title{white-space:nowrap;letter-spacing:-.02em}
+.title-v4 .kat-sub{display:inline-flex;align-items:center;gap:.3em;padding:.15em 1.6em;font-family:var(--display,inherit);font-weight:400;color:#fff;letter-spacing:.12em;border:3px solid #f2c14e;border-radius:10px;background:linear-gradient(#d9362a,#9a1216 70%,#7a0c10);text-shadow:0 2px 0 #4a0606;box-shadow:inset 0 2px 0 #ff9a7a,0 0 0 3px #fff6dd,0 6px 12px #0005}
+.title-v4 .kat-sub span{color:#ffd88a}
+.title-v4 .kat-note{left:auto;transform:none;text-align:center}
+@media (min-width:900px) and (min-aspect-ratio:6/5){
+.title-v4 .kat-owner{height:98vh;left:1.5vw;bottom:-3vh;top:auto}
+.title-v4 .kat-dish{inset:auto auto 7.5vh 24vw;width:47vw}
+.title-v4 .kat-logo{left:auto;right:2vw;top:2.5vh;width:61vw}
+.title-v4 .kat-badge{font-size:1.8vw;margin-bottom:-.4vw}
+.title-v4 .kat-title{font-size:8.1vw;line-height:1.12}
+.title-v4 .kat-sub{font-size:2.1vw;margin-top:.2vw}
+.title-v4 .kat-menu{left:auto;bottom:auto;right:2.9vw;top:36vh;width:22.4vw;gap:1.1vh}
+.title-v4 .kat-menu button{height:6.5vh;font-size:1.5vw}
+.title-v4 .kat-menu button.primary{height:8vh;font-size:1.9vw}
+.title-v4 .kat-note{right:2.9vw;bottom:5.7vh;width:22.4vw;font-size:.9vw}
+}
+.cook-v3.g1 .work .fry-tap{height:min(52vh,560px);aspect-ratio:auto}
+.cook-v3 .prep-pad{min-height:min(44vh,470px)}
+.cook-v3 .work .card-body{min-height:min(56vh,600px)}
+.cook-v3.g1 .work .card-body{min-height:0}
+.title-v4 .kat-note{white-space:normal;line-height:1.4}

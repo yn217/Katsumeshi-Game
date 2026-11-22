@@ -68,7 +68,7 @@ const keys = Object.keys(map).sort((a, b) => b.length - a.length);
 const re = new RegExp(keys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "gu");
 const SKIP = new Set(["SCRIPT", "STYLE", "TEXTAREA", "INPUT", "OPTION", "TITLE"]);
 
-function swap(root) {
+export function swapIcons(root) {
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode: n => (SKIP.has(n.parentNode?.nodeName) ? NodeFilter.FILTER_REJECT : (re.lastIndex = 0, re.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP)),
   });
@@ -92,6 +92,6 @@ function swap(root) {
 }
 
 const app = document.getElementById("app");
-const obs = new MutationObserver(() => { obs.disconnect(); swap(app); obs.observe(app, { childList: true, subtree: true, characterData: true }); });
-swap(app);
+const obs = new MutationObserver(() => { obs.disconnect(); swapIcons(app); obs.observe(app, { childList: true, subtree: true, characterData: true }); });
+swapIcons(app);
 obs.observe(app, { childList: true, subtree: true, characterData: true });

@@ -77,6 +77,7 @@
 | se_error | 無効操作 | 音量を抑える、文字で理由を表示 |
 
 - BGMとSEは別音量0〜100%。ブラウザ音声再生は初回クリック後に解放。
+- 2026-11-22: オリジナル合成のBGM4曲とSE11種をWAVで作成し、`public/assets/game/audio/manifest.json` に記録。設計は `assets/source/audio/v03/design.json`、生成コードは `scripts/generate_audio_assets.py`。全音源は `concept_review` で、実機での聴取・ミックス確認が必要。
 - ボイスは**MVPに入れない**。リップシンク/音声合成はv1以降。
 - 音がなくても進行できる。音・光・演出のデータにゲーム内会計トリガを置かない。
 

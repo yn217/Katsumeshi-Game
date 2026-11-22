@@ -1,0 +1,53 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v03",
+  "generatedAt": "2026-11-22",
+  "status": "concept_review",
+  "subject": "Equipment icons for fryer and chair upgrades; no characters",
+  "sourceAttribution": "OpenAI ChatGPT built-in image generation; original PNG masters retained in assets/source/imagegen/v03/equipment/",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "equipment_fryer_v03",
+      "path": "public/assets/game/equipment/v03/fryer_v03.webp",
+      "type": "equipment",
+      "width": 1536,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 1.0,
+      "scaleHint": 1.0,
+      "tags": [
+        "upgrade",
+        "fryer"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#fryer",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "equipment_chair_v03",
+      "path": "public/assets/game/equipment/v03/chair_v03.webp",
+      "type": "equipment",
+      "width": 1254,
+      "height": 1254,
+      "anchorX": 0.5,
+      "anchorY": 1.0,
+      "scaleHint": 1.0,
+      "tags": [
+        "upgrade",
+        "chair"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#chair",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    }
+  ]
+}

@@ -106,6 +106,11 @@
       "minimum": 0,
       "maximum": 8
     },
+    "tutorialStep": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 12
+    },
     "tutorialFirstServed": {
       "type": "boolean"
     },
@@ -369,6 +374,101 @@
               "minLength": 1
             },
             "uniqueItems": true
+          },
+          "qualityBreakdown": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "stageScores": {
+                    "type": "object",
+                    "properties": {
+                      "P1": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 15
+                      },
+                      "P2": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 15
+                      },
+                      "P3": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 30
+                      },
+                      "P4": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 20
+                      },
+                      "P5": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 10
+                      },
+                      "P6": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 10
+                      }
+                    },
+                    "required": [
+                      "P1",
+                      "P2",
+                      "P3",
+                      "P4",
+                      "P5",
+                      "P6"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "quality": {
+                    "type": "number",
+                    "minimum": 20,
+                    "maximum": 100
+                  },
+                  "tasteDistance": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  "tasteBonus": {
+                    "type": "number",
+                    "minimum": -15,
+                    "maximum": 15
+                  },
+                  "finalScore": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  "rank": {
+                    "enum": [
+                      "SSS",
+                      "S",
+                      "A",
+                      "B",
+                      "C",
+                      "F"
+                    ]
+                  }
+                },
+                "required": [
+                  "stageScores",
+                  "quality",
+                  "tasteDistance",
+                  "tasteBonus",
+                  "finalScore",
+                  "rank"
+                ],
+                "additionalProperties": false
+              }
+            ]
           }
         },
         "required": [
@@ -385,7 +485,8 @@
           "cookingScore",
           "rank",
           "settled",
-          "appliedActionIds"
+          "appliedActionIds",
+          "qualityBreakdown"
         ],
         "additionalProperties": false
       }
@@ -569,6 +670,22 @@
                 },
                 "timerStopped": {
                   "type": "boolean"
+                },
+                "selectedComponentId": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "rice",
+                        "cutlet",
+                        "sauce",
+                        "cabbage"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
                 }
               },
               "required": [
@@ -581,7 +698,8 @@
                 "coatCellMask",
                 "placedComponentIds",
                 "placedSlotIds",
-                "timerStopped"
+                "timerStopped",
+                "selectedComponentId"
               ],
               "additionalProperties": false
             }
@@ -610,6 +728,17 @@
         "minLength": 1
       },
       "uniqueItems": true
+    },
+    "activeStoryEventId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "appliedCommandIds": {
       "type": "array",
@@ -772,6 +901,20 @@
         "skippedCandidates"
       ],
       "additionalProperties": false
+    },
+    "reactionStage": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "enum": [
+            "intro",
+            "customerReaction",
+            "resultVisible"
+          ]
+        }
+      ]
     }
   },
   "required": [
@@ -790,6 +933,7 @@
     "nextArrivalIndex",
     "arrivalSeconds",
     "tutorialNextOrderIndex",
+    "tutorialStep",
     "tutorialFirstServed",
     "dayClosed",
     "dayOverheadSettled",
@@ -805,11 +949,13 @@
     "activeOrderId",
     "cookingSession",
     "seenStoryEventIds",
+    "activeStoryEventId",
     "appliedCommandIds",
     "dailyLedger",
     "lastServedOrderId",
     "lastReactionRank",
-    "careerLedger"
+    "careerLedger",
+    "reactionStage"
   ],
   "additionalProperties": false,
   "allOf": [
@@ -930,6 +1076,9 @@
                   "timerStarted": {
                     "type": "boolean"
                   },
+                  "timerStopped": {
+                    "type": "boolean"
+                  },
                   "taps": {
                     "type": "integer",
                     "minimum": 0,
@@ -993,6 +1142,22 @@
                         "cabbage"
                       ]
                     }
+                  },
+                  "selectedComponentId": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "rice",
+                          "cutlet",
+                          "sauce",
+                          "cabbage"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
                   }
                 },
                 "required": [
@@ -1004,7 +1169,8 @@
                   "coatCoverage01",
                   "coatCellMask",
                   "placedComponentIds",
-                  "placedSlotIds"
+                  "placedSlotIds",
+                  "selectedComponentId"
                 ],
                 "additionalProperties": false
               }

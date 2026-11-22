@@ -1,0 +1,35 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v03",
+  "generatedAt": "2026-11-22",
+  "status": "concept_review",
+  "subject": "Gold and cream scalable nine-slice card frame; transparent center",
+  "sourceAttribution": "Original SVG authored for the project, following docs/11_UI_MOCKUPS_V03.md palette and docs/17_ASSET_PRODUCTION_PLAN.md UI requirements.",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "ui_cream_panel_frame_v03",
+      "path": "public/assets/game/ui/panels/v03/cream_panel_frame_v03.svg",
+      "type": "ui_panel_frame",
+      "width": 96,
+      "height": 96,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ui",
+        "panel",
+        "nine_slice",
+        "cream",
+        "gold"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "docs/17_ASSET_PRODUCTION_PLAN.md#ui-nine-slice-frame",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Original project SVG authored for this game; review applicable distribution terms before release.",
+      "reviewedAt": null
+    }
+  ]
+}

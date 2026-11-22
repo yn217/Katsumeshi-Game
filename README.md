@@ -4,11 +4,11 @@
 
 プレイヤーは小さな食堂を営み、ビフカツの下ごしらえ・衣付け・揚げ・秘伝のたれ・盛り付けを工夫しながら、お客さんの評判と売上を伸ばして地域の人気店を目指します。
 
-> 状態: 企画・仕様策定 v0.5（第3回レビュー・検証契約追加） / 作成日: 2026-11-22。以下の数値はゲームの初期設計値であり、実装とプレイテストで調整します。**初期ブラウザプロトタイプのコードを追加済み**（2026-11-22）。正式キャラクター等のゲーム用アセットは未分割、ブラウザE2Eと実機UI品質は未検証。UIモックアップ画像8枚は登録済みです。
+> 状態: v0.5仕様に沿ったブラウザ操作プロトタイプを実装中（2026-11-23）。調理・店舗経営・会話・セーブの主要フローと分割アセットを接続済みです。キャラクターはComfyUI＋LoRA版を使用。画像・音はレビュー候補のため、ライセンス確認、画面合成レビュー、ブラウザE2E、実機UI品質の受け入れは未完了です。料理の新規生成・差替えは保留しています。
 
-## 動作するブラウザ初期プロトタイプ（2026-11-22）
+## ブラウザ操作プロトタイプ（2026-11-23）
 
-**ブラウザ初期版のコードを追加しました。** 仕様v0.5の検証を優先した依存ライブラリ不要のES Modules版です。後にReact/PixiJSへ移行するときも `src/domain.mjs` のロジックを再利用できます。
+依存ライブラリ不要のES Modules版です。後にReact/PixiJSへ移行するときも `src/domain.mjs` のロジックを再利用できます。
 
 ```powershell
 git clone https://github.com/yn217/Katsumeshi-Game.git
@@ -21,12 +21,14 @@ npm run dev
 ```powershell
 npm test
 npm run build
+npm run build:preview
 ```
 
-- `npm test`：Node.jsの標準テストで注文/会計/調理/翌日など8項目を検証
-- `npm run build`：外部依存なしの静的サイトを `dist/` に出力
-- **機能:** タイトル → 朝の仕込み/たれ → 通常営業と注文 → 6工程 → 評価SSS〜F → 閉店結果 → 設備購入 → 翌日、IndexedDBセーブ/ロード
-- **現状:** 調理は簡易入力方式。正式なキャラ立ち絵・料理アセット・音声・完全なドラッグ操作・ブラウザE2Eは未対応。公開リリースではなく操作検証用。
+- `npm test`：Node.jsの標準テストで注文/会計/調理/翌日などの計算を検証
+- `npm run build`：承認済み素材だけを含む配布ビルド。実行中素材の受け入れ・権利確認が揃わない場合は停止
+- `npm run build:preview`：レビュー候補を含むローカル確認用サイトを `dist-preview/` に出力。公開しない
+- **機能:** タイトル → 朝の仕込み/たれ → 通常営業と注文 → 6工程 → 評価SSS〜F → 閉店結果 → 設備購入 → 翌日、IndexedDBセーブ/ロード。チュートリアル、日別会話、音量設定とBGM/SEも実装。
+- **現状:** P1〜P6は簡易操作のプロトタイプ。店主・顧客キャラ32枚はComfyUI＋LoRAで生成し参照先に接続済み。料理、背景、UI、音素材を含む受け入れレビューとブラウザE2Eは未完で、公開リリースではありません。
 - **注意:** `index.html` を直接ダブルクリックせず、`npm run dev` でHTTP配信してください。ローカル保存はブラウザのIndexedDBに依存します。
 
 実装範囲・検証結果・既知の差分は [docs/24_PROTOTYPE_IMPLEMENTATION.md](docs/24_PROTOTYPE_IMPLEMENTATION.md) を参照。
@@ -64,6 +66,8 @@ npm run build
 | [docs/21_BALANCE_AND_PLAYER_EXPERIENCE.md](docs/21_BALANCE_AND_PLAYER_EXPERIENCE.md) | 進行、ゲーム体験、バランス試験 |
 | [docs/22_UI_ACCESSIBILITY_AND_INPUT.md](docs/22_UI_ACCESSIBILITY_AND_INPUT.md) | 画面状態・入力・アクセシビリティ |
 | [docs/23_QA_RELEASE_CONTRACT.md](docs/23_QA_RELEASE_CONTRACT.md) | 単体/E2E/アセット受け入れ試験 |
+| [docs/24_PROTOTYPE_IMPLEMENTATION.md](docs/24_PROTOTYPE_IMPLEMENTATION.md) | 実装状況・既知の差分・次の開発優先順位 |
+| [docs/25_ASSET_REQUIREMENTS_AUDIT.md](docs/25_ASSET_REQUIREMENTS_AUDIT.md) | 仕様に対するアセット生成/受け入れ監査 |
 
 ## MVP（最初に動かすもの）
 - ブラウザでタイトル→1日の仕込み→開店→8件の注文→結果→翌日の流れを遊べる
