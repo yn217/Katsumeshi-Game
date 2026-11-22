@@ -5,7 +5,7 @@
 - React（HUD、メニュー、モーダル、会話UI）
 - PixiJS（店舗・調理・料理の2D描画、演出）
 - Web Audio API（SE/BGM。初回ユーザー操作後に再生）
-- IndexedDB（セーブ。小規模ならlocalStorageでも可だが破損対策・バージョン移行を優先）
+- IndexedDB（MVPで採用。トランザクションと破損復旧を優先）
 - Vitest（計算/状態/データ）、Playwright（画面遷移E2E）
 - GitHub Actionsを前提としない。ローカル検証コマンドを定義する。
 
@@ -46,7 +46,7 @@ Web版はユーザーがすぐ触れる試作を優先。ゲームロジック�
 - AssetRegistry: アセットID→ファイルパス、ロード失敗時の代替表示、進捗表示。
 
 ## ゲームループ
-- GameClockはdeltaSecondsを受け取り、ブラウザのフレームレートに依存しない経過時間を計上。
+- GameClockはdeltaSecondsを受け取り、ブラウザのフレームレートに依存しない経過時間を計上。OPEN/COOKでのみ時計を進め、REACTION/PAUSE/MORNING/RESULT/UPGRADEでは停止。
 - requestAnimationFrameは描画用。調理や顧客の待ち時間などのロジックは固定ステップ（例: 1/30秒）の更新が望ましい。
 - タブ非アクティブ時は自動一時停止し、復帰後に大量の経過時間を一度に進めない。
 - 乱数はseedベース、客生成やイベントはseedとゲーム内Dayから再現できるようにする。
@@ -58,12 +58,13 @@ Web版はユーザーがすぐ触れる試作を優先。ゲームロジック�
 | START_DAY | MORNING | 時計初期化 |
 | PURCHASE | MORNINGかUPGRADE、支払可能 | 現金↓、在庫または設備↑ |
 | OPEN_SHOP | MORNING | OPEN、注文発生開始 |
-| ACCEPT_ORDER | OPEN、注文queued、食材十分 | 食材予約、注文cooking、COOK |
+| ACCEPT_ORDER | OPEN、注文queued、食材十分 | 在庫減算・消費原価計上、注文cooking、COOK |
 | COMPLETE_STAGE | COOK、現在工程に一致 | 検証済み工程スコア保存、次工程 |
-| SERVE | COOK全工程完了、未精算 | score計算、会計、評判更新、REACTION |
-| DISMISS_REACTION | REACTION | OPEN、注文完了を確定 |
-| CLOSE_DAY | OPEN、終了条件成立 | RESULT、固定費処理、注文停止 |
-| NEXT_DAY | RESULTから遷移 | 日付進行、MORNING |
+| SERVE | COOK全工程完了、未精算 | score計算、売上・評判確定、注文served、REACTION |
+| DISMISS_REACTION | REACTION | 会計変更なし、OPENに戻る |
+| CLOSE_DAY | OPEN、終了条件成立、残注文なし | 固定費1回決済、RESULTへ |
+| GO_UPGRADE | RESULT | UPGRADEへ（会計変更なし） |
+| NEXT_DAY | UPGRADE | 日付進行、MORNING |
 | SAVE_QUIT | 任意の復元可能状態 | セーブ完了後タイトル |
 
 各アクションはvalidate → apply → persist notificationを通す。同じactionId/orderIdの二重送信を無視。Reactの再レンダーやダブルクリックで二重精算しない。
@@ -100,3 +101,12 @@ Web版はユーザーがすぐ触れる試作を優先。ゲームロジック�
 - npm run test:e2e
 
 上記のコマンドは現時点では未実装であり、完成扱いにしない。
+
+## ドメイン状態の不変条件（v0.2）
+- queued最大3、cooking最大1。受付時は在庫と消費原価を**同じ操作で**更新。材料の予約だけで宙に浮かせない。
+- queuedのみ忍耐値減算。営業時間0でも残注文処理を継続し、新規来客生成を止める。RESPONSE/REACTION表示中はゲーム時計停止（正しいphase名はREACTION）。
+- 注文ID単位で ACCEPT_ORDER/SERVE/CANCEL_ORDER を冪等にし、同じIDの再実行を防ぐ。CLOSE_DAYもdayキーで冪等にする。
+- saveはstageIndex/工程入力/activeOrderId/rngState/来客残数/固定費精算フラグを含め、店舗の全phaseから復元可能にする。
+- IndexDB内に完全な状態スナップショットとバックアップをトランザクション保存。書き込み失敗で元のセーブを消さない。
+- 配合/注文/費用の確定値をスナップショット化し、セーブ復帰やデータ変更による過去の会計再計算を防ぐ。
+- 終了後のUIに関係なくdomainのイベント適用は1回だけとする。

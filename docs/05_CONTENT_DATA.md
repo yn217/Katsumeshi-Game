@@ -48,9 +48,10 @@
       id: string; customerId: string; recipeId: string;
       state: "queued"|"cooking"|"served"|"cancelled"|"expired";
       createdAtGameSeconds: number;
-      patienceSeconds: number;
+      queuedWaitRemainingSeconds: number; // queuedの間だけ減らす
       cookingScore?: number;
-      settled: boolean;
+      ingredientsConsumed: boolean;
+      settled: boolean; // 提供・売上・評判確定時にtrue
     };
 
 ## セーブスキーマ（v1）
@@ -58,8 +59,16 @@
       schemaVersion: 1;
       savedAtIso: string;
       seed: number;
+      rngState: number;           // 乱数の再開位置
+      nextOrderSequence: number; // 注文ID連番
       day: number;
       phase: "MORNING"|"OPEN"|"COOK"|"REACTION"|"RESULT"|"UPGRADE";
+      overlay: null | {kind: "PAUSE" | "EVENT"; eventId?: string};
+      activeOrderId: string | null;
+      cookingSession: CookingSession | null;
+      remainingArrivals: number;
+      dayOverheadSettled: boolean;
+      dayClosed: boolean;
       timeRemainingSeconds: number;
       cashYen: number;
       reputation: number;
@@ -78,15 +87,15 @@
     };
 
 ## セーブとバージョニング
-- 永続化: MVPはIndexedDBまたはlocalStorageを採用（選定は技術仕様参照）。保存中の失敗を検知して表示する。
+- 永続化: MVPはIndexedDBを採用（技術仕様と共通）。保存中の失敗を検知して表示する。
 - すべての数値をロード時に検証。NaN/Infinity/負数の不正な在庫を禁止。
 - セーブは1スロット+手動バックアップスロット（MVP後半）。
-- 重大な状態遷移（提供確定/閉店/購入/翌日）後は自動保存。
+- 重大な状態遷移（受付と材料消費/提供/閉店/購入/翌日）後は自動保存。
 - schemaVersion変更時は明示的な移行関数を書く。未対応バージョンは読み込みを中断し元データを保持。
 - ランダムイベントと客生成はseed付きの乱数から生成し、同じseedで再現可能にする。
 
 ## データ整合性制約
-- 注文は queued → cooking → served、または queued → expired、cooking → cancelled のみ。
+- 注文は queued → cooking → served、または queued → expired、cooking → cancelled のみ。queued→cookingで一度だけ材料消費し、cooking客は忍耐切れしない。
 - served, cancelled, expired は終了状態。2回精算しない。
 - cashYenは整数、評判・満足度は0〜100、材料量は整数個/グラム等をレシピ側で固定。
 - 1営業日で同じイベントIDが複数回発火しない。
@@ -104,3 +113,29 @@
 - 使用するアセットIDの参照先がある。
 - 配合値の範囲外・二重ID・重複イベント・無効な工程順はCI相当のローカル検証で失敗する。
 - すべての評価ランクにリアクションアセットまたは代替表示がある。
+
+## 調理中の復元構造（v0.2、実装時にスキーマ定義）
+    type StageId = "P1" | "P2" | "P3" | "P4" | "P5" | "P6";
+    type CookingSession = {
+      orderId: string;
+      stageIndex: number; // 0..5
+      completedScores: Partial<Record<StageId, number>>;
+      selectedSauceId: string;
+      sauceSnapshot: {sweetness:number; richness:number; acidity:number};
+      retriesRemaining: number;
+      stageInput: {
+        elapsedSeconds: number;        // P3/P5など
+        taps: number;                  // P1
+        thicknessError01: number;      // P1
+        coatCoverage01: number[];      // P2 3区画
+        placedComponentIds: string[];  // P6
+      };
+    };
+
+- SaveGameにあるCookingSession型は上記とする。COOKの途中入力値・残り時計・レシピ配合スナップショットを保管し、保存後の再開で変化させない。
+- PAUSE/EVENTはオーバーレイで保存し、永続phaseは維持する。TITLEはセーブ対象のphaseにしない。
+- remainingArrivals、rngState、nextOrderSequenceを保存することで再読み込み時の二重来店を防ぐ。
+- 各orderにpriceYenSnapshot、ingredientCostYenSnapshot、sauceSnapshot、appliedActionIdsを保持し、途中でデータの値段が変わっても既存注文を再会計しない。正式スキーマ実装時に型へ反映する。
+- ledger.wasteYenはledger.ingredientConsumedYenの**内数**。利益から二重減算しない。
+- RESULTのdayOverheadSettledがtrueなら二度と固定費支払いを適用しない。
+- 本書の型例は規範を定めるものだがコードそのものは未実装。実装時にはZod/JSON Schemaを一次情報として同期する。
