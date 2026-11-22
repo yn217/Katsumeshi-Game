@@ -26,6 +26,7 @@
 | [docs/08_ROADMAP_QA.md](docs/08_ROADMAP_QA.md) | MVP工程・Issue分割・検証・受け入れ基準 |
 | [docs/09_REFERENCES.md](docs/09_REFERENCES.md) | 郷土料理の事実確認・資料・権利について |
 | [docs/10_SPEC_REVIEW.md](docs/10_SPEC_REVIEW.md) | 仕様レビュー・修正履歴・未解決事項 |
+| [docs/11_UI_MOCKUPS_V03.md](docs/11_UI_MOCKUPS_V03.md) | 新キャラクターを反映したUIモックアップ v0.3 のレビューと管理 |
 
 ## MVP（最初に動かすもの）
 - ブラウザでタイトル→1日の仕込み→開店→8件の注文→結果→翌日の流れを遊べる
