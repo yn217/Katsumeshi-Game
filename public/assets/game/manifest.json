@@ -1,0 +1,995 @@
+{
+ "schema": "katsumeshi-asset-manifest/v1",
+ "generatedAt": "2026-11-22T18:40:53",
+ "assets": [
+  {
+   "id": "bg_title",
+   "path": "public/assets/game/backgrounds/title.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "title"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_title_day_v001",
+   "generationSeed": 77150,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_morning",
+   "path": "public/assets/game/backgrounds/morning.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "MORNING"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_morning_prep_v101",
+   "generationSeed": 96003,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_shop",
+   "path": "public/assets/game/backgrounds/shop.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "OPEN"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_shop_day_v101",
+   "generationSeed": 96001,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_kitchen",
+   "path": "public/assets/game/backgrounds/kitchen.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "COOK"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_kitchen_day_v001",
+   "generationSeed": 76110,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_result",
+   "path": "public/assets/game/backgrounds/result.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "RESULT",
+    "UPGRADE"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_result_evening_v101",
+   "generationSeed": 96002,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_normal",
+   "path": "public/assets/game/characters/owner/shop/normal.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "normal"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_normal_v001",
+   "generationSeed": 81101,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_encourage",
+   "path": "public/assets/game/characters/owner/shop/encourage.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "encourage"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_encourage_v001",
+   "generationSeed": 81102,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_happy",
+   "path": "public/assets/game/characters/owner/shop/happy.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "happy"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_happy_v001",
+   "generationSeed": 81103,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_sad",
+   "path": "public/assets/game/characters/owner/shop/sad.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "sad"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_sad_v001",
+   "generationSeed": 81104,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_surprised",
+   "path": "public/assets/game/characters/owner/shop/surprised.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "surprised"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_surprised_v001",
+   "generationSeed": 81105,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_thinking",
+   "path": "public/assets/game/characters/owner/shop/thinking.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "thinking"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_thinking_v001",
+   "generationSeed": 81106,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_full",
+   "path": "public/assets/game/characters/owner/shop/full.webp",
+   "type": "character",
+   "width": 832,
+   "height": 1216,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "full"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_full_front_v001",
+   "generationSeed": 81201,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_casual_full",
+   "path": "public/assets/game/characters/owner/casual/full.webp",
+   "type": "character",
+   "width": 832,
+   "height": 1216,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "full"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_casual_full_front_v001",
+   "generationSeed": 81202,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_sss",
+   "path": "public/assets/game/characters/regular/sss.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "SSS"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_sss_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_s",
+   "path": "public/assets/game/characters/regular/s.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "S"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_s_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_a",
+   "path": "public/assets/game/characters/regular/a.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "A"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_a_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_b",
+   "path": "public/assets/game/characters/regular/b.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "B"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_b_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_c",
+   "path": "public/assets/game/characters/regular/c.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "C"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_c_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_f",
+   "path": "public/assets/game/characters/regular/f.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "F"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_f_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_sss",
+   "path": "public/assets/game/characters/student/sss.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "SSS"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_sss_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_s",
+   "path": "public/assets/game/characters/student/s.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "S"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_s_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_a",
+   "path": "public/assets/game/characters/student/a.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "A"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_a_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_b",
+   "path": "public/assets/game/characters/student/b.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "B"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_b_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_c",
+   "path": "public/assets/game/characters/student/c.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "C"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_c_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_f",
+   "path": "public/assets/game/characters/student/f.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "F"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_f_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_sss",
+   "path": "public/assets/game/characters/worker/sss.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "SSS"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_sss_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_s",
+   "path": "public/assets/game/characters/worker/s.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "S"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_s_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_a",
+   "path": "public/assets/game/characters/worker/a.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "A"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_a_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_b",
+   "path": "public/assets/game/characters/worker/b.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "B"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_b_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_c",
+   "path": "public/assets/game/characters/worker/c.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "C"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_c_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_f",
+   "path": "public/assets/game/characters/worker/f.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "F"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_f_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_sss",
+   "path": "public/assets/game/characters/tourist/sss.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "SSS"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_sss_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_s",
+   "path": "public/assets/game/characters/tourist/s.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "S"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_s_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_a",
+   "path": "public/assets/game/characters/tourist/a.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "A"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_a_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_b",
+   "path": "public/assets/game/characters/tourist/b.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "B"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_b_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_c",
+   "path": "public/assets/game/characters/tourist/c.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "C"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_c_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_f",
+   "path": "public/assets/game/characters/tourist/f.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "F"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_f_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  }
+ ]
+}

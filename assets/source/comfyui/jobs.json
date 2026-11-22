@@ -1,0 +1,705 @@
+{
+ "test": [
+  {
+   "id": "test_owner_shop_81001",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 81001,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, upper body portrait, cowboy shot from chest up, looking at viewer, facing viewer, simple plain white background, visual novel character sprite, clean lineart, soft cel shading, gentle smile, closed mouth, calm friendly expression, arms down at sides, hands out of frame",
+   "negative_extra": ", detailed background, scenery, props, cropped head"
+  },
+  {
+   "id": "test_owner_shop_81002",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 81002,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, upper body portrait, cowboy shot from chest up, looking at viewer, facing viewer, simple plain white background, visual novel character sprite, clean lineart, soft cel shading, gentle smile, closed mouth, calm friendly expression, arms down at sides, hands out of frame",
+   "negative_extra": ", detailed background, scenery, props, cropped head"
+  }
+ ],
+ "owner": [
+  {
+   "id": "char_owner_shop_normal_v001",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 81101,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, upper body portrait, cowboy shot from chest up, looking at viewer, facing viewer, simple plain white background, visual novel character sprite, clean lineart, soft cel shading, gentle smile, closed mouth, calm friendly expression, arms down at sides, hands out of frame",
+   "negative_extra": ", detailed background, scenery, props, cropped head"
+  },
+  {
+   "id": "char_owner_shop_encourage_v001",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 81102,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, upper body portrait, cowboy shot from chest up, looking at viewer, facing viewer, simple plain white background, visual novel character sprite, clean lineart, soft cel shading, encouraging confident smile, one hand raised in a small fist at chest height, cheering pose, determined eyes",
+   "negative_extra": ", detailed background, scenery, props, cropped head"
+  },
+  {
+   "id": "char_owner_shop_happy_v001",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 81103,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, upper body portrait, cowboy shot from chest up, looking at viewer, facing viewer, simple plain white background, visual novel character sprite, clean lineart, soft cel shading, very happy, big smile, open mouth, sparkling eyes, light blush, arms down at sides, hands out of frame",
+   "negative_extra": ", detailed background, scenery, props, cropped head"
+  },
+  {
+   "id": "char_owner_shop_sad_v001",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 81104,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, upper body portrait, cowboy shot from chest up, looking at viewer, facing viewer, simple plain white background, visual novel character sprite, clean lineart, soft cel shading, disappointed, sad downcast eyes, small frown, troubled eyebrows, shoulders slumped, arms down at sides, hands out of frame",
+   "negative_extra": ", detailed background, scenery, props, cropped head"
+  },
+  {
+   "id": "char_owner_shop_surprised_v001",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 81105,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, upper body portrait, cowboy shot from chest up, looking at viewer, facing viewer, simple plain white background, visual novel character sprite, clean lineart, soft cel shading, surprised, wide open eyes, small open mouth, raised eyebrows, arms down at sides, hands out of frame",
+   "negative_extra": ", detailed background, scenery, props, cropped head"
+  },
+  {
+   "id": "char_owner_shop_thinking_v001",
+   "preset": "owner",
+   "w": 896,
+   "h": 1152,
+   "seed": 81106,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, upper body portrait, cowboy shot from chest up, looking at viewer, facing viewer, simple plain white background, visual novel character sprite, clean lineart, soft cel shading, thinking, pondering, eyes looking up and to the side, closed mouth, head tilt, arms down at sides, hands out of frame",
+   "negative_extra": ", detailed background, scenery, props, cropped head"
+  },
+  {
+   "id": "char_owner_shop_full_front_v001",
+   "preset": "owner",
+   "w": 832,
+   "h": 1216,
+   "seed": 81201,
+   "cutout": true,
+   "prompt": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist, dark brown long skirt, full body standing pose, facing viewer, front view, gentle smile, hands clasped in front, brown loafers, feet fully visible, full figure with clear space above head and below shoes, simple plain white background, visual novel character sprite, clean lineart, soft cel shading",
+   "negative_extra": ", detailed background, scenery, cropped head, cropped feet, cropped legs"
+  },
+  {
+   "id": "char_owner_casual_full_front_v001",
+   "preset": "owner",
+   "w": 832,
+   "h": 1216,
+   "seed": 81202,
+   "cutout": true,
+   "prompt": "light pink spring knit cardigan over a white frilled blouse, beige flared skirt, full body standing pose, facing viewer, front view, cheerful smile, hands clasped behind back, white sneakers, feet fully visible, full figure with clear space above head and below shoes, simple plain white background, visual novel character sprite, clean lineart, soft cel shading",
+   "negative_extra": ", detailed background, scenery, cropped head, cropped feet, cropped legs"
+  }
+ ],
+ "customers": [
+  {
+   "id": "char_regular_reaction_sss_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 91000,
+   "cutout": true,
+   "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, ecstatic overjoyed reaction, sparkling starry eyes, wide open happy mouth, rosy blush, both fists raised near the chin in delight",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_regular_reaction_s_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 91000,
+   "cutout": true,
+   "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, very happy delighted reaction, bright big smile with open mouth, shining eyes, light blush",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_regular_reaction_a_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 91000,
+   "cutout": true,
+   "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, pleased satisfied reaction, warm smile, slightly open mouth, relaxed eyebrows",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_regular_reaction_b_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 91000,
+   "cutout": true,
+   "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, calm content expression, small gentle closed-mouth smile",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_regular_reaction_c_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 91000,
+   "cutout": true,
+   "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, slightly puzzled unsure expression, faint awkward smile, one eyebrow slightly raised",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_regular_reaction_f_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 91000,
+   "cutout": true,
+   "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, disappointed sad expression, downcast eyes, small frown, troubled eyebrows, shoulders slightly slumped",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_student_reaction_sss_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 92000,
+   "cutout": true,
+   "prompt": "original fictional game character, one cheerful Japanese teenage boy high school student, messy short light brown hair, bright green eyes, navy blazer school uniform with white shirt and red striped tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, ecstatic overjoyed reaction, sparkling starry eyes, wide open happy mouth, rosy blush, both fists raised near the chin in delight",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_student_reaction_s_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 92000,
+   "cutout": true,
+   "prompt": "original fictional game character, one cheerful Japanese teenage boy high school student, messy short light brown hair, bright green eyes, navy blazer school uniform with white shirt and red striped tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, very happy delighted reaction, bright big smile with open mouth, shining eyes, light blush",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_student_reaction_a_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 92000,
+   "cutout": true,
+   "prompt": "original fictional game character, one cheerful Japanese teenage boy high school student, messy short light brown hair, bright green eyes, navy blazer school uniform with white shirt and red striped tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, pleased satisfied reaction, warm smile, slightly open mouth, relaxed eyebrows",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_student_reaction_b_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 92000,
+   "cutout": true,
+   "prompt": "original fictional game character, one cheerful Japanese teenage boy high school student, messy short light brown hair, bright green eyes, navy blazer school uniform with white shirt and red striped tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, calm content expression, small gentle closed-mouth smile",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_student_reaction_c_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 92000,
+   "cutout": true,
+   "prompt": "original fictional game character, one cheerful Japanese teenage boy high school student, messy short light brown hair, bright green eyes, navy blazer school uniform with white shirt and red striped tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, slightly puzzled unsure expression, faint awkward smile, one eyebrow slightly raised",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_student_reaction_f_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 92000,
+   "cutout": true,
+   "prompt": "original fictional game character, one cheerful Japanese teenage boy high school student, messy short light brown hair, bright green eyes, navy blazer school uniform with white shirt and red striped tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, disappointed sad expression, downcast eyes, small frown, troubled eyebrows, shoulders slightly slumped",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_worker_reaction_sss_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 93000,
+   "cutout": true,
+   "prompt": "original fictional game character, one Japanese office worker man in his early thirties, neat short black hair parted at the side, thin silver rectangular glasses, dark eyes, charcoal gray suit jacket, light blue shirt, dark red tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, ecstatic overjoyed reaction, sparkling starry eyes, wide open happy mouth, rosy blush, both fists raised near the chin in delight",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin"
+  },
+  {
+   "id": "char_worker_reaction_s_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 93000,
+   "cutout": true,
+   "prompt": "original fictional game character, one Japanese office worker man in his early thirties, neat short black hair parted at the side, thin silver rectangular glasses, dark eyes, charcoal gray suit jacket, light blue shirt, dark red tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, very happy delighted reaction, bright big smile with open mouth, shining eyes, light blush",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin"
+  },
+  {
+   "id": "char_worker_reaction_a_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 93000,
+   "cutout": true,
+   "prompt": "original fictional game character, one Japanese office worker man in his early thirties, neat short black hair parted at the side, thin silver rectangular glasses, dark eyes, charcoal gray suit jacket, light blue shirt, dark red tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, pleased satisfied reaction, warm smile, slightly open mouth, relaxed eyebrows",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin"
+  },
+  {
+   "id": "char_worker_reaction_b_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 93000,
+   "cutout": true,
+   "prompt": "original fictional game character, one Japanese office worker man in his early thirties, neat short black hair parted at the side, thin silver rectangular glasses, dark eyes, charcoal gray suit jacket, light blue shirt, dark red tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, calm content expression, small gentle closed-mouth smile",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin"
+  },
+  {
+   "id": "char_worker_reaction_c_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 93000,
+   "cutout": true,
+   "prompt": "original fictional game character, one Japanese office worker man in his early thirties, neat short black hair parted at the side, thin silver rectangular glasses, dark eyes, charcoal gray suit jacket, light blue shirt, dark red tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, slightly puzzled unsure expression, faint awkward smile, one eyebrow slightly raised",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin"
+  },
+  {
+   "id": "char_worker_reaction_f_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 93000,
+   "cutout": true,
+   "prompt": "original fictional game character, one Japanese office worker man in his early thirties, neat short black hair parted at the side, thin silver rectangular glasses, dark eyes, charcoal gray suit jacket, light blue shirt, dark red tie, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, disappointed sad expression, downcast eyes, small frown, troubled eyebrows, shoulders slightly slumped",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin"
+  },
+  {
+   "id": "char_tourist_reaction_sss_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 94000,
+   "cutout": true,
+   "prompt": "original fictional game character, one young woman traveler in her twenties, long wavy honey blonde hair in a low side ponytail, blue eyes, mint green light windbreaker jacket over a white t-shirt, thin camera strap across the chest, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, ecstatic overjoyed reaction, sparkling starry eyes, wide open happy mouth, rosy blush, both fists raised near the chin in delight",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_tourist_reaction_s_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 94000,
+   "cutout": true,
+   "prompt": "original fictional game character, one young woman traveler in her twenties, long wavy honey blonde hair in a low side ponytail, blue eyes, mint green light windbreaker jacket over a white t-shirt, thin camera strap across the chest, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, very happy delighted reaction, bright big smile with open mouth, shining eyes, light blush",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_tourist_reaction_a_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 94000,
+   "cutout": true,
+   "prompt": "original fictional game character, one young woman traveler in her twenties, long wavy honey blonde hair in a low side ponytail, blue eyes, mint green light windbreaker jacket over a white t-shirt, thin camera strap across the chest, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, pleased satisfied reaction, warm smile, slightly open mouth, relaxed eyebrows",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_tourist_reaction_b_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 94000,
+   "cutout": true,
+   "prompt": "original fictional game character, one young woman traveler in her twenties, long wavy honey blonde hair in a low side ponytail, blue eyes, mint green light windbreaker jacket over a white t-shirt, thin camera strap across the chest, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, calm content expression, small gentle closed-mouth smile",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_tourist_reaction_c_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 94000,
+   "cutout": true,
+   "prompt": "original fictional game character, one young woman traveler in her twenties, long wavy honey blonde hair in a low side ponytail, blue eyes, mint green light windbreaker jacket over a white t-shirt, thin camera strap across the chest, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, slightly puzzled unsure expression, faint awkward smile, one eyebrow slightly raised",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  },
+  {
+   "id": "char_tourist_reaction_f_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 94000,
+   "cutout": true,
+   "prompt": "original fictional game character, one young woman traveler in her twenties, long wavy honey blonde hair in a low side ponytail, blue eyes, mint green light windbreaker jacket over a white t-shirt, thin camera strap across the chest, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, disappointed sad expression, downcast eyes, small frown, troubled eyebrows, shoulders slightly slumped",
+   "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses"
+  }
+ ],
+ "food": [
+  {
+   "id": "food_beef_katsumeshi_final_canonical_v101",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 95001,
+   "cutout": true,
+   "prompt": "polished 2D anime food illustration, Kakogawa beef katsumeshi on one white oval western plate, entire plate fully visible and centered with generous margin, three-quarter overhead view, a bed of white rice covering the plate, on top of the rice one thin flat golden breaded beef cutlet cut into six even strips laid side by side, glossy thick dark brown demi-glace sauce poured over the cutlet, a heap of pale green boiled shredded cabbage on the side of the plate, appetizing warm lighting, plain white background, no lettering",
+   "negative_extra": ", cubed meat, block of meat, thick meat, stew, hamburger, curry, fries, lettuce, tomato, multiple plates, cropped plate, chopsticks, hands, people"
+  },
+  {
+   "id": "food_beef_katsumeshi_final_canonical_v102",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 95002,
+   "cutout": true,
+   "prompt": "polished 2D anime food illustration, Kakogawa beef katsumeshi on one white oval western plate, entire plate fully visible and centered with generous margin, three-quarter overhead view, a bed of white rice covering the plate, on top of the rice one thin flat golden breaded beef cutlet cut into six even strips laid side by side, glossy thick dark brown demi-glace sauce poured over the cutlet, a heap of pale green boiled shredded cabbage on the side of the plate, appetizing warm lighting, plain white background, no lettering",
+   "negative_extra": ", cubed meat, block of meat, thick meat, stew, hamburger, curry, fries, lettuce, tomato, multiple plates, cropped plate, chopsticks, hands, people"
+  },
+  {
+   "id": "food_beef_katsumeshi_final_canonical_v103",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 95003,
+   "cutout": true,
+   "prompt": "polished 2D anime food illustration, Kakogawa beef katsumeshi on one white oval western plate, entire plate fully visible and centered with generous margin, three-quarter overhead view, a bed of white rice covering the plate, on top of the rice one thin flat golden breaded beef cutlet cut into six even strips laid side by side, glossy thick dark brown demi-glace sauce poured over the cutlet, a heap of pale green boiled shredded cabbage on the side of the plate, appetizing warm lighting, plain white background, no lettering",
+   "negative_extra": ", cubed meat, block of meat, thick meat, stew, hamburger, curry, fries, lettuce, tomato, multiple plates, cropped plate, chopsticks, hands, people"
+  },
+  {
+   "id": "food_beef_katsumeshi_final_canonical_v104",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 95004,
+   "cutout": true,
+   "prompt": "polished 2D anime food illustration, Kakogawa beef katsumeshi on one white oval western plate, entire plate fully visible and centered with generous margin, three-quarter overhead view, a bed of white rice covering the plate, on top of the rice one thin flat golden breaded beef cutlet cut into six even strips laid side by side, glossy thick dark brown demi-glace sauce poured over the cutlet, a heap of pale green boiled shredded cabbage on the side of the plate, appetizing warm lighting, plain white background, no lettering",
+   "negative_extra": ", cubed meat, block of meat, thick meat, stew, hamburger, curry, fries, lettuce, tomato, multiple plates, cropped plate, chopsticks, hands, people"
+  }
+ ],
+ "backgrounds": [
+  {
+   "id": "bg_shop_day_v101",
+   "preset": "scene",
+   "w": 1536,
+   "h": 864,
+   "seed": 96001,
+   "prompt": "original animated game background, no people, clean painterly 2D anime background illustration, full bleed image filling the entire frame edge to edge, interior of a small cozy Japanese neighborhood diner during lunchtime, wooden counter with stools in the foreground, a few small wooden tables, cream noren curtain at the entrance, warm pendant lights, sunlight through shoji-style windows, slightly elevated wide view",
+   "negative_extra": ", people, characters, vignette, white border, frame, blank margins, readable text, fisheye"
+  },
+  {
+   "id": "bg_result_evening_v101",
+   "preset": "scene",
+   "w": 1536,
+   "h": 864,
+   "seed": 96002,
+   "prompt": "original animated game background, no people, clean painterly 2D anime background illustration, full bleed image filling the entire frame edge to edge, interior of the same small cozy Japanese neighborhood diner after closing in the evening, chairs tucked in, warm orange sunset light through the windows, soft lamp glow, calm peaceful mood, slightly elevated wide view",
+   "negative_extra": ", people, characters, vignette, white border, frame, blank margins, readable text, fisheye"
+  },
+  {
+   "id": "bg_morning_prep_v101",
+   "preset": "scene",
+   "w": 1536,
+   "h": 864,
+   "seed": 96003,
+   "prompt": "original animated game background, no people, clean painterly 2D anime background illustration, full bleed image filling the entire frame edge to edge, small Japanese diner kitchen prep counter in the early morning, wooden cutting board, bowls, sauce pots, fresh cabbage and rice cooker, soft cool morning sunlight through a window, tidy and clean, eye-level view",
+   "negative_extra": ", people, characters, vignette, white border, frame, blank margins, readable text, fisheye"
+  }
+ ],
+ "food2": [
+  {
+   "id": "food_katsumeshi_food_soft_v201",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97001,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v202",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97002,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v203",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97003,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v204",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97004,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v201",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97001,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v202",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97002,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v203",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97003,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v204",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97004,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_scene_v201",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97001,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_scene_v202",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97002,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_scene_v203",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97003,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_scene_v204",
+   "preset": "scene",
+   "w": 1024,
+   "h": 1024,
+   "seed": 97004,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, one large whole breaded beef cutlet with crispy golden brown panko crust laid on a bed of fluffy glossy white rice, the cutlet is completely smothered in a generous amount of thick glossy dark chocolate brown demi-glace sauce that drips over the edges and pools onto the plate around the rice, bright highlights and shine on the sauce, a little crispy crust visible at the edge of the cutlet, white rice grains peeking out from under the cutlet, a fluffy mound of fresh finely shredded pale green cabbage at the back right of the plate, warm soft restaurant lighting, steam rising, mouthwatering, isolated on plain white background",
+   "negative_extra": ", orange cutlet, plastic, toy, flat colors, sauce only in the center, small amount of sauce, dry cutlet, cut into strips, sliced cutlet, separated pieces, cubed meat, block of meat, curry, stew, hamburger, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  }
+ ],
+ "food3": [
+  {
+   "id": "food_katsumeshi_food_soft_v301",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 98001,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice covering most of the plate, clearly visible white rice around the cutlet, on the rice one large thin flat breaded beef cutlet, about one centimeter thick, crispy golden brown panko crust, covered with a generous ladle of warm reddish brown demi-glace gravy, savory beef gravy color like tomato and red wine, smooth sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, overly glossy, plastic, toy, orange cutlet, cut into strips, sliced cutlet, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v302",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 98002,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice covering most of the plate, clearly visible white rice around the cutlet, on the rice one large thin flat breaded beef cutlet, about one centimeter thick, crispy golden brown panko crust, covered with a generous ladle of warm reddish brown demi-glace gravy, savory beef gravy color like tomato and red wine, smooth sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, overly glossy, plastic, toy, orange cutlet, cut into strips, sliced cutlet, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v303",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 98003,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice covering most of the plate, clearly visible white rice around the cutlet, on the rice one large thin flat breaded beef cutlet, about one centimeter thick, crispy golden brown panko crust, covered with a generous ladle of warm reddish brown demi-glace gravy, savory beef gravy color like tomato and red wine, smooth sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, overly glossy, plastic, toy, orange cutlet, cut into strips, sliced cutlet, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v304",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 98004,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice covering most of the plate, clearly visible white rice around the cutlet, on the rice one large thin flat breaded beef cutlet, about one centimeter thick, crispy golden brown panko crust, covered with a generous ladle of warm reddish brown demi-glace gravy, savory beef gravy color like tomato and red wine, smooth sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, overly glossy, plastic, toy, orange cutlet, cut into strips, sliced cutlet, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v301",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 98001,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice covering most of the plate, clearly visible white rice around the cutlet, on the rice one large thin flat breaded beef cutlet, about one centimeter thick, crispy golden brown panko crust, covered with a generous ladle of warm reddish brown demi-glace gravy, savory beef gravy color like tomato and red wine, smooth sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, overly glossy, plastic, toy, orange cutlet, cut into strips, sliced cutlet, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v302",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 98002,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice covering most of the plate, clearly visible white rice around the cutlet, on the rice one large thin flat breaded beef cutlet, about one centimeter thick, crispy golden brown panko crust, covered with a generous ladle of warm reddish brown demi-glace gravy, savory beef gravy color like tomato and red wine, smooth sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, overly glossy, plastic, toy, orange cutlet, cut into strips, sliced cutlet, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v303",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 98003,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice covering most of the plate, clearly visible white rice around the cutlet, on the rice one large thin flat breaded beef cutlet, about one centimeter thick, crispy golden brown panko crust, covered with a generous ladle of warm reddish brown demi-glace gravy, savory beef gravy color like tomato and red wine, smooth sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, overly glossy, plastic, toy, orange cutlet, cut into strips, sliced cutlet, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v304",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 98004,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice covering most of the plate, clearly visible white rice around the cutlet, on the rice one large thin flat breaded beef cutlet, about one centimeter thick, crispy golden brown panko crust, covered with a generous ladle of warm reddish brown demi-glace gravy, savory beef gravy color like tomato and red wine, smooth sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, overly glossy, plastic, toy, orange cutlet, cut into strips, sliced cutlet, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  }
+ ],
+ "food4": [
+  {
+   "id": "food_katsumeshi_food_soft_v401",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 99001,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v402",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 99002,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v403",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 99003,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_soft_v404",
+   "preset": "food_soft",
+   "w": 1024,
+   "h": 1024,
+   "seed": 99004,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v401",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 99001,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v402",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 99002,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v403",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 99003,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  },
+  {
+   "id": "food_katsumeshi_food_plain_v404",
+   "preset": "food_plain",
+   "w": 1024,
+   "h": 1024,
+   "seed": 99004,
+   "cutout": true,
+   "prompt": "highly detailed appetizing anime food illustration, rich semi-realistic painted food rendering, Kakogawa katsumeshi, Japanese yoshoku dish, on one large white oval western plate, entire plate fully visible and centered with margin, three-quarter view from a slightly low oblique angle, a wide bed of fluffy white rice on the plate, white rice visible around the edges of the cutlet, on the rice one large elongated oval thin flat breaded beef cutlet covering about half of the plate, crispy golden brown panko crust visible at the edges, smothered in plenty of thick rich dark brown demi-glace sauce, deep chestnut brown gravy color, smooth velvety sauce flowing over the cutlet edges onto the rice and plate, soft natural shine, a large fluffy mound of fresh finely shredded raw pale green cabbage on the right side of the plate, warm soft restaurant lighting, gentle steam, mouthwatering home-style diner meal, isolated on plain white background",
+   "negative_extra": ", orange sauce, red sauce, ketchup, tomato sauce, sweet and sour sauce, chocolate, chocolate sauce, fudge, cake, brownie, bread, thick cutlet, tall meat block, black sauce, plastic, toy, cut into strips, sliced cutlet, round cutlet, croquette, curry, stew, hamburger steak, fries, lettuce leaves, tomato, multiple plates, cropped plate, chopsticks, spoon, hands, people, wooden table"
+  }
+ ]
+}

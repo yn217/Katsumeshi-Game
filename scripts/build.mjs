@@ -4,6 +4,7 @@ if(c.schema!=="katsumeshi-mvp-config/v0.5")throw Error("Unexpected config versio
 rmSync("dist",{recursive:true,force:true});mkdirSync("dist",{recursive:true});
 copyFileSync("index.html","dist/index.html");
 cpSync("src","dist/src",{recursive:true});
+if(existsSync("public/assets/game"))cpSync("public/assets/game","dist/public/assets/game",{recursive:true});
 mkdirSync("dist/spec",{recursive:true});
 copyFileSync("spec/mvp_config.json","dist/spec/mvp_config.json");
 console.log("Static build ready: dist/ (serve from any HTTP server)");
