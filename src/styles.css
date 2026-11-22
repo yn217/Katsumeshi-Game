@@ -246,3 +246,14 @@ select{border-radius:8px;background:#fffaf0;border:2px solid var(--gold);padding
   .work .card-body{min-height:300px}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* ---------- dish (user-provided katsumeshi photo cutout on a CSS plate) ---------- */
+.dish{position:relative;display:grid;place-items:center;padding:3% 4% 7%}
+.dish::before{content:"";position:absolute;inset:10% 0 0;border-radius:50%;background:radial-gradient(ellipse at 50% 42%,#fff 56%,#f1ece3 68%,#fff 72%,#ddd5c7 100%);box-shadow:0 14px 22px #0005}
+.dish-img{position:relative;width:90%;filter:drop-shadow(0 3px 4px #0003)}
+.title-dish{position:absolute;left:14%;bottom:-3%;width:min(44vw,640px);z-index:2;pointer-events:none}
+.order-dish{width:104px;margin-bottom:-.2rem}
+.finish-dish{width:min(100%,440px)}
+.tasting-dish{width:min(100%,380px);margin:-.4rem 0 -.2rem}
+@media(max-width:900px){.title-dish{display:none}}
+@media(max-width:640px){.order-dish{display:none}}

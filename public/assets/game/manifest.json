@@ -990,6 +990,48 @@
    ],
    "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
    "reviewedAt": null
+  },
+  {
+   "id": "food_beef_katsumeshi_whole",
+   "path": "public/assets/game/food/beef_katsumeshi/whole.webp",
+   "type": "food",
+   "width": 1576,
+   "height": 907,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "canonical",
+    "whole"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/food/katsumeshi_whole_user.webp + birefnet background removal",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "User-provided image (2026-11-22). Plate removed by birefnet; plate drawn in CSS. Confirm usage rights before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "food_beef_katsumeshi_sliced",
+   "path": "public/assets/game/food/beef_katsumeshi/sliced.webp",
+   "type": "food",
+   "width": 1652,
+   "height": 919,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "variant",
+    "sliced"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/food/katsumeshi_sliced_user.webp + birefnet background removal",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "User-provided image (2026-11-22). Plate removed by birefnet; plate drawn in CSS. Confirm usage rights before release.",
+   "reviewedAt": null
   }
  ]
 }
