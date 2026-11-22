@@ -66,5 +66,18 @@
     "skippedCandidates": 0
   },
   "lastServedOrderId": null,
-  "lastReactionRank": null
+  "lastReactionRank": null,
+  "careerLedger": {
+    "salesYen": 0,
+    "ingredientConsumedYen": 0,
+    "wasteYen": 0,
+    "purchasesYen": 0,
+    "upgradePurchasesYen": 0,
+    "overheadYen": 0,
+    "payrollYen": 0,
+    "providedCount": 0,
+    "cancelledCount": 0,
+    "expiredCount": 0,
+    "skippedCandidates": 0
+  }
 }

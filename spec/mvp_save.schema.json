@@ -705,6 +705,69 @@
           "type": "null"
         }
       ]
+    },
+    "careerLedger": {
+      "type": "object",
+      "properties": {
+        "salesYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ingredientConsumedYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wasteYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "purchasesYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "upgradePurchasesYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "overheadYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "payrollYen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "providedCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cancelledCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expiredCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "skippedCandidates": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "salesYen",
+        "ingredientConsumedYen",
+        "wasteYen",
+        "purchasesYen",
+        "upgradePurchasesYen",
+        "overheadYen",
+        "payrollYen",
+        "providedCount",
+        "cancelledCount",
+        "expiredCount",
+        "skippedCandidates"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -741,7 +804,8 @@
     "appliedCommandIds",
     "dailyLedger",
     "lastServedOrderId",
-    "lastReactionRank"
+    "lastReactionRank",
+    "careerLedger"
   ],
   "additionalProperties": false,
   "allOf": [

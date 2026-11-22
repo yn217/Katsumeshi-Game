@@ -127,3 +127,6 @@ cashDelta = salesYen - purchasesYen - overheadYen - payrollYen - upgradePurchase
 - `spec/mvp_save.schema.json`がJSON構造、`spec/mvp_save_example.json`がDay1初期セーブの例、`spec/mvp_config.json`が初期値の正。本文の型は説明であり競合時はschemaを優先。
 - `appliedCommandIds`を保存し、支援/購入/受付/提供/設備購入/閉店/日付遷移に付けたcommandIdの重複適用を禁止。二重適用防止の範囲やタイムステップ順序は[20](20_EVENT_STATE_PROTOCOL.md)で定義。
 - 初日初回キャンセルを拒否、`tutorialFirstServed`を保存する。無料支援は各食材を最低4食分へ補充し、在庫に4を無条件加算しない。
+
+## v0.5 複数日集計と保存容量
+`GameSave` は `careerLedger:DailyLedger`（完了済み営業日の累計）を追加で必須とする。 `orders[]` と `appliedCommandIds[]` はその日のみ保持し、`NEXT_DAY` で当日LedgerをcareerLedgerに1回だけ合算した後クリア。表示中の日次Ledgerは引き続き保持。Day7の累計は `careerLedger + dailyLedger`。このルールと自動保存の間隔・強制終了の復帰保証は[20](20_EVENT_STATE_PROTOCOL.md)が正。旧TypeScript例の追記漏れはセーブSchemaを優先する。

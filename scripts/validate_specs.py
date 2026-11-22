@@ -89,6 +89,7 @@ def main() -> None:
     require(example["sauces"][0]["id"] == "basic", "example sauce")
     require(example["tutorialFirstServed"] is False, "tutorial first served initial")
     require(example["dailyLedger"]["upgradePurchasesYen"] == 0, "upgrade ledger")
+    require(example["careerLedger"] == example["dailyLedger"], "initial lifetime ledger is empty")
 
     upgrade_ids = [u["id"] for u in config["upgrades"]]
     require(sorted(upgrade_ids) == ["chairs", "fryer"], "upgrade ids")
@@ -122,6 +123,10 @@ def main() -> None:
             result = max(0, min(100, js_round(raw)))
             require(result == case["finalScore"], f"{case['id']} score")
             require(score_rank(result, config["cooking"]["rankMinimum"]) == case["rank"], f"{case['id']} rank")
+
+    rollover = by_id["day1_rollover_to_career"]
+    require(rollover["salesBeforeCareerYen"] + rollover["salesCurrentDayYen"] == rollover["salesAfterCareerYen"], "rollover aggregation")
+    require(rollover["dailySalesAfterResetYen"] == 0 and rollover["ordersAfterReset"] == 0, "rollover reset")
 
     fryer = by_id["upgrade_fryer_first_purchase"]
     require(fryer["completedDay"] + 1 >= fryer["unlockDay"], "fryer unlock")

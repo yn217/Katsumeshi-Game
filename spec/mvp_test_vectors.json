@@ -172,6 +172,16 @@
       "rank": "SSS",
       "rawDelta": 4,
       "reputationAfter": 100
+    },
+    {
+      "id": "day1_rollover_to_career",
+      "completedDay": 1,
+      "salesBeforeCareerYen": 0,
+      "salesCurrentDayYen": 7840,
+      "salesAfterCareerYen": 7840,
+      "dailySalesAfterResetYen": 0,
+      "ordersAfterReset": 0,
+      "appliedCommandIdsAfterReset": 0
     }
   ],
   "expectedProperties": [
@@ -188,6 +198,7 @@
     "Day1 first order cannot be cancelled before first served reaction",
     "same tick expiry precedes accept and closing decision happens last",
     "basic sauce preset cannot be modified or deleted",
-    "save and config satisfy JSON Schema 2020-12"
+    "save and config satisfy JSON Schema 2020-12",
+    "Day end rollover accumulates careerLedger exactly once and resets daily orders and command ids"
   ]
 }
