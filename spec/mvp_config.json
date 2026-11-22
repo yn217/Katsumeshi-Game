@@ -1,0 +1,201 @@
+{
+  "schema": "katsumeshi-mvp-config/v0.4",
+  "status": "design-provisional",
+  "day1": {
+    "tutorial": true,
+    "orderTypes": [
+      "regular",
+      "student",
+      "worker",
+      "tourist",
+      "regular",
+      "student",
+      "worker",
+      "tourist"
+    ],
+    "queueMax": 1,
+    "businessSeconds": null,
+    "patienceEnabled": false
+  },
+  "normalDay": {
+    "businessSeconds": 600,
+    "queuedMax": 3,
+    "cookingMax": 1,
+    "basePatienceSeconds": 180,
+    "arrivalBase": 10,
+    "arrivalPerReputationStep": 25,
+    "arrivalMaximum": 14,
+    "arrivalFirstSecond": 20,
+    "arrivalSpreadSeconds": 540,
+    "arrivalWeights": {
+      "regular": 30,
+      "student": 25,
+      "worker": 25,
+      "tourist": 20
+    }
+  },
+  "starting": {
+    "cashYen": 30000,
+    "reputation": 30,
+    "inventoryEachIngredient": 10,
+    "sauceId": "basic",
+    "sauceTaste": {
+      "sweetness": 50,
+      "richness": 60,
+      "acidity": 40
+    }
+  },
+  "recipe": {
+    "id": "beef_katsumeshi",
+    "priceYen": 980,
+    "ingredientUnitsPerDish": {
+      "beef": 1,
+      "rice": 1,
+      "coating": 1,
+      "sauce": 1,
+      "cabbage": 1
+    }
+  },
+  "ingredientCostsYen": {
+    "beef": 250,
+    "rice": 60,
+    "coating": 40,
+    "sauce": 50,
+    "cabbage": 30
+  },
+  "inventory": {
+    "unit": "meal_equivalent",
+    "maxUnitsPerIngredient": 99,
+    "purchaseQuantities": [
+      1,
+      5,
+      10
+    ],
+    "spoilageEnabled": false
+  },
+  "sauce": {
+    "min": 0,
+    "max": 100,
+    "step": 10,
+    "maxPresets": 3
+  },
+  "cooking": {
+    "maxRetriesPerDish": 1,
+    "p1TargetsX": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "p1ErrorDenominator": 0.25,
+    "p2Zones": 3,
+    "p2CellsPerZone": 10,
+    "p3TargetSeconds": 10,
+    "p3PenaltyWindowSeconds": 5,
+    "p3UpgradedWindowSeconds": 6,
+    "p5TargetSeconds": 4,
+    "p5PenaltyWindowSeconds": 4,
+    "p6Parts": [
+      "rice",
+      "cutlet",
+      "sauce",
+      "cabbage"
+    ],
+    "fixedSauceQualityPoints": 20,
+    "stageMaxPoints": {
+      "P1": 15,
+      "P2": 15,
+      "P3": 30,
+      "P4": 20,
+      "P5": 10,
+      "P6": 10
+    },
+    "customerSauceCorrection": {
+      "max": 15,
+      "distanceCoefficient": 0.3
+    },
+    "rankMinimum": {
+      "SSS": 95,
+      "S": 85,
+      "A": 70,
+      "B": 55,
+      "C": 40,
+      "F": 0
+    }
+  },
+  "customer": {
+    "regular": {
+      "taste": [
+        50,
+        60,
+        40
+      ],
+      "patienceMultiplier": 1.2
+    },
+    "student": {
+      "taste": [
+        80,
+        50,
+        20
+      ],
+      "patienceMultiplier": 0.9
+    },
+    "worker": {
+      "taste": [
+        30,
+        90,
+        30
+      ],
+      "patienceMultiplier": 0.8
+    },
+    "tourist": {
+      "taste": [
+        40,
+        50,
+        80
+      ],
+      "patienceMultiplier": 1
+    }
+  },
+  "reputationDelta": {
+    "SSS": 4,
+    "S": 3,
+    "A": 1,
+    "B": 0,
+    "C": -2,
+    "F": -4,
+    "expired": -2
+  },
+  "economy": {
+    "overheadYenPerDay": 2200,
+    "payrollYenPerDay": 0,
+    "startOfDayAidUnitsEach": 4,
+    "aidLimitPerDay": 1
+  },
+  "upgrades": [
+    {
+      "id": "fryer",
+      "unlockDay": 2,
+      "costYen": 8000,
+      "effect": {
+        "p3WindowSeconds": 6
+      }
+    },
+    {
+      "id": "chairs",
+      "unlockDay": 3,
+      "costYen": 5000,
+      "effect": {
+        "patienceMultiplier": 1.1
+      }
+    }
+  ],
+  "mvpMilestone": {
+    "day": 7,
+    "canContinueAfter": true
+  },
+  "notes": [
+    "Values are initial game balance candidates, not real-world cooking temperatures or prices.",
+    "Oil temperature is display-only in MVP.",
+    "High-resolution v0.3 UI mockups are concept art, not reusable game UI controls."
+  ]
+}

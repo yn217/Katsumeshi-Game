@@ -143,3 +143,6 @@
 - ledger.wasteYenはledger.ingredientConsumedYenの**内数**。利益から二重減算しない。
 - RESULTのdayOverheadSettledがtrueなら二度と固定費支払いを適用しない。
 - 本書の型例は規範を定めるものだがコードそのものは未実装。実装時にはZod/JSON Schemaを一次情報として同期する。
+
+## v0.4データ契約
+本書の旧TypeScript断片は初期概念例であり、調理途中の入出力、到着予定や設備購入元帳、救済フラグを全て列挙していない。MVP実装時の必要フィールド・状態不変条件・精算契約は [16_SAVE_DATA_AND_BALANCE.md](16_SAVE_DATA_AND_BALANCE.md)、単位/数値は [spec/mvp_config.json](../spec/mvp_config.json) が優先。コードにする際はZod/JSON Schemaを作成してから旧例を削除・整理する。

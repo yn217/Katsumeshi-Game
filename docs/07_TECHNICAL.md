@@ -56,7 +56,8 @@ Web版はユーザーがすぐ触れる試作を優先。ゲームロジック�
 | アクション | 前提 | 副作用 |
 | --- | --- | --- |
 | START_DAY | MORNING | 時計初期化 |
-| PURCHASE | MORNINGかUPGRADE、支払可能 | 現金↓、在庫または設備↑ |
+| BUY_INGREDIENT | MORNING、仕入上限/現金条件を満たす | 現金減少、在庫増加、仕入支出を記録 |
+| BUY_UPGRADE | UPGRADE、解放日/未購入/現金条件を満たす | 現金減少、設備ID解放、投資支出を記録 |
 | OPEN_SHOP | MORNING | OPEN、注文発生開始 |
 | ACCEPT_ORDER | OPEN、注文queued、食材十分 | 在庫減算・消費原価計上、注文cooking、COOK |
 | COMPLETE_STAGE | COOK、現在工程に一致 | 検証済み工程スコア保存、次工程 |
@@ -110,3 +111,6 @@ Web版はユーザーがすぐ触れる試作を優先。ゲームロジック�
 - IndexedDB内に完全な状態スナップショットとバックアップをトランザクション保存。書き込み失敗で元のセーブを消さない。
 - 配合/注文/費用の確定値をスナップショット化し、セーブ復帰やデータ変更による過去の会計再計算を防ぐ。
 - 終了後のUIに関係なくdomainのイベント適用は1回だけとする。
+
+## v0.4 ドメイン境界と検証
+ドメイン時刻・来客スケジュールは[12](12_MVP_SIMULATION_SPEC.md)、調理入力は[14](14_COOKING_INPUT_CONTRACT.md)、GameSave契約は[16](16_SAVE_DATA_AND_BALANCE.md)、画面操作は[13](13_SCREEN_INTERACTION_SPEC.md)。店舗/調理/会計はUIの画像・画風から独立した純粋計算とする。設定画面はプレイセーブとは独立した永続キーを用い、設定変更で日次計算を再実行しない。

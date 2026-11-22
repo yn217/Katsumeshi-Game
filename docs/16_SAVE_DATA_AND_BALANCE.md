@@ -1,0 +1,122 @@
+# 16. 保存データ・経済初期データ・検証契約（v0.4）
+
+docs/03_MANAGEMENT.md / docs/05_CONTENT_DATA.mdの**型定義を実装に必要な粒度に補完する**。本書は契約仕様であり、実際のTypeScript・JSON Schema/Zod・テストコードは未実装。
+
+## 1. 固定データ（MVP）
+- 料理は `beef_katsumeshi` 1品、価格980円。材料は `beef=250, rice=60, coating=40, sauce=50, cabbage=30` 円/食分相当。計430円。
+- 在庫はすべて **「食分相当」の整数**。初期在庫は各材料10。料理1皿で各1を消費、調理途中キャンセルでも返却しない。腐敗/賞味期限はMVP外。
+- 仕入時は各材料を1/5/10単位で選択でき、所持上限99、購入後現金が負になる購入は拒否。負の現金残高からの新規購入は不可。
+- たれ配合値は0,10,...,100の整数。初期プリセット `basic=(50,60,40)`。保存可能なプリセットは計3件。
+- 価格変更、スタッフ人件費、割引、複数皿注文、材料の廃棄期限はMVP外。
+- 設備は fryer(8,000円,Day2以降) と chairs(5,000円,Day3以降) のみ。Day1では設備購入不可。
+
+## 2. ドメインモデル（実装で満たす）
+```ts
+type Phase = "MORNING"|"OPEN"|"COOK"|"REACTION"|"RESULT"|"UPGRADE";
+type OrderState = "queued"|"cooking"|"served"|"cancelled"|"expired";
+type Rank = "SSS"|"S"|"A"|"B"|"C"|"F";
+type SauceTaste = { sweetness:number; richness:number; acidity:number };
+type IngredientId = "beef"|"rice"|"coating"|"sauce"|"cabbage";
+type IngredientUnits = Record<IngredientId,number>; // integer 0..99
+type Order = {
+ id:string; customerId:"regular"|"student"|"worker"|"tourist";
+ recipeId:"beef_katsumeshi"; state:OrderState;
+ createdAtGameSeconds:number;
+ queuedWaitRemainingSeconds:number;
+ priceYenSnapshot:number; ingredientCostYenSnapshot:number;
+ sauceSnapshot:SauceTaste|null; ingredientsConsumed:boolean;
+ cookingScore:number|null; rank:Rank|null; settled:boolean;
+ appliedActionIds:string[];
+};
+type CookingSession = {
+ orderId:string; stageIndex:0|1|2|3|4|5;
+ completedScores:Partial<Record<"P1"|"P2"|"P3"|"P4"|"P5"|"P6",number>>;
+ selectedSauceId:string; sauceSnapshot:SauceTaste;
+ retriesRemaining:number; unlimitedRetry:boolean;
+ stageInput:{
+   elapsedSeconds:number; timerStarted:boolean;
+   taps:number; strikeXs:number[]; thicknessError01:number;
+   coatCoverage01:number[]; coatCellMask:number[]; // 3 zone bitsets
+   placedComponentIds:string[]; placedSlotIds:string[];
+ };
+};
+type DailyLedger = {
+ salesYen:number; ingredientConsumedYen:number; wasteYen:number;
+ purchasesYen:number; upgradePurchasesYen:number;
+ overheadYen:number; payrollYen:number;
+ providedCount:number; cancelledCount:number; expiredCount:number;
+ skippedCandidates:number;
+};
+type GameSave = {
+ schemaVersion:1; revision:number; savedAtIso:string;
+ seed:number; rngState:number; day:number; nextOrderSequence:number;
+ phase:Phase; overlay:null|{kind:"PAUSE"|"EVENT";eventId?:string};
+ openingRemainingSeconds:number|null; businessElapsedSeconds:number;
+ remainingArrivals:number; nextArrivalIndex:number; arrivalSeconds:number[];
+ tutorialNextOrderIndex:number; dayClosed:boolean; dayOverheadSettled:boolean;
+ aidGrantedDay:number|null; // 同日に二度の支援を受けられない
+ cashYen:number; reputation:number; inventory:IngredientUnits;
+ unlockedRecipeIds:string[]; unlockedUpgradeIds:string[];
+ sauces:{id:string;taste:SauceTaste}[];
+ customerAffinity:Record<string,number>;
+ orders:Order[]; activeOrderId:string|null;
+ cookingSession:CookingSession|null;
+ seenStoryEventIds:string[]; dailyLedger:DailyLedger;
+ lastServedOrderId:string|null; lastReactionRank:Rank|null;
+};
+```
+- `GameSave`の上記は**必須項目の範囲**でありZod schemaが未実装。より厳密な注文ID順序等の詳細は実装時schemaへ移す。
+- `openingRemainingSeconds=null` はDay1チュートリアルのみ。通常日は0..600。
+- `lastServedOrderId` はREACTION再表示での二重会計を防ぐため表示専用。独立した注文スナップショットをsource of truthとする。
+- `arrivalSeconds` と `nextArrivalIndex` は通常日の候補予定を保持。リロード後に同じ候補を再生成しない。MVPでは一日の開始時に配列を生成し永続化する。
+- `customerAffinity` は0..100。MVPの明示的な長期解放には用いない（将来用の保存フィールド）。
+- `seenStoryEventIds` のIDが既読なら同じ日次会話を再演しない。
+
+## 3. トランザクション
+- `BUY_INGREDIENT` (MORNING): `cashYen>=price`、`inventory[id]+qty<=99` で `cash-=price`, `inventory+=qty`, `ledger.purchasesYen+=price`。原価消費は増やさない。
+- `ACCEPT_ORDER` (OPEN): 5種類の在庫を確認後 `inventory-=1`、`ledger.ingredientConsumedYen+=430`、`ingredientsConsumed=true`、`state=cooking` を一操作で記録。 `activeOrderId` と `CookingSession` を作成。
+- `COMPLETE_STAGE` (COOK): 当該工程の入力が確定済みなら一回だけ点数保存。P6完了までSERVE不可。
+- `SERVE` (COOK): 調理済・未settledなら価格スナップショットを売上と現金へ、評価ランク分を評判へ追加。 `settled=true`、`state=served`、`phase=REACTION`。
+- `CANCEL_ORDER` (COOK): 既消費なら `ledger.wasteYen+=ingredientCostYenSnapshot`、`state=cancelled`、`phase=OPEN`。ingredientConsumedYenは消費時点で加算済みなので**追加で原価減算しない**。
+- `EXPIRE_ORDER` (queued): `state=expired`、`reputation-=2`、`ledger.expiredCount+=1`、`inventory`は不変。
+- `CLOSE_DAY`: `dayOverheadSettled` がfalseなら `overheadYen+=2200`、`cashYen-=2200`、trueにする。重複実行は無視。
+- `BUY_UPGRADE` (UPGRADE): 解放日・未購入・支払可能を満たせば現金減額とID解放を原子的に更新。
+- `NEXT_DAY`: UPGRADE以外から拒否。日次ledgerとday flagsを初期化し、評判は継続。
+
+## 4. 会計の検算式
+```
+grossProfit = salesYen - ingredientConsumedYen
+operatingProfit = salesYen - ingredientConsumedYen - overheadYen - payrollYen
+cashDelta = salesYen - purchasesYen - overheadYen - payrollYen - upgradePurchasesYen
+// wasteYen は ingredientConsumedYen の内数で二度引かない
+```
+- `upgradePurchasesYen` は設備購入による現金支出であり営業費用ではなく資産投資。DailyLedgerに明示し、営業利益では減算しない。
+- Day1基準: 初期現金30,000+売上7,840-固定費2,200=35,640。原価3,440は開業支給在庫からの消費のため当日現金減額しない。
+
+## 5. 救済/進行不能防止
+- MORNINGにて「必要5材料が1食分も揃わず」「不足材料を1食分揃える購入が現金不足で不可能」な場合、**立て直し支援**ボタンを1日1回表示。条件は `!every(inventory[id]>=1) && cashYen < sum(cost[id] for inventory[id]<1)`。押すと全5種を各4食分相当追加（無料の現物支給、ただし99上限でclamp）、仕入支払や原価計上なし。 `aidGrantedDay=day` を永続化する。
+- 支援でも通常通り料理開始時に原価計上する。現金が負でも支援は受けられる。Day1の初期10食分では表示されない。
+- 無償支援は明示的な救済機能であり通常の仕入の代わりとして利用できない条件判定をテストする。
+
+## 6. 保存の原子性・復元
+- IndexedDBは `main` と `backup` の2キーを使用し、1 transactionで世代を切り替える。`revision` を単調増加。保存中にページを閉じても最終コミット済みデータに戻す。
+- `SAVE_QUIT`は保存成功後にTITLEへ遷移、失敗時は同じ画面に留まる。
+- REACTIONからの再開でもSERVE再発火禁止。COOKからの再開は未完了の現在工程の入力を復元する。
+- saveファイルの外部JSON import/exportはMVP外。診断用エクスポートは開発ビルドのみ。
+- schemaVersion不一致/データ不整合はバックアップ復旧を試み、失敗なら新規ゲームの選択肢とエラー内容を表示。旧データを自動削除しない。
+
+## 7. セーブ時不変条件
+- 現金は整数。材料数0..99の整数。評判0..100、料理得点0..100。
+- activeOrderId!=null ↔ phase=COOKかつ料理中注文がちょうど1件（ただしCOOK→REACTIONへはactiveOrderIdを同時にnullにする）。
+- phase=REACTIONなら `lastServedOrderId` が必ず有効なserved注文を示し、settled=true。
+- `wasteYen<=ingredientConsumedYen`、二重精算不可、同じorderIdが二つ存在しない。
+- DAY1では残り候補が固定8件で、通常日と異なる時計・来客スケジュール。
+- `dayOverheadSettled=true`かつ `dayClosed=true` のとき再CLOSE_DAYは無変更。
+
+## 8. テスト例（先に実装する）
+- 1注文を提供→保存→再開→SERVEを再試行しても売上980/原価430のまま。
+- キャンセル1件→waste430/原価430/売上0、現金変化0。
+- Day1全8件提供→35,640円、各食材残2食分。
+- Day2の買い足し5種各1の現金減430、販売時現金+980、原価+430。
+- 購入対象が保有99食の時、1以上の追加を拒否。
+- 立て直し支援を同日二度押しても2回目は無変更。

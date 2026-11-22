@@ -1,7 +1,7 @@
 # 01. ゲームループと進行仕様
 
 ## コアループ
-朝の準備 → 仕入れ/たれ配合確認 → 開店 → 注文受付 → 調理 → 提供・リアクション → 会計/口コミ → 閉店集計 → 設備投資 → 翌日
+朝の準備 → 仕入れ/たれ配合確認 → 開店 → 注文受付 → 調理 → 提供時に会計/評判確定 → 試食リアクション（時計停止） → 閉店集計 → 設備投資 → 翌日
 
 1日の意思決定「今日は何を仕込むか」が営業中の展開を変え、料理の成績が翌日の資金・評判・来客に効く。
 
@@ -72,3 +72,6 @@ T01 タイトル開始 → T02 仕込み画面の見方 → T03 最初の注文 
 5. 残り時間0、queuedが0、cookingが0、REACTION表示中ではない場合にCLOSE_DAYを1回発火。初日は生成された8注文がすべて終端に達すると閉店する。
 6. SERVE時に売上・評判を確定し、REACTIONでは表示のみ。REACTION中はゲーム時計を停止し、DISMISS_REACTIONでOPENへ復帰する。
 7. RESULTで固定費決済済み。必ずUPGRADEを経由してNEXT_DAY→MORNINGへ進む。
+
+## v0.4補足仕様への参照
+通常日の来客候補生成、同時イベント、Day1の8件発行方法、時間切れ/閉店の例外は [12_MVP_SIMULATION_SPEC.md](12_MVP_SIMULATION_SPEC.md) を正とする。Day1は各客順次1件ずつ生成。MVPのストーリーDay1〜7は [15_NARRATIVE_CHARACTER_AUDIO.md](15_NARRATIVE_CHARACTER_AUDIO.md)、画面操作は[13](13_SCREEN_INTERACTION_SPEC.md)。

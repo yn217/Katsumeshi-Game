@@ -1,0 +1,80 @@
+{
+  "schema": "katsumeshi-qa-v0.4",
+  "fixtures": [
+    {
+      "id": "mvp_day1_all_served",
+      "ordersServed": 8,
+      "ordersCancelled": 0,
+      "startCashYen": 30000,
+      "purchaseYen": 0,
+      "salesYen": 7840,
+      "consumedIngredientYen": 3440,
+      "wasteYen": 0,
+      "overheadYen": 2200,
+      "operatingProfitYen": 2200,
+      "endCashYen": 35640,
+      "remainingEachIngredient": 2
+    },
+    {
+      "id": "mvp_one_cancel",
+      "ordersServed": 0,
+      "ordersCancelled": 1,
+      "salesYen": 0,
+      "consumedIngredientYen": 430,
+      "wasteYen": 430,
+      "operatingProfitBeforeOverheadYen": -430
+    },
+    {
+      "id": "normal_day_reputation30",
+      "reputation": 30,
+      "candidateArrivals": 11,
+      "openingSeconds": 600,
+      "queuedMax": 3
+    },
+    {
+      "id": "score_perfect",
+      "quality": 100,
+      "tasteDistance": 0,
+      "finalScore": 100,
+      "rank": "SSS"
+    },
+    {
+      "id": "score_preference_match",
+      "quality": 80,
+      "tasteDistance": 0,
+      "finalScore": 95,
+      "rank": "SSS"
+    },
+    {
+      "id": "score_mid_taste",
+      "quality": 80,
+      "tasteDistance": 50,
+      "finalScore": 80,
+      "rank": "A"
+    },
+    {
+      "id": "score_minimum",
+      "quality": 20,
+      "tasteDistance": 100,
+      "finalScore": 5,
+      "rank": "F"
+    },
+    {
+      "id": "score_round",
+      "quality": 84.5,
+      "tasteDistance": 50,
+      "finalScore": 85,
+      "rank": "S"
+    }
+  ],
+  "expectedProperties": [
+    "SERVE idempotent per order",
+    "CLOSE_DAY idempotent per day",
+    "no overbooking queued>3 or cooking>1",
+    "REACTION and PAUSE do not advance clocks",
+    "P3 oil temperature display does not affect score",
+    "restore keeps RNG state and unprocessed arrival schedule",
+    "inventory is meal-equivalent integer units",
+    "loss is included in consumed ingredient cost, never subtracted twice"
+  ]
+}
