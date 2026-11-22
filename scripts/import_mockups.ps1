@@ -14,7 +14,10 @@ try {
     $src = Join-Path $tmp 'Katsumeshi-Game_UI_v03'
     if (-not (Test-Path (Join-Path $src '00_title.png'))) { throw "Archive does not contain expected title image" }
     New-Item -ItemType Directory -Path $dest -Force | Out-Null
-    Copy-Item -Path (Join-Path $src '*.png') -Destination $dest -Force
+    # Export only generated mockups. Do not publish the user's reference image.
+    Get-ChildItem -Path $src -Filter '*.png' | Where-Object {
+        $_.BaseName -match '^0[0-7]_' 
+    } | Copy-Item -Destination $dest -Force
     Copy-Item -Path (Join-Path $src 'manifest.json') -Destination $dest -Force
     Copy-Item -Path (Join-Path $src 'README.md') -Destination $dest -Force
     Write-Host "Copied UI mockup assets to $dest"
