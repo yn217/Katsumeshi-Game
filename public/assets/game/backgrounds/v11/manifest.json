@@ -1,0 +1,38 @@
+{
+  "schema": "katsumeshi-chatgpt-background-manifest/v1",
+  "version": "v11",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceAttribution": "ChatGPT built-in image generation; original candidate is 1672x941 and runtime WebP is Lanczos-upscaled for preview only.",
+  "assets": [
+    {
+      "id": "shop_diner_layout_chatgpt_v01",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v11/shop_diner_layout_chatgpt_v01.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v11/backgrounds/shop_diner_layout_chatgpt_v01_source.png",
+      "width": 2560,
+      "height": 1440,
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "resampling": "Lanczos upscale for preview; does not restore native detail",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "shop",
+        "diner",
+        "anime",
+        "screen-composition"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation, using v08 shop background as style/identity reference.",
+      "prompt": "Use case: production game background candidate for a Japanese restaurant management game. Asset type: standalone full-bleed shop gameplay background, wide 16:9 landscape. Use the attached image only as an illustration-style and restaurant-identity reference: warm hand-painted 2D anime background, confident dark brown ink contours, simplified cel-shaded wood, muted amber sunlight, matte surfaces, restrained painterly shading. Create a distinct composition based on this exact gameplay layout: keep the leftmost 28 percent visually quiet and darker with simple wall/window details for a large standing shopkeeper sprite; keep the central 42 percent mostly clear floor and low-detail wall for order and waiting UI; place tables, red-seat chairs, and potted plants along the far right and rear edges; place the service counter along the back wall, mostly in the upper right half. Camera at a mildly elevated diagonal angle into a cozy small riverside katsumeshi diner in Kakogawa, Japan; shoji windows on left show a soft river and bridge, warm timber beams, red noren curtains, amber pendant lights. Maintain a readable calm background with lower contrast where UI will sit. No characters, people, food, plated dishes, readable text, logos, menus, UI, lettering, watermark, border, panels, or collage. Make it visibly illustrated, not photorealistic, not 3D render. Full-bleed edge to edge.",
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Standalone visual inspection: dark quiet left region, broad low-detail center floor, rear service counter, and right-edge tables/chairs are clearly separated. Illustration uses warm anime background lines and matte cel shading. Native source is 1672x941, below the 2560x1440 source requirement. Full-screen composite/readability remains unreviewed; concept_review only.",
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
+    }
+  ],
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
+}

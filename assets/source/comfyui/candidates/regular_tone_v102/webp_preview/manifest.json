@@ -1,0 +1,52 @@
+{
+  "schema": "katsumeshi-comfy-character-candidate-manifest/v1",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceWorkflow": "assets/source/comfyui/jobs.json#customer_tone_review_v102",
+  "assets": [
+    {
+      "id": "char_regular_reaction_c_v102",
+      "rank": "C",
+      "path": "assets/source/comfyui/candidates/regular_tone_v102/webp_preview/reaction_c_v102.webp",
+      "sourceImage": "assets/source/comfyui/candidates/regular_tone_v102/char_regular_reaction_c_v102.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_regular_reaction_c_v102_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 99101,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, subdued neutral reaction, polite but clearly unimpressed, relaxed half-lidded eyes, small straight mouth, faintly lowered brows, no smile, shoulders relaxed, hands out of frame",
+      "negativePromptExtra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses, big smile, cheerful, excited, sparkling eyes, open laughing mouth, exaggerated expression",
+      "status": "concept_review",
+      "reviewNote": "Superseded by the img2img v103 preview candidate; retained for comparison and provenance only. Not the current runtime reference.",
+      "licenseNote": "Model and LoRA training-data rights remain pending; do not publish."
+    },
+    {
+      "id": "char_regular_reaction_f_v102",
+      "rank": "F",
+      "path": "assets/source/comfyui/candidates/regular_tone_v102/webp_preview/reaction_f_v102.webp",
+      "sourceImage": "assets/source/comfyui/candidates/regular_tone_v102/char_regular_reaction_f_v102.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_regular_reaction_f_v102_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 99102,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, mild disappointment, downcast eyes, subtly pinched eyebrows, tiny closed-mouth frown, restrained and quiet reaction, no tears, shoulders relaxed, hands out of frame",
+      "negativePromptExtra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses, big smile, cheerful, excited, sparkling eyes, open laughing mouth, exaggerated expression",
+      "status": "concept_review",
+      "reviewNote": "Superseded by the img2img v103 preview candidate; retained for comparison and provenance only. Not the current runtime reference.",
+      "licenseNote": "Model and LoRA training-data rights remain pending; do not publish."
+    }
+  ]
+}

@@ -25,9 +25,11 @@
       "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
       "prompt": "Game asset illustration, single isolated cooking tool icon: a shallow rectangular stainless-steel breading tray seen from a slightly elevated three-quarter angle, filled with visibly coarse, separate golden panko flakes. Whole tray centered with generous clear margins; tray rim, corners, and crumbs all fully visible. Hand-painted 2D anime game art, soft cel shading and fine painterly highlights, warm cream and gold palette, crisp readable silhouette at small UI size. Clean transparent background. No meat, no cutlet, no plate, no table, no hands, no person, no text, no label, no logo, no watermark.",
       "status": "concept_review",
-      "licenseNote": "Review applicable distribution terms before release.",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
       "reviewNote": "Distinct coarse panko flakes, full tray visible, and transparent background checked; final in-game scale review pending.",
-      "reviewedAt": null
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
     }
-  ]
+  ],
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
 }

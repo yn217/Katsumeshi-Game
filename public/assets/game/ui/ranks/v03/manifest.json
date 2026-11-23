@@ -27,7 +27,8 @@
       "model": null,
       "loraList": [],
       "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
-      "reviewedAt": null
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
     },
     {
       "id": "ui_rank_s_badge_v03",
@@ -49,7 +50,8 @@
       "model": null,
       "loraList": [],
       "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
-      "reviewedAt": null
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
     },
     {
       "id": "ui_rank_a_badge_v03",
@@ -71,7 +73,8 @@
       "model": null,
       "loraList": [],
       "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
-      "reviewedAt": null
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
     },
     {
       "id": "ui_rank_b_badge_v03",
@@ -93,7 +96,8 @@
       "model": null,
       "loraList": [],
       "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
-      "reviewedAt": null
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
     },
     {
       "id": "ui_rank_c_badge_v03",
@@ -115,7 +119,8 @@
       "model": null,
       "loraList": [],
       "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
-      "reviewedAt": null
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
     },
     {
       "id": "ui_rank_f_badge_v03",
@@ -137,7 +142,8 @@
       "model": null,
       "loraList": [],
       "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
-      "reviewedAt": null
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
     }
   ]
 }

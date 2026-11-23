@@ -1,0 +1,57 @@
+{
+  "schema": "katsumeshi-comfy-character-candidate-manifest/v1",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceWorkflow": "assets/source/comfyui/jobs.json#customer_tone_review_v103",
+  "workflowNote": "Img2img uses the exact current v05 character PNG, VAEEncode, denoise 0.30/0.36, and the existing anima-style LoRA. This job set contains character assets only.",
+  "assets": [
+    {
+      "id": "char_regular_reaction_c_v103",
+      "rank": "C",
+      "path": "assets/source/comfyui/candidates/regular_tone_v103/webp_preview/reaction_c_v103.webp",
+      "sourceImage": "assets/source/comfyui/candidates/regular_tone_v103/reaction_c_v103.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_regular_reaction_c_v103_mask_00001_.png",
+      "initImage": "ComfyUI input/katsumeshi_regular_c_v101_reference.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 99203,
+      "denoise": 0.3,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "prompt": "Edit the exact elderly Japanese woman from the input image. Preserve her identity and geometry: the same short softly permed silver-gray hair, same warm brown eyes, same face shape and wrinkles, same olive-green cardigan, beige blouse, pearl earrings, chest-up framing, head scale, shoulder position, gaze direction, and lighting. Change only her expression to a restrained low-rating reaction: relaxed half-lidded eyes, faintly lowered brows, small straight closed mouth with no smile, politely unimpressed and mildly concerned, not angry or exaggerated. Keep her calm and recognizable as the same regular customer.",
+      "negativePromptExtra": ", different person, younger person, changed hairstyle, changed clothes, changed face shape, changed crop, shifted shoulders, big smile, cheerful, laughing, excited, sparkling eyes, open mouth, anger, tears, dramatic pose, hands, text, logo, watermark",
+      "status": "concept_review",
+      "reviewNote": "Connected as the current preview candidate for regular C/F after side-by-side comparison with v05 and v102. Identity and restrained low-rank tone are closer to the intended character; six-rank consistency, screen composition, and release approval remain pending.",
+      "licenseNote": "Model and LoRA training-data rights remain pending; do not publish."
+    },
+    {
+      "id": "char_regular_reaction_f_v103",
+      "rank": "F",
+      "path": "assets/source/comfyui/candidates/regular_tone_v103/webp_preview/reaction_f_v103.webp",
+      "sourceImage": "assets/source/comfyui/candidates/regular_tone_v103/reaction_f_v103.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_regular_reaction_f_v103_mask_00001_.png",
+      "initImage": "ComfyUI input/katsumeshi_regular_f_v101_reference.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 99204,
+      "denoise": 0.36,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "prompt": "Edit the exact elderly Japanese woman from the input image. Preserve her identity and geometry: the same short softly permed silver-gray hair, same warm brown eyes, same face shape and wrinkles, same olive-green cardigan, beige blouse, pearl earrings, chest-up framing, head scale, shoulder position, gaze direction, and lighting. Change only her expression to a clear but quiet low-rating reaction: mildly disappointed, subtly downcast eyes, softly pinched eyebrows, a small closed-mouth frown, no tears, no anger, and no smile. Keep the reaction restrained and preserve the exact regular-customer character identity.",
+      "negativePromptExtra": ", different person, younger person, changed hairstyle, changed clothes, changed face shape, changed crop, shifted shoulders, big smile, cheerful, laughing, excited, sparkling eyes, open mouth, anger, tears, dramatic pose, hands, text, logo, watermark",
+      "status": "concept_review",
+      "reviewNote": "Connected as the current preview candidate for regular C/F after side-by-side comparison with v05 and v102. Identity and restrained low-rank tone are closer to the intended character; six-rank consistency, screen composition, and release approval remain pending.",
+      "licenseNote": "Model and LoRA training-data rights remain pending; do not publish."
+    }
+  ]
+}

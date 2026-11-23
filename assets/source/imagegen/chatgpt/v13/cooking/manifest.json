@@ -1,0 +1,24 @@
+{
+  "schema": "katsumeshi-imagegen-candidate-manifest/v1",
+  "version": "v13",
+  "assetId": "fry_stage_cutlet_anime_chatgpt_v01",
+  "file": "fry_stage_cutlet_anime_chatgpt_v01.png",
+  "width": 1672,
+  "height": 941,
+  "mode": "RGB",
+  "generatedAt": "2026-11-23",
+  "generationMethod": "ChatGPT built-in image generation edit",
+  "model": "ChatGPT built-in image generation",
+  "seed": null,
+  "status": "concept_review",
+  "prompt": "Use case: style-transfer. Asset type: P3 frying-stage illustration for a 2D anime cooking game. Input image: the provided image is the edit target; preserve its wide composition and essential object placement. Primary request: redraw this scene as clearly hand-illustrated 2D cel art that fits a warm anime game background. Keep one broad, flat, irregular rounded-rectangle beef cutlet lifted above the fryer by chopsticks, with its thick side edge visibly readable; keep the fryer basket and a few oil droplets. Preserve the warm pale kitchen tile backdrop and framing. Style: decisive warm-brown ink outlines, broad clean color shapes, restrained two-step cel shadows, low texture density, simplified panko marks grouped into larger shapes. Make it look like a polished 2D game illustration, not a 3D render or food photograph. Composition: wide 16:9 scene, cutlet central and prominent, fryer across the lower portion, chopsticks entering from upper right. Lighting: warm amber kitchen light, controlled highlights with matte breading. Constraints: preserve a single cutlet and its lifted frying action; no plate, no rice, no sauce, no cabbage, no characters, no text, no logo, no watermark. Avoid glossy photorealistic crumbs, metallic microdetail, airbrush gradients, excessive shine, fish, chicken, extra food, or a narrow oblong shape.",
+  "inputReferences": [
+    {
+      "path": "public/assets/game/cooking/v08/fry_stage_lifted_cutlet_chatgpt_v01.png",
+      "role": "edit target and composition reference"
+    }
+  ],
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; not approved for release.",
+  "licenseReference": "https://openai.com/policies/terms-of-use/",
+  "review": "Visual inspection: broad flat cutlet, visible thick side, fryer and chopsticks remain clear; flatter cel shading and stronger linework than v08. Concept candidate only. Runtime scale/composition and final adoption not reviewed."
+}

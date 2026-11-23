@@ -1,0 +1,24 @@
+{
+  "schema": "katsumeshi-imagegen-candidate-manifest/v1",
+  "version": "v14",
+  "generatedAt": "2026-11-23",
+  "assetId": "shop_diner_layout_chatgpt_v02",
+  "file": "shop_diner_layout_chatgpt_v02_source.png",
+  "width": 1672,
+  "height": 941,
+  "mode": "RGB",
+  "generationMethod": "ChatGPT built-in image generation",
+  "model": "ChatGPT built-in image generation",
+  "seed": null,
+  "status": "concept_review",
+  "prompt": "Use case: stylized-concept. Asset type: standalone SHOP gameplay background master for a 2D Japanese restaurant management game. Generate a distinctly new image from text, without copying a specific reference composition. Wide 16:9 scene for a cozy, small family katsumeshi diner in Kakogawa, Japan. The camera looks diagonally across the room from a slightly raised position. Screen composition must support an existing game layout: left 28% is a quiet darker wall/window area for a standing shopkeeper sprite; central 42% is calm, low-detail open floor and wall for translucent order cards; far right and rear edges hold a few simple tables, red-seat chairs and plants; a compact service counter runs across the rear, slightly right of center. Through shoji-style windows on the left, show a soft green river and a small Japanese bridge. Style is a clearly hand-drawn 2D anime background painting: visible confident dark umber contour lines on furniture and architecture, simplified hand-painted shapes, clean cel-shadow blocks, subtle dry-brush texture only in broad surfaces, flat illustrated perspective, matte non-reflective materials. Avoid the glossy volumetric lighting and realistic depth cues of a 3D render. Warm late-morning light, restrained amber, cream plaster, red fabric, honey wood and soft river green. High-detail background art at native 2560x1440 target, full-bleed, crisp linework, deliberate broad quiet zones behind UI. No people, characters, food, plates, text, letters, menus, signs, logos, UI, watermark, border, frame, or collage.",
+  "inputReferences": [
+    {
+      "path": "public/assets/game/backgrounds/v11/shop_diner_layout_chatgpt_v01.webp",
+      "role": "restaurant identity and screen composition reference"
+    }
+  ],
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; not approved for release.",
+  "licenseReference": "https://openai.com/policies/terms-of-use/",
+  "review": "Standalone visual inspection: clearer hand-drawn contour lines, cel-shadow blocks, and simplified wall/furniture planes than v11. Candidate maintains the quiet left sprite zone and central open floor. However source is 1672x941, below the docs/17 §5 native 2560x1440 requirement; floor plank lines may compete with central order UI. Not runtime-connected; screen composite and legibility review remain pending."
+}

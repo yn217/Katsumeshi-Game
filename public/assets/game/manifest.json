@@ -1055,6 +1055,27 @@
    "reviewedAt": null
   },
   {
+   "id": "cooking_fry_scene_v09",
+   "path": "public/assets/game/cooking/fry.webp",
+   "type": "background",
+   "width": 1448,
+   "height": 1086,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "COOK",
+    "P3"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/food/frying_user.webp",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "User-provided image (2026-11-22). Confirm usage rights before release.",
+   "reviewedAt": null
+  },
+  {
    "id": "char_owner_shop_invite",
    "path": "public/assets/game/characters/owner/shop/invite.webp",
    "type": "character",
@@ -2561,7 +2582,7 @@
    "id": "char_worker_reaction_b_chatgpt_v01",
    "path": "public/assets/game/characters/worker/v04/b.webp",
    "type": "character",
-   "width": 1294,
+   "width": 1293,
    "height": 1216,
    "sourceWidth": 1294,
    "sourceHeight": 1216,

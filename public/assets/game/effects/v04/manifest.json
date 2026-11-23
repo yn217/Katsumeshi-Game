@@ -1,0 +1,139 @@
+{
+  "schema": "katsumeshi-chatgpt-effects-manifest/v1",
+  "version": "v04-chatgpt",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceAttribution": "ChatGPT built-in image generation; no ComfyUI generation for non-character assets.",
+  "charactersIncluded": false,
+  "normalization": {
+    "outputSize": 512,
+    "maxContentSize": 416,
+    "sourceAlphaNoiseCutoff": 2,
+    "cropAlphaThreshold": 4,
+    "resampling": "Lanczos",
+    "webp": "lossless"
+  },
+  "files": [
+    {
+      "id": "effect_steam_wisps_chatgpt_v08",
+      "path": "public/assets/game/effects/v04/steam_wisps_chatgpt_v08.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v08/effects/steam_wisps_chatgpt_v08.png",
+      "type": "effect",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "contentBBoxSource": [
+        287,
+        95,
+        957,
+        1085
+      ],
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "effect",
+        "steam_wisps",
+        "anime",
+        "transparent"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt in assets/source/imagegen/chatgpt/v08/effects/prompts.json",
+      "generationSeed": null,
+      "model": "ChatGPT Image Generation",
+      "loraList": [],
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Transparent 512x512 runtime sprite, generated at 1254x1254 and fitted inside a 416px box with Lanczos resampling; small alpha noise removed. Contact-sheet review: delicate upward steam strands remain visually separate from the transparent background. In-game size/composition, animation, and rights approval remain pending.",
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "transparentMarginPx": [
+        115,
+        48,
+        115,
+        48
+      ]
+    },
+    {
+      "id": "effect_frying_sizzle_chatgpt_v08",
+      "path": "public/assets/game/effects/v04/frying_sizzle_chatgpt_v08.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v08/effects/frying_sizzle_chatgpt_v08.png",
+      "type": "effect",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "contentBBoxSource": [
+        291,
+        495,
+        963,
+        778
+      ],
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "effect",
+        "frying_sizzle",
+        "anime",
+        "transparent"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt in assets/source/imagegen/chatgpt/v08/effects/prompts.json",
+      "generationSeed": null,
+      "model": "ChatGPT Image Generation",
+      "loraList": [],
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Transparent 512x512 runtime sprite, generated at 1254x1254 and fitted inside a 416px box with Lanczos resampling; small alpha noise removed. Contact-sheet review: compact bubbles and droplets are readable as a gentle frying effect. In-game size/composition, animation, and rights approval remain pending.",
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "transparentMarginPx": [
+        48,
+        168,
+        48,
+        169
+      ]
+    },
+    {
+      "id": "effect_golden_sparkle_chatgpt_v08",
+      "path": "public/assets/game/effects/v04/golden_sparkle_chatgpt_v08.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v08/effects/golden_sparkle_chatgpt_v08.png",
+      "type": "effect",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "contentBBoxSource": [
+        144,
+        318,
+        1110,
+        817
+      ],
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "effect",
+        "golden_sparkle",
+        "anime",
+        "transparent"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt in assets/source/imagegen/chatgpt/v08/effects/prompts.json",
+      "generationSeed": null,
+      "model": "ChatGPT Image Generation",
+      "loraList": [],
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Transparent 512x512 runtime sprite, generated at 1254x1254 and fitted inside a 416px box with Lanczos resampling; small alpha noise removed. Contact-sheet review: the golden glints form a clear arc and leave the center open for the SSS badge. In-game size/composition, animation, and rights approval remain pending.",
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "transparentMarginPx": [
+        48,
+        148,
+        48,
+        149
+      ]
+    }
+  ],
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
+}

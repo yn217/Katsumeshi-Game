@@ -1,0 +1,65 @@
+{
+  "schema": "katsumeshi-comfy-character-candidate-manifest/v1",
+  "generatedAt": "2026-11-23",
+  "status": "rejected",
+  "sourceWorkflow": "assets/source/comfyui/jobs.json#owner_fullbody_hr_v002",
+  "workflowNote": "Character-only ComfyUI img2img; Anima-Base + Koharu and anima-style LoRAs at 0.8 each, 1536x2048, denoise 0.28, cutout mask retained.",
+  "assets": [
+    {
+      "id": "char_owner_shop_full_front_v002_hr",
+      "outfit": "shop",
+      "path": "assets/source/comfyui/candidates/owner_fullbody_hr_v002/webp_preview/owner_shop_full_v002_hr.webp",
+      "sourceImage": "assets/source/comfyui/candidates/owner_fullbody_hr_v002/owner_shop_full_v002_hr.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_owner_shop_full_front_v002_hr_mask_00001_.png",
+      "initImage": "ComfyUI input/katsumeshi_owner_shop_full_v001_reference_1536x2048.png",
+      "width": 1536,
+      "height": 2048,
+      "seed": 85201,
+      "denoise": 0.28,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "Koharu-Koharu-epoch100.safetensors",
+          "strength": 0.8
+        },
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "prompt": "Refine the same original fictional young adult Japanese woman in the input image into a clean high-resolution full-body game character sprite. Preserve her exact face and identity, silver-gray medium hair with two small buns, side bangs, pink eyes, small pink heart hairpin, head-to-body proportions, gentle expression, standing pose, hand placement, cream blouse with sleeves rolled to the elbows, deep crimson waist apron tied in a bow, long dark brown skirt, gray socks, and dark brown loafers. Keep the entire hair, both hands, full skirt hem, both legs, socks, and both shoes visible with comfortable transparent margin. Front three-quarter standing view, same body shape and angle as input. Improve fine anime line clarity and fabric/shoe detail without redesigning anything. Pure white background for later transparency extraction.",
+      "negativePromptExtra": ", changed identity, different person, different face, changed eye color, missing twin buns, missing heart hairpin, cropped hair, cropped head, cropped hands, cropped feet, cropped shoes, sitting, extra limbs, malformed hands, extra fingers, missing fingers, altered outfit, denim, overalls, suspenders, jeans, blue clothes, different skirt, text, logo, watermark",
+      "status": "rejected",
+      "licenseNote": "Koharu/Anima-style LoRA training-data rights remain pending; do not publish.",
+      "reviewNote": "Reviewed 2026-11-23: enlarged alpha-edge inspection shows the shoes meet and are cut by the bottom canvas edge; alpha bbox has zero bottom margin. Fails the no-cropped-feet/transparent-margin acceptance criteria. Do not integrate. No replacement job submitted per user instruction."
+    },
+    {
+      "id": "char_owner_casual_full_front_v002_hr",
+      "outfit": "casual",
+      "path": "assets/source/comfyui/candidates/owner_fullbody_hr_v002/webp_preview/owner_casual_full_v002_hr.webp",
+      "sourceImage": "assets/source/comfyui/candidates/owner_fullbody_hr_v002/owner_casual_full_v002_hr.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_owner_casual_full_front_v002_hr_mask_00001_.png",
+      "initImage": "ComfyUI input/katsumeshi_owner_casual_full_v001_reference_1536x2048.png",
+      "width": 1536,
+      "height": 2048,
+      "seed": 85202,
+      "denoise": 0.28,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "Koharu-Koharu-epoch100.safetensors",
+          "strength": 0.8
+        },
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "prompt": "Refine the same original fictional young adult Japanese woman in the input image into a clean high-resolution full-body game character sprite. Preserve her exact face and identity, silver-gray medium hair with two small buns, side bangs, pink eyes, small pink heart hairpin, head-to-body proportions, gentle expression, standing pose, hand placement, light pink spring cardigan over a white frilled blouse, beige flared skirt, white socks, and simple brown shoes. Keep the entire hair, both hands, full skirt hem, both legs, socks, and both shoes visible with comfortable transparent margin. Front three-quarter standing view, same body shape and angle as input. Improve fine anime line clarity and fabric/shoe detail without redesigning anything. Pure white background for later transparency extraction.",
+      "negativePromptExtra": ", changed identity, different person, different face, changed eye color, missing twin buns, missing heart hairpin, cropped hair, cropped head, cropped hands, cropped feet, cropped shoes, sitting, extra limbs, malformed hands, extra fingers, missing fingers, altered outfit, denim, overalls, suspenders, jeans, blue clothes, different skirt, text, logo, watermark",
+      "status": "rejected",
+      "licenseNote": "Koharu/Anima-style LoRA training-data rights remain pending; do not publish.",
+      "reviewNote": "Reviewed 2026-11-23: enlarged alpha-edge inspection shows the shoes meet and are cut by the bottom canvas edge; alpha bbox has zero bottom margin. Fails the no-cropped-feet/transparent-margin acceptance criteria. Do not integrate. No replacement job submitted per user instruction."
+    }
+  ]
+}

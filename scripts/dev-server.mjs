@@ -8,6 +8,10 @@ const port=Number(process.env.PORT||5173);
 createServer((req,res)=>{
   try{
     let pathname=decodeURIComponent(new URL(req.url,"http://localhost").pathname);
+    if(pathname==="/__dev_status"){
+      res.writeHead(200,{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store"}).end('{"development":true}');
+      return;
+    }
     if(pathname==="/")pathname="/index.html";
     const path=resolve(root,"."+pathname);
     if(path!==root&&!path.startsWith(root+sep)){res.writeHead(403).end();return;}

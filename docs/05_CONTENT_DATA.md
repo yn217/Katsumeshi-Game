@@ -67,7 +67,7 @@
       nextOrderSequence: number; // 注文ID連番
       day: number;
       phase: "MORNING"|"OPEN"|"COOK"|"REACTION"|"RESULT"|"UPGRADE";
-      overlay: null | {kind: "PAUSE" | "EVENT"; eventId?: string};
+      overlay: null | {kind: "PAUSE"} | {kind: "EVENT"; eventId: string};
       activeOrderId: string | null;
       cookingSession: CookingSession | null;
       remainingArrivals: number;
@@ -137,7 +137,7 @@
     };
 
 - SaveGameにあるCookingSession型は上記とする。COOKの途中入力値・残り時計・レシピ配合スナップショットを保管し、保存後の再開で変化させない。
-- PAUSE/EVENTはオーバーレイで保存し、永続phaseは維持する。TITLEはセーブ対象のphaseにしない。
+- PAUSE/EVENTはオーバーレイで保存し、永続phaseは維持する。EVENTのeventIdはactiveStoryEventIdと一致させる。TITLEはセーブ対象のphaseにしない。
 - remainingArrivals、rngState、nextOrderSequenceを保存することで再読み込み時の二重来店を防ぐ。
 - 各orderにpriceYenSnapshot、ingredientCostYenSnapshot、sauceSnapshot、appliedActionIdsを保持し、途中でデータの値段が変わっても既存注文を再会計しない。正式スキーマ実装時に型へ反映する。
 - ledger.wasteYenはledger.ingredientConsumedYenの**内数**。利益から二重減算しない。

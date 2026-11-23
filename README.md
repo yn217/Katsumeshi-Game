@@ -4,7 +4,7 @@
 
 プレイヤーは小さな食堂を営み、ビフカツの下ごしらえ・衣付け・揚げ・秘伝のたれ・盛り付けを工夫しながら、お客さんの評判と売上を伸ばして地域の人気店を目指します。
 
-> 状態: v0.5仕様に沿ったブラウザ操作プロトタイプを実装中（2026-11-23）。調理・店舗経営・会話・セーブの主要フローと分割アセットを接続済みです。キャラクターのみComfyUI＋LoRAで生成し、その他の画像はChatGPT画像生成を使用。画像・音はレビュー候補のため、ライセンス確認、画面合成レビュー、ブラウザE2E、実機UI品質の受け入れは未完了です。料理の新規生成・差替えは保留しています。
+> 状態: v0.5仕様に沿ったブラウザ操作プロトタイプを実装中（2026-11-23）。調理・店舗経営・会話・セーブの主要フローと分割アセットを接続済みです。既存キャラクター候補はComfyUI＋LoRA由来、非キャラクター画像はChatGPT画像生成を使用。ComfyUIへの新規ジョブ投入は全て停止中です。画像・音はレビュー候補のため、ライセンス確認、画面合成レビュー、ブラウザE2E、実機UI品質の受け入れは未完了です。料理の新規生成・差替えは保留しています。
 
 ## ブラウザ操作プロトタイプ（2026-11-23）
 
@@ -20,12 +20,14 @@ npm run dev
 
 ```powershell
 npm test
+npm run audit:release
 npm run build
 npm run build:preview
 ```
 
 - `npm test`：Node.jsの標準テストで注文/会計/調理/翌日などの計算を検証
 - `npm run build`：承認済み素材だけを含む配布ビルド。実行中素材の受け入れ・権利確認が揃わない場合は停止
+- `npm run audit:release`：配布素材の承認・ライセンス・sourceWorkflowを読み取り専用で確認。ファイルは生成/削除しない
 - `npm run build:preview`：レビュー候補を含むローカル確認用サイトを `dist-preview/` に出力。公開しない
 - **機能:** タイトル → 朝の仕込み/たれ → 通常営業と注文 → 6工程 → 評価SSS〜F → 閉店結果 → 設備購入 → 翌日、IndexedDBセーブ/ロード。チュートリアル、日別会話、音量設定とBGM/SEも実装。
 - **現状:** P1〜P6は簡易操作のプロトタイプ。店主・顧客キャラ32枚はComfyUI＋LoRAで生成し参照先に接続済み。料理、背景、UI、音素材を含む受け入れレビューとブラウザE2Eは未完で、公開リリースではありません。
@@ -48,7 +50,7 @@ npm run build:preview
 | [docs/03_MANAGEMENT.md](docs/03_MANAGEMENT.md) | 店舗経営・顧客・イベント・バランス |
 | [docs/04_UI_UX.md](docs/04_UI_UX.md) | 画面遷移・画面構成・入力・アクセシビリティ |
 | [docs/05_CONTENT_DATA.md](docs/05_CONTENT_DATA.md) | データ定義・レシピ・イベント・セーブ |
-| [docs/06_ART_ASSETS.md](docs/06_ART_ASSETS.md) | ビジュアル方針・アセット規格・ComfyUI制作 |
+| [docs/06_ART_ASSETS.md](docs/06_ART_ASSETS.md) | ビジュアル方針・アセット規格・既存キャラクター候補の由来 |
 | [docs/07_TECHNICAL.md](docs/07_TECHNICAL.md) | Web実装案・アーキテクチャ・性能目標 |
 | [docs/08_ROADMAP_QA.md](docs/08_ROADMAP_QA.md) | MVP工程・Issue分割・検証・受け入れ基準 |
 | [docs/09_REFERENCES.md](docs/09_REFERENCES.md) | 郷土料理の事実確認・資料・権利について |
@@ -59,7 +61,7 @@ npm run build:preview
 | [docs/14_COOKING_INPUT_CONTRACT.md](docs/14_COOKING_INPUT_CONTRACT.md) | 調理6工程の具体的入力・採点 |
 | [docs/15_NARRATIVE_CHARACTER_AUDIO.md](docs/15_NARRATIVE_CHARACTER_AUDIO.md) | 主人公・顧客・物語・台詞・音 |
 | [docs/16_SAVE_DATA_AND_BALANCE.md](docs/16_SAVE_DATA_AND_BALANCE.md) | セーブ契約、食材単位、会計、救済 |
-| [docs/17_ASSET_PRODUCTION_PLAN.md](docs/17_ASSET_PRODUCTION_PLAN.md) | UI分割、ComfyUI、アセット制作 |
+| [docs/17_ASSET_PRODUCTION_PLAN.md](docs/17_ASSET_PRODUCTION_PLAN.md) | UI分割・アセット制作・既存キャラクター候補の生成記録 |
 | [docs/18_REVIEW_V04.md](docs/18_REVIEW_V04.md) | レビュー指摘と実装残課題 |
 | [docs/19_REVIEW_V05.md](docs/19_REVIEW_V05.md) | 第3回横断レビューと修正記録 |
 | [docs/20_EVENT_STATE_PROTOCOL.md](docs/20_EVENT_STATE_PROTOCOL.md) | 状態遷移・コマンド処理・保存規約 |
@@ -73,7 +75,7 @@ npm run build:preview
 - ブラウザでタイトル→1日の仕込み→開店→8件の注文→結果→翌日の流れを遊べる
 - 基本ビーフかつめし1種、たれ3パラメータ、異なる嗜好を持つ客4種
 - カツ調理6工程（採点5工程＋たれ選択1工程）、品質評価、食後リアクション、売上・評価・セーブ
-- マウス操作中心。キャラクターはComfyUI＋LoRA、非キャラクター画像はChatGPT画像生成で候補を制作する
+- マウス操作中心。既存キャラクター候補はComfyUI＋LoRA由来。新規画像は非キャラクターのみChatGPT画像生成を使い、ComfyUIジョブは投入しない
 
 ## 設計ルール
 仕様と実装を区別する。未検証の数値には「暫定値」を明記する。実在店舗・実在人物・観光協会の公式キャラクター／ロゴの無断利用はしない。
@@ -96,4 +98,4 @@ npm run build:preview
 - UI文字は画面画像とは別レイヤーでCSS表示。1280×720でも18px程度の主要文字サイズを維持。
 - [spec/mvp_config.schema.json](spec/mvp_config.schema.json)・[spec/mvp_save.schema.json](spec/mvp_save.schema.json)・[spec/mvp_save_example.json](spec/mvp_save_example.json) でデータ型を検証する。[scripts/validate_specs.py](scripts/validate_specs.py)を使った静的チェックは実行可能な準備が整った段階で検証する。
 
-**仕様優先順位:** v0.5の[19](docs/19_REVIEW_V05.md)を参照。v0.4の旧説明・v0.3の画像に矛盾する値があれば20〜23とspec JSONを優先する。ゲームコードやE2Eはまだ未実装。
+**仕様優先順位:** v0.5の[19](docs/19_REVIEW_V05.md)を参照。v0.4の旧説明・v0.3の画像に矛盾する値があれば20〜23とspec JSONを優先する。ゲームコードはブラウザ操作プロトタイプとして実装済みで、全受け入れE2E・アセット採用審査・リリース判定は未完了です。検証状況は[docs/23_QA_RELEASE_CONTRACT.md](docs/23_QA_RELEASE_CONTRACT.md)と[docs/24_PROTOTYPE_IMPLEMENTATION.md](docs/24_PROTOTYPE_IMPLEMENTATION.md)を参照してください。

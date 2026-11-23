@@ -24,9 +24,10 @@
       "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
       "prompt": "ChatGPT image generation. Wide 16:9 background illustration for a Japanese neighborhood restaurant management game: a small welcoming local diner in Kakogawa, Hyogo beside a calm riverside promenade on a clear spring morning, modest wood-front storefront and noren, riverbank, greenery, distant low town buildings, bright soft daylight. Hand-painted 2D anime environment art, polished game background, no photorealism. Keep center and upper middle calm for title/menu overlays. Full-bleed, coherent perspective. No people, no characters, no food, no dishes, no readable signs, no letters, no logo, no watermark.",
       "status": "concept_review",
-      "licenseNote": "Review applicable distribution terms before release.",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
       "reviewNote": "Scene subject and overlay negative space visually checked; in-game crop/composition review pending.",
-      "reviewedAt": null
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
     },
     {
       "id": "result_evening_chatgpt_v02",
@@ -47,9 +48,35 @@
       "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
       "prompt": "ChatGPT image generation. Wide 16:9 background illustration for the closing results screen of a Japanese neighborhood restaurant management game: interior of the same modest wood-front local diner in Kakogawa, Hyogo after closing at early evening, chairs tucked beside small tables, clean wooden counter, warm pendant lights, gentle orange-pink twilight through windows, quiet welcoming mood. Hand-painted 2D anime environment art matching polished game background illustration. Full-bleed, coherent perspective, keep center calm for result panels/text. No people, no characters, no food, no dishes, no readable signs, no lettering, no logo, no watermark.",
       "status": "concept_review",
-      "licenseNote": "Review applicable distribution terms before release.",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
       "reviewNote": "Scene subject and overlay negative space visually checked; in-game crop/composition review pending.",
-      "reviewedAt": null
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
+    },
+    {
+      "id": "tasting_interior_chatgpt_v01",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v06/tasting_interior_chatgpt_v01.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v06/backgrounds/tasting_interior_chatgpt_v01.png",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "tasting",
+        "interior",
+        "anime"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "Create a polished 2D anime-game background illustration for a cozy small Japanese Western-style diner in Kakogawa, Japan, viewed from a gentle elevated diagonal angle. This is a tasting/reaction gameplay background. Show a warm wooden counter and a few empty dining tables, softly glowing amber pendant lamps, muted cream walls, a subtle window hinting at a quiet local shopping street, tasteful plants, and uncluttered open central area reserved for foreground characters and UI. Evening indoor lighting, soft depth of field / gently defocused background, warm ochre and cream palette, painterly clean cel-shading consistent with a friendly Japanese indie management game. Wide horizontal 16:9 composition, no people, no food, no plates, no signs, no lettering, no logo, no UI, no watermark. Keep important decor away from edges, maintain a calm readable midtone center behind foreground overlays.",
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewNote": "Generated as the tasting/reaction screen interior background with central overlay space; visual candidate only. Game composition and crop review pending.",
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
     }
-  ]
+  ],
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
 }

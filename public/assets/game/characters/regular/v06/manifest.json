@@ -1,0 +1,148 @@
+{
+  "schema": "katsumeshi-comfy-character-candidate-manifest/v1",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceWorkflow": "assets/source/comfyui/jobs.json#customer_tone_review_v102",
+  "assets": [
+    {
+      "id": "char_regular_reaction_c_v102",
+      "rank": "C",
+      "path": "public/assets/game/characters/regular/v06/reaction_c_v102.webp",
+      "sourceImage": "assets/source/comfyui/candidates/regular_tone_v102/char_regular_reaction_c_v102.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_regular_reaction_c_v102_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        [
+          "anima-style-epoch35-lr5e5.safetensors",
+          0.8
+        ]
+      ],
+      "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, subdued neutral reaction, polite but clearly unimpressed, relaxed half-lidded eyes, small straight mouth, faintly lowered brows, no smile, shoulders relaxed, hands out of frame",
+      "negativePromptExtra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses, big smile, cheerful, excited, sparkling eyes, open laughing mouth, exaggerated expression",
+      "status": "concept_review",
+      "reviewNote": "Superseded by the img2img v103 preview candidate; retained for comparison and provenance only. Not the current runtime reference.",
+      "licenseNote": "Model and LoRA training-data rights remain pending; do not publish.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#customer_tone_review_v102",
+      "type": "character",
+      "anchorX": 0.5,
+      "anchorY": 0.54,
+      "scaleHint": 1,
+      "tags": [
+        "character",
+        "customer",
+        "regular",
+        "reaction",
+        "rank-c"
+      ],
+      "generationSeed": 99101,
+      "reviewedAt": null
+    },
+    {
+      "id": "char_regular_reaction_f_v102",
+      "rank": "F",
+      "path": "public/assets/game/characters/regular/v06/reaction_f_v102.webp",
+      "sourceImage": "assets/source/comfyui/candidates/regular_tone_v102/char_regular_reaction_f_v102.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_regular_reaction_f_v102_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        [
+          "anima-style-epoch35-lr5e5.safetensors",
+          0.8
+        ]
+      ],
+      "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, mild disappointment, downcast eyes, subtly pinched eyebrows, tiny closed-mouth frown, restrained and quiet reaction, no tears, shoulders relaxed, hands out of frame",
+      "negativePromptExtra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses, big smile, cheerful, excited, sparkling eyes, open laughing mouth, exaggerated expression",
+      "status": "concept_review",
+      "reviewNote": "Superseded by the img2img v103 preview candidate; retained for comparison and provenance only. Not the current runtime reference.",
+      "licenseNote": "Model and LoRA training-data rights remain pending; do not publish.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#customer_tone_review_v102",
+      "type": "character",
+      "anchorX": 0.5,
+      "anchorY": 0.54,
+      "scaleHint": 1,
+      "tags": [
+        "character",
+        "customer",
+        "regular",
+        "reaction",
+        "rank-f"
+      ],
+      "generationSeed": 99102,
+      "reviewedAt": null
+    },
+    {
+      "id": "char_regular_reaction_c_v103",
+      "rank": "C",
+      "path": "public/assets/game/characters/regular/v06/reaction_c_v103.webp",
+      "sourceImage": "assets/source/comfyui/candidates/regular_tone_v103/reaction_c_v103.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_regular_reaction_c_v103_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 99203,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "prompt": "Edit the exact elderly Japanese woman from the input image. Preserve her identity and geometry: the same short softly permed silver-gray hair, same warm brown eyes, same face shape and wrinkles, same olive-green cardigan, beige blouse, pearl earrings, chest-up framing, head scale, shoulder position, gaze direction, and lighting. Change only her expression to a restrained low-rating reaction: relaxed half-lidded eyes, faintly lowered brows, small straight closed mouth with no smile, politely unimpressed and mildly concerned, not angry or exaggerated. Keep her calm and recognizable as the same regular customer.",
+      "status": "concept_review",
+      "reviewNote": "Current-runtime thumbnail comparison shows a restrained low-rank expression with preserved identity. Six-rank consistency, full-size screen composition, and rights approval remain pending; not approved for release.",
+      "licenseNote": "Model and LoRA training-data rights remain pending; do not publish.",
+      "type": "character",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#customer_tone_review_v103",
+      "anchorX": 0.5,
+      "anchorY": 0.54,
+      "scaleHint": 1,
+      "tags": [
+        "character",
+        "customer",
+        "regular",
+        "reaction",
+        "rank-c"
+      ],
+      "generationSeed": 99203,
+      "reviewedAt": "2026-11-23"
+    },
+    {
+      "id": "char_regular_reaction_f_v103",
+      "rank": "F",
+      "path": "public/assets/game/characters/regular/v06/reaction_f_v103.webp",
+      "sourceImage": "assets/source/comfyui/candidates/regular_tone_v103/reaction_f_v103.png",
+      "sourceMask": "ComfyUI output/town_game_assets/char_regular_reaction_f_v103_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "seed": 99204,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "prompt": "Edit the exact elderly Japanese woman from the input image. Preserve her identity and geometry: the same short softly permed silver-gray hair, same warm brown eyes, same face shape and wrinkles, same olive-green cardigan, beige blouse, pearl earrings, chest-up framing, head scale, shoulder position, gaze direction, and lighting. Change only her expression to a clear but quiet low-rating reaction: mildly disappointed, subtly downcast eyes, softly pinched eyebrows, a small closed-mouth frown, no tears, no anger, and no smile. Keep the reaction restrained and preserve the exact regular-customer character identity.",
+      "status": "concept_review",
+      "reviewNote": "Current-runtime thumbnail comparison shows a clear but restrained low-rank expression with preserved identity. Six-rank consistency, full-size screen composition, and rights approval remain pending; not approved for release.",
+      "licenseNote": "Model and LoRA training-data rights remain pending; do not publish.",
+      "type": "character",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#customer_tone_review_v103",
+      "anchorX": 0.5,
+      "anchorY": 0.54,
+      "scaleHint": 1,
+      "tags": [
+        "character",
+        "customer",
+        "regular",
+        "reaction",
+        "rank-f"
+      ],
+      "generationSeed": 99204,
+      "reviewedAt": "2026-11-23"
+    }
+  ]
+}

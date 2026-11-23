@@ -1,0 +1,12 @@
+{
+  "generationTool": "ChatGPT built-in image_gen",
+  "generatedAt": "2026-11-23",
+  "asset": "fry_stage_anime_chatgpt_v02",
+  "sourceWorkflow": "ChatGPT built-in image generation",
+  "compositionReference": "public/assets/game/cooking/fry.webp",
+  "styleReference": "assets/source/imagegen/chatgpt/v07/backgrounds/kitchen_frying_anime_chatgpt_v01.png",
+  "status": "concept_review",
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+  "editReference": "assets/source/imagegen/chatgpt/v07/cooking/fry_stage_anime_chatgpt_v01.png",
+  "prompt": "Edit reference image 1, preserving its hand-painted 2D anime illustration style, warm brown ink outlines, amber palette, fryer setting, and clear close-up composition. Correct the cutlet shape: it must be a broad, flattened beef cutlet, a wide irregular oval/rounded rectangle with a length-to-width ratio around 1.5:1, visibly much wider and less elongated than it is now. Show coarse golden panko crust and the flat beef cutlet partly submerged in the oil. Keep one cutlet as the main subject and fully visible enough to identify its broad flattened shape; wooden chopsticks can hold it near one edge. Preserve warm cel-shaded kitchen lighting; match the background illustration style of reference image 2. Keep bubbles modest so they do not obscure the cutlet. Do not turn it into fish, chicken tenders, a narrow strip, or multiple overlapping cutlets. No person, hands, face, plate, rice, cabbage, sauce, text, logos, watermark, photorealism, 3D rendering. Wide landscape illustration for the P3 frying stage."
+}

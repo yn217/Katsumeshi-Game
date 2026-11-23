@@ -1,0 +1,82 @@
+{
+  "schema": "katsumeshi-chatgpt-equipment-manifest/v1",
+  "version": "v07",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceAttribution": "ChatGPT built-in image generation; no ComfyUI generation for non-character assets.",
+  "assets": [
+    {
+      "id": "equipment_fryer_chatgpt_v07",
+      "path": "public/assets/game/equipment/v07/fryer_chatgpt_v07.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v07/equipment/fryer_chatgpt_v07.png",
+      "sourceWorkflow": "ChatGPT built-in image generation; style reference and prompt recorded in this manifest.",
+      "styleReference": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png",
+      "prompt": "Use the reference image only for its clean hand-painted 2D anime game illustration style, ink outlines, simplified forms, and warm cel-shaded palette. Create one isolated game inventory icon: a compact countertop stainless-steel deep fryer with one rectangular oil vat and one wire basket with short handle, shown from a clear front three-quarter angle. Center the complete fryer with generous transparent margin. Soft painterly cel shading, crisp readable outline, warm reflections simplified as painted shapes. No counter, no room, no hands, no people, no food, no brand, no lettering, no labels, no symbols, no watermark. This must read as a 2D illustrated sprite, not a 3D product render.",
+      "type": "equipment",
+      "width": 1024,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.9,
+      "scaleHint": 1.0,
+      "tags": [
+        "chatgpt",
+        "anime",
+        "transparent",
+        "equipment"
+      ],
+      "status": "concept_review",
+      "generationSeed": null,
+      "model": "ChatGPT built-in image generation",
+      "loraList": [],
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "reviewNote": "Recreated in hand-painted 2D style to match v07 backgrounds. Contact-sheet visual review found the fryer and basket recognizable at the sheet's display scale; in-game size and composition are still pending.",
+      "reviewedAt": "2026-11-23",
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "transparentMarginPx": [
+        79,
+        224,
+        76,
+        222
+      ]
+    },
+    {
+      "id": "equipment_chair_chatgpt_v07",
+      "path": "public/assets/game/equipment/v07/chair_chatgpt_v07.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v07/equipment/chair_chatgpt_v07.png",
+      "sourceWorkflow": "ChatGPT built-in image generation; style reference and prompt recorded in this manifest.",
+      "styleReference": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png",
+      "prompt": "Use the reference image only for its clean hand-painted 2D anime game illustration style, ink outlines, simplified forms, and warm cel-shaded palette. Create one isolated game inventory icon: a single sturdy wooden dining chair for a small Japanese diner, warm medium-brown frame with a muted deep-red upholstered seat, simple practical design, whole chair visible from front three-quarter angle. Center the complete chair with generous transparent margin. Soft painterly cel shading and crisp readable outline. No table, no room, no people, no extra chairs, no text, no logo, no watermark. This must read as a 2D illustrated sprite, not a 3D product render.",
+      "type": "equipment",
+      "width": 1024,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.9,
+      "scaleHint": 1.0,
+      "tags": [
+        "chatgpt",
+        "anime",
+        "transparent",
+        "equipment"
+      ],
+      "status": "concept_review",
+      "generationSeed": null,
+      "model": "ChatGPT built-in image generation",
+      "loraList": [],
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "reviewNote": "Recreated in hand-painted 2D style to match v07 backgrounds. Contact-sheet visual review found the chair silhouette and seat readable at the sheet's display scale; in-game size and composition are still pending.",
+      "reviewedAt": "2026-11-23",
+      "sourceWidth": 1312,
+      "sourceHeight": 1199,
+      "transparentMarginPx": [
+        52,
+        91,
+        77,
+        108
+      ]
+    }
+  ],
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
+}

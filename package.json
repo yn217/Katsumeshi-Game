@@ -8,6 +8,7 @@
     "dev": "node scripts/dev-server.mjs",
     "test": "node --test tests/domain.test.mjs",
     "build": "node scripts/build.mjs --release",
+    "audit:release": "node scripts/build.mjs --audit-release",
     "build:preview": "node scripts/build.mjs --preview"
   }
 }

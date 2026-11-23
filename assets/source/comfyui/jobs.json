@@ -1247,5 +1247,79 @@
       "prompt": "single isolated icon of a compact tabletop electric deep fryer for a cozy small diner, small box-shaped brushed stainless steel base sitting directly on a counter, one shallow rectangular open oil vat with one wire basket and a short handle, front three-quarter view, no stand, no legs, no cabinet, no extra shelf, polished 2D hand-painted anime game illustration, soft cel shading, fine clean linework, centered entire appliance with generous margin, plain light-gray background for transparency extraction, no people, no text, no logo",
       "negative_extra": ", industrial floor fryer, large cabinet, pedestal, tall appliance, stove, double vat, multiple baskets, cropped, photorealistic, 3d render, product photo, text, branding"
     }
+  ],
+  "customer_tone_review_v102": [
+    {
+      "id": "char_regular_reaction_c_v102",
+      "preset": "scene",
+      "w": 1024,
+      "h": 1024,
+      "seed": 99101,
+      "cutout": true,
+      "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, subdued neutral reaction, polite but clearly unimpressed, relaxed half-lidded eyes, small straight mouth, faintly lowered brows, no smile, shoulders relaxed, hands out of frame",
+      "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses, big smile, cheerful, excited, sparkling eyes, open laughing mouth, exaggerated expression"
+    },
+    {
+      "id": "char_regular_reaction_f_v102",
+      "preset": "scene",
+      "w": 1024,
+      "h": 1024,
+      "seed": 99102,
+      "cutout": true,
+      "prompt": "original fictional game character, one kind elderly Japanese woman in her sixties, short softly permed gray hair with silver highlights, small smile wrinkles at the eyes, warm brown eyes, olive green knit cardigan over a beige blouse, small pearl earrings, bust portrait from mid chest upward, face and both shoulders centered, entire head and all hair fully visible with blank space above the head, facing viewer, looking at viewer, plain white background, clean anime character art, soft cel shading, mild disappointment, downcast eyes, subtly pinched eyebrows, tiny closed-mouth frown, restrained and quiet reaction, no tears, shoulders relaxed, hands out of frame",
+      "negative_extra": ", multiple people, duplicate person, split screen, second head, cropped head, cropped hair, hands covering face, busy background, silver hair, double bun, hair buns, pink eyes, heart hairpin, glasses, big smile, cheerful, excited, sparkling eyes, open laughing mouth, exaggerated expression"
+    }
+  ],
+  "customer_tone_review_v103": [
+    {
+      "id": "char_regular_reaction_c_v103",
+      "preset": "scene",
+      "w": 1024,
+      "h": 1024,
+      "seed": 99203,
+      "init_image": "katsumeshi_regular_c_v101_reference.png",
+      "denoise": 0.30,
+      "cutout": true,
+      "prompt": "Edit the exact elderly Japanese woman from the input image. Preserve her identity and geometry: the same short softly permed silver-gray hair, same warm brown eyes, same face shape and wrinkles, same olive-green cardigan, beige blouse, pearl earrings, chest-up framing, head scale, shoulder position, gaze direction, and lighting. Change only her expression to a restrained low-rating reaction: relaxed half-lidded eyes, faintly lowered brows, small straight closed mouth with no smile, politely unimpressed and mildly concerned, not angry or exaggerated. Keep her calm and recognizable as the same regular customer.",
+      "negative_extra": ", different person, younger person, changed hairstyle, changed clothes, changed face shape, changed crop, shifted shoulders, big smile, cheerful, laughing, excited, sparkling eyes, open mouth, anger, tears, dramatic pose, hands, text, logo, watermark"
+    },
+    {
+      "id": "char_regular_reaction_f_v103",
+      "preset": "scene",
+      "w": 1024,
+      "h": 1024,
+      "seed": 99204,
+      "init_image": "katsumeshi_regular_f_v101_reference.png",
+      "denoise": 0.36,
+      "cutout": true,
+      "prompt": "Edit the exact elderly Japanese woman from the input image. Preserve her identity and geometry: the same short softly permed silver-gray hair, same warm brown eyes, same face shape and wrinkles, same olive-green cardigan, beige blouse, pearl earrings, chest-up framing, head scale, shoulder position, gaze direction, and lighting. Change only her expression to a clear but quiet low-rating reaction: mildly disappointed, subtly downcast eyes, softly pinched eyebrows, a small closed-mouth frown, no tears, no anger, and no smile. Keep the reaction restrained and preserve the exact regular-customer character identity.",
+      "negative_extra": ", different person, younger person, changed hairstyle, changed clothes, changed face shape, changed crop, shifted shoulders, big smile, cheerful, laughing, excited, sparkling eyes, open mouth, anger, tears, dramatic pose, hands, text, logo, watermark"
+    }
+  ],
+  "owner_fullbody_hr_v002": [
+    {
+      "id": "char_owner_shop_full_front_v002_hr",
+      "preset": "owner",
+      "w": 1536,
+      "h": 2048,
+      "seed": 85201,
+      "init_image": "katsumeshi_owner_shop_full_v001_reference_1536x2048.png",
+      "denoise": 0.28,
+      "cutout": true,
+      "prompt": "Refine the same original fictional young adult Japanese woman in the input image into a clean high-resolution full-body game character sprite. Preserve her exact face and identity, silver-gray medium hair with two small buns, side bangs, pink eyes, small pink heart hairpin, head-to-body proportions, gentle expression, standing pose, hand placement, cream blouse with sleeves rolled to the elbows, deep crimson waist apron tied in a bow, long dark brown skirt, gray socks, and dark brown loafers. Keep the entire hair, both hands, full skirt hem, both legs, socks, and both shoes visible with comfortable transparent margin. Front three-quarter standing view, same body shape and angle as input. Improve fine anime line clarity and fabric/shoe detail without redesigning anything. Pure white background for later transparency extraction.",
+      "negative_extra": ", changed identity, different person, different face, changed eye color, missing twin buns, missing heart hairpin, cropped hair, cropped head, cropped hands, cropped feet, cropped shoes, sitting, extra limbs, malformed hands, extra fingers, missing fingers, altered outfit, denim, overalls, suspenders, jeans, blue clothes, different skirt, text, logo, watermark"
+    },
+    {
+      "id": "char_owner_casual_full_front_v002_hr",
+      "preset": "owner",
+      "w": 1536,
+      "h": 2048,
+      "seed": 85202,
+      "init_image": "katsumeshi_owner_casual_full_v001_reference_1536x2048.png",
+      "denoise": 0.28,
+      "cutout": true,
+      "prompt": "Refine the same original fictional young adult Japanese woman in the input image into a clean high-resolution full-body game character sprite. Preserve her exact face and identity, silver-gray medium hair with two small buns, side bangs, pink eyes, small pink heart hairpin, head-to-body proportions, gentle expression, standing pose, hand placement, light pink spring cardigan over a white frilled blouse, beige flared skirt, white socks, and simple brown shoes. Keep the entire hair, both hands, full skirt hem, both legs, socks, and both shoes visible with comfortable transparent margin. Front three-quarter standing view, same body shape and angle as input. Improve fine anime line clarity and fabric/shoe detail without redesigning anything. Pure white background for later transparency extraction.",
+      "negative_extra": ", changed identity, different person, different face, changed eye color, missing twin buns, missing heart hairpin, cropped hair, cropped head, cropped hands, cropped feet, cropped shoes, sitting, extra limbs, malformed hands, extra fingers, missing fingers, altered outfit, denim, overalls, suspenders, jeans, blue clothes, different skirt, text, logo, watermark"
+    }
   ]
 }

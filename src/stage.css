@@ -1,11 +1,7 @@
-/* Landscape stage mode: everything is laid out on a 1920x1080 canvas and scaled by --s (see stage.mjs).
-   Only active under html.staged; phones/portrait keep the fluid rules in styles.css.
+/* Native-size landscape stage mode: used only when 1920x1080 fits without shrinking (see stage.mjs).
+   Smaller landscape viewports use the fluid rules in styles.css.
    Viewport units (vw/vh) from styles.css are replaced here with px at design resolution. */
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Dela+Gothic+One&display=swap");
-
-:root{--display:"Dela Gothic One","M PLUS Rounded 1c",var(--round)}
-:root{--round:"M PLUS Rounded 1c","Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic",system-ui,sans-serif}
-body{font-family:var(--round)}
+body{font-family:var(--font-ui)}
 
 html.staged{font-size:21px}
 html.staged body{overflow:hidden;background:#120906;min-width:0;min-height:0}
@@ -40,6 +36,7 @@ html.staged .card-body{padding:16px 20px}
 html.staged button{border-radius:16px}
 html.staged .big-cta{font-size:34px;padding:16px 56px;border-radius:22px}
 html.staged .toast{max-width:900px}
+html.staged .toast.save-warning{bottom:7rem}
 html.staged .tutorial-banner{width:900px}
 
 /* ----- title (title mockup) ----- */
@@ -76,11 +73,12 @@ html.staged .step{min-width:178px;font-size:26px;padding:6px 24px 8px 32px}
 html.staged .step b{font-size:22px}
 html.staged .step-ico{font-size:40px}
 html.staged .step-arrow{font-size:22px}
-html.staged .cook-layout{grid-template-columns:330px 1fr 470px;gap:24px}
+html.staged .cook-layout{grid-template-columns:330px minmax(0,1fr);gap:24px}
+html.staged .cook-work-pane{grid-template-columns:minmax(0,1fr) 470px;gap:24px}
 html.staged .memo-face{width:72px;height:72px}
 html.staged .work .card-body{min-height:560px}
 html.staged .work.fry-mode .card-body{min-height:0}
-html.staged .work.fry-mode .fry-scene{width:100%;max-width:800px;aspect-ratio:1448/1086;margin:0 auto}
+html.staged .work.fry-mode .fry-scene{width:100%;max-width:800px;aspect-ratio:1672/941;margin:0 auto}
 html.staged .fry-time{width:100%;max-width:760px;margin-top:-110px;position:relative;z-index:2}
 html.staged .fry-time strong{font-size:44px}
 html.staged .fry-bar{height:26px}
@@ -133,7 +131,8 @@ html.staged .story-portrait{width:260px;height:380px}
 html.staged .stage.with-owner:has(.cook-layout){padding-left:300px}
 html.staged .stage:has(.cook-layout) .owner-stand{height:700px;left:-60px}
 html.staged .stage:has(.cook-layout) .owner-bubble{width:330px}
-html.staged .cook-layout{grid-template-columns:330px 1fr 440px}
+html.staged .cook-layout{grid-template-columns:330px minmax(0,1fr)}
+html.staged .cook-work-pane{grid-template-columns:minmax(0,1fr) 440px}
 html.staged .work.fry-mode .stage-photo{display:none}
 html.staged .fry-card .big-cta{font-size:34px;padding:16px 10px;white-space:nowrap}
 html.staged .eval-head{justify-content:space-between}
@@ -217,7 +216,7 @@ button .ico{margin-right:.15em}
 .kat-menu button:disabled{opacity:.6;filter:grayscale(.3)}
 
 /* footer hint bar */
-.kat-footer{position:absolute;left:0;right:0;bottom:0;z-index:6;display:flex;justify-content:space-between;gap:1rem;padding:.45em 1.4em;font-size:.85rem;font-weight:800;color:#fff3dc;background:linear-gradient(#3a1a0fcc,#2a1208ee);border-top:2px solid #d9a441}
+.kat-footer{position:absolute;left:0;right:0;bottom:0;z-index:6;display:flex;justify-content:space-between;gap:1rem;padding:.45em 1.4em;font-size:.85rem;font-weight:800;color:#fff3dc;background:linear-gradient(#3a1a0fcc,#2a1208ee);border-top:2px solid var(--accent-gold)}
 .kat-footer .ico{width:1.3em;height:1.3em}
 .title-v2 .kat-note{bottom:3.2rem}
 
@@ -344,7 +343,7 @@ html.staged .stage:has(.result-layout) .cta-row{margin-top:10px}
 .fry-bubbles.lvl0 i{width:16px;height:16px}.fry-bubbles.lvl2 i,.fry-bubbles.lvl3 i{width:6px;height:6px}
 @keyframes bubble{0%{transform:translateY(0) scale(.6);opacity:0}20%{opacity:1}100%{transform:translateY(-120px) scale(1.1);opacity:0}}
 .verdict{font-weight:900;font-size:1.2em;margin:0;text-align:center}
-.verdict.good{color:#1f8a3a}.verdict.ok{color:#c07a12}.verdict.bad{color:#b8231f}
+.verdict.good{color:var(--state-success)}.verdict.ok{color:var(--state-warning)}.verdict.bad{color:var(--state-danger)}
 .fry-bar{position:relative}
 .fry-bar .sweet{position:absolute;top:0;bottom:0;background:#3fbf5f66;border-left:2px solid #2a9a48;border-right:2px solid #2a9a48}
 .fry-tip{margin:.4em 0;font-size:.9em;color:#6a4a2a}
@@ -363,15 +362,18 @@ html.staged .stage:has(.result-layout) .cta-row{margin-top:10px}
 .boil-pot.on .boil-cabbage{animation:boilBob .5s ease-in-out infinite}
 @keyframes boilBob{50%{transform:translateY(-6px) rotate(-3deg)}}
 .boil-btn{padding:1em .6em;font-size:1.1em;touch-action:none;user-select:none}
-.plate-up{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border:0;background:none;padding:0;cursor:pointer;transform:none!important}
-.plate-up:disabled{cursor:default;filter:grayscale(.6) opacity(.6)}
-.plate-up .dish{width:100%}
-.plate-up .dish-img{width:100%;height:auto}
-.plate-call{font-weight:900;color:var(--red,#b8231f)}
-.finish-plate.active .plate-up{animation:fryPulse 1.2s ease-in-out infinite;border-radius:16px}
+.finish-plate .plate-big{width:min(100%,240px);align-self:center;flex:none}
+.plating-hint{margin:0;text-align:center;font-weight:800;color:var(--text-ink,#4b3022)}
+.plating-controls{display:grid;gap:8px}
+.part-choice,.plate-slot{min-height:44px;padding:.45rem .6rem;border:2px solid #d7b66e;border-radius:10px;background:#fffdf6;color:var(--text-ink,#4b3022);font-weight:800;cursor:pointer}
+.part-choice.selected{border-color:var(--red,#b8231f);box-shadow:0 0 0 2px #b8231f33}
+.plate-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.part-choice:disabled,.plate-slot:disabled{opacity:.55;cursor:default}
+.plating-complete{font-weight:900;text-align:center;color:var(--state-success,#3d702d)}
+.serve-plate{min-height:44px}
 .cook-v3 .scoreline small{font-size:.7em;opacity:.7}
-html.staged .cook-v3 .work .card-body{min-height:600px}
-html.staged .cook-v3 .prep-pad{min-height:470px}
+html.staged .cook-v3 .work .card-body{min-height:480px}
+html.staged .cook-v3 .prep-pad{min-height:360px}
 html.staged .cook-v3.g1 .fry-tap{aspect-ratio:1448/1086;max-width:780px;margin:0 auto}
 @media (max-width:899px){.finish-grid{grid-template-columns:1fr}.prep-pad{min-height:260px}.prep-meat{width:80%}}
 .cook-v3 .work .card-body{align-items:stretch}
@@ -404,6 +406,16 @@ html.staged .cook-v3.g1 .fry-tap{max-height:520px;aspect-ratio:auto;height:520px
 .cook-v3 .work .card-body{min-height:min(56vh,600px)}
 .cook-v3.g1 .work .card-body{min-height:0}
 .title-v4 .kat-note{white-space:normal;line-height:1.4}
+@media (min-width:901px){
+  html.staged .title-v4 .kat-title{font-size:clamp(4.5rem,7.8vw,9.5rem);line-height:1.1}
+}
+
+@media(max-height:780px) and (min-width:901px){
+  .stage.cooking-stage{gap:.2rem;padding-top:.25rem;padding-bottom:0}
+  .stage.cooking-stage .kitchen-rail{margin-bottom:0}
+  .stage.cooking-stage .cook-v3:not(.g1) .work .card-body{min-height:300px}
+  .stage.cooking-stage .cook-v3:not(.g1) .prep-pad{min-height:260px}
+}
 
 /* ===== kitchen-centred service: order ticket rail + idle kitchen ===== */
 .kitchen-rail{display:flex;align-items:stretch;gap:12px;margin:0 auto 10px;max-width:1500px;padding:8px 12px;border-radius:14px;background:linear-gradient(#5a2a16ee,#3a1a0eee);box-shadow:inset 0 2px 0 #ffffff22,0 6px 14px #0005;color:#fff3dc}
@@ -411,20 +423,20 @@ html.staged .cook-v3.g1 .fry-tap{max-height:520px;aspect-ratio:auto;height:520px
 .rail-head strong{font-size:1.1em}
 .rail-tickets{display:flex;gap:10px;overflow-x:auto;flex:1;align-items:center}
 .rail-empty{margin:0;opacity:.8}
-.ticket{position:relative;display:flex;align-items:center;gap:8px;min-width:190px;padding:6px 10px 6px 6px;border-radius:8px;background:#fffaf0;color:#4a2412;box-shadow:0 3px 0 #c9a46a,0 5px 8px #0004;transform:rotate(-.6deg);animation:ticketIn .35s ease-out}
+.ticket{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:8px;min-width:190px;padding:6px 10px 6px 6px;border-radius:8px;background:#fffaf0;color:#4a2412;box-shadow:0 3px 0 #c9a46a,0 5px 8px #0004;transform:rotate(-.6deg);animation:ticketIn .35s ease-out}
 .ticket:nth-child(even){transform:rotate(.6deg)}
 .ticket::before{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff8a6a,#a8161a);box-shadow:0 2px 2px #0005}
 .ticket.cooking{background:#fff1c8;box-shadow:0 0 0 3px #f2c14e,0 5px 10px #0005}
 .ticket.next{box-shadow:0 0 0 2px #e2473a,0 5px 8px #0004}
 .ticket.hurry{animation:ticketHurry .8s ease-in-out infinite}
 .ticket-face{width:44px;height:44px;border-radius:50%;flex:none;background-size:cover;background-position:center 15%}
-.ticket-main{display:flex;flex-direction:column;gap:2px;min-width:0;font-size:.85em}
+.ticket-main{display:flex;flex-direction:column;gap:2px;min-width:0;font-size:1em}
 .ticket-main strong{font-size:1.05em}
 .ticket-tag{font-weight:800;color:#a8161a}
 .ticket-wait{height:6px;border-radius:999px;background:#0001;overflow:hidden;width:110px}
 .ticket-wait i{display:block;height:100%;background:linear-gradient(90deg,#d9362a,#f2c14e 40%,#3fbf5f)}
 .ticket.hurry .ticket-wait i{background:#d9362a}
-.ticket-main em{font-style:normal;font-size:.85em;opacity:.75}
+.ticket-main em{font-style:normal;font-size:1em;opacity:.75}
 @keyframes ticketIn{from{transform:translateY(-30px) rotate(-4deg);opacity:0}}
 @keyframes ticketHurry{50%{transform:rotate(1.5deg)}}
 .kitchen-center{display:grid;place-items:center;min-height:min(60vh,640px)}
@@ -438,3 +450,107 @@ html.staged .cook-v3.g1 .fry-tap{max-height:520px;aspect-ratio:auto;height:520px
 .idle-served span{position:relative}
 .idle-served-face{display:block;width:56px;height:56px;border-radius:50%;background-size:cover;background-position:center 15%}
 .idle-served .rank-chip{position:absolute;right:-6px;bottom:-4px}
+
+@media(min-width:1600px) and (min-height:900px){
+  html.staged .stage.tasting-stage>.tasting{min-height:0}
+}
+
+/* Fluid landscape layouts keep readable text in real viewport pixels. */
+html.fluid-landscape{font-size:18px}
+html.fluid-landscape small{font-size:max(16px,.9em)}
+html.fluid-landscape .logo-badge small,
+html.fluid-landscape .inv-row strong small,
+html.fluid-landscape .preset-chip small{font-size:16px}
+html.fluid-landscape button.tiny,html.fluid-landscape .hintbar,
+html.fluid-landscape .title-note,html.fluid-landscape .kat-note,
+html.fluid-landscape .tutorial-skip,html.fluid-landscape .story-copy .story-speaker,
+html.fluid-landscape .sub,html.fluid-landscape .order-main>span,
+html.fluid-landscape .wait,html.fluid-landscape .taste-row,
+html.fluid-landscape .guest-card em,html.fluid-landscape .memo-head span,
+html.fluid-landscape .retry,html.fluid-landscape .step b,
+html.fluid-landscape .stage-photo figcaption,html.fluid-landscape .doneness figcaption,
+html.fluid-landscape .scoreline,html.fluid-landscape .fry-tip,
+html.fluid-landscape .kat-footer,html.fluid-landscape .cooking-status,
+html.fluid-landscape .morning-stage .sauce-note,
+html.fluid-landscape .ledger-row.small,html.fluid-landscape .ledger-row.small strong,
+html.fluid-landscape .fin-note,html.fluid-landscape .rail-head,
+html.fluid-landscape .ticket-main,html.fluid-landscape .ticket-main em,html.fluid-landscape .ticket-detail,
+html.fluid-landscape .tutorial-story-ack,html.fluid-landscape .steps3 .step-t small,
+html.fluid-landscape .cook-v3 .scoreline small{font-size:16px}
+html.fluid-landscape .oldest-badge{font-size:16px!important}
+html.fluid-landscape .step,html.fluid-landscape .cooking-stage .step{font-size:18px}
+html.fluid-landscape .fin-h b{font-size:16px}
+
+.ticket-accept{flex:1 0 100%;min-height:40px;font-size:.9em;padding:.35rem .5rem;transform:none!important;animation:none!important}
+.ticket-reason{flex:1 0 100%;font-size:.82em;line-height:1.2;text-align:center}
+
+.ticket-detail{display:block;max-width:100%;font-size:1em;line-height:1.15;white-space:normal}
+.ticket-dish{font-weight:800}
+.ticket-taste{color:#6b4a22}
+@media(min-width:1280px) and (orientation:landscape){.ticket-detail{font-size:max(16px,.9em)}}
+
+/* P1: three actual strike positions across the displayed meat bounds */
+.cook-v3 .meat-zone{position:relative;width:58%;aspect-ratio:3/2;height:auto;cursor:crosshair;display:block;transform:scaleX(var(--flat,1));transform-origin:center;touch-action:manipulation;user-select:none}
+.cook-v3 .meat-zone .prep-raw{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;filter:drop-shadow(0 10px 10px #0004)}
+.cook-v3 .strike-guides{position:absolute;inset:8% 0;pointer-events:none}
+.cook-v3 .strike-guide{position:absolute;left:var(--target);top:0;bottom:0;border-left:2px dashed #fff9;color:#fff;text-shadow:0 1px 4px #542b12;font-size:1.15rem}
+.cook-v3 .strike-guide b{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:.12em .32em;border:2px solid #fff;border-radius:50%;background:#9b4d24;color:#fff;font-size:.72em}
+.cook-v3 .strike-guide.next{border-color:#ffe36b;color:#ffe36b}
+.cook-v3 .strike-guide.next b{background:#40813c}
+.cook-v3 .strike-hit{position:absolute;left:var(--target);top:50%;transform:translate(-50%,-50%);color:#d63825;font-size:1.4rem;text-shadow:0 1px 2px #fff,0 0 5px #fff;pointer-events:none}
+.cook-v3 .meat-zone:focus-visible{outline:4px solid var(--gold,#e8b74a);outline-offset:5px;border-radius:18px}
+
+/* tasting verdict at fluid landscape sizes (e.g. 1600x860): emblem on top, dish left, text right, no vertical scroll */
+html.fluid-landscape .tasting{padding:.5rem 1rem;min-height:0}
+html.fluid-landscape .tasting .verdict{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);grid-template-areas:"em em" "dish sp" "dish qb" "dish st" "dish bt";gap:.5rem 1rem;align-items:center;justify-items:center;padding-right:clamp(90px,10vw,170px)}
+html.fluid-landscape .tasting .verdict>.emblem{grid-area:em;width:clamp(140px,25vh,230px)}
+html.fluid-landscape .tasting .emblem-rank{font-size:clamp(3.2rem,10vh,5.5rem)}
+html.fluid-landscape .tasting .verdict>.rank-dish{grid-area:dish;width:100%;max-width:400px}
+html.fluid-landscape .tasting .verdict>.speech{grid-area:sp;margin:0}
+html.fluid-landscape .tasting .verdict>.quality-breakdown{grid-area:qb;font-size:.82rem;padding:.4rem .6rem}
+html.fluid-landscape .tasting .verdict>.verdict-stats{grid-area:st}
+html.fluid-landscape .tasting .verdict>button{grid-area:bt;white-space:nowrap}
+html.fluid-landscape .tasting-owner{width:clamp(110px,11vw,170px);right:-.5rem;bottom:-.5rem}
+html.fluid-landscape .taster-img{max-height:calc(100vh - 140px);width:auto;max-width:100%}
+
+/* cooking finish at fluid landscape sizes: sauce + cabbage stacked left, wider plating right, so it fits without vertical scroll */
+html.fluid-landscape .finish-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);grid-template-areas:"sauce plate" "boil plate";align-items:start}
+html.fluid-landscape .finish-sauce{grid-area:sauce}
+html.fluid-landscape .finish-boil{grid-area:boil}
+html.fluid-landscape .finish-plate{grid-area:plate}
+html.fluid-landscape .finish-boil .boil-pot,html.fluid-landscape .finish-boil img{max-height:90px;width:auto;align-self:center}
+html.fluid-landscape .finish-plate .fin-note{font-size:.78rem;margin:0}
+html.fluid-landscape .finish-plate .plate-big{width:min(100%,170px)}
+html.fluid-landscape .plating-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+html.fluid-landscape .plating-controls>.plate-slots,html.fluid-landscape .plating-controls>.plating-complete{grid-column:1/-1}
+html.fluid-landscape .plate-slots{grid-template-columns:repeat(4,minmax(0,1fr))}
+html.fluid-landscape .part-choice,html.fluid-landscape .plate-slot{min-height:40px;padding:.35rem .4rem;font-size:.85rem}
+/* fluid landscape cooking: slimmer ticket rail and step strip so the work area fits the viewport height */
+html.fluid-landscape .stage.cooking-stage .kitchen-rail{padding:4px 10px;margin-bottom:4px;gap:10px}
+html.fluid-landscape .stage.cooking-stage .rail-head{flex-direction:row;align-items:center;gap:10px;min-width:0}
+html.fluid-landscape .stage.cooking-stage .ticket{flex-wrap:nowrap;padding:4px 8px 4px 4px;min-width:0}
+html.fluid-landscape .stage.cooking-stage .ticket-face{width:34px;height:34px}
+html.fluid-landscape .stage.cooking-stage .ticket-main{flex-direction:row;align-items:center;gap:8px;white-space:nowrap}
+html.fluid-landscape .stage.cooking-stage .steps{margin:2px 0 4px}
+html.fluid-landscape .stage.cooking-stage .steps3 .step{padding:.25em 1em .25em .6em}
+html.fluid-landscape .stage.cooking-stage .steps3 .step-ico{display:none}
+html.fluid-landscape .stage.cooking-stage .step.now{transform:none}
+/* fluid landscape tasting, v2: emblem + dish on the left, speech/breakdown/stats/button on a wider right column */
+html.fluid-landscape .tasting{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr)}
+html.fluid-landscape .tasting .verdict{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-areas:"em sp" "em qb" "dish st" "dish bt";padding-right:clamp(80px,8vw,130px);align-content:center}
+html.fluid-landscape .tasting .verdict>.emblem{align-self:end}
+html.fluid-landscape .tasting .verdict>.rank-dish{align-self:start}
+html.fluid-landscape .tasting .verdict>.speech,html.fluid-landscape .tasting .verdict>.quality-breakdown,html.fluid-landscape .tasting .verdict>.verdict-stats{width:100%}
+html.fluid-landscape .tasting .verdict-stats span{padding:.2rem .6rem;font-size:.9rem}
+html.fluid-landscape .tasting-owner{width:clamp(90px,8vw,130px)}
+/* fluid landscape, short screens (<=900px tall, e.g. 1600x860): tighten the finish stage further */
+@media (max-height:900px){
+  html.fluid-landscape .stage.cooking-stage{gap:.4rem}
+  html.fluid-landscape .stage.cooking-stage .steps3 .step-t small{display:none}
+  html.fluid-landscape .finish-grid .fin-block{gap:6px;padding:8px}
+  html.fluid-landscape .finish-plate .fin-note{display:none}
+  html.fluid-landscape .finish-plate .plate-big{width:min(100%,120px)}
+  html.fluid-landscape .finish-boil .boil-pot{height:64px}
+  html.fluid-landscape .finish-boil .boil-pot img{max-height:64px}
+  html.fluid-landscape .finish-boil .boil-btn{white-space:nowrap;padding:.5rem .6rem;font-size:.95rem}
+}

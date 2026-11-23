@@ -11,6 +11,13 @@ from PIL import Image
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 COMFY_OUT = os.environ.get("COMFY_OUTPUT_DIR") or os.sys.exit("set COMFY_OUTPUT_DIR to your ComfyUI output folder")
 SEL = json.load(open(os.path.join(ROOT, "assets/source/comfyui/selection.json"), encoding="utf-8"))
+non_character_assets = [asset.get("id", "<unknown>") for asset in SEL.get("assets", []) if asset.get("type") != "character"]
+if non_character_assets:
+    raise SystemExit(
+        "ComfyUI export blocked: selection.json contains non-character assets ("
+        + ", ".join(non_character_assets[:8])
+        + "). Non-character assets must use ChatGPT image generation."
+    )
 PRESETS = json.load(open(os.path.join(ROOT, "assets/source/comfyui/presets.json"), encoding="utf-8"))
 JOBS = {j["id"]: j for js in json.load(open(os.path.join(ROOT, "assets/source/comfyui/jobs.json"), encoding="utf-8")).values() for j in js}
 

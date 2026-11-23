@@ -50,7 +50,7 @@ type DailyLedger = {
 type GameSave = {
  schemaVersion:1; revision:number; savedAtIso:string;
  seed:number; rngState:number; day:number; nextOrderSequence:number;
- phase:Phase; reactionStage:null|"intro"|"customerReaction"|"resultVisible"; overlay:null|{kind:"PAUSE"|"EVENT";eventId?:string};
+ phase:Phase; reactionStage:null|"intro"|"customerReaction"|"resultVisible"; overlay:null|{kind:"PAUSE"}|{kind:"EVENT";eventId:string};
  openingRemainingSeconds:number|null; businessElapsedSeconds:number;
  remainingArrivals:number; nextArrivalIndex:number; arrivalSeconds:number[];
  tutorialNextOrderIndex:number; tutorialFirstServed:boolean;
@@ -70,9 +70,10 @@ type GameSave = {
 - `GameSave`はJSON Schemaで構造検証し、注文/フェーズ/台帳の相互条件を`src/save-validation.mjs`で追加検証する。
 - `openingRemainingSeconds=null` はDay1チュートリアルのみ。通常日は0..600。
 - `lastServedOrderId` はREACTION再表示での二重会計を防ぐため表示専用。独立した注文スナップショットをsource of truthとする。
-- `arrivalSeconds` と `nextArrivalIndex` は通常日の候補予定を保持。リロード後に同じ候補を再生成しない。MVPでは一日の開始時に配列を生成し永続化する。
+- `arrivalSeconds` と `nextArrivalIndex` は通常日の候補予定を保持。リロード後に同じ候補を再生成しない。MVPでは一日の開始時に配列を生成し永続化する。営業中は `remainingArrivals===arrivalSeconds.length-nextArrivalIndex`、閉店後は未到着分を逸失に数えず `remainingArrivals===0` とする。いずれも `nextArrivalIndex===orders.length+dailyLedger.skippedCandidates` を保つ。開店後の通常日配列は `n=10..14` 件で、各時刻は `arrivalFirstSecond+floor(i*arrivalSpreadSeconds/n)` と一致する。Day1は固定チュートリアル注文で進行し、通常日の候補配列は空、`remainingArrivals===8-tutorialNextOrderIndex` とする。
 - `customerAffinity` は0..100。MVPの明示的な長期解放には用いない（将来用の保存フィールド）。
-- `seenStoryEventIds` のIDが既読なら同じ日次会話を再演しない。
+- `seenStoryEventIds` のIDが既読なら同じ日次会話を再演しない。保存中の `activeStoryEventId` はstoryイベント定義に存在し、そのday/triggerが現在のday/phaseと一致し、既読でないこと。
+- ストーリー会話をEVENT overlayとして保存する場合、overlay.eventIdとactiveStoryEventIdは一致させる。PAUSE overlayと表示中イベントを同時に持たない。
 
 ## 3. トランザクション
 - `BUY_INGREDIENT` (MORNING): `cashYen>=price`、`inventory[id]+qty<=99` で `cash-=price`, `inventory+=qty`, `ledger.purchasesYen+=price`。原価消費は増やさない。
@@ -81,7 +82,7 @@ type GameSave = {
 - `SERVE` (COOK): 調理済・未settledなら価格スナップショットを売上と現金へ、評価ランク分を評判へ追加。 `settled=true`、`state=served`、`phase=REACTION`、`reactionStage=intro`。REACTION_NEXTで顧客反応・結果表示へ順に進み、REACTION_SKIPはresultVisibleへ進める。DISMISS_REACTIONはresultVisibleでのみ許可。
 - `CANCEL_ORDER` (COOK): 既消費なら `ledger.wasteYen+=ingredientCostYenSnapshot`、`state=cancelled`、`phase=OPEN`。ingredientConsumedYenは消費時点で加算済みなので**追加で原価減算しない**。
 - `EXPIRE_ORDER` (queued): `state=expired`、`reputation-=2`、`ledger.expiredCount+=1`、`inventory`は不変。
-- `CLOSE_DAY`: `dayOverheadSettled` がfalseなら `overheadYen+=2200`、`cashYen-=2200`、trueにする。重複実行は無視。
+- `CLOSE_DAY`: `dayOverheadSettled` がfalseなら `overheadYen+=config.economy.overheadYenPerDay` と `payrollYen+=config.economy.payrollYenPerDay` を一度だけ計上し、合計額を現金から引いてtrueにする。重複実行は無視。MVPの給与は0円。
 - `BUY_UPGRADE` (UPGRADE): `day+1>=unlockDay`・未購入・支払可能を満たせば現金減額とID解放を原子的に更新。効果は翌日OPENから有効。
 - `NEXT_DAY`: UPGRADE以外から拒否。日次ledgerとday flagsを初期化し、評判、在庫、設備、たれ、既読会話を継続。購入済みの設備は翌日の開始時点で効力がある。
 
@@ -106,14 +107,22 @@ cashDelta = salesYen - purchasesYen - overheadYen - payrollYen - upgradePurchase
 - REACTIONからの再開でもSERVE再発火禁止。COOKからの再開は未完了の現在工程の入力を復元する。
 - saveファイルの外部JSON import/exportはMVP外。診断用エクスポートは開発ビルドのみ。
 - schemaVersion不一致/データ不整合はバックアップ復旧を試み、失敗なら新規ゲームの選択肢とエラー内容を表示。旧データを自動削除しない。
+- 利用者が有効なバックアップからの復旧を承認した場合は、復元した状態を新しいrevisionとして `main` に保存する。保存に失敗しても元のbackupは保持し、画面に未保存警告を出す。
 
 ## 7. セーブ時不変条件
 - 現金は整数。材料数0..99の整数。評判0..100、料理得点0..100。
 - activeOrderId!=null ↔ phase=COOKかつ料理中注文がちょうど1件（ただしCOOK→REACTIONへはactiveOrderIdを同時にnullにする）。
 - phase=REACTIONなら `lastServedOrderId` が必ず有効なserved注文を示し、settled=true。
 - `wasteYen<=ingredientConsumedYen`、二重精算不可、同じorderIdが二つ存在しない。
-- DAY1では残り候補が固定8件で、通常日と異なる時計・来客スケジュール。
-- `dayOverheadSettled=true`かつ `dayClosed=true` のとき再CLOSE_DAYは無変更。
+- MVPの `unlockedRecipeIds` は設定済みの `beef_katsumeshi` 1品だけを含む。未定義レシピや複数料理の解放状態は拒否する。
+- 注文ごとの操作履歴は `ACCEPT_ORDER`/`SERVE` のみ許可し、材料消費状態・提供状態とそれぞれ双方向に一致させる。
+- 注文生成時刻は経過営業時刻を超えない。通常日の待ち時間0の注文は期限切れ状態、Day1注文は期限切れ不可。
+- 価格/原価がMVP固定中は、全注文の `priceYenSnapshot` と `ingredientCostYenSnapshot` を設定値に一致させる。提供済み注文はたれスナップショット・得点・ランクを必須とし、未提供注文は結果スナップショットを持たない。旧セーブで省略された `qualityBreakdown` は移行互換のためnullを許す。
+- DAY1では残り候補が固定8件で、通常日と異なる時計・来客スケジュール。Day1の `openingRemainingSeconds` はnull、Day2以降は通常営業時計（0..600秒）を必ず持つ。Day1は `tutorialNextOrderIndex===orders.length` とする。
+- `nextOrderSequence===orders.length` とし、当日注文IDを `d{day}_o{index+1}` の連番にする。Day1の `tutorialNextOrderIndex===orders.length` かつ注文客の並びは `day1.orderTypes` と一致。通常日は営業中に `remainingArrivals===arrivalSeconds.length-nextArrivalIndex`、閉店後に0。
+- `aidGrantedDay` はnullまたは現在のday。NEXT_DAYではnullへ戻し、過去日/未来日の支援マーカーを持ち越さない。
+- `unlockedUpgradeIds` に含む設備費の合計は `careerLedger.upgradePurchasesYen+dailyLedger.upgradePurchasesYen` と一致。当日購入額はUPGRADE中だけ保持し、NEXT_DAY後はcareerLedgerへ移す。
+- `dayOverheadSettled=true`かつ `dayClosed=true` のとき再CLOSE_DAYは無変更。閉店済みなら当日固定費/給与は設定値どおり、営業中なら両額とも0。
 
 ## 8. テスト例（先に実装する）
 - 1注文を提供→保存→再開→SERVEを再試行しても売上980/原価430のまま。

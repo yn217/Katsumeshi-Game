@@ -20,6 +20,11 @@ NAMES = [
     "boiled_cabbage",
     "steamed_rice",
 ]
+GENERATION_PROMPTS = [
+    "Create one precise game-art asset contact sheet for a Japanese restaurant management game. Seven separate objects in an exact clean 4-column by 2-row grid with equal cell sizes and large empty gutters. Each object centered fully inside its own cell and not touching the gutters. Top row left to right: (1) one thin flattened raw beef cutlet, (2) same thin beef cutlet evenly coated in pale flour and egg, (3) coarse golden Japanese panko crumbs in a small neat pile, (4) one thin breaded beef cutlet frying in oil shown as a single isolated cutlet with a few tiny bubbles only. Bottom row left to right: (5) glossy dark demi-glace sauce in a small ceramic bowl, no food; (6) softly boiled pale-green shredded cabbage in a small neat serving, no plate; (7) a small fluffy mound of steamed white rice, no bowl. Leave bottom-right cell empty and transparent. All seven objects must be separate, no plate with assembled meal, no katsumeshi, no rice under cutlet, no finished dish. Consistent polished hand-painted 2D anime game illustration, warm soft cel shading, detailed but readable as small 256px inventory icons. No text, labels, borders, panels, numbers, people, hands, logos or watermark. Transparent background.",
+    "Edit the supplied transparent food asset sheet. Preserve its exact transparent background, 4 by 2 grid, object positions, spacing, and object identities. Redraw every food object as polished illustrated 2D anime game art that matches a warm Japanese restaurant game: hand-drawn dark-brown contour lines, simplified painterly forms, clear soft cel shading, matte surfaces, low contrast tiny details, warm cream and muted amber/green/brown palette. It must look drawn, not photographed or rendered in 3D. Specifically remove realistic photographic meat grain and excessive glossy specular reflections. Keep raw flattened beef clearly raw, panko flakes discernible, thin breaded cutlet clearly golden, boiled cabbage softly cooked pale green, dark sauce in its bowl, rice fluffy white. Maintain one separate icon per cell and the empty lower-right cell. Do not add any plate, meal composition, text, border, shadow halo, white background, checkerboard, labels, people, logos. Keep edge pixels clean with true transparency around every icon.",
+    "Keep every illustrated food item exactly as it is and keep its current position and 4x2 grid. Remove the gray checkerboard completely and replace it with genuine transparent pixels (alpha 0). Do not draw any checkerboard, white backdrop, floor shadow, halo, panels, outlines around the sheet, or any new elements. Preserve the dark brown outlines and colors of each food item. Keep the lower-right cell empty and transparent. Output as a transparent PNG.",
+]
 
 
 def main() -> None:
@@ -68,11 +73,7 @@ def main() -> None:
         "generatedAt": "2026-11-23",
         "status": "concept_review",
         "sourceAttribution": "ChatGPT built-in image generation; illustrated transparent food asset sheet.",
-        "generationProcess": [
-            "Create a 4x2 transparent contact sheet with seven isolated food and cooking-stage icons in order: flattened raw beef, flour-and-egg-coated beef, panko crumbs, frying breaded cutlet, demi-glace sauce bowl, boiled cabbage, steamed rice; leave the last cell empty; no assembled dish.",
-            "Redraw the same objects as hand-drawn 2D anime game art with dark-brown outlines, simplified painterly forms, soft cel shading, matte surfaces, and warm muted colors; preserve the transparent background and grid.",
-            "Remove the checkerboard completely to true transparency; preserve the illustrated items and leave the lower-right cell empty.",
-        ],
+        "generationPrompts": GENERATION_PROMPTS,
         "charactersIncluded": False,
         "reviewNotes": "Seven independent cells visually checked. No plated katsumeshi or completed dish is included. Confirm visual fit and scale in game before approval.",
         "files": assets,

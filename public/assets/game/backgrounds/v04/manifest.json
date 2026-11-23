@@ -28,8 +28,9 @@
       "generationSeed": null,
       "model": "ChatGPT Image Generation",
       "loraList": [],
-      "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
-      "reviewedAt": "2026-11-22"
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-22",
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
     },
     {
       "id": "bg_morning_chatgpt_v01",
@@ -52,8 +53,9 @@
       "generationSeed": null,
       "model": "ChatGPT Image Generation",
       "loraList": [],
-      "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
-      "reviewedAt": "2026-11-22"
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-22",
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
     },
     {
       "id": "bg_kitchen_frying_chatgpt_v01",
@@ -77,8 +79,9 @@
       "generationSeed": null,
       "model": "ChatGPT Image Generation",
       "loraList": [],
-      "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
-      "reviewedAt": "2026-11-22"
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-22",
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
     },
     {
       "id": "bg_result_evening_chatgpt_v01",
@@ -101,8 +104,9 @@
       "generationSeed": null,
       "model": "ChatGPT Image Generation",
       "loraList": [],
-      "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
-      "reviewedAt": "2026-11-22"
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-22",
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
     },
     {
       "id": "bg_title_riverside_chatgpt_v01",
@@ -125,8 +129,10 @@
       "generationSeed": null,
       "model": "ChatGPT Image Generation",
       "loraList": [],
-      "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
-      "reviewedAt": "2026-11-22"
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewedAt": "2026-11-22",
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
     }
-  ]
+  ],
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
 }

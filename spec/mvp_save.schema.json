@@ -52,10 +52,7 @@
           "type": "object",
           "properties": {
             "kind": {
-              "enum": [
-                "PAUSE",
-                "EVENT"
-              ]
+              "const": "EVENT"
             },
             "eventId": {
               "type": "string",
@@ -63,8 +60,17 @@
             }
           },
           "required": [
-            "kind"
+            "kind",
+            "eventId"
           ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": { "const": "PAUSE" }
+          },
+          "required": ["kind"],
           "additionalProperties": false
         }
       ]
@@ -589,7 +595,7 @@
             "retriesRemaining": {
               "type": "integer",
               "minimum": 0,
-              "maximum": 1
+              "maximum": 10
             },
             "unlimitedRetry": {
               "type": "boolean"
@@ -1061,7 +1067,7 @@
               "retriesRemaining": {
                 "type": "integer",
                 "minimum": 0,
-                "maximum": 1
+                "maximum": 10
               },
               "unlimitedRetry": {
                 "type": "boolean"
@@ -1163,6 +1169,7 @@
                 "required": [
                   "elapsedSeconds",
                   "timerStarted",
+                  "timerStopped",
                   "taps",
                   "strikeXs",
                   "thicknessError01",

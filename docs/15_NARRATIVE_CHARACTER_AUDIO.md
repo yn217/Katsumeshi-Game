@@ -78,6 +78,7 @@
 
 - BGMとSEは別音量0〜100%。ブラウザ音声再生は初回クリック後に解放。
 - 2026-11-22: オリジナル合成のBGM4曲とSE11種をWAVで作成し、`public/assets/game/audio/manifest.json` に記録。設計は `assets/source/audio/v03/design.json`、生成コードは `scripts/generate_audio_assets.py`。全音源は `concept_review` で、実機での聴取・ミックス確認が必要。
+- 2026-11-23: generatorが全WAVを同じピーク値へ正規化していたため修正。BGMはpeak 0.88、SEはclick 0.26/fry 0.34/error 0.28、rank SSSからFへ段階的に0.72から0.46とし、相対ピーク設計をmanifestへ記録。生成WAVのピーク・RMS・ループ端を確認した。実際の音量感とゲーム内BGM/SEバランスは聴感レビュー待ち。
 - ボイスは**MVPに入れない**。リップシンク/音声合成はv1以降。
 - 音がなくても進行できる。音・光・演出のデータにゲーム内会計トリガを置かない。
 

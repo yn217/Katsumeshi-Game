@@ -1,0 +1,15 @@
+{
+  "schema": "katsumeshi-imagegen-candidate-manifest/v1",
+  "version": "v08",
+  "generatedAt": "2026-11-23",
+  "status": "rejected",
+  "assetId": "fry_stage_candidate_rejected_v03",
+  "file": "fry_stage_candidate_rejected_v03.png",
+  "width": 1254,
+  "height": 1254,
+  "generationMethod": "ChatGPT built-in image generation",
+  "reference": "assets/source/imagegen/chatgpt/v07/cooking/fry_stage_anime_chatgpt_v02.png",
+  "prompt": "Use case: illustration-story; square P3 frying-stage game asset; one broad flattened irregular oval beef cutlet with coarse golden panko, partly submerged in amber oil, gentle wooden chopsticks at one edge, warm hand-painted anime game illustration, clear complete silhouette, modest bubbles; avoid thin strip, flat crust blanket, multiple cutlets, photorealism, 3D, text, watermark.",
+  "review": "Rejected before runtime integration. Visual inspection shows cutlet reads as a huge thin crust sheet merged into the oil, with no distinct edge or convincing thickness. The fryer remains dominant despite the close-crop requirement. Not suitable as a game asset.",
+  "statusReason": "P3 shape readability and subject separation failed visual review."
+}

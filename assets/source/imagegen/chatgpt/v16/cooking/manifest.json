@@ -1,0 +1,19 @@
+{
+  "schema": "katsumeshi-imagegen-candidate-manifest/v1",
+  "version": "v16",
+  "assetId": "fry_stage_lifted_cutlet_chatgpt_v01",
+  "file": "fry_stage_lifted_cutlet_chatgpt_v01.png",
+  "width": 1672,
+  "height": 941,
+  "mode": "RGB",
+  "generatedAt": "2026-11-23",
+  "generationMethod": "ChatGPT built-in image generation",
+  "model": "ChatGPT built-in image generation",
+  "seed": null,
+  "status": "concept_review",
+  "prompt": "Create a polished 2D hand-drawn anime game background illustration for a Japanese katsumeshi cooking mini-game, landscape 16:9, designed as a gameplay stage rather than a finished food illustration. Viewpoint: close side angle across a traditional deep fryer at counter height. A cook's forearm and wire skimmer enter from the upper left, lifting one thick, irregular breaded beef cutlet fully clear of the oil; the cutlet's golden crust and full distinct silhouette are visible with clear air gap beneath it. Oil surface and fryer occupy the lower half, with a few simple bubbles and restrained steam. Warm cozy restaurant kitchen in soft focus behind, wood and muted cream colors. Bold clean dark brown line art, flat cel shading, limited warm palette, consistent Japanese indie game illustration, crisp readable shapes at 1920x1080 display size. Leave the upper right quarter visually quiet for game instructions, and keep the central-right region free of props. No text, no labels, no plate, no rice, no cabbage, no sauce, no complete plated meal, no extra cutlets, no photorealism, no 3D render, no glossy excessive highlights, no logos.",
+  "inputReferences": [],
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; not approved for release.",
+  "licenseReference": "https://openai.com/policies/terms-of-use/",
+  "review": "New P3 concept candidate. Standalone inspection shows one fully visible cutlet lifted above the oil on a wire skimmer, with warm kitchen background and open upper-right space. Source is 1672x941 and does not meet the 2560x1440 native background requirement. Runtime scale, gameplay UI composition, rights review, and adoption are pending. Not connected to runtime."
+}

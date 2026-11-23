@@ -23,7 +23,8 @@
       ],
       "source": "town_game_assets/char_owner_shop_normal_v001_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_normal_v001"
     },
     {
       "id": "char_owner_shop_encourage_v001",
@@ -44,7 +45,8 @@
       ],
       "source": "town_game_assets/char_owner_shop_encourage_v001_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_encourage_v001"
     },
     {
       "id": "char_owner_shop_happy_v001",
@@ -65,7 +67,8 @@
       ],
       "source": "town_game_assets/char_owner_shop_happy_v001_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_happy_v001"
     },
     {
       "id": "char_owner_shop_sad_v001",
@@ -86,7 +89,8 @@
       ],
       "source": "town_game_assets/char_owner_shop_sad_v001_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_sad_v001"
     },
     {
       "id": "char_owner_shop_surprised_v001",
@@ -107,7 +111,8 @@
       ],
       "source": "town_game_assets/char_owner_shop_surprised_v001_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_surprised_v001"
     },
     {
       "id": "char_owner_shop_thinking_v001",
@@ -128,7 +133,8 @@
       ],
       "source": "town_game_assets/char_owner_shop_thinking_v001_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_thinking_v001"
     },
     {
       "id": "char_owner_shop_full_front_v001",
@@ -149,7 +155,8 @@
       ],
       "source": "town_game_assets/char_owner_shop_full_front_v001_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_full_front_v001"
     },
     {
       "id": "char_owner_casual_full_front_v001",
@@ -170,7 +177,8 @@
       ],
       "source": "town_game_assets/char_owner_casual_full_front_v001_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_casual_full_front_v001"
     },
     {
       "id": "char_regular_reaction_sss_v101",
@@ -187,7 +195,10 @@
       ],
       "source": "town_game_assets/char_regular_reaction_sss_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_sss_v101"
     },
     {
       "id": "char_regular_reaction_s_v101",
@@ -204,7 +215,10 @@
       ],
       "source": "town_game_assets/char_regular_reaction_s_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_s_v101"
     },
     {
       "id": "char_regular_reaction_a_v101",
@@ -221,7 +235,10 @@
       ],
       "source": "town_game_assets/char_regular_reaction_a_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_a_v101"
     },
     {
       "id": "char_regular_reaction_b_v101",
@@ -238,7 +255,10 @@
       ],
       "source": "town_game_assets/char_regular_reaction_b_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_b_v101"
     },
     {
       "id": "char_regular_reaction_c_v101",
@@ -255,7 +275,8 @@
       ],
       "source": "town_game_assets/char_regular_reaction_c_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_c_v101"
     },
     {
       "id": "char_regular_reaction_f_v101",
@@ -272,7 +293,8 @@
       ],
       "source": "town_game_assets/char_regular_reaction_f_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_f_v101"
     },
     {
       "id": "char_student_reaction_sss_v101",
@@ -289,7 +311,10 @@
       ],
       "source": "town_game_assets/char_student_reaction_sss_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_sss_v101"
     },
     {
       "id": "char_student_reaction_s_v101",
@@ -306,7 +331,10 @@
       ],
       "source": "town_game_assets/char_student_reaction_s_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_s_v101"
     },
     {
       "id": "char_student_reaction_a_v101",
@@ -323,7 +351,10 @@
       ],
       "source": "town_game_assets/char_student_reaction_a_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_a_v101"
     },
     {
       "id": "char_student_reaction_b_v101",
@@ -340,7 +371,10 @@
       ],
       "source": "town_game_assets/char_student_reaction_b_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_b_v101"
     },
     {
       "id": "char_student_reaction_c_v101",
@@ -357,7 +391,10 @@
       ],
       "source": "town_game_assets/char_student_reaction_c_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison shows only a weak distinction from F; low-rank separation needs review. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_c_v101"
     },
     {
       "id": "char_student_reaction_f_v101",
@@ -374,7 +411,10 @@
       ],
       "source": "town_game_assets/char_student_reaction_f_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison shows only a weak distinction from C; low-rank separation needs review. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_f_v101"
     },
     {
       "id": "char_worker_reaction_sss_v101",
@@ -391,7 +431,10 @@
       ],
       "source": "town_game_assets/char_worker_reaction_sss_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_sss_v101"
     },
     {
       "id": "char_worker_reaction_s_v101",
@@ -408,7 +451,10 @@
       ],
       "source": "town_game_assets/char_worker_reaction_s_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_s_v101"
     },
     {
       "id": "char_worker_reaction_a_v101",
@@ -425,7 +471,10 @@
       ],
       "source": "town_game_assets/char_worker_reaction_a_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_a_v101"
     },
     {
       "id": "char_worker_reaction_b_v101",
@@ -442,7 +491,10 @@
       ],
       "source": "town_game_assets/char_worker_reaction_b_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_b_v101"
     },
     {
       "id": "char_worker_reaction_c_v101",
@@ -459,7 +511,10 @@
       ],
       "source": "town_game_assets/char_worker_reaction_c_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison makes this C expression look more cheerful than B; rank progression needs review. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_c_v101"
     },
     {
       "id": "char_worker_reaction_f_v101",
@@ -476,7 +531,10 @@
       ],
       "source": "town_game_assets/char_worker_reaction_f_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison reads clearly as a downcast low-rank reaction. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_f_v101"
     },
     {
       "id": "char_tourist_reaction_sss_v101",
@@ -493,7 +551,10 @@
       ],
       "source": "town_game_assets/char_tourist_reaction_sss_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_sss_v101"
     },
     {
       "id": "char_tourist_reaction_s_v101",
@@ -510,7 +571,10 @@
       ],
       "source": "town_game_assets/char_tourist_reaction_s_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_s_v101"
     },
     {
       "id": "char_tourist_reaction_a_v101",
@@ -527,7 +591,10 @@
       ],
       "source": "town_game_assets/char_tourist_reaction_a_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_a_v101"
     },
     {
       "id": "char_tourist_reaction_b_v101",
@@ -544,7 +611,10 @@
       ],
       "source": "town_game_assets/char_tourist_reaction_b_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison confirms the expression is readable at sheet scale; consistency and approval remain pending. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_b_v101"
     },
     {
       "id": "char_tourist_reaction_c_v101",
@@ -561,7 +631,10 @@
       ],
       "source": "town_game_assets/char_tourist_reaction_c_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison shows only a weak distinction from F; low-rank separation needs review. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_c_v101"
     },
     {
       "id": "char_tourist_reaction_f_v101",
@@ -578,7 +651,38 @@
       ],
       "source": "town_game_assets/char_tourist_reaction_f_v101_00001_.png",
       "reviewStatus": "concept_review",
-      "licenseNote": "Distribution terms for the base model and LoRAs are pending review; do not publish until cleared."
+      "licenseNote": "Anima license permits commercial use of generated outputs, including paid game assets; model and derivative LoRA weights are non-commercial and must not be bundled. Training image/source rights remain under review.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Current-runtime 24-image contact sheet reviewed. The current-runtime thumbnail comparison shows only a weak distinction from C; low-rank separation needs review. Not approved for release; full-size identity, screen-composite, and rights review remain pending.",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_f_v101"
     }
-  ]
+  ],
+  "modelLicenseReview": {
+    "model": "Anima-Base-v1.0",
+    "license": "CircleStone Labs Non-Commercial License",
+    "reference": "https://huggingface.co/circlestone-labs/Anima",
+    "finding": "The official model card says model and derivative weights are non-commercial, but generated outputs may be used commercially, including as assets for paid games.",
+    "weightDistribution": "Do not bundle or distribute Anima or LoRA weights with the game.",
+    "status": "reviewed_for_generated_output_use",
+    "loras": [
+      {
+        "name": "Koharu-Koharu-epoch100.safetensors",
+        "origin": "Locally trained LoRA",
+        "trainingDataset": "koharu-anima prepared image dataset",
+        "rightsStatus": "pending",
+        "note": "Dataset contains no source-license or rights manifest."
+      },
+      {
+        "name": "anima-style-epoch35-lr5e5.safetensors",
+        "origin": "Locally trained LoRA",
+        "trainingDataset": "anima-style image dataset",
+        "rightsStatus": "pending",
+        "note": "Local review manifest lists 212 images requiring manual quality and rights review."
+      }
+    ]
+  },
+  "trainingDataRightsReview": {
+    "status": "pending",
+    "finding": "The local style LoRA image manifest marks 212 images as requiring manual quality and rights review. The Koharu LoRA prepared dataset has no source-license record. Review of training-image rights and character-source rights is still needed before final approval."
+  }
 }

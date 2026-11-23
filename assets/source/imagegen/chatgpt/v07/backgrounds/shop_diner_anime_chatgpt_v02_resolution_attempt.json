@@ -1,0 +1,19 @@
+{
+  "prompt": "Create a refined, genuinely high-resolution 2D anime game background for the Katsumeshi Game shop screen. Preserve the reference composition: a warm small Japanese neighborhood diner in Kakogawa, river-town daylight visible through left shoji-style windows, wood counter toward the back, several simple wood tables and chairs arranged along the sides, and a broad uncluttered central floor reserved for customer sprites and UI. Improve line clarity, fine painted wood grain, window frame details, chair silhouettes, and gentle daylight shadows while keeping the same calm hand-painted anime background style, warm cream and honey palette, and clean brown ink edges. This is a background plate only: no characters, people, food, plates, signs, text, labels, UI, logos, or watermark. Wide 16:9 landscape composition. Render at native 2560 by 1440 pixels with crisp fine detail throughout; do not return a small preview or upscale blur.",
+  "status": "concept_review",
+  "runtimeAsset": false,
+  "reviewNote": "The ChatGPT image generator returned 1672x941 despite an explicit native 2560x1440 request. Do not treat this as meeting the docs/17 master-resolution requirement; not connected to runtime. Compare art quality only if useful.",
+  "schema": "katsumeshi-imagegen-resolution-attempt/v1",
+  "requestedHeight": 1440,
+  "type": "background",
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review remains pending.",
+  "compositionReference": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png",
+  "licenseReference": "https://openai.com/policies/terms-of-use/",
+  "actualWidth": 1672,
+  "actualHeight": 941,
+  "generatedAt": "2026-11-23",
+  "sourceImage": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v02_resolution_attempt.png",
+  "sourceWorkflow": "ChatGPT built-in image generation",
+  "id": "shop_diner_anime_chatgpt_v02_resolution_attempt",
+  "requestedWidth": 2560
+}

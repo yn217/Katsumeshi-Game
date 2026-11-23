@@ -47,12 +47,12 @@ def add_event(stereo: np.ndarray, start: float, freq: float, duration: float, ki
     sig=note_wave(freq,(right-left)/RATE,kind,velocity)
     p=max(-1.0,min(1.0,pan)); stereo[left:right,0]+=sig*math.sqrt((1-p)*0.5); stereo[left:right,1]+=sig*math.sqrt((1+p)*0.5)
 
-def normalized(audio: np.ndarray) -> np.ndarray:
+def normalized(audio: np.ndarray, target_peak: float=0.88) -> np.ndarray:
     peak=float(np.max(np.abs(audio))) if audio.size else 0
-    return audio*(0.88/peak) if peak>0 else audio
+    return audio*(target_peak/peak) if peak>0 else audio
 
-def write_wav(path: Path, audio: np.ndarray):
-    pcm=np.clip(normalized(audio),-1,1)
+def write_wav(path: Path, audio: np.ndarray, target_peak: float=0.88):
+    pcm=np.clip(normalized(audio,target_peak),-1,1)
     pcm=(pcm*32767).astype('<i2')
     path.parent.mkdir(parents=True,exist_ok=True)
     with wave.open(str(path),'wb') as f:
@@ -144,6 +144,10 @@ SE={
  'error':lambda:make_chime([57,53],[.14,.22],[.035,0],velocity=.13),
  'fry':make_fry,
 }
+SE_TARGET_PEAKS={
+ 'click':0.26,'purchase':0.65,'serve':0.62,'rank_sss':0.72,'rank_s':0.68,
+ 'rank_a':0.63,'rank_b':0.58,'rank_c':0.52,'rank_f':0.46,'error':0.28,'fry':0.34,
+}
 
 def main():
     source=ROOT/'assets/source/audio/v03';runtime=ROOT/'public/assets/game/audio'
@@ -153,12 +157,12 @@ def main():
         duration=len(audio)/RATE
         src=source/'bgm'/f'bgm_{name}_v03.wav';src.parent.mkdir(parents=True,exist_ok=True);write_wav(src,audio)
         out=runtime/'bgm'/f'bgm_{name}_v03.wav';out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(src.read_bytes())
-        records.append({'id':f'bgm_{name}_v03','path':out.relative_to(ROOT).as_posix(),'category':'bgm','durationSeconds':round(duration,3),'sampleRate':RATE,'channels':2,'format':'wav-pcm16','loop':True,'status':'concept_review','source':src.relative_to(ROOT).as_posix(),'generationMethod':'Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.'})
+        records.append({'id':f'bgm_{name}_v03','path':out.relative_to(ROOT).as_posix(),'category':'bgm','durationSeconds':round(duration,3),'sampleRate':RATE,'channels':2,'format':'wav-pcm16','masterPeakTarget':0.88,'loop':True,'status':'concept_review','source':src.relative_to(ROOT).as_posix(),'generationMethod':'Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.'})
     for name,fn in SE.items():
         audio=fn();duration=len(audio)/RATE
-        src=source/'se'/f'se_{name}_v03.wav';src.parent.mkdir(parents=True,exist_ok=True);write_wav(src,audio)
+        src=source/'se'/f'se_{name}_v03.wav';src.parent.mkdir(parents=True,exist_ok=True);write_wav(src,audio,SE_TARGET_PEAKS[name])
         out=runtime/'se'/f'se_{name}_v03.wav';out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(src.read_bytes())
-        records.append({'id':f'se_{name}_v03','path':out.relative_to(ROOT).as_posix(),'category':'se','durationSeconds':round(duration,3),'sampleRate':RATE,'channels':2,'format':'wav-pcm16','loop':name=='fry','status':'concept_review','source':src.relative_to(ROOT).as_posix(),'generationMethod':'Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.'})
+        records.append({'id':f'se_{name}_v03','path':out.relative_to(ROOT).as_posix(),'category':'se','durationSeconds':round(duration,3),'sampleRate':RATE,'channels':2,'format':'wav-pcm16','masterPeakTarget':SE_TARGET_PEAKS[name],'loop':name=='fry','status':'concept_review','source':src.relative_to(ROOT).as_posix(),'generationMethod':'Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.'})
     for item in records:
         item.update({'width':0,'height':0,'anchorX':0.5,'anchorY':0.5,'scaleHint':1.0,'tags':['audio',item['category'],item['id'].replace('_v03','')],'sourceWorkflow':f"assets/source/audio/v03/design.json#{item['id']}",'generationSeed':None,'model':None,'loraList':[],'licenseNote':'Original project synthesis; no external samples. Review listening quality before final release.','reviewedAt':None})
     manifest={'schema':'katsumeshi-audio-manifest/v1','version':'v03','generatedAt':'2026-11-22','status':'concept_review','sourceAttribution':'Original synthesized PCM is stored as WAV masters and WAV runtime files; no sampled or external music used.','files':records}
@@ -169,9 +173,17 @@ def main():
     (source/'design.json').write_text(json.dumps(design,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     shared=ROOT/'public/assets/game/manifest.json'
     root_manifest=json.loads(shared.read_text(encoding='utf-8'))
-    ids={item['id'] for item in records}
-    root_manifest['assets']=[item for item in root_manifest['assets'] if item.get('id') not in ids]
-    root_manifest['assets'].extend(records)
+    by_id={item['id']:item for item in records}
+    found=set()
+    updated=[]
+    for item in root_manifest['assets']:
+        asset_id=item.get('id')
+        if asset_id in by_id:
+            updated.append(by_id[asset_id]);found.add(asset_id)
+        else:
+            updated.append(item)
+    updated.extend(item for item in records if item['id'] not in found)
+    root_manifest['assets']=updated
     shared.write_text(json.dumps(root_manifest,ensure_ascii=False,indent=1)+'\n',encoding='utf-8')
     print(f'generated {len(records)} audio assets')
 if __name__=='__main__':main()
