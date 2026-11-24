@@ -438,6 +438,7 @@
   "error.tutorial.firstDish": "最初の一皿を完成させてください",
   "error.serve.incomplete": "全工程を完了してください",
   "error.serve.settled": "精算済みです",
+  "error.serve.noRecipe": "今日の一皿をまだ仕込んでいません",
   "error.reaction.shown": "評価結果は表示済みです",
   "error.reaction.skipUnavailable": "スキップできる演出はありません",
   "error.reaction.checkResult": "評価結果を確認してください",

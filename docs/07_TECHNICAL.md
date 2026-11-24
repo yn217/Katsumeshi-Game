@@ -75,7 +75,7 @@ Web版はユーザーがすぐ触れる試作を優先。ゲームロジック�
 - 画像は画面単位で遅延ロードし、元解像度を無条件で描画しない。
 - 大量の画像がある立ち絵・反応素材は必要な差分だけロード。
 - ループごとのDOM全再構築は禁止。状態表示は更新箇所を絞る。
-- 画像処理やAI推論をブラウザ側の本番ゲーム中に行わない。ComfyUIは過去のキャラクター素材制作に使ったが、現在は新規ジョブ投入をすべて停止している。非キャラクター画像はChatGPT画像生成を使う。
+- 画像処理やAI推論をブラウザ側の本番ゲーム中に行わない。ComfyUIは過去のキャラクター素材制作に使ったが、現在は新規ジョブ投入をすべて停止している。非キャラクター画像はChatGPT画像生成を使う。（2026-11-24 更新：ユーザーの指示により、配膳画面の素材 `public/assets/game/serving/v01/` に限りComfyUI生成を許可。店員SDは Anima-Base＋Koharu LoRA＋anima-style LoRA、客と料理人は Anima-Base＋anima-style LoRA、店内背景は Qwen-Image＋ControlNet。manifest の `comfyUserApproved: true` でビルド確認を通す。）
 
 ## ログとデバッグ
 - 開発ビルドにseed指定、Dayジャンプ、評判変更、評価ランク強制、在庫補充のDebug Menu。

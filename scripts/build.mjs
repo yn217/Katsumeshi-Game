@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateConfig, validateStoryEvents, validateCustomerDialogue } from "../src/save-validation.mjs";
 import { runtimeFoodAssets } from "../src/game-assets.mjs";
+import { servingRuntimeFiles } from "../src/serving.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const GAME_ASSETS = path.join(ROOT, "public/assets/game");
@@ -39,6 +40,7 @@ const runtimeAssets = [
   "characters/regular/v06/reaction_c_v103.webp",
   "characters/regular/v06/reaction_f_v103.webp",
   "food/beef_katsumeshi/whole.webp",
+  ...servingRuntimeFiles,
   "cooking/v09/fry_stage_cutlet_anime_chatgpt_v01.png",
   ...runtimeFoodAssets,
   ...["meat_mallet", "breading_tray", "sauce_ladle", "cabbage_pot", "rice_paddle"]
@@ -49,8 +51,8 @@ const runtimeAssets = [
   ...ranks.map(rank => `ui/ranks/v03/rank_${rank}_badge_v03.webp`),
   "ui/panels/v03/cream_panel_frame_v03.svg",
   ...["title", "shop", "cooking", "result"].map(name => `audio/bgm/bgm_${name}_v03.wav`),
-  ...["click", "purchase", "fry", "serve", "error", "rank_sss", "rank_s", "rank_a", "rank_b", "rank_c", "rank_f"]
-    .map(name => `audio/se/se_${name}_v03.wav`),
+  ...["click", "purchase", "fry", "serve", "error", "rank_sss", "rank_s", "rank_a", "rank_b", "rank_c", "rank_f", "ready", "pickup"]
+    .map(name => `audio/se/se_${name}_v04.wav`),
 ];
 
 function findManifests(dir) {
@@ -106,6 +108,8 @@ function nonCharacterComfyCandidates() {
         const sourceWorkflow = [asset.sourceWorkflow, manifest.sourceWorkflow]
           .find(value => typeof value === "string" && value.trim()) || "";
         if (!/comfyui/i.test(sourceWorkflow)) continue;
+        // the user explicitly allowed ComfyUI for these assets (recorded in their manifest)
+        if (asset.comfyUserApproved === true || manifest.comfyUserApproved === true) continue;
         const key = normalizeAssetPath(manifestFile, asset.path);
         if (!key || /(^|\/)characters(\/|$)/i.test(key)) continue;
         candidates.add(key);

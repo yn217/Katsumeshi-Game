@@ -13,7 +13,7 @@ export function createAudioDirector() {
   }
   async function loadBuffer(category,name){
     const key=category+":"+name;if(buffers.has(key))return buffers.get(key);
-    const filename=category==="bgm"?`bgm_${name}_v03.wav`:`se_${name}_v03.wav`;
+    const filename=category==="bgm"?`bgm_${name}_v03.wav`:`se_${name}_v04.wav`;
     const url=new URL(`../public/assets/game/audio/${category}/${filename}`,import.meta.url);
     const pending=fetch(url).then(r=>{if(!r.ok)throw new Error(`Audio ${r.status}: ${filename}`);return r.arrayBuffer();}).then(data=>ensureContext().decodeAudioData(data));
     buffers.set(key,pending);

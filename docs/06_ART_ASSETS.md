@@ -99,7 +99,7 @@ UIの操作記号は `src/icons.mjs` の24×24 `viewBox` のインラインSVG�
 必須manifestメタデータ: id, path, type, width, height, anchorX, anchorY, scaleHint, tags, status, sourceWorkflow, generationSeed, model, loraList, licenseNote, reviewedAt。
 
 ## 既存ComfyUIキャラクター候補の生成記録
-2026-11-23にユーザー環境の既存 `output/town_game` PNGメタデータを読み取り、店主LoRA・画風LoRA・checkpoint・seed等を確認した。既存キャラクター候補の生成条件は `assets/source/comfyui/presets.json`、`jobs.json`、各manifestに記録済み。元画像の服装は模倣していない。現在、ComfyUIへのジョブ投入はキャラクターを含めすべて停止中であり、この節は過去素材の由来記録に限る。`scripts/comfy_generate.py` もジョブ投入を拒否する。今後の非キャラクター画像制作ではChatGPT画像生成を使う。候補は権利・デザイン・画面合成の審査が終わるまで未承認。
+2026-11-23にユーザー環境の既存 `output/town_game` PNGメタデータを読み取り、店主LoRA・画風LoRA・checkpoint・seed等を確認した。既存キャラクター候補の生成条件は `assets/source/comfyui/presets.json`、`jobs.json`、各manifestに記録済み。元画像の服装は模倣していない。現在、ComfyUIへのジョブ投入はキャラクターを含めすべて停止中であり、この節は過去素材の由来記録に限る。`scripts/comfy_generate.py` もジョブ投入を拒否する。今後の非キャラクター画像制作ではChatGPT画像生成を使う。（2026-11-24 更新：ユーザーの指示により、配膳画面の素材 `public/assets/game/serving/v01/` に限りComfyUI生成を許可。店員SDは Anima-Base＋Koharu LoRA＋anima-style LoRA、客と料理人は Anima-Base＋anima-style LoRA、店内背景は Qwen-Image＋ControlNet。manifest の `comfyUserApproved: true` でビルド確認を通す。）候補は権利・デザイン・画面合成の審査が終わるまで未承認。
 
 - 既存PNGの埋め込みworkflowと生成パラメータを棚卸しし、checkpoint、LoRA、強度、seed、解像度をキャラクターmanifestへ記録済み。
 - 完成かつめしの新規制作はユーザー指示により保留。ユーザー提供の実物写真切り抜きを暫定使用し、たれ外観差分も保留。

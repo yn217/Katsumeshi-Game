@@ -25,7 +25,7 @@ function makeDish(s){
  s=move(s,"COMPLETE_STAGE");s=move(s,"COMPLETE_STAGE");
  s=move(s,"START_TIMER");s=clock(s,4);s=move(s,"STOP_TIMER");
  s=move(s,"COMPLETE_STAGE");
- for(const slot of P)s=move(s,"PLACE",{slot});
+ for(const slot of P){s=move(s,"SELECT_PART",{componentId:slot});s=move(s,"PLACE",{slot});}
  s=move(s,"COMPLETE_STAGE");s=move(s,"SERVE");
  return s;
 }
@@ -34,7 +34,7 @@ test("Day1: first cancellation is guarded",()=>{
 });
 test("Day1: all eight dishes, accounting, and automatic close",()=>{
  let s=move(createGame(cfg),"OPEN_SHOP");
- for(let i=0;i<8;i++){s=makeDish(s);assert.equal(s.phase,"REACTION");s=move(s,"DISMISS_REACTION");}
+ for(let i=0;i<8;i++){s=makeDish(s);assert.equal(s.phase,"REACTION");s=move(s,"REACTION_SKIP");s=move(s,"DISMISS_REACTION");}
  assert.equal(s.phase,"RESULT");assert.equal(s.dailyLedger.providedCount,8);
  assert.equal(s.dailyLedger.salesYen,7840);assert.equal(s.dailyLedger.ingredientConsumedYen,3440);
  assert.equal(s.dailyLedger.overheadYen,2200);assert.equal(profit(s.dailyLedger),2200);
@@ -52,7 +52,8 @@ test("replayed command ID does not double-charge",()=>{
 });
 test("Day1 next-day fryer unlock and career rollover",()=>{
  let s=move(createGame(cfg),"OPEN_SHOP");
- for(let i=0;i<8;i++){s=makeDish(s);s=move(s,"DISMISS_REACTION");}
+ for(let i=0;i<8;i++){s=makeDish(s);s=move(s,"REACTION_SKIP");s=move(s,"DISMISS_REACTION");}
+ if(s.activeStoryEventId)s=move(s,"DISMISS_STORY");
  s=move(s,"GO_UPGRADE");
  rejected(s,"BUY_UPGRADE",{id:"chairs"});
  s=move(s,"BUY_UPGRADE",{id:"fryer"});assert.equal(s.cashYen,27640);
@@ -79,4 +80,27 @@ test("normal-day arrival schedule and pause clock",()=>{
 test("reject stale-day commands",()=>{
  let s=createGame(cfg),r=dispatch(s,{type:"BUY_INGREDIENT",payload:{ingredient:"beef",qty:1},id:"old",targetDay:0},cfg);
  assert.equal(r.ok,false);assert.deepEqual(r.state,s);
+});
+test("serving floor: later orders use today's first dish and stay save-valid",async()=>{
+ const { validateSave }=await import("../src/save-validation.mjs");
+ const schema=JSON.parse(readFileSync(new URL("../spec/mvp_save.schema.json",import.meta.url),"utf-8"));
+ let s=move(createGame(cfg),"OPEN_SHOP");
+ rejected(s,"SERVE_TABLE",{orderId:s.orders[0].id});
+ s=move(s,"ACCEPT_ORDER",{orderId:s.orders[0].id});
+ for(const x of cfg.cooking.p1TargetsX)s=move(s,"STRIKE",{x});
+ s=move(s,"COMPLETE_STAGE");for(let z=0;z<3;z++)s=move(s,"COAT",{zone:z,full:true});s=move(s,"COMPLETE_STAGE");
+ s=move(s,"START_TIMER");s=clock(s,10);s=move(s,"STOP_TIMER");s=move(s,"COMPLETE_STAGE");s=move(s,"COMPLETE_STAGE");
+ s=move(s,"START_TIMER");s=clock(s,4);s=move(s,"STOP_TIMER");s=move(s,"COMPLETE_STAGE");
+ for(const slot of P){s=move(s,"SELECT_PART",{componentId:slot});s=move(s,"PLACE",{slot});}
+ s=move(s,"COMPLETE_STAGE");s=move(s,"SERVE");s=move(s,"REACTION_SKIP");s=move(s,"DISMISS_REACTION");
+ const recipe=s.orders[0],next=s.orders.find(o=>o.state==="queued"),cash=s.cashYen,beef=s.inventory.beef;
+ assert.ok(next,"tutorial queues the next order");
+ s=move(s,"SERVE_TABLE",{orderId:next.id});
+ const served=s.orders.find(o=>o.id===next.id);
+ assert.equal(s.phase,"OPEN");assert.equal(served.state,"served");
+ assert.equal(served.qualityBreakdown.quality,recipe.qualityBreakdown.quality);
+ assert.equal(served.rank,grade(recipe.qualityBreakdown.quality,recipe.sauceSnapshot,served.customerId,cfg).rank);
+ assert.equal(s.cashYen,cash+cfg.recipe.priceYen);assert.equal(s.inventory.beef,beef-1);assert.equal(s.dailyLedger.providedCount,2);
+ rejected(s,"SERVE_TABLE",{orderId:next.id});
+ assert.deepEqual(validateSave(s,schema,cfg),[]);
 });
