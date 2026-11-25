@@ -1,0 +1,2917 @@
+{
+ "schema": "katsumeshi-asset-manifest/v1",
+ "generatedAt": "2026-11-22T18:40:53",
+ "assets": [
+  {
+   "id": "bg_title",
+   "path": "public/assets/game/backgrounds/title.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "title"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_title_day_v001",
+   "generationSeed": 77150,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_morning",
+   "path": "public/assets/game/backgrounds/morning.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "MORNING"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_morning_prep_v101",
+   "generationSeed": 96003,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_shop",
+   "path": "public/assets/game/backgrounds/shop.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "OPEN"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_shop_day_v101",
+   "generationSeed": 96001,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_kitchen",
+   "path": "public/assets/game/backgrounds/kitchen.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "COOK"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_kitchen_day_v001",
+   "generationSeed": 76110,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_result",
+   "path": "public/assets/game/backgrounds/result.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "RESULT",
+    "UPGRADE"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_result_evening_v101",
+   "generationSeed": 96002,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_normal",
+   "path": "public/assets/game/characters/owner/shop/normal.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "normal"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_normal_v001",
+   "generationSeed": 81101,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_encourage",
+   "path": "public/assets/game/characters/owner/shop/encourage.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "encourage"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_encourage_v001",
+   "generationSeed": 81102,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_happy",
+   "path": "public/assets/game/characters/owner/shop/happy.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "happy"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_happy_v001",
+   "generationSeed": 81103,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_sad",
+   "path": "public/assets/game/characters/owner/shop/sad.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "sad"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_sad_v001",
+   "generationSeed": 81104,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_surprised",
+   "path": "public/assets/game/characters/owner/shop/surprised.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "surprised"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_surprised_v001",
+   "generationSeed": 81105,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_thinking",
+   "path": "public/assets/game/characters/owner/shop/thinking.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "thinking"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_thinking_v001",
+   "generationSeed": 81106,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_full",
+   "path": "public/assets/game/characters/owner/shop/full.webp",
+   "type": "character",
+   "width": 832,
+   "height": 1216,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "full"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_shop_full_front_v001",
+   "generationSeed": 81201,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_casual_full",
+   "path": "public/assets/game/characters/owner/casual/full.webp",
+   "type": "character",
+   "width": 832,
+   "height": 1216,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "full"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_casual_full_front_v001",
+   "generationSeed": 81202,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_sss",
+   "path": "public/assets/game/characters/regular/sss.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "SSS"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_sss_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_s",
+   "path": "public/assets/game/characters/regular/s.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "S"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_s_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_a",
+   "path": "public/assets/game/characters/regular/a.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "A"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_a_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_b",
+   "path": "public/assets/game/characters/regular/b.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "B"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_b_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_c",
+   "path": "public/assets/game/characters/regular/c.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "C"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_c_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_regular_reaction_f",
+   "path": "public/assets/game/characters/regular/f.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "F"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_regular_reaction_f_v101",
+   "generationSeed": 91000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_sss",
+   "path": "public/assets/game/characters/student/sss.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "SSS"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_sss_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_s",
+   "path": "public/assets/game/characters/student/s.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "S"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_s_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_a",
+   "path": "public/assets/game/characters/student/a.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "A"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_a_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_b",
+   "path": "public/assets/game/characters/student/b.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "B"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_b_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_c",
+   "path": "public/assets/game/characters/student/c.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "C"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_c_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_student_reaction_f",
+   "path": "public/assets/game/characters/student/f.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "F"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_student_reaction_f_v101",
+   "generationSeed": 92000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_sss",
+   "path": "public/assets/game/characters/worker/sss.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "SSS"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_sss_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_s",
+   "path": "public/assets/game/characters/worker/s.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "S"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_s_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_a",
+   "path": "public/assets/game/characters/worker/a.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "A"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_a_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_b",
+   "path": "public/assets/game/characters/worker/b.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "B"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_b_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_c",
+   "path": "public/assets/game/characters/worker/c.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "C"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_c_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_worker_reaction_f",
+   "path": "public/assets/game/characters/worker/f.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "F"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_worker_reaction_f_v101",
+   "generationSeed": 93000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_sss",
+   "path": "public/assets/game/characters/tourist/sss.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "SSS"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_sss_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_s",
+   "path": "public/assets/game/characters/tourist/s.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "S"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_s_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_a",
+   "path": "public/assets/game/characters/tourist/a.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "A"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_a_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_b",
+   "path": "public/assets/game/characters/tourist/b.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "B"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_b_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_c",
+   "path": "public/assets/game/characters/tourist/c.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "C"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_c_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_tourist_reaction_f",
+   "path": "public/assets/game/characters/tourist/f.webp",
+   "type": "character",
+   "width": 1024,
+   "height": 1024,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "F"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_tourist_reaction_f_v101",
+   "generationSeed": 94000,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "food_beef_katsumeshi_whole",
+   "path": "public/assets/game/food/beef_katsumeshi/whole.webp",
+   "type": "food",
+   "width": 1576,
+   "height": 907,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "canonical",
+    "whole"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/food/katsumeshi_whole_user.webp + birefnet background removal",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "User-provided image (2026-11-22). Plate removed by birefnet; plate drawn in CSS. Confirm usage rights before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "food_beef_katsumeshi_sliced",
+   "path": "public/assets/game/food/beef_katsumeshi/sliced.webp",
+   "type": "food",
+   "width": 1652,
+   "height": 919,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "variant",
+    "sliced"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/food/katsumeshi_sliced_user.webp + birefnet background removal",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "User-provided image (2026-11-22). Plate removed by birefnet; plate drawn in CSS. Confirm usage rights before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "cooking_fry_scene",
+   "path": "public/assets/game/cooking/fry.webp",
+   "type": "background",
+   "width": 1448,
+   "height": 1086,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "COOK",
+    "P3"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/food/frying_user.webp",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "User-provided image (2026-11-22). Confirm usage rights before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "cooking_fry_scene_v09",
+   "path": "public/assets/game/cooking/fry.webp",
+   "type": "background",
+   "width": 1448,
+   "height": 1086,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "COOK",
+    "P3"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/food/frying_user.webp",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "User-provided image (2026-11-22). Confirm usage rights before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "char_owner_shop_invite",
+   "path": "public/assets/game/characters/owner/shop/invite.webp",
+   "type": "character",
+   "width": 896,
+   "height": 1152,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "invite",
+    "title"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#char_owner_invite2_owner_aesthetic_v204",
+   "generationSeed": 84004,
+   "model": "Anima-Aesthetic-v1.1.safetensors",
+   "loraList": [
+    [
+     "Koharu-Koharu-epoch100.safetensors",
+     0.8
+    ],
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_title_riverside",
+   "path": "public/assets/game/backgrounds/title_riverside.webp",
+   "type": "background",
+   "width": 1536,
+   "height": 864,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "title"
+   ],
+   "status": "draft",
+   "sourceWorkflow": "assets/source/comfyui/jobs.json#bg_title_riverside_v102",
+   "generationSeed": 83002,
+   "model": "Anima-Base-v1.0.safetensors",
+   "loraList": [
+    [
+     "anima-style-epoch35-lr5e5.safetensors",
+     0.8
+    ]
+   ],
+   "licenseNote": "Generated locally with Anima-Base + user-owned LoRAs. Model/LoRA license review pending; do not publish until approved.",
+   "reviewedAt": null
+  },
+  {
+   "id": "ui_rank_sss_badge_v03",
+   "path": "public/assets/game/ui/ranks/v03/rank_sss_badge_v03.webp",
+   "type": "ui_rank",
+   "width": 768,
+   "height": 768,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "ui",
+    "rank_badge",
+    "sss"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_sss_badge",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "ui_rank_s_badge_v03",
+   "path": "public/assets/game/ui/ranks/v03/rank_s_badge_v03.webp",
+   "type": "ui_rank",
+   "width": 768,
+   "height": 768,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "ui",
+    "rank_badge",
+    "s"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_s_badge",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "ui_rank_a_badge_v03",
+   "path": "public/assets/game/ui/ranks/v03/rank_a_badge_v03.webp",
+   "type": "ui_rank",
+   "width": 768,
+   "height": 768,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "ui",
+    "rank_badge",
+    "a"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_a_badge",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "ui_rank_b_badge_v03",
+   "path": "public/assets/game/ui/ranks/v03/rank_b_badge_v03.webp",
+   "type": "ui_rank",
+   "width": 768,
+   "height": 768,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "ui",
+    "rank_badge",
+    "b"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_b_badge",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "ui_rank_c_badge_v03",
+   "path": "public/assets/game/ui/ranks/v03/rank_c_badge_v03.webp",
+   "type": "ui_rank",
+   "width": 768,
+   "height": 768,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "ui",
+    "rank_badge",
+    "c"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_c_badge",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "ui_rank_f_badge_v03",
+   "path": "public/assets/game/ui/ranks/v03/rank_f_badge_v03.webp",
+   "type": "ui_rank",
+   "width": 768,
+   "height": 768,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "ui",
+    "rank_badge",
+    "f"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_f_badge",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "ui_cream_panel_frame_v03",
+   "path": "public/assets/game/ui/panels/v03/cream_panel_frame_v03.svg",
+   "type": "ui_panel_frame",
+   "width": 96,
+   "height": 96,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "ui",
+    "panel",
+    "nine_slice",
+    "cream",
+    "gold"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "docs/17_ASSET_PRODUCTION_PLAN.md#ui-nine-slice-frame",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project SVG authored for this game; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "cooking_tool_meat_mallet_v03",
+   "path": "public/assets/game/cooking/v03/tools/meat_mallet_v03.webp",
+   "type": "cooking_tool",
+   "width": 768,
+   "height": 512,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "cooking",
+    "stage_tool",
+    "meat_mallet"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#meat_mallet",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "cooking_tool_breading_tray_v03",
+   "path": "public/assets/game/cooking/v03/tools/breading_tray_v03.webp",
+   "type": "cooking_tool",
+   "width": 768,
+   "height": 512,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "cooking",
+    "stage_tool",
+    "breading_tray"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#breading_tray",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "cooking_tool_sauce_ladle_v03",
+   "path": "public/assets/game/cooking/v03/tools/sauce_ladle_v03.webp",
+   "type": "cooking_tool",
+   "width": 768,
+   "height": 512,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "cooking",
+    "stage_tool",
+    "sauce_ladle"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#sauce_ladle",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "cooking_tool_cabbage_pot_v03",
+   "path": "public/assets/game/cooking/v03/tools/cabbage_pot_v03.webp",
+   "type": "cooking_tool",
+   "width": 768,
+   "height": 512,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "cooking",
+    "stage_tool",
+    "cabbage_pot"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#cabbage_pot",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "cooking_tool_rice_paddle_v03",
+   "path": "public/assets/game/cooking/v03/tools/rice_paddle_v03.webp",
+   "type": "cooking_tool",
+   "width": 768,
+   "height": 512,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "cooking",
+    "stage_tool",
+    "rice_paddle"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rice_paddle",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bgm_title_v03",
+   "path": "public/assets/game/audio/bgm/bgm_title_v03.wav",
+   "category": "bgm",
+   "durationSeconds": 21.818,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": true,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/bgm/bgm_title_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "bgm",
+    "bgm_title"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#bgm_title_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bgm_shop_v03",
+   "path": "public/assets/game/audio/bgm/bgm_shop_v03.wav",
+   "category": "bgm",
+   "durationSeconds": 18.113,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": true,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/bgm/bgm_shop_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "bgm",
+    "bgm_shop"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#bgm_shop_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bgm_cooking_v03",
+   "path": "public/assets/game/audio/bgm/bgm_cooking_v03.wav",
+   "category": "bgm",
+   "durationSeconds": 16.552,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": true,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/bgm/bgm_cooking_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "bgm",
+    "bgm_cooking"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#bgm_cooking_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bgm_result_v03",
+   "path": "public/assets/game/audio/bgm/bgm_result_v03.wav",
+   "category": "bgm",
+   "durationSeconds": 24.615,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": true,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/bgm/bgm_result_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "bgm",
+    "bgm_result"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#bgm_result_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_click_v03",
+   "path": "public/assets/game/audio/se/se_click_v03.wav",
+   "category": "se",
+   "durationSeconds": 0.09,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_click_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_click"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_click_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_purchase_v03",
+   "path": "public/assets/game/audio/se/se_purchase_v03.wav",
+   "category": "se",
+   "durationSeconds": 0.77,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_purchase_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_purchase"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_purchase_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_serve_v03",
+   "path": "public/assets/game/audio/se/se_serve_v03.wav",
+   "category": "se",
+   "durationSeconds": 0.99,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_serve_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_serve"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_serve_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_rank_sss_v03",
+   "path": "public/assets/game/audio/se/se_rank_sss_v03.wav",
+   "category": "se",
+   "durationSeconds": 1.47,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_rank_sss_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_rank_sss"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_rank_sss_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_rank_s_v03",
+   "path": "public/assets/game/audio/se/se_rank_s_v03.wav",
+   "category": "se",
+   "durationSeconds": 1.17,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_rank_s_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_rank_s"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_rank_s_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_rank_a_v03",
+   "path": "public/assets/game/audio/se/se_rank_a_v03.wav",
+   "category": "se",
+   "durationSeconds": 0.905,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_rank_a_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_rank_a"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_rank_a_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_rank_b_v03",
+   "path": "public/assets/game/audio/se/se_rank_b_v03.wav",
+   "category": "se",
+   "durationSeconds": 0.89,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_rank_b_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_rank_b"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_rank_b_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_rank_c_v03",
+   "path": "public/assets/game/audio/se/se_rank_c_v03.wav",
+   "category": "se",
+   "durationSeconds": 0.94,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_rank_c_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_rank_c"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_rank_c_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_rank_f_v03",
+   "path": "public/assets/game/audio/se/se_rank_f_v03.wav",
+   "category": "se",
+   "durationSeconds": 0.81,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_rank_f_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_rank_f"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_rank_f_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_error_v03",
+   "path": "public/assets/game/audio/se/se_error_v03.wav",
+   "category": "se",
+   "durationSeconds": 0.595,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": false,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_error_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_error"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_error_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "se_fry_v03",
+   "path": "public/assets/game/audio/se/se_fry_v03.wav",
+   "category": "se",
+   "durationSeconds": 1.8,
+   "sampleRate": 44100,
+   "channels": 2,
+   "format": "wav-pcm16",
+   "loop": true,
+   "status": "concept_review",
+   "source": "assets/source/audio/v03/se/se_fry_v03.wav",
+   "generationMethod": "Original procedural synthesis from scripts/generate_audio_assets.py; no third-party samples.",
+   "width": 0,
+   "height": 0,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "audio",
+    "se",
+    "se_fry"
+   ],
+   "sourceWorkflow": "assets/source/audio/v03/design.json#se_fry_v03",
+   "generationSeed": null,
+   "model": null,
+   "loraList": [],
+   "licenseNote": "Original project synthesis; no external samples. Review listening quality before final release.",
+   "reviewedAt": null
+  },
+  {
+   "id": "bg_shop_lunch_chatgpt_v01",
+   "path": "public/assets/game/backgrounds/shop_chatgpt_v01.webp",
+   "type": "background",
+   "width": 2560,
+   "height": 1440,
+   "sourceWidth": 1672,
+   "sourceHeight": 941,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "shop",
+    "open",
+    "background"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#bg_shop_lunch_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "bg_morning_chatgpt_v01",
+   "path": "public/assets/game/backgrounds/morning_chatgpt_v01.webp",
+   "type": "background",
+   "width": 2560,
+   "height": 1440,
+   "sourceWidth": 1672,
+   "sourceHeight": 941,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "morning",
+    "prep",
+    "background"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#bg_morning_prep_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "bg_kitchen_frying_chatgpt_v01",
+   "path": "public/assets/game/backgrounds/kitchen_frying_chatgpt_v01.webp",
+   "type": "background",
+   "width": 2560,
+   "height": 1440,
+   "sourceWidth": 1672,
+   "sourceHeight": 941,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "cooking",
+    "P3",
+    "frying",
+    "background"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#bg_kitchen_frying_p3_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "bg_result_evening_chatgpt_v01",
+   "path": "public/assets/game/backgrounds/result_chatgpt_v01.webp",
+   "type": "background",
+   "width": 2560,
+   "height": 1440,
+   "sourceWidth": 1672,
+   "sourceHeight": 941,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "result",
+    "evening",
+    "background"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#bg_result_evening_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "bg_title_riverside_chatgpt_v01",
+   "path": "public/assets/game/backgrounds/title_riverside_chatgpt_v01.webp",
+   "type": "background",
+   "width": 2560,
+   "height": 1440,
+   "sourceWidth": 1672,
+   "sourceHeight": 941,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "title",
+    "riverside",
+    "background"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#bg_title_riverside_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_design_sheet_chatgpt_v01",
+   "path": "assets/source/imagegen/chatgpt/v04/characters/owner_design_sheet_v01.png",
+   "type": "character_reference_sheet",
+   "width": 1024,
+   "height": 1536,
+   "sourceWidth": 1024,
+   "sourceHeight": 1536,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "design_sheet",
+    "shop",
+    "casual",
+    "palette"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_design_sheet_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_shop_full_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/shop_full_v01.webp",
+   "type": "character",
+   "width": 887,
+   "height": 1774,
+   "sourceWidth": 887,
+   "sourceHeight": 1774,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "shop_uniform",
+    "full_body"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_shop_full_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_expression_sheet_chatgpt_v01",
+   "path": "assets/source/imagegen/chatgpt/v04/characters/owner_expression_sheet_v01.png",
+   "type": "character_expression_sheet",
+   "width": 1024,
+   "height": 1536,
+   "sourceWidth": 1024,
+   "sourceHeight": 1536,
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "expressions",
+    "sprite_sheet"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_expression_sheet_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_shop_normal_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/emotions/normal_v01.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "shop_uniform",
+    "expression",
+    "normal"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_expression_normal_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_shop_encourage_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/emotions/encourage_v01.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "shop_uniform",
+    "expression",
+    "encourage"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_expression_encourage_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_shop_happy_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/emotions/happy_v01.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "shop_uniform",
+    "expression",
+    "happy"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_expression_happy_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_shop_sad_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/emotions/sad_v01.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "shop_uniform",
+    "expression",
+    "sad"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_expression_sad_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_shop_surprised_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/emotions/surprised_v01.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "shop_uniform",
+    "expression",
+    "surprised"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_expression_surprised_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_shop_thinking_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/emotions/thinking_v01.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "shop_uniform",
+    "expression",
+    "thinking"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_expression_thinking_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_shop_invite_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/emotions/invite_v01.webp",
+   "type": "character",
+   "width": 1181,
+   "height": 1331,
+   "sourceWidth": 1181,
+   "sourceHeight": 1331,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "shop_uniform",
+    "title",
+    "invite"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_expression_invite_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_regular_reaction_sss_chatgpt_v01",
+   "path": "public/assets/game/characters/regular/v04/sss.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "customer",
+    "reaction",
+    "SSS"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_regular_sss_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_regular_reaction_s_chatgpt_v01",
+   "path": "public/assets/game/characters/regular/v04/s.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "customer",
+    "reaction",
+    "S"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_regular_s_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_regular_reaction_a_chatgpt_v01",
+   "path": "public/assets/game/characters/regular/v04/a.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "customer",
+    "reaction",
+    "A"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_regular_a_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_regular_reaction_b_chatgpt_v01",
+   "path": "public/assets/game/characters/regular/v04/b.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "customer",
+    "reaction",
+    "B"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_regular_b_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_regular_reaction_c_chatgpt_v01",
+   "path": "public/assets/game/characters/regular/v04/c.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "customer",
+    "reaction",
+    "C"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_regular_c_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_regular_reaction_f_chatgpt_v01",
+   "path": "public/assets/game/characters/regular/v04/f.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "regular",
+    "customer",
+    "reaction",
+    "F"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_regular_f_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_student_reaction_sss_chatgpt_v01",
+   "path": "public/assets/game/characters/student/v04/sss.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "customer",
+    "reaction",
+    "SSS"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_student_sss_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_student_reaction_s_chatgpt_v01",
+   "path": "public/assets/game/characters/student/v04/s.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "customer",
+    "reaction",
+    "S"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_student_s_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_student_reaction_a_chatgpt_v01",
+   "path": "public/assets/game/characters/student/v04/a.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "customer",
+    "reaction",
+    "A"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_student_a_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_student_reaction_b_chatgpt_v01",
+   "path": "public/assets/game/characters/student/v04/b.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "customer",
+    "reaction",
+    "B"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_student_b_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_student_reaction_c_chatgpt_v01",
+   "path": "public/assets/game/characters/student/v04/c.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "customer",
+    "reaction",
+    "C"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_student_c_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_student_reaction_f_chatgpt_v01",
+   "path": "public/assets/game/characters/student/v04/f.webp",
+   "type": "character",
+   "width": 1186,
+   "height": 1326,
+   "sourceWidth": 1186,
+   "sourceHeight": 1326,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "student",
+    "customer",
+    "reaction",
+    "F"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_student_f_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_worker_reaction_sss_chatgpt_v01",
+   "path": "public/assets/game/characters/worker/v04/sss.webp",
+   "type": "character",
+   "width": 1294,
+   "height": 1216,
+   "sourceWidth": 1294,
+   "sourceHeight": 1216,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "customer",
+    "reaction",
+    "SSS"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_worker_sss_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_worker_reaction_s_chatgpt_v01",
+   "path": "public/assets/game/characters/worker/v04/s_v01.webp",
+   "type": "character",
+   "width": 1294,
+   "height": 1216,
+   "sourceWidth": 1294,
+   "sourceHeight": 1216,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "customer",
+    "reaction",
+    "S"
+   ],
+   "status": "rejected",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_worker_s_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22",
+   "reviewNotes": "S reaction was too close in intensity to SSS; replaced with v02."
+  },
+  {
+   "id": "char_worker_reaction_a_chatgpt_v01",
+   "path": "public/assets/game/characters/worker/v04/a.webp",
+   "type": "character",
+   "width": 1294,
+   "height": 1216,
+   "sourceWidth": 1294,
+   "sourceHeight": 1216,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "customer",
+    "reaction",
+    "A"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_worker_a_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_worker_reaction_b_chatgpt_v01",
+   "path": "public/assets/game/characters/worker/v04/b.webp",
+   "type": "character",
+   "width": 1293,
+   "height": 1216,
+   "sourceWidth": 1294,
+   "sourceHeight": 1216,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "customer",
+    "reaction",
+    "B"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_worker_b_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_worker_reaction_c_chatgpt_v01",
+   "path": "public/assets/game/characters/worker/v04/c.webp",
+   "type": "character",
+   "width": 1294,
+   "height": 1216,
+   "sourceWidth": 1294,
+   "sourceHeight": 1216,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "customer",
+    "reaction",
+    "C"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_worker_c_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_worker_reaction_f_chatgpt_v01",
+   "path": "public/assets/game/characters/worker/v04/f.webp",
+   "type": "character",
+   "width": 1294,
+   "height": 1216,
+   "sourceWidth": 1294,
+   "sourceHeight": 1216,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "customer",
+    "reaction",
+    "F"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_worker_f_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_tourist_reaction_sss_chatgpt_v01",
+   "path": "public/assets/game/characters/tourist/v04/sss.webp",
+   "type": "character",
+   "width": 1312,
+   "height": 1199,
+   "sourceWidth": 1312,
+   "sourceHeight": 1199,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "customer",
+    "reaction",
+    "SSS"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_tourist_sss_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_tourist_reaction_s_chatgpt_v01",
+   "path": "public/assets/game/characters/tourist/v04/s_v01.webp",
+   "type": "character",
+   "width": 1312,
+   "height": 1199,
+   "sourceWidth": 1312,
+   "sourceHeight": 1199,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "customer",
+    "reaction",
+    "S"
+   ],
+   "status": "rejected",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_tourist_s_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22",
+   "reviewNotes": "S reaction was too close in intensity to SSS; replaced with v02."
+  },
+  {
+   "id": "char_tourist_reaction_a_chatgpt_v01",
+   "path": "public/assets/game/characters/tourist/v04/a.webp",
+   "type": "character",
+   "width": 1312,
+   "height": 1199,
+   "sourceWidth": 1312,
+   "sourceHeight": 1199,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "customer",
+    "reaction",
+    "A"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_tourist_a_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_tourist_reaction_b_chatgpt_v01",
+   "path": "public/assets/game/characters/tourist/v04/b.webp",
+   "type": "character",
+   "width": 1312,
+   "height": 1199,
+   "sourceWidth": 1312,
+   "sourceHeight": 1199,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "customer",
+    "reaction",
+    "B"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_tourist_b_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_tourist_reaction_c_chatgpt_v01",
+   "path": "public/assets/game/characters/tourist/v04/c.webp",
+   "type": "character",
+   "width": 1312,
+   "height": 1199,
+   "sourceWidth": 1312,
+   "sourceHeight": 1199,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "customer",
+    "reaction",
+    "C"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_tourist_c_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_tourist_reaction_f_chatgpt_v01",
+   "path": "public/assets/game/characters/tourist/v04/f.webp",
+   "type": "character",
+   "width": 1312,
+   "height": 1199,
+   "sourceWidth": 1312,
+   "sourceHeight": 1199,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "customer",
+    "reaction",
+    "F"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_tourist_f_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "char_owner_casual_full_chatgpt_v01",
+   "path": "public/assets/game/characters/owner/v04/casual_full_v01.webp",
+   "type": "character",
+   "width": 887,
+   "height": 1774,
+   "sourceWidth": 887,
+   "sourceHeight": 1774,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "casual_outfit",
+    "full_body"
+   ],
+   "status": "rejected",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_casual_full_v01",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22",
+   "reviewNotes": "Outfit skirt color did not match the canonical casual design sheet; superseded by v02."
+  },
+  {
+   "id": "char_owner_casual_full_chatgpt_v02",
+   "path": "public/assets/game/characters/owner/v04/casual_full_v02.webp",
+   "type": "character",
+   "width": 887,
+   "height": 1774,
+   "sourceWidth": 887,
+   "sourceHeight": 1774,
+   "anchorX": 0.5,
+   "anchorY": 1.0,
+   "scaleHint": 1.0,
+   "tags": [
+    "owner",
+    "casual_outfit",
+    "full_body"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#owner_casual_full_v02",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22",
+   "reviewNotes": null
+  },
+  {
+   "id": "char_worker_reaction_s_chatgpt_v02",
+   "path": "public/assets/game/characters/worker/v04/s.webp",
+   "type": "character",
+   "width": 1294,
+   "height": 1216,
+   "sourceWidth": 1294,
+   "sourceHeight": 1216,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "worker",
+    "customer",
+    "reaction",
+    "S"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_worker_s_v02",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22",
+   "reviewNotes": null
+  },
+  {
+   "id": "char_tourist_reaction_s_chatgpt_v02",
+   "path": "public/assets/game/characters/tourist/v04/s.webp",
+   "type": "character",
+   "width": 1312,
+   "height": 1199,
+   "sourceWidth": 1312,
+   "sourceHeight": 1199,
+   "anchorX": 0.5,
+   "anchorY": 0.72,
+   "scaleHint": 1.0,
+   "tags": [
+    "tourist",
+    "customer",
+    "reaction",
+    "S"
+   ],
+   "status": "concept_review",
+   "sourceWorkflow": "assets/source/imagegen/chatgpt/v04/prompts.json#customer_tourist_s_v02",
+   "generationSeed": null,
+   "model": "ChatGPT Image Generation",
+   "loraList": [],
+   "licenseNote": "Generated for this project with ChatGPT Image Generation. Verify applicable distribution terms before release.",
+   "reviewedAt": "2026-11-22",
+   "reviewNotes": null
+  }
+ ],
+ "includes": [
+  "public/assets/game/food/v02/manifest.json",
+  "public/assets/game/food/v03/manifest.json",
+  "public/assets/game/equipment/v03/manifest.json",
+  "public/assets/game/effects/v03/manifest.json",
+  "public/assets/game/backgrounds/v03/manifest.json"
+ ]
+}

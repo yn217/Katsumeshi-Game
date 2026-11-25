@@ -1,0 +1,74 @@
+{
+  "note": "Recipe extracted from ComfyUI output/town_game (koharu_rikka) PNG metadata. Outfit tags of the source images (white shirt + denim overalls) are deliberately excluded.",
+  "base": {
+    "unet": "Anima-Base-v1.0.safetensors",
+    "clip": "qwen_3_06b_base.safetensors",
+    "vae": "qwen_image_vae.safetensors",
+    "sampler": {
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5
+    }
+  },
+  "presets": {
+    "owner": {
+      "loras": [
+        [
+          "Koharu-Koharu-epoch100.safetensors",
+          0.8
+        ],
+        [
+          "anima-style-epoch35-lr5e5.safetensors",
+          0.8
+        ]
+      ],
+      "prefix": "koharu_rikka, anima_style, masterpiece, best quality, 1girl, solo, Koharu Rikka, silver gray hair, medium hair with bangs, double bun, two small hair buns on top of head, pink heart hairpin, pink eyes, ",
+      "negative": "worst quality, low quality, blurry, photorealistic, 3d render, bad anatomy, extra fingers, missing fingers, fused fingers, deformed hands, extra limbs, duplicate girl, multiple girls, wrong hair color, long hair, ribbon bow tie, washed out colors, overexposure, real brand logos, text, letters, gibberish text, watermark, signature, denim, overalls, suspenders, shoulder straps, blue clothes, jeans"
+    },
+    "scene": {
+      "loras": [
+        [
+          "anima-style-epoch35-lr5e5.safetensors",
+          0.8
+        ]
+      ],
+      "prefix": "anima_style, masterpiece, best quality, ",
+      "negative": "worst quality, low quality, blurry, photorealistic, 3d render, readable text, lettering, logos, watermark, signature"
+    },
+    "food_soft": {
+      "loras": [
+        [
+          "anima-style-epoch35-lr5e5.safetensors",
+          0.4
+        ]
+      ],
+      "prefix": "anima_style, masterpiece, best quality, ",
+      "negative": "worst quality, low quality, blurry, photorealistic, 3d render, readable text, lettering, logos, watermark, signature"
+    },
+    "food_plain": {
+      "loras": [],
+      "prefix": "masterpiece, best quality, ",
+      "negative": "worst quality, low quality, blurry, photorealistic, 3d render, readable text, lettering, logos, watermark, signature"
+    },
+    "owner_aesthetic": {
+      "loras": [
+        [
+          "Koharu-Koharu-epoch100.safetensors",
+          0.8
+        ],
+        [
+          "anima-style-epoch35-lr5e5.safetensors",
+          0.8
+        ]
+      ],
+      "prefix": "koharu_rikka, anima_style, masterpiece, best quality, 1girl, solo, Koharu Rikka, silver gray hair, medium hair with bangs, double bun, two small hair buns on top of head, pink heart hairpin, pink eyes, ",
+      "negative": "worst quality, low quality, blurry, photorealistic, 3d render, bad anatomy, extra fingers, missing fingers, fused fingers, deformed hands, extra limbs, duplicate girl, multiple girls, wrong hair color, long hair, ribbon bow tie, washed out colors, overexposure, real brand logos, text, letters, gibberish text, watermark, signature, denim, overalls, suspenders, shoulder straps, blue clothes, jeans",
+      "unet": "Anima-Aesthetic-v1.1.safetensors"
+    }
+  },
+  "outfits": {
+    "shop": "cream white blouse with sleeves rolled up to elbows, deep crimson red cafe apron tied at the waist with a bow at the back, dark brown long skirt",
+    "casual": "light pink spring knit cardigan over a white frilled blouse, beige flared skirt"
+  }
+}

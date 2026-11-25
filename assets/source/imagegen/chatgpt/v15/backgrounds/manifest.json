@@ -1,0 +1,24 @@
+{
+  "schema": "katsumeshi-imagegen-candidate-manifest/v1",
+  "version": "v15",
+  "generatedAt": "2026-11-23",
+  "assetId": "title_riverside_anime_chatgpt_v04",
+  "file": "title_riverside_anime_chatgpt_v04_source.png",
+  "width": 1672,
+  "height": 941,
+  "mode": "RGB",
+  "generationMethod": "ChatGPT built-in image generation",
+  "model": "ChatGPT built-in image generation",
+  "seed": null,
+  "status": "concept_review",
+  "prompt": "Create a refined high-resolution 16:9 Japanese indie game title-screen background based on the supplied reference image. Preserve its composition and identity: a small warm traditional Japanese katsumeshi diner on the RIGHT half, river and low bridge on the LEFT, leafy foreground tree at upper-left, quiet riverside shopping street at golden-hour dusk. Clean detailed hand-painted 2D anime background with confident line art, restrained cel-shaded colors and inviting warm lights. Leave broad uncluttered negative space in the upper-left sky and lower-left riverbank for UI overlay; do not put important details near edges. No people, no food, no plates, no writing, no logos, no signage text, no UI, no watermark. Keep 16:9 and produce at the highest native resolution available, targeting 2560x1440.",
+  "inputReferences": [
+    {
+      "path": "assets/source/imagegen/chatgpt/v08/backgrounds/title_riverside_anime_chatgpt_v03_source.png",
+      "role": "composition and diner identity reference"
+    }
+  ],
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; not approved for release.",
+  "licenseReference": "https://openai.com/policies/terms-of-use/",
+  "review": "Visual review: preserves the required riverside diner, bridge on left, storefront on right, and UI negative space. Source is 1672x941, below the 2560x1440 native master requirement; therefore not runtime-connected and not approved. It is a composition/color candidate only; upscale conversion would not satisfy native-detail requirement."
+}

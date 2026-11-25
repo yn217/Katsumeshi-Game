@@ -1,0 +1,158 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v03",
+  "generatedAt": "2026-11-22",
+  "status": "concept_review",
+  "subject": "Standalone Katsumeshi ingredients and cutlet cooking states, no plated finished dish and no characters",
+  "sourceAttribution": "OpenAI ChatGPT built-in image generation; original PNG masters retained in assets/source/imagegen/v03/ingredients/",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "food_raw_beef_v03",
+      "path": "public/assets/game/food/v03/ingredients/raw_beef_v03.webp",
+      "type": "food",
+      "width": 1774,
+      "height": 887,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ingredient",
+        "beef"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#raw_beef",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "food_steamed_rice_v03",
+      "path": "public/assets/game/food/v03/ingredients/steamed_rice_v03.webp",
+      "type": "food",
+      "width": 1536,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ingredient",
+        "rice"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#steamed_rice",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "food_panko_v03",
+      "path": "public/assets/game/food/v03/ingredients/panko_v03.webp",
+      "type": "food",
+      "width": 1536,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ingredient",
+        "coating"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#panko",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "food_boiled_cabbage_v03",
+      "path": "public/assets/game/food/v03/ingredients/boiled_cabbage_v03.webp",
+      "type": "food",
+      "width": 1536,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ingredient",
+        "cabbage"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#boiled_cabbage",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "food_demiglace_v03",
+      "path": "public/assets/game/food/v03/ingredients/demiglace_v03.webp",
+      "type": "food",
+      "width": 1536,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ingredient",
+        "sauce"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#demiglace",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "food_breaded_cutlet_v03",
+      "path": "public/assets/game/food/v03/ingredients/breaded_cutlet_v03.webp",
+      "type": "food",
+      "width": 1774,
+      "height": 887,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking-stage",
+        "breaded_cutlet"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#breaded_cutlet",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "food_fried_cutlet_v03",
+      "path": "public/assets/game/food/v03/ingredients/fried_cutlet_v03.webp",
+      "type": "food",
+      "width": 1774,
+      "height": 887,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking-stage",
+        "fried_cutlet"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#fried_cutlet",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    }
+  ]
+}

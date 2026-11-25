@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>効果音くらべ｜かつめし繁盛記</title>
+<style>
+body{margin:0;padding:24px;background:#2a1712;color:#3b2416;font-family:"BIZ UDPGothic","Yu Gothic UI","Meiryo",sans-serif}
+main{max-width:760px;margin:auto;background:#fff6e2;border:3px solid #e8b44e;border-radius:16px;padding:18px 22px}
+h1{margin:0 0 6px;color:#a3262a;font-size:24px}p{margin:0 0 14px}
+table{width:100%;border-collapse:collapse}td,th{padding:8px;border-bottom:1px dashed #d8bf94;text-align:left}
+button{font:inherit;font-weight:800;padding:6px 14px;border-radius:10px;border:2px solid #d9b170;background:#fffaf0;cursor:pointer}
+button.new{background:linear-gradient(#d23a3f,#8d1c20);color:#fff;border-color:#ffe39a}
+</style>
+</head>
+<body>
+<main>
+<h1>効果音くらべ</h1>
+<p>旧（v03）と新（v04）を聞きくらべられます。ゲーム本体は v04 を使います。</p>
+<table id="list"><tr><th>効果音</th><th>旧 v03</th><th>新 v04</th></tr></table>
+</main>
+<script>
+const cues=[["click","ボタン"],["purchase","購入"],["serve","提供"],["ready","料理できあがり（新規）"],["pickup","トレーに載せる（新規）"],["fry","揚げる（ループ）"],["rank_sss","評価 SSS"],["rank_s","評価 S"],["rank_a","評価 A"],["rank_b","評価 B"],["rank_c","評価 C"],["rank_f","評価 F"],["error","エラー"]];
+const v03=new Set(["click","purchase","serve","fry","rank_sss","rank_s","rank_a","rank_b","rank_c","rank_f","error"]);
+let current=null;
+const play=src=>{if(current){current.pause();}current=new Audio(src);current.play();};
+const list=document.getElementById("list");
+for(const [id,label] of cues){
+  const tr=document.createElement("tr");
+  tr.innerHTML=`<td>${label}</td><td>${v03.has(id)?`<button data-src="../../public/assets/game/audio/se/se_${id}_v03.wav">▶ 旧</button>`:"—"}</td><td><button class="new" data-src="../../public/assets/game/audio/se/se_${id}_v04.wav">▶ 新</button></td>`;
+  list.appendChild(tr);
+}
+list.addEventListener("click",e=>{const b=e.target.closest("button");if(b)play(b.dataset.src);});
+</script>
+</body>
+</html>

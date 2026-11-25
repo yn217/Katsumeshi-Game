@@ -1,0 +1,74 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v03",
+  "generatedAt": "2026-11-22",
+  "status": "concept_review",
+  "subject": "Transparent steam, frying sizzle, and golden sparkle effects; no characters",
+  "sourceAttribution": "OpenAI ChatGPT built-in image generation; original PNG masters retained in assets/source/imagegen/v03/effects/",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "effect_steam_wisps_v03",
+      "path": "public/assets/game/effects/v03/steam_wisps_v03.webp",
+      "type": "effect",
+      "width": 1199,
+      "height": 1312,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "effect",
+        "steam_wisps"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#steam_wisps",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "effect_frying_sizzle_v03",
+      "path": "public/assets/game/effects/v03/frying_sizzle_v03.webp",
+      "type": "effect",
+      "width": 1536,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "effect",
+        "frying_sizzle"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#frying_sizzle",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "effect_golden_sparkle_v03",
+      "path": "public/assets/game/effects/v03/golden_sparkle_v03.webp",
+      "type": "effect",
+      "width": 1536,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "effect",
+        "golden_sparkle"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#golden_sparkle",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    }
+  ]
+}

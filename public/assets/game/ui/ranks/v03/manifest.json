@@ -1,0 +1,149 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v03",
+  "generatedAt": "2026-11-22",
+  "status": "concept_review",
+  "subject": "Six transparent rank emblem frames with blank centers for program-rendered rank labels; no characters",
+  "sourceAttribution": "OpenAI ChatGPT built-in image generation; original PNG masters retained in assets/source/imagegen/v03/ranks/",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "ui_rank_sss_badge_v03",
+      "path": "public/assets/game/ui/ranks/v03/rank_sss_badge_v03.webp",
+      "type": "ui_rank",
+      "width": 768,
+      "height": 768,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ui",
+        "rank_badge",
+        "sss"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_sss_badge",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
+    },
+    {
+      "id": "ui_rank_s_badge_v03",
+      "path": "public/assets/game/ui/ranks/v03/rank_s_badge_v03.webp",
+      "type": "ui_rank",
+      "width": 768,
+      "height": 768,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ui",
+        "rank_badge",
+        "s"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_s_badge",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
+    },
+    {
+      "id": "ui_rank_a_badge_v03",
+      "path": "public/assets/game/ui/ranks/v03/rank_a_badge_v03.webp",
+      "type": "ui_rank",
+      "width": 768,
+      "height": 768,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ui",
+        "rank_badge",
+        "a"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_a_badge",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
+    },
+    {
+      "id": "ui_rank_b_badge_v03",
+      "path": "public/assets/game/ui/ranks/v03/rank_b_badge_v03.webp",
+      "type": "ui_rank",
+      "width": 768,
+      "height": 768,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ui",
+        "rank_badge",
+        "b"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_b_badge",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
+    },
+    {
+      "id": "ui_rank_c_badge_v03",
+      "path": "public/assets/game/ui/ranks/v03/rank_c_badge_v03.webp",
+      "type": "ui_rank",
+      "width": 768,
+      "height": 768,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ui",
+        "rank_badge",
+        "c"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_c_badge",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
+    },
+    {
+      "id": "ui_rank_f_badge_v03",
+      "path": "public/assets/game/ui/ranks/v03/rank_f_badge_v03.webp",
+      "type": "ui_rank",
+      "width": 768,
+      "height": 768,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "ui",
+        "rank_badge",
+        "f"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rank_f_badge",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": "2026-11-23",
+      "reviewNote": "Compared runtime frame with program-rendered rank text on a transparency checkerboard in artifacts/rank_badges_runtime_review_v01.png. Text fits the central blank area; actual in-game sizes and all viewport scales still need review."
+    }
+  ]
+}

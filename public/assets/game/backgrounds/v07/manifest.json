@@ -1,0 +1,130 @@
+{
+  "schema": "katsumeshi-chatgpt-background-manifest/v1",
+  "version": "v07",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceAttribution": "ChatGPT built-in image generation; no ComfyUI generation for non-character assets.",
+  "assets": [
+    {
+      "id": "shop_diner_anime_chatgpt_v01",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v07/shop_diner_anime_chatgpt_v01.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "shop",
+        "diner",
+        "anime"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "Use case: stylized-concept. Asset type: game background for the Katsumeshi Game shop screen. Primary request: a clean, professional 2D anime background illustration of a small friendly Japanese neighborhood diner interior in Kakogawa, Hyogo, with an empty central aisle and several modest wood tables and chairs along the sides. Scene/backdrop: warm wood counter, cream plaster walls, simple shoji-inspired window frames, a few small potted plants, calm late-morning light. Style/medium: unmistakably hand-painted 2D Japanese anime game background, matching a soft-cel-shaded visual novel illustration; clean ink outlines on furniture and window edges, simplified flat shapes, painterly brush texture, restrained cel-shaded shadows, illustrated not rendered. Composition/framing: wide 16:9 environment plate, eye-level gentle perspective, clear central floor for characters and UI, no foreground figures. Lighting/mood: warm, welcoming daylight. Palette: muted cream, honey wood, soft red-brown accents, moderate saturation. Constraints: no people or characters, no food or dishes, no lettering or signage, no logo, no UI, no watermark. Avoid: photorealism, 3D rendering, CGI, ray-traced reflections, glossy realistic wood, depth-of-field blur, cinematic lens effects, over-detailed textures, clutter. Keep the result visibly illustrated and stylistically consistent with anime character sprites.",
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewNote": "This v07 candidate uses stronger hand-painted 2D linework and cel shading than the earlier semi-realistic shop background. Character/background harmony and game-screen composition still need review.",
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
+    },
+    {
+      "id": "morning_prep_anime_chatgpt_v01",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v07/morning_prep_anime_chatgpt_v01.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v07/backgrounds/morning_prep_anime_chatgpt_v01.png",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "morning",
+        "anime"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "Use the reference image only for its hand-painted 2D anime background style, clean ink outlines, simplified flat shapes, and warm cel-shaded palette. Create a different scene for a cozy small Japanese neighborhood diner preparation screen: a broad clean wooden prep counter in the foreground, simple cream tile backsplash and shoji-style side window with soft morning light, a sink and a few neatly arranged bowls/utensils in the rear, small potted plant. Leave broad uncluttered counter and central midground for inventory UI and the shopkeeper sprite. Wide horizontal 16:9 environment plate, gentle perspective. No people, no characters, no food, no lettering, no logo, no UI, no watermark. Avoid photorealism, 3D rendering, CGI, glossy reflections, cinematic blur, clutter. Match the reference's illustrated 2D anime game background style; do not copy its room layout.",
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewNote": "Regenerated as a hand-painted 2D background candidate to better match the anime character sprites. Character/screen composition review and native-size comparison remain pending.",
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "styleReference": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png"
+    },
+    {
+      "id": "kitchen_frying_anime_chatgpt_v01",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v07/kitchen_frying_anime_chatgpt_v01.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v07/backgrounds/kitchen_frying_anime_chatgpt_v01.png",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "kitchen",
+        "anime"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "Use the reference image only for its hand-painted 2D anime background style, clean ink outlines, simplified flat shapes, and warm cel-shaded palette. Create a different scene: a compact Japanese neighborhood diner kitchen for the P3 frying gameplay screen. Show one small countertop deep fryer with a wire basket, wooden counter, simple cream tile backsplash, a few neatly arranged stainless utensils on a shelf, and an open center area for character/gameplay overlays. Wide 16:9 environment plate, gentle eye-level perspective, warm morning light, restrained textures. Keep the fryer readable but leave enough quiet negative space around it. No people, no characters, no food, no text, no logo, no UI, no watermark. Avoid photorealism, 3D/CGI rendering, glossy reflections, cinematic blur, clutter. Match the reference's clearly illustrated 2D look; don't reproduce its shop layout.",
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewNote": "Regenerated as a hand-painted 2D background candidate to better match the anime character sprites. Character/screen composition review and native-size comparison remain pending.",
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "styleReference": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png"
+    },
+    {
+      "id": "tasting_interior_anime_chatgpt_v01",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v07/tasting_interior_anime_chatgpt_v01.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v07/backgrounds/tasting_interior_anime_chatgpt_v01.png",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "tasting",
+        "anime"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "Use the reference image only for its hand-painted 2D anime environment style, clean outlines, simplified flat shapes, and warm cel-shaded palette. Create a tasting/reaction screen background in the same small Japanese diner, but viewed across a quiet open dining area: warm wood tables and chairs pushed to the sides, cream walls, shoji-style windows with gentle early-evening light, a few small plants, subtle pendant lamps. Leave a broad calm central area for the customer, shopkeeper, dish, and score UI. Wide 16:9 plate, gentle depth-of-field softness painted into the illustration (not camera blur), medium-low contrast behind overlays. No people, no characters, no food, no plates, no text/signs/logo/UI/watermark. Avoid photorealism, CGI, glossy reflections, heavy texture, busy details. Match the reference's visibly illustrated 2D game art and color language.",
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewNote": "Regenerated as a hand-painted 2D background candidate to better match the anime character sprites. Character/screen composition review and native-size comparison remain pending.",
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "styleReference": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png"
+    },
+    {
+      "id": "result_evening_anime_chatgpt_v01",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v07/result_evening_anime_chatgpt_v01.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v07/backgrounds/result_evening_anime_chatgpt_v01.png",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "background",
+        "result",
+        "anime"
+      ],
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt recorded in this manifest.",
+      "prompt": "Use the reference image only for the same small diner identity and hand-painted 2D anime background style, clean outlines, simplified flat shapes, and warm cel-shaded palette. Create the same cozy Japanese neighborhood restaurant interior after closing at early evening. Show chairs tucked beside wooden tables, the familiar counter and cream walls, shoji-style windows with soft orange-pink twilight, amber pendant lamps. Keep center open and calm for daily results UI and a character sprite. Wide 16:9 environment plate, slightly quieter and dimmer than the reference, but keep UI contrast readable. No people, no characters, no food, no plates, no text/signs/logo/UI/watermark. Avoid photorealism, 3D/CGI, glossy realistic reflections, cinematic blur, busy details. Match the reference's visibly illustrated 2D game art.",
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewNote": "Regenerated as a hand-painted 2D background candidate to better match the anime character sprites. Character/screen composition review and native-size comparison remain pending.",
+      "reviewedAt": null,
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "styleReference": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png"
+    }
+  ],
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
+}

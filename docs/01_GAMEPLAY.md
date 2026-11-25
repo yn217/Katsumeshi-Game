@@ -65,7 +65,7 @@ T01 タイトル開始 → T02 仕込み画面の見方 → T03 最初の注文 
 - 未確認のイベントがある場合も翌日の状態復元が可能。
 
 ## 営業時計・閉店の決定仕様（v0.2）
-1. 永続化するphaseは MORNING / OPEN / COOK / REACTION / RESULT / UPGRADE（TITLEはメニュー画面）。PAUSE/EVENTはphaseではなくオーバーレイ。元phaseと操作途中を保持する。
+1. 永続化するphaseは MORNING / OPEN / COOK / REACTION / RESULT / UPGRADE（TITLEはメニュー画面）。PAUSE/EVENTはphaseではなくオーバーレイ。ストーリーイベント中はイベントIDと元phase/操作途中を保持する。
 2. 通常営業の時計は600秒。**OPEN・COOKだけ**残り時間を減算し、queuedの忍耐も減らす。初日チュートリアルは600秒の制限を無効にする。
 3. 受付済み注文はcookingへ入り、以後その客の忍耐は減らない。別のqueued客は減る。queued最大3件、cooking最大1件。
 4. 残り時間0では**新規来店のみ停止**。queued注文は受付/期限切れまで、調理中注文は提供/キャンセルまで継続。残り時間0でもqueuedの忍耐は減る。

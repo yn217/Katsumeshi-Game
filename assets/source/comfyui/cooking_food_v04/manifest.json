@@ -1,0 +1,296 @@
+{
+  "schema": "katsumeshi-comfy-cooking-food-candidates/v1",
+  "generatedAt": "2026-11-23",
+  "reviewStatus": "candidate_review",
+  "description": "Standalone food ingredients and intermediate cutlets only. No plated finished katsumeshi. These candidates were generated to compare style against the ComfyUI anime game backgrounds. None are runtime approved.",
+  "assets": [
+    {
+      "id": "food_raw_beef_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_raw_beef_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_raw_beef_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98001,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04/food_raw_beef_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected after visual review: cutlet orientation/food shape and poor contrast or ingredient identity do not meet the stage reference.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_steamed_rice_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_steamed_rice_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_steamed_rice_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98002,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04/food_steamed_rice_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected after visual review: cutlet orientation/food shape and poor contrast or ingredient identity do not meet the stage reference.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_panko_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_panko_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_panko_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98003,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04/food_panko_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected after visual review: cutlet orientation/food shape and poor contrast or ingredient identity do not meet the stage reference.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_boiled_cabbage_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_boiled_cabbage_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_boiled_cabbage_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98004,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04/food_boiled_cabbage_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected after visual review: cutlet orientation/food shape and poor contrast or ingredient identity do not meet the stage reference.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_demiglace_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_demiglace_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_demiglace_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98005,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04/food_demiglace_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected after visual review: cutlet orientation/food shape and poor contrast or ingredient identity do not meet the stage reference.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_breaded_cutlet_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_breaded_cutlet_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_breaded_cutlet_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98006,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04/food_breaded_cutlet_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected after visual review: cutlet orientation/food shape and poor contrast or ingredient identity do not meet the stage reference.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_fried_cutlet_anime_v401",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_fried_cutlet_anime_v401_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_fried_cutlet_anime_v401_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98007,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04/food_fried_cutlet_anime_v401",
+      "status": "rejected",
+      "reviewNote": "Rejected after visual review: cutlet orientation/food shape and poor contrast or ingredient identity do not meet the stage reference.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_raw_beef_anime_v402",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_raw_beef_anime_v402_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_raw_beef_anime_v402_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98101,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04_iter2/food_raw_beef_anime_v402",
+      "status": "concept_review",
+      "reviewNote": "Concept candidate; oval is vertical. Could be rotated for a horizontal asset, but marbling and final look need review.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_steamed_rice_anime_v402",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_steamed_rice_anime_v402_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_steamed_rice_anime_v402_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98102,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04_iter2/food_steamed_rice_anime_v402",
+      "status": "concept_review",
+      "reviewNote": "Concept candidate; visible grain detail improved, but contrast on light UI backgrounds needs review.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_panko_anime_v402",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_panko_anime_v402_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_panko_anime_v402_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98103,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04_iter2/food_panko_anime_v402",
+      "status": "concept_review",
+      "reviewNote": "Concept candidate; distinct crumb texture, but pile is unusually circular and flat.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_boiled_cabbage_anime_v402",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_boiled_cabbage_anime_v402_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_boiled_cabbage_anime_v402_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98104,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04_iter2/food_boiled_cabbage_anime_v402",
+      "status": "rejected",
+      "reviewNote": "Rejected visually in review: ribbons resemble noodles rather than boiled cabbage leaves.",
+      "runtimePath": null
+    },
+    {
+      "id": "food_breaded_cutlet_anime_v402",
+      "sourceImage": "assets/source/comfyui/cooking_food_v04/food_breaded_cutlet_anime_v402_00001_.png",
+      "sourceMask": "assets/source/comfyui/cooking_food_v04/food_breaded_cutlet_anime_v402_mask_00001_.png",
+      "width": 1024,
+      "height": 1024,
+      "preset": "scene",
+      "seed": 98105,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loras": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_food_v04_iter2/food_breaded_cutlet_anime_v402",
+      "status": "concept_review",
+      "reviewNote": "Concept candidate; flat oval silhouette, but coating color/texture is too pale and weak.",
+      "runtimePath": null
+    }
+  ]
+}

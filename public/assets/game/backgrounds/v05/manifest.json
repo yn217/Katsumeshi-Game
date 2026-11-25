@@ -1,0 +1,101 @@
+{
+  "schema": "katsumeshi-background-manifest/v1",
+  "version": "v05",
+  "reviewStatus": "concept_review",
+  "assets": [
+    {
+      "id": "bg_morning_prep_v106",
+      "type": "background",
+      "width": 2560,
+      "height": 1440,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "MORNING",
+        "prep-counter",
+        "anime-background"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#backgrounds_v06/bg_morning_prep_v106",
+      "generationSeed": 96008,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "licenseNote": "Base model and LoRA distribution terms pending review; do not publish.",
+      "reviewedAt": null,
+      "path": "public/assets/game/backgrounds/v05/morning_prep_v106.webp"
+    },
+    {
+      "id": "bg_shop_day_v106",
+      "type": "background",
+      "width": 2560,
+      "height": 1440,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "OPEN",
+        "dining-room",
+        "anime-background"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#backgrounds_v06/bg_shop_day_v106",
+      "generationSeed": 96009,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "licenseNote": "Base model and LoRA distribution terms pending review; do not publish.",
+      "reviewedAt": null,
+      "path": "public/assets/game/backgrounds/v05/shop_day_v106.webp"
+    },
+    {
+      "id": "bg_kitchen_cooking_v103",
+      "type": "background",
+      "width": 2560,
+      "height": 1440,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "COOK",
+        "P3",
+        "deep-fryer",
+        "anime-background"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#background_kitchen_v05/bg_kitchen_cooking_v103",
+      "generationSeed": 96103,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "licenseNote": "Base model and LoRA distribution terms pending review; do not publish.",
+      "reviewedAt": null,
+      "path": "public/assets/game/backgrounds/v05/kitchen_cooking_v103.webp"
+    }
+  ]
+}

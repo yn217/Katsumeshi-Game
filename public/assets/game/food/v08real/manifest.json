@@ -1,0 +1,137 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v08real",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "charactersIncluded": false,
+  "assets": [
+    {
+      "id": "food_raw_beef_flattened_real_v01",
+      "path": "public/assets/game/food/v08real/raw_beef_flattened_real_v01.webp",
+      "sourceImage": "assets/source/comfyui/realfood_parts_selected/raw_beef_flattened_real_cut.png",
+      "type": "food_stage_icon",
+      "width": 256,
+      "height": 256,
+      "sourceAlphaBbox": [
+        177,
+        301,
+        851,
+        712
+      ],
+      "sourceWorkflow": "ComfyUI Qwen-Image-2512 GGUF Q4 + Lightning 8-step LoRA, BiRefNet background removal",
+      "status": "concept_review"
+    },
+    {
+      "id": "food_breaded_beef_real_v01",
+      "path": "public/assets/game/food/v08real/breaded_beef_real_v01.webp",
+      "sourceImage": "assets/source/comfyui/realfood_parts_selected/breaded_beef_real_cut.png",
+      "type": "food_stage_icon",
+      "width": 256,
+      "height": 256,
+      "sourceAlphaBbox": [
+        168,
+        289,
+        855,
+        720
+      ],
+      "sourceWorkflow": "ComfyUI Qwen-Image-2512 GGUF Q4 + Lightning 8-step LoRA, BiRefNet background removal",
+      "status": "concept_review"
+    },
+    {
+      "id": "food_fried_cutlet_real_v01",
+      "path": "public/assets/game/food/v08real/fried_cutlet_real_v01.webp",
+      "sourceImage": "assets/source/comfyui/realfood_parts_selected/fried_cutlet_real_cut.png",
+      "type": "food_stage_icon",
+      "width": 256,
+      "height": 256,
+      "sourceAlphaBbox": [
+        171,
+        297,
+        853,
+        722
+      ],
+      "sourceWorkflow": "ComfyUI Qwen-Image-2512 GGUF Q4 + Lightning 8-step LoRA, BiRefNet background removal",
+      "status": "concept_review"
+    },
+    {
+      "id": "food_boiled_cabbage_real_v01",
+      "path": "public/assets/game/food/v08real/boiled_cabbage_real_v01.webp",
+      "sourceImage": "assets/source/comfyui/realfood_parts_selected/boiled_cabbage_real_cut.png",
+      "type": "food_stage_icon",
+      "width": 256,
+      "height": 256,
+      "sourceAlphaBbox": [
+        68,
+        220,
+        938,
+        838
+      ],
+      "sourceWorkflow": "ComfyUI Qwen-Image-2512 GGUF Q4 + Lightning 8-step LoRA, BiRefNet background removal",
+      "status": "concept_review"
+    },
+    {
+      "id": "food_demi_glace_sauce_real_v01",
+      "path": "public/assets/game/food/v08real/demi_glace_sauce_real_v01.webp",
+      "sourceImage": "assets/source/comfyui/realfood_parts_selected/demi_glace_sauce_real_cut.png",
+      "type": "food_stage_icon",
+      "width": 256,
+      "height": 256,
+      "sourceAlphaBbox": [
+        103,
+        181,
+        902,
+        838
+      ],
+      "sourceWorkflow": "ComfyUI Qwen-Image-2512 GGUF Q4 + Lightning 8-step LoRA, BiRefNet background removal",
+      "status": "concept_review"
+    },
+    {
+      "id": "food_panko_crumbs_real_v01",
+      "path": "public/assets/game/food/v08real/panko_crumbs_real_v01.webp",
+      "sourceImage": "assets/source/comfyui/realfood_parts_selected/panko_crumbs_real_cut.png",
+      "type": "food_stage_icon",
+      "width": 256,
+      "height": 256,
+      "sourceAlphaBbox": [
+        79,
+        222,
+        903,
+        829
+      ],
+      "sourceWorkflow": "ComfyUI Qwen-Image-2512 GGUF Q4 + Lightning 8-step LoRA, BiRefNet background removal",
+      "status": "concept_review"
+    },
+    {
+      "id": "food_steamed_rice_real_v01",
+      "path": "public/assets/game/food/v08real/steamed_rice_real_v01.webp",
+      "sourceImage": "assets/source/comfyui/realfood_parts_selected/steamed_rice_real_cut.png",
+      "type": "food_stage_icon",
+      "width": 256,
+      "height": 256,
+      "sourceAlphaBbox": [
+        153,
+        212,
+        856,
+        823
+      ],
+      "sourceWorkflow": "ComfyUI Qwen-Image-2512 GGUF Q4 + Lightning 8-step LoRA, BiRefNet background removal",
+      "status": "concept_review"
+    },
+    {
+      "id": "food_katsumeshi_whole_real_v01",
+      "path": "public/assets/game/food/v08real/katsumeshi_whole_real_v01.webp",
+      "sourceImage": "assets/source/comfyui/realfood_trial_v20/katsumeshi_real_adopted_cut.png",
+      "type": "dish",
+      "width": 700,
+      "height": 455,
+      "sourceAlphaBbox": [
+        152,
+        121,
+        852,
+        576
+      ],
+      "sourceWorkflow": "ComfyUI Qwen-Image-2512 GGUF Q4 + Lightning LoRA + Fun ControlNet Union, img2img denoise 0.62, BiRefNet",
+      "status": "concept_review"
+    }
+  ]
+}

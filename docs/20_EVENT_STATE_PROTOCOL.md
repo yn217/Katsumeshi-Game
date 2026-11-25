@@ -5,7 +5,7 @@
 ## 1. 画面とゲーム状態
 - `TITLE` はメニューUIであり保存する `phase` に含まない。
 - 永続 `phase`: MORNING, OPEN, COOK, REACTION, RESULT, UPGRADE。
-- `overlay` は null / PAUSE / EVENT。ユーザーのポーズ、モーダル、ブラウザ非表示時はゲームクロック停止。モーダル表示だけで店舗の注文が消えたり再発行されない。
+- `overlay` は null / PAUSE / EVENT。ストーリー表示中は `EVENT(eventId)` を保存し、`activeStoryEventId` と一致させる。ユーザーのポーズまたはイベント表示中はゲームクロック停止。モーダル表示だけで店舗の注文が消えたり再発行されない。
 - `phase=COOK` iff `activeOrderId` はcooking注文を指し `cookingSession` は同じIDを持つ。REACTIONはserved注文を `lastServedOrderId` で示し、activeOrderId/cookingSessionはnull。
 - 新規ゲームはDay1/MORNING、初期現金30,000、評判30、5種在庫各10、基本たれ1件で開始。デバッグ機能は本番に露出させない。
 
@@ -15,7 +15,7 @@
 2. OPEN/COOKのみ営業時間・queued待ちを1/30秒進め、0以下になったqueuedをID昇順でexpiredにして評判-2を適用。COOK中のactive注文を期限切れにしない。
 3. 期限切れ処理の**後に**その秒に到来した候補客を到着順に抽選/発行、満員なら候補を消費して逸失+1。
 4. ユーザーコマンドは投入順に検証・適用（同一tickの期限切れと競合なら期限切れ優先）。
-5. 最後に自動閉店可否を判定し、1回だけ固定費を記録する。
+5. 最後に自動閉店可否を判定し、1回だけ固定費と給与を記録する。
 6. 読み出し用の不変スナップショットをUIへ渡す。画像演出はドメイン状態に一切書き込まない。
 - 仕様12にあった「閉店判定→ユーザーコマンド」の順序はこのv0.5で**閉店判定を最後**に統一する。
 - 同一commandIdを再送したら応答を再取得できるが**新たな副作用は無い**。`appliedCommandIds`をセーブに保存し、orderId/dayIdに対する遷移も状態で二重チェック。クライアントのdebounceだけでは防止とみなさない。

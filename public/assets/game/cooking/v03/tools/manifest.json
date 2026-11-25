@@ -1,0 +1,121 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v03",
+  "generatedAt": "2026-11-22",
+  "status": "concept_review",
+  "subject": "Stage-specific cooking utensil and cookware icons for P1, P2, P4, P5 and P6; P3 uses existing fryer art. No characters or finished dish.",
+  "sourceAttribution": "OpenAI ChatGPT built-in image generation; original PNG masters retained in assets/source/imagegen/v03/tools/",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "cooking_tool_meat_mallet_v03",
+      "path": "public/assets/game/cooking/v03/tools/meat_mallet_v03.webp",
+      "type": "cooking_tool",
+      "width": 768,
+      "height": 512,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "meat_mallet"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#meat_mallet",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "cooking_tool_breading_tray_v03",
+      "path": "public/assets/game/cooking/v03/tools/breading_tray_v03.webp",
+      "type": "cooking_tool",
+      "width": 768,
+      "height": 512,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "breading_tray"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#breading_tray",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "cooking_tool_sauce_ladle_v03",
+      "path": "public/assets/game/cooking/v03/tools/sauce_ladle_v03.webp",
+      "type": "cooking_tool",
+      "width": 768,
+      "height": 512,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "sauce_ladle"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#sauce_ladle",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "cooking_tool_cabbage_pot_v03",
+      "path": "public/assets/game/cooking/v03/tools/cabbage_pot_v03.webp",
+      "type": "cooking_tool",
+      "width": 768,
+      "height": 512,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "cabbage_pot"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#cabbage_pot",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    },
+    {
+      "id": "cooking_tool_rice_paddle_v03",
+      "path": "public/assets/game/cooking/v03/tools/rice_paddle_v03.webp",
+      "type": "cooking_tool",
+      "width": 768,
+      "height": 512,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "rice_paddle"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#rice_paddle",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    }
+  ]
+}

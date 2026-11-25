@@ -1,0 +1,32 @@
+{
+  "schema": "katsumeshi-chatgpt-cooking-scene-manifest/v1",
+  "version": "v08",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceAttribution": "ChatGPT built-in image generation; no ComfyUI generation for non-character assets.",
+  "assets": [
+    {
+      "id": "fry_stage_lifted_cutlet_chatgpt_v01",
+      "path": "public/assets/game/cooking/v08/fry_stage_lifted_cutlet_chatgpt_v01.png",
+      "sourceImage": "assets/source/imagegen/chatgpt/v09/cooking/fry_stage_lifted_cutlet_chatgpt_v01.png",
+      "sourceWorkflow": "ChatGPT built-in image generation; prompt and references are recorded in the source candidate manifest.",
+      "compositionReference": "assets/source/imagegen/chatgpt/v07/cooking/fry_stage_anime_chatgpt_v02.png",
+      "styleReference": "assets/source/imagegen/chatgpt/v07/backgrounds/kitchen_frying_anime_chatgpt_v01.png",
+      "type": "cooking_stage",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": ["chatgpt", "anime", "cooking", "P3", "frying", "lifted-cutlet"],
+      "status": "concept_review",
+      "model": "ChatGPT built-in image generation",
+      "generationSeed": null,
+      "loraList": [],
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "licenseReference": "https://openai.com/policies/terms-of-use/",
+      "reviewNote": "Standalone visual review found a fully separated, lifted breaded cutlet with a visible thick edge. Runtime scale/composition and final adoption remain unreviewed.",
+      "reviewedAt": "2026-11-23"
+    }
+  ]
+}

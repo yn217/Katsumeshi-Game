@@ -1,0 +1,32 @@
+{
+  "schema": "katsumeshi-chatgpt-background-manifest/v1",
+  "version": "v10",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "sourceAttribution": "ChatGPT built-in image generation; original candidate is 1672x941 and runtime WebP is Lanczos-upscaled for preview only.",
+  "assets": [
+    {
+      "id": "shop_screen_anime_chatgpt_v01",
+      "type": "background",
+      "path": "public/assets/game/backgrounds/v10/shop_screen_anime_chatgpt_v01.webp",
+      "sourceImage": "assets/source/imagegen/chatgpt/v10/backgrounds/shop_screen_anime_chatgpt_v01_source.png",
+      "width": 2560,
+      "height": 1440,
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "resampling": "Lanczos upscale for preview; does not restore native detail",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": ["background", "shop", "diner", "anime", "screen-composition"],
+      "sourceWorkflow": "ChatGPT built-in image generation; edited from a generated shop-layout reference.",
+      "prompt": "Redesign the reference as a 16:9 hand-drawn 2D anime game background specifically for the Katsumeshi Game SHOP screen. Preserve the cozy Kakogawa Japanese diner identity, warm wood, shoji windows, amber lamps, plants and subtle river view, but change the composition to match these exact gameplay zones: leave the entire left third simple, darker, and low-detail for a tall shopkeeper sprite; leave the central middle area open and uncluttered for customer-order UI; put the dining tables and red chairs mainly along the far right edge and rear; keep the long service counter in the far back upper-right, never crossing the left foreground. Keep the lower center as clear wood floor. Clearly hand-inked flat 2D cel-shaded illustration with bold clean outlines, simplified shapes, matte colors and limited soft painterly texture; it must look illustrated, not 3D or photographic. Medium-low contrast behind UI. No people, characters, food, plates, readable text, menu writing, logos, UI, watermark, frame, white margins or collage.",
+      "status": "concept_review",
+      "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+      "reviewNote": "Standalone visual review confirms a low-detail left third for the shopkeeper, open center floor for order UI, right-side seating, and the service counter in the rear. Warm hand-inked illustration is consistent with the intended diner setting. The generated source is 1672x941, below the 2560x1440 native-source requirement. Game-screen composite, sprite overlap, and readability remain unreviewed; concept_review only.",
+      "reviewedAt": "2026-11-23",
+      "licenseReference": "https://openai.com/policies/terms-of-use/"
+    }
+  ],
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>配膳ハーネス｜かつめし繁盛記</title>
+<link rel="stylesheet" href="../../src/serving.css">
+<style>
+html,body{margin:0;height:100%;background:#1d120b;overflow:hidden;font-family:"Hiragino Maru Gothic ProN","BIZ UDPGothic","Yu Gothic UI","Meiryo",sans-serif}
+.app{position:fixed;inset:0;display:flex;flex-direction:column}
+.hud{height:62px;flex:none;display:flex;align-items:center;gap:10px;padding:0 14px;background:linear-gradient(#9b2f27,#641712);border-bottom:3px solid #e8b44e;color:#3b2416;font-weight:900}
+.hud .logo{background:#fff6e2;border:2px solid #e8b44e;border-radius:10px;padding:3px 14px;color:#a3262a;line-height:1.05;text-align:center}
+.hud .logo b{display:block;font-size:20px}.hud .logo small{font-size:11px}
+.hud span{background:#fff6e2;border:2px solid #d9b98a;border-radius:9px;padding:7px 12px;font-size:16px}
+.hud .grow{flex:1;background:none;border:0}
+.serving-host{flex:1;position:relative;overflow:hidden}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="hud"><div class="logo"><b>かつめし繁盛記</b><small>〜加古川の一皿〜</small></div><span>🏪 店舗営業</span><span class="grow"></span><span>📅 Day 2</span><span>☀️ 昼営業</span><span id="cash">💰 資金 31,960円</span><span>評判 ★★★☆☆</span></header>
+  <div class="serving-host"></div>
+</div>
+<script type="module">
+// Review harness: runs the real src/serving.mjs against a small mock of the domain (orders, patience, SERVE_TABLE).
+import { createServingFloor, servingArt } from "../../src/serving.mjs";
+const base = new URL("../../public/assets/game/", location.href).href;
+const qs = new URLSearchParams(location.search);
+const labels = { regular: "常連さん", student: "学生さん", worker: "会社員さん", tourist: "観光客さん" };
+const PAT = { regular: 70, student: 55, worker: 50, tourist: 75 };
+const types = Object.keys(PAT);
+let seq = 0, served = 0, cash = 31960, t = 0;
+const game = { day: 2, seed: 7, phase: "OPEN", overlay: null, activeStoryEventId: null, dayClosed: false, orders: [], inventory: { beef: 9, rice: 9, coating: 9, sauce: 9, cabbage: 9 } };
+const spawn = () => { const k = types[seq % 4]; game.orders.push({ id: "o" + (++seq), customerId: k, state: "queued", queuedWaitRemainingSeconds: PAT[k] * (0.4 + (seq % 3) * .3), createdAtGameSeconds: t, priceYenSnapshot: 980, rank: null }); };
+const api = {
+  serve(id) { const o = game.orders.find(o => o.id === id); if (!o || o.state !== "queued") return false; const r = o.queuedWaitRemainingSeconds / PAT[o.customerId]; o.state = "served"; o.rank = r > .6 ? "S" : r > .3 ? "A" : "B"; served++; cash += 980; document.getElementById("cash").textContent = "💰 資金 " + cash.toLocaleString() + "円"; return true; },
+  sound() {}, setSpeed() {},
+  mission: () => ({ title: "昼営業ラッシュ", goal: 8, served, text: "8食を提供しよう！", time: Math.floor((165 - t) / 60) + ":" + String(Math.floor((165 - t) % 60)).padStart(2, "0") }),
+  qualityLabel: () => '<span>今日の仕込み</span><b>92<small>点</small></b>'
+};
+const floor = createServingFloor({ art: servingArt(base), labels, patienceOf: o => Math.max(0, Math.min(1, o.queuedWaitRemainingSeconds / PAT[o.customerId])), ingredientsReady: n => n <= 9 });
+const tick = dt => { t += dt; for (const o of game.orders) if (o.state === "queued") { o.queuedWaitRemainingSeconds = Math.max(0, o.queuedWaitRemainingSeconds - dt); if (!o.queuedWaitRemainingSeconds) o.state = "expired"; } if (game.orders.filter(o => o.state === "queued").length < 5 && t % 6 < dt) spawn(); };
+floor.mount(document.querySelector(".serving-host"), game, api);
+for (let i = 0; i < 4; i++) spawn();
+// ?ff=SECONDS fast-forwards: picks up two dishes, then walks toward the first table (for screenshots)
+const ff = Number(qs.get("ff") || 0);
+if (ff) {
+  let phase = 0;
+  floor.simulate(ff, F => { tick(.05); if (phase === 0 && F.pass.length >= 2 && !F.me.path) { floor.goTo("pass"); phase = 1; } if (phase === 1 && F.tray.length === 2 && !F.me.path) { const s = F.seats.get(F.tray[0]); floor.goTo(s.table); phase = 2; } if (phase === 2 && F.me.path && Math.hypot(F.me.path.x - F.me.x, F.me.path.y - F.me.y) < 2.2) { F.me.path = null; phase = 3; } });
+}
+let last = performance.now();
+(function loop(now) { const dt = Math.min(.1, (now - last) / 1000); last = now; tick(dt); floor.update(game); requestAnimationFrame(loop); })(last);
+window.floor = floor; window.game = game;
+</script>
+</body>
+</html>

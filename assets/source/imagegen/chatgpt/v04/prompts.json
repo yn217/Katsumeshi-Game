@@ -1,0 +1,682 @@
+{
+  "bg_shop_lunch_v01": {
+    "prompt": "Create a production-ready background asset for a cozy Japanese visual novel game. Wide landscape 16:9 scene, intended master canvas 2560x1440. Show the interior of a small, welcoming neighborhood diner in Kakogawa, Japan, at lunchtime: warm dark walnut counter and a few stools in foreground, two modest wooden tables, cream-colored noren at the entrance, large shoji-inspired windows with soft daylight, simple pendant lamps, a few shelves and plants. Slightly elevated wide camera view, clean readable layout with calm open areas on the far left and right for later UI overlays. Warm amber, cream, and walnut palette; painterly 2D anime environment art with refined linework and soft cel shading, matching a polished Japanese indie game background. Entire scene fills the frame edge to edge. Absolutely no people, no characters, no food, no plates, no menu boards, no lettering, no logos, no UI, no border, no vignette.",
+    "tool": "ChatGPT Image Generation",
+    "sourceFile": "assets/source/imagegen/chatgpt/v04/backgrounds/bg_shop_lunch_v01.png",
+    "generatedResolution": [
+      1672,
+      941
+    ],
+    "runtimeResolution": [
+      2560,
+      1440
+    ],
+    "status": "concept_review"
+  },
+  "bg_morning_prep_v01": {
+    "tool": "ChatGPT Image Generation",
+    "prompt": "Create a production-ready background asset for the morning preparation screen of a cozy Japanese visual novel game. Wide landscape 16:9, intended master canvas 2560x1440. Interior of the same small Japanese neighborhood diner as a warm polished indie game environment: early morning pale blue daylight enters from a shoji-inspired kitchen window, broad clean wooden prep counter in the foreground, a simple white rice cooker, wooden cutting board, covered sauce pot, stainless bowls and a neatly folded towel. Calm, tidy, inviting, slightly elevated wide camera view, visible wood and cream tile materials, consistent walnut/cream/amber palette, painterly 2D anime background illustration with refined outlines and soft cel shading. Leave a clear central work area and calm margins for game UI. Full bleed edge to edge. No people, no characters, no food or ingredients, no plates, no lettering, no labels, no menu boards, no logos, no UI, no border, no vignette.",
+    "sourceFile": "assets/source/imagegen/chatgpt/v04/backgrounds/bg_morning_prep_v01.png",
+    "generatedResolution": [
+      1672,
+      941
+    ],
+    "runtimeFile": "public/assets/game/backgrounds/morning_chatgpt_v01.webp",
+    "runtimeResolution": [
+      2560,
+      1440
+    ],
+    "status": "concept_review"
+  },
+  "bg_kitchen_frying_p3_v01": {
+    "tool": "ChatGPT Image Generation",
+    "prompt": "Create a production-ready P3 frying-stage background asset for a cozy Japanese visual novel game, matching the same walnut-and-cream small diner kitchen and painterly 2D anime environment style as the game's morning prep background. Wide landscape 16:9, intended master canvas 2560x1440. Close three-quarter overhead view of a large built-in stainless deep fryer centered on a dark walnut counter; clear golden oil with small gentle bubbles and an empty wire frying basket resting at the rim. Warm amber pendant light, cream tiled backsplash and dark wood shelves softly in the background. Keep the fryer as the strong central focal point; leave the far left and right edges visually calm for overlay UI. Polished game-background illustration, refined clean outlines, soft cel shading, warm practical lighting, full bleed edge to edge. No people, no characters, no hands, no food, no cutlet, no rice, no plates, no text, no lettering, no menus, no logos, no interface, no border, no vignette.",
+    "sourceFile": "assets/source/imagegen/chatgpt/v04/backgrounds/bg_kitchen_frying_p3_v01.png",
+    "generatedResolution": [
+      1672,
+      941
+    ],
+    "runtimeFile": "public/assets/game/backgrounds/kitchen_frying_chatgpt_v01.webp",
+    "runtimeResolution": [
+      2560,
+      1440
+    ],
+    "status": "concept_review"
+  },
+  "bg_result_evening_v01": {
+    "tool": "ChatGPT Image Generation",
+    "prompt": "Create a production-ready result-screen background asset for the same cozy Japanese neighborhood diner visual novel game. Wide landscape 16:9, intended master canvas 2560x1440. Interior of the same small diner after closing, recognizably matching the warm walnut counter, cream walls, shoji-inspired window frames, simple pendant lamps and modest wooden tables from the daytime shop background. Evening amber sunset glow through the windows, chairs neatly tucked in, counter clean and quiet, calm reflective mood after a busy day. Slightly elevated wide camera view, painterly 2D anime game environment illustration with refined clean linework, soft cel shading, warm amber / cream / walnut palette. Keep center and sides uncluttered for result panel overlays. Full bleed edge to edge. No people, no characters, no food, no plates, no receipts, no writing, no lettering, no logos, no interface, no border, no vignette.",
+    "sourceFile": "assets/source/imagegen/chatgpt/v04/backgrounds/bg_result_evening_v01.png",
+    "generatedResolution": [
+      1672,
+      941
+    ],
+    "runtimeFile": "public/assets/game/backgrounds/result_chatgpt_v01.webp",
+    "runtimeResolution": [
+      2560,
+      1440
+    ],
+    "status": "concept_review"
+  },
+  "bg_title_riverside_v01": {
+    "tool": "ChatGPT Image Generation",
+    "prompt": "Create a production-ready title-screen background for an original Japanese indie game inspired by Kakogawa. Wide landscape 16:9, intended master canvas 2560x1440. A peaceful fictional riverside neighborhood in early summer: broad calm river in the foreground, a simple low road bridge in the middle distance, leafy green banks, compact Japanese homes and a small unbranded diner exterior on the far side, soft blue sky with a few clouds, warm late-morning sunlight. Composition should leave open sky in the upper center for a game logo and quieter darker space along one side for a menu. Painterly 2D anime environment illustration with refined linework and soft cel shading, polished Japanese visual novel background, gentle optimistic mood. Avoid depicting any identifiable real landmark or exact real business. Full bleed edge to edge. No people, no characters, no food, no signs, no writing, no text, no logos, no UI, no border, no vignette.",
+    "sourceFile": "assets/source/imagegen/chatgpt/v04/backgrounds/bg_title_riverside_v01.png",
+    "generatedResolution": [
+      1672,
+      941
+    ],
+    "runtimeFile": "public/assets/game/backgrounds/title_riverside_chatgpt_v01.webp",
+    "runtimeResolution": [
+      2560,
+      1440
+    ],
+    "status": "concept_review"
+  },
+  "owner_design_sheet_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "public/assets/game/characters/owner/shop/normal.webp",
+    "generatedResolution": [
+      1024,
+      1536
+    ],
+    "status": "concept_review",
+    "prompt": "Using the attached image only as a reference for the original fictional character identity, create a clean production character design sheet on warm off-white. Keep one consistent young adult woman: silver-gray medium hair, two small round buns high on head, soft straight bangs, small pink heart hairpin on viewer-right side, large pink eyes, gentle face, petite build. Show shop uniform (cream blouse, deep wine-red apron, dark brown skirt) and casual outfit (pink cardigan, white blouse, beige skirt), full body views, face portrait, side view, and palette swatches. Do not copy white shirt and blue denim overalls. No text or labels."
+  },
+  "owner_shop_full_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_design_sheet_v01.png",
+    "generatedResolution": [
+      887,
+      1774
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/shop_full_v01.webp",
+    "runtimeResolution": [
+      887,
+      1774
+    ],
+    "status": "concept_review",
+    "prompt": "One full-body adult woman, front-facing, friendly calm smile, arms at sides, hands visible. Preserve design: silver-gray medium hair, two small high buns, straight bangs, pink heart hairpin at viewer-right, large pink eyes. Cream rolled-sleeve blouse, deep wine-red waist-tied cafe apron, dark brown long skirt, brown loafers. No denim, overalls, suspenders, cardigan or props. Clean 2D anime lineart, soft cel shading, transparent background, full figure with no crop."
+  },
+  "owner_expression_sheet_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "generatedResolution": [
+      1024,
+      1536
+    ],
+    "status": "concept_review",
+    "prompt": "Exact 2-column by 3-row grid of six equal square bust portraits with consistent camera and face placement. Same fictional woman in each: silver-gray medium hair, two small buns, pink heart hairpin viewer-right, pink eyes, cream blouse and wine-red apron. Expressions: neutral, encouraging, joyful, sad, surprised, thoughtful. Clean 2D anime art, no words or dividers."
+  },
+  "owner_expression_normal_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "prompt": "Bust portrait, calm friendly neutral expression and small closed-mouth smile; preserve exact reference character, outfit, view, and transparent background. Silver-gray medium hair, two small high buns, soft bangs, pink heart hairpin viewer-right, pink eyes, cream blouse and deep wine-red apron. Centered mid-chest portrait, same framing; transparent background.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/emotions/normal_v01.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "owner_expression_encourage_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "prompt": "Bust portrait, encouraging confident smile, determined bright eyes, one small fist near chest without covering face; preserve exact reference character and outfit. Silver-gray medium hair, two small high buns, soft bangs, pink heart hairpin viewer-right, pink eyes, cream blouse and deep wine-red apron. Centered mid-chest portrait, same framing; transparent background.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/emotions/encourage_v01.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "owner_expression_happy_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "prompt": "Bust portrait, delighted expression, bright joyful eyes, open happy smile and light blush; preserve exact reference character and outfit. Silver-gray medium hair, two small high buns, soft bangs, pink heart hairpin viewer-right, pink eyes, cream blouse and deep wine-red apron. Centered mid-chest portrait, same framing; transparent background.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/emotions/happy_v01.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "owner_expression_sad_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "prompt": "Bust portrait, disappointed and sad, downcast eyes, small frown, worried eyebrows, shoulders slightly lowered; preserve exact reference character and outfit. Silver-gray medium hair, two small high buns, soft bangs, pink heart hairpin viewer-right, pink eyes, cream blouse and deep wine-red apron. Centered mid-chest portrait, same framing; transparent background.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/emotions/sad_v01.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "owner_expression_surprised_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "prompt": "Bust portrait, surprised, wide eyes, raised brows and small open mouth; preserve exact reference character and outfit. Silver-gray medium hair, two small high buns, soft bangs, pink heart hairpin viewer-right, pink eyes, cream blouse and deep wine-red apron. Centered mid-chest portrait, same framing; transparent background.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/emotions/surprised_v01.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "owner_expression_thinking_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "prompt": "Bust portrait, thoughtful, one eyebrow slightly raised, closed small smile, eyes glancing upward and to one side, subtle head tilt; preserve exact reference character and outfit. Silver-gray medium hair, two small high buns, soft bangs, pink heart hairpin viewer-right, pink eyes, cream blouse and deep wine-red apron. Centered mid-chest portrait, same framing; transparent background.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/emotions/thinking_v01.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "owner_expression_invite_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "prompt": "Title invitation sprite of the same woman: silver-gray medium hair, two small buns, pink eyes and heart pin; cream blouse, deep wine-red apron. Hips-up, lean toward viewer and extend one open welcoming hand, warm smile. Transparent background, no crop, no text or props.",
+    "generatedResolution": [
+      1181,
+      1331
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/emotions/invite_v01.webp",
+    "runtimeResolution": [
+      1181,
+      1331
+    ],
+    "status": "concept_review"
+  },
+  "customer_regular_sss_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/regular/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: calm, approachable older local regular; taste 50/60/40. Visual details are a provisional interpretation, not fixed specification.",
+    "prompt": "Use the style reference only for polished 2D anime linework and soft cel shading; create a different older Japanese woman, a calm friendly neighborhood regular, around early 60s, short softly waved ash-gray hair, warm hazel-brown eyes, gentle smile lines, moss-green knit cardigan over a cream blouse, small pearl stud earrings. Centered front-facing mid-chest portrait, same face and shoulders each rank, transparent background. This design is a provisional visual interpretation because docs/15 defines role/personality but not appearance. Expression: Strong joyful reaction: sparkling delighted eyes, wide open happy smile, rosy cheeks, both small fists raised near the chin. One person only; no food, props, text, logo, watermark, or border.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/regular/v04/sss.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_regular_s_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/regular/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: calm, approachable older local regular; taste 50/60/40. Visual details are a provisional interpretation, not fixed specification.",
+    "prompt": "Use the style reference only for polished 2D anime linework and soft cel shading; create a different older Japanese woman, a calm friendly neighborhood regular, around early 60s, short softly waved ash-gray hair, warm hazel-brown eyes, gentle smile lines, moss-green knit cardigan over a cream blouse, small pearl stud earrings. Centered front-facing mid-chest portrait, same face and shoulders each rank, transparent background. This design is a provisional visual interpretation because docs/15 defines role/personality but not appearance. Expression: Very happy but less exuberant than SSS: bright shining eyes, broad delighted smile with mouth slightly open, light blush, hands out of frame. One person only; no food, props, text, logo, watermark, or border.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/regular/v04/s.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_regular_a_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/regular/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: calm, approachable older local regular; taste 50/60/40. Visual details are a provisional interpretation, not fixed specification.",
+    "prompt": "Use the style reference only for polished 2D anime linework and soft cel shading; create a different older Japanese woman, a calm friendly neighborhood regular, around early 60s, short softly waved ash-gray hair, warm hazel-brown eyes, gentle smile lines, moss-green knit cardigan over a cream blouse, small pearl stud earrings. Centered front-facing mid-chest portrait, same face and shoulders each rank, transparent background. This design is a provisional visual interpretation because docs/15 defines role/personality but not appearance. Expression: Pleased and satisfied: warm modest smile with lips slightly parted, relaxed eyebrows and gentle eyes, a little blush. One person only; no food, props, text, logo, watermark, or border.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/regular/v04/a.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_regular_b_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/regular/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: calm, approachable older local regular; taste 50/60/40. Visual details are a provisional interpretation, not fixed specification.",
+    "prompt": "Use the style reference only for polished 2D anime linework and soft cel shading; create a different older Japanese woman, a calm friendly neighborhood regular, around early 60s, short softly waved ash-gray hair, warm hazel-brown eyes, gentle smile lines, moss-green knit cardigan over a cream blouse, small pearl stud earrings. Centered front-facing mid-chest portrait, same face and shoulders each rank, transparent background. This design is a provisional visual interpretation because docs/15 defines role/personality but not appearance. Expression: Calm, content neutral expression with a small friendly closed-mouth smile. One person only; no food, props, text, logo, watermark, or border.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/regular/v04/b.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_regular_c_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/regular/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: calm, approachable older local regular; taste 50/60/40. Visual details are a provisional interpretation, not fixed specification.",
+    "prompt": "Use the style reference only for polished 2D anime linework and soft cel shading; create a different older Japanese woman, a calm friendly neighborhood regular, around early 60s, short softly waved ash-gray hair, warm hazel-brown eyes, gentle smile lines, moss-green knit cardigan over a cream blouse, small pearl stud earrings. Centered front-facing mid-chest portrait, same face and shoulders each rank, transparent background. This design is a provisional visual interpretation because docs/15 defines role/personality but not appearance. Expression: Mildly uncertain and puzzled: one eyebrow slightly raised, faint awkward polite smile, gently unsure eyes, not exaggerated. One person only; no food, props, text, logo, watermark, or border.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/regular/v04/c.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_regular_f_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/regular/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: calm, approachable older local regular; taste 50/60/40. Visual details are a provisional interpretation, not fixed specification.",
+    "prompt": "Use the style reference only for polished 2D anime linework and soft cel shading; create a different older Japanese woman, a calm friendly neighborhood regular, around early 60s, short softly waved ash-gray hair, warm hazel-brown eyes, gentle smile lines, moss-green knit cardigan over a cream blouse, small pearl stud earrings. Centered front-facing mid-chest portrait, same face and shoulders each rank, transparent background. This design is a provisional visual interpretation because docs/15 defines role/personality but not appearance. Expression: Disappointed and sad but gentle: downcast eyes, small frown, troubled eyebrows, shoulders slightly slumped, no tears. One person only; no food, props, text, logo, watermark, or border.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/regular/v04/f.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_student_sss_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/student/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: lively young student; taste 80/50/20. Age, gender, hair and outfit are provisional visual interpretation, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same young Japanese university student woman, chestnut high ponytail with loose fringe, bright green eyes, small turquoise hair clip, navy cardigan over cream shirt with muted teal ribbon tie. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a lively young student and taste 80/50/20; age, gender, hairstyle and clothing are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, text, logo, watermark or border. Expression: Radiant delight, sparkling wide eyes, joyful open smile, cheeks lifted.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/student/v04/sss.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_student_s_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/student/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: lively young student; taste 80/50/20. Age, gender, hair and outfit are provisional visual interpretation, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same young Japanese university student woman, chestnut high ponytail with loose fringe, bright green eyes, small turquoise hair clip, navy cardigan over cream shirt with muted teal ribbon tie. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a lively young student and taste 80/50/20; age, gender, hairstyle and clothing are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, text, logo, watermark or border. Expression: Very happy, bright open smile and lively eyes.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/student/v04/s.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_student_a_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/student/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: lively young student; taste 80/50/20. Age, gender, hair and outfit are provisional visual interpretation, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same young Japanese university student woman, chestnut high ponytail with loose fringe, bright green eyes, small turquoise hair clip, navy cardigan over cream shirt with muted teal ribbon tie. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a lively young student and taste 80/50/20; age, gender, hairstyle and clothing are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, text, logo, watermark or border. Expression: Clearly pleased, warm smile, cheerful eyes.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/student/v04/a.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_student_b_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/student/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: lively young student; taste 80/50/20. Age, gender, hair and outfit are provisional visual interpretation, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same young Japanese university student woman, chestnut high ponytail with loose fringe, bright green eyes, small turquoise hair clip, navy cardigan over cream shirt with muted teal ribbon tie. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a lively young student and taste 80/50/20; age, gender, hairstyle and clothing are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, text, logo, watermark or border. Expression: Friendly neutral expression with a small polite smile.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/student/v04/b.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_student_c_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/student/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: lively young student; taste 80/50/20. Age, gender, hair and outfit are provisional visual interpretation, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same young Japanese university student woman, chestnut high ponytail with loose fringe, bright green eyes, small turquoise hair clip, navy cardigan over cream shirt with muted teal ribbon tie. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a lively young student and taste 80/50/20; age, gender, hairstyle and clothing are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, text, logo, watermark or border. Expression: Mildly uncertain, slightly raised eyebrow and restrained hesitant smile.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/student/v04/c.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_student_f_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/student/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: lively young student; taste 80/50/20. Age, gender, hair and outfit are provisional visual interpretation, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same young Japanese university student woman, chestnut high ponytail with loose fringe, bright green eyes, small turquoise hair clip, navy cardigan over cream shirt with muted teal ribbon tie. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a lively young student and taste 80/50/20; age, gender, hairstyle and clothing are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, text, logo, watermark or border. Expression: Disappointed and sad, downcast eyes and small frown, gentle and not exaggerated.",
+    "generatedResolution": [
+      1186,
+      1326
+    ],
+    "runtimeFile": "public/assets/game/characters/student/v04/f.webp",
+    "runtimeResolution": [
+      1186,
+      1326
+    ],
+    "status": "concept_review"
+  },
+  "customer_worker_sss_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/worker/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: busy but food-loving worker; taste 30/90/30. Age, gender, hair and outfit are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same Japanese office worker woman in her early 30s, dark chestnut shoulder-length hair tucked behind one ear, brown eyes, small understated earrings, charcoal blazer over muted burgundy blouse. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a busy worker who cares about food and taste 30/90/30; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, food, text, logo, watermark or border. Expression: Delighted and deeply impressed by an excellent meal, bright sparkling eyes, joyful smile.",
+    "generatedResolution": [
+      1294,
+      1216
+    ],
+    "runtimeFile": "public/assets/game/characters/worker/v04/sss.webp",
+    "runtimeResolution": [
+      1294,
+      1216
+    ],
+    "status": "concept_review"
+  },
+  "customer_worker_s_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/worker/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: busy but food-loving worker; taste 30/90/30. Age, gender, hair and outfit are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same Japanese office worker woman in her early 30s, dark chestnut shoulder-length hair tucked behind one ear, brown eyes, small understated earrings, charcoal blazer over muted burgundy blouse. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a busy worker who cares about food and taste 30/90/30; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, food, text, logo, watermark or border. Expression: Clearly pleased and impressed, bright warm eyes, wide friendly smile, slightly less intense.",
+    "generatedResolution": [
+      1294,
+      1216
+    ],
+    "runtimeFile": "public/assets/game/characters/worker/v04/s_v01.webp",
+    "runtimeResolution": [
+      1294,
+      1216
+    ],
+    "status": "concept_review"
+  },
+  "customer_worker_a_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/worker/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: busy but food-loving worker; taste 30/90/30. Age, gender, hair and outfit are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same Japanese office worker woman in her early 30s, dark chestnut shoulder-length hair tucked behind one ear, brown eyes, small understated earrings, charcoal blazer over muted burgundy blouse. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a busy worker who cares about food and taste 30/90/30; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, food, text, logo, watermark or border. Expression: Satisfied and appreciative, gentle closed-mouth smile, softened eyes.",
+    "generatedResolution": [
+      1294,
+      1216
+    ],
+    "runtimeFile": "public/assets/game/characters/worker/v04/a.webp",
+    "runtimeResolution": [
+      1294,
+      1216
+    ],
+    "status": "concept_review"
+  },
+  "customer_worker_b_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/worker/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: busy but food-loving worker; taste 30/90/30. Age, gender, hair and outfit are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same Japanese office worker woman in her early 30s, dark chestnut shoulder-length hair tucked behind one ear, brown eyes, small understated earrings, charcoal blazer over muted burgundy blouse. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a busy worker who cares about food and taste 30/90/30; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, food, text, logo, watermark or border. Expression: Composed neutral expression, attentive eyes, subtle polite smile, neither pleased nor disappointed.",
+    "generatedResolution": [
+      1294,
+      1216
+    ],
+    "runtimeFile": "public/assets/game/characters/worker/v04/b.webp",
+    "runtimeResolution": [
+      1294,
+      1216
+    ],
+    "status": "concept_review"
+  },
+  "customer_worker_c_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/worker/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: busy but food-loving worker; taste 30/90/30. Age, gender, hair and outfit are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same Japanese office worker woman in her early 30s, dark chestnut shoulder-length hair tucked behind one ear, brown eyes, small understated earrings, charcoal blazer over muted burgundy blouse. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a busy worker who cares about food and taste 30/90/30; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, food, text, logo, watermark or border. Expression: Mildly dissatisfied and uncertain, slightly knit brows, restrained small frown, subtle disappointment.",
+    "generatedResolution": [
+      1294,
+      1216
+    ],
+    "runtimeFile": "public/assets/game/characters/worker/v04/c.webp",
+    "runtimeResolution": [
+      1294,
+      1216
+    ],
+    "status": "concept_review"
+  },
+  "customer_worker_f_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/worker/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: busy but food-loving worker; taste 30/90/30. Age, gender, hair and outfit are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same Japanese office worker woman in her early 30s, dark chestnut shoulder-length hair tucked behind one ear, brown eyes, small understated earrings, charcoal blazer over muted burgundy blouse. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a busy worker who cares about food and taste 30/90/30; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no props, food, text, logo, watermark or border. Expression: Clearly disappointed and dissatisfied, downcast eyes, troubled brows and small frown, restrained adult emotion.",
+    "generatedResolution": [
+      1294,
+      1216
+    ],
+    "runtimeFile": "public/assets/game/characters/worker/v04/f.webp",
+    "runtimeResolution": [
+      1294,
+      1216
+    ],
+    "status": "concept_review"
+  },
+  "customer_tourist_sss_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/tourist/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: tourist wants to discover local culture; taste 40/50/80. All appearance details are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same curious Japanese woman tourist in her late 20s, short softly wavy black jaw-length hair, dark brown eyes, small gold earrings, muted teal travel jacket over warm ivory top. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a tourist who wants to discover local culture and taste 40/50/80; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no luggage, camera, food, text, logo, watermark or border. Expression: Amazed and delighted to discover a wonderful local specialty, sparkling wide eyes and bright joyful open smile.",
+    "generatedResolution": [
+      1312,
+      1199
+    ],
+    "runtimeFile": "public/assets/game/characters/tourist/v04/sss.webp",
+    "runtimeResolution": [
+      1312,
+      1199
+    ],
+    "status": "concept_review"
+  },
+  "customer_tourist_s_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/tourist/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: tourist wants to discover local culture; taste 40/50/80. All appearance details are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same curious Japanese woman tourist in her late 20s, short softly wavy black jaw-length hair, dark brown eyes, small gold earrings, muted teal travel jacket over warm ivory top. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a tourist who wants to discover local culture and taste 40/50/80; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no luggage, camera, food, text, logo, watermark or border. Expression: Delighted and impressed by local food culture, bright warm eyes and broad friendly smile, a little less intense.",
+    "generatedResolution": [
+      1312,
+      1199
+    ],
+    "runtimeFile": "public/assets/game/characters/tourist/v04/s_v01.webp",
+    "runtimeResolution": [
+      1312,
+      1199
+    ],
+    "status": "concept_review"
+  },
+  "customer_tourist_a_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/tourist/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: tourist wants to discover local culture; taste 40/50/80. All appearance details are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same curious Japanese woman tourist in her late 20s, short softly wavy black jaw-length hair, dark brown eyes, small gold earrings, muted teal travel jacket over warm ivory top. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a tourist who wants to discover local culture and taste 40/50/80; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no luggage, camera, food, text, logo, watermark or border. Expression: Pleased and warmly appreciative, gentle smile and softened attentive eyes.",
+    "generatedResolution": [
+      1312,
+      1199
+    ],
+    "runtimeFile": "public/assets/game/characters/tourist/v04/a.webp",
+    "runtimeResolution": [
+      1312,
+      1199
+    ],
+    "status": "concept_review"
+  },
+  "customer_tourist_b_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/tourist/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: tourist wants to discover local culture; taste 40/50/80. All appearance details are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same curious Japanese woman tourist in her late 20s, short softly wavy black jaw-length hair, dark brown eyes, small gold earrings, muted teal travel jacket over warm ivory top. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a tourist who wants to discover local culture and taste 40/50/80; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no luggage, camera, food, text, logo, watermark or border. Expression: Calm neutral expression, attentive curious eyes and subtle polite smile.",
+    "generatedResolution": [
+      1312,
+      1199
+    ],
+    "runtimeFile": "public/assets/game/characters/tourist/v04/b.webp",
+    "runtimeResolution": [
+      1312,
+      1199
+    ],
+    "status": "concept_review"
+  },
+  "customer_tourist_c_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/tourist/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: tourist wants to discover local culture; taste 40/50/80. All appearance details are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same curious Japanese woman tourist in her late 20s, short softly wavy black jaw-length hair, dark brown eyes, small gold earrings, muted teal travel jacket over warm ivory top. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a tourist who wants to discover local culture and taste 40/50/80; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no luggage, camera, food, text, logo, watermark or border. Expression: Mildly disappointed and puzzled, slightly raised inner brows and small uncertain frown, still polite.",
+    "generatedResolution": [
+      1312,
+      1199
+    ],
+    "runtimeFile": "public/assets/game/characters/tourist/v04/c.webp",
+    "runtimeResolution": [
+      1312,
+      1199
+    ],
+    "status": "concept_review"
+  },
+  "customer_tourist_f_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/tourist/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: tourist wants to discover local culture; taste 40/50/80. All appearance details are provisional, not fixed specification.",
+    "prompt": "Polished 2D anime linework and soft cel shading. Same curious Japanese woman tourist in her late 20s, short softly wavy black jaw-length hair, dark brown eyes, small gold earrings, muted teal travel jacket over warm ivory top. Centered front-facing mid-chest portrait, transparent background. docs/15 defines a tourist who wants to discover local culture and taste 40/50/80; age, gender, hair and outfit are provisional visual choices. Same face, hair, outfit, framing and lighting; no luggage, camera, food, text, logo, watermark or border. Expression: Clearly disappointed and let down, downcast eyes, troubled brows and small frown, gentle restrained emotion.",
+    "generatedResolution": [
+      1312,
+      1199
+    ],
+    "runtimeFile": "public/assets/game/characters/tourist/v04/f.webp",
+    "runtimeResolution": [
+      1312,
+      1199
+    ],
+    "status": "concept_review"
+  },
+  "owner_casual_full_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png",
+    "designBasis": "docs/17_ASSET_PRODUCTION_PLAN.md §2-3: title uses owner in casual clothes and owner needs at least two compositions. Identity traits follow docs/17; clothing is a new provisional casual design, with original denim outfit explicitly excluded.",
+    "prompt": "Use the reference only to preserve established character identity: silver-gray hair in two rounded side buns, pink eyes, pink heart hair clip, youthful anime face, polished 2D linework and soft cel shading. Create a separate full-body casual outfit design for the same character, standing relaxed and facing forward. Soft dusty-rose cardigan over pale lavender blouse, deep plum pleated skirt, dark tights and brown flats. Do not reproduce the source-reference white shirt with blue denim overalls; no denim, no apron. Transparent background, complete head-to-shoes framing, natural hands, no props, food, text, logo, watermark or border.",
+    "generatedResolution": [
+      887,
+      1774
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/casual_full_v01.webp",
+    "runtimeResolution": [
+      887,
+      1774
+    ],
+    "status": "concept_review"
+  },
+  "owner_casual_full_v02": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAssets": [
+      "assets/source/imagegen/chatgpt/v04/characters/owner_design_sheet_v01.png",
+      "assets/source/imagegen/chatgpt/v04/characters/owner_casual_full_v01.png"
+    ],
+    "designBasis": "docs/17_ASSET_PRODUCTION_PLAN.md §2-3: title uses owner in casual clothes and owner needs at least two compositions. Identity follows design sheet; clothing matches its pale pink cardigan and light beige skirt, not the original denim outfit.",
+    "prompt": "Use reference 1 for canonical casual outfit and palette; reference 2 only for full body pose/framing. Preserve silver-gray twin buns, pink eyes, pink heart clip and youthful face. Exact casual outfit: soft pale dusty-pink cardigan over white/cream blouse, light warm beige knee-length pleated skirt, light socks and dark brown loafers. Relaxed welcoming full-body pose, hands naturally together. Transparent background, centered, complete head-to-shoes, no props, food, text, logo, watermark, or border. Do not reproduce original blue denim overalls.",
+    "generatedResolution": [
+      887,
+      1774
+    ],
+    "runtimeFile": "public/assets/game/characters/owner/v04/casual_full_v02.webp",
+    "runtimeResolution": [
+      887,
+      1774
+    ],
+    "status": "concept_review"
+  },
+  "owner_shop_back_reference_v01": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAssets": [
+      "assets/source/imagegen/chatgpt/v04/characters/owner_design_sheet_v01.png",
+      "assets/source/imagegen/chatgpt/v04/characters/owner_shop_full_v01.png"
+    ],
+    "designBasis": "docs/17_ASSET_PRODUCTION_PLAN.md §3: owner reference sheet includes rear/side design view, shop outfit, palette, and hairpin placement. This is a supplemental rear-view reference, not a runtime sprite.",
+    "prompt": "Create a clean full-body rear-view turnaround reference of the same shop owner. Preserve silver-gray twin buns, shoulder-length loose hair, pink hair clip, cream blouse, deep burgundy apron with tied bow at back, dark brown skirt, dark tights and brown shoes. Transparent background, straight rear view, head to shoes visible, no front or side view, no text or other objects. Do not use denim or overalls.",
+    "generatedResolution": [
+      887,
+      1774
+    ],
+    "runtimeFile": null,
+    "status": "concept_review"
+  },
+  "customer_worker_s_v02": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/worker/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: busy but food-loving worker; taste 30/90/30. Age, gender, hair and outfit are provisional, not fixed specification.",
+    "prompt": "Use the reference as the exact worker customer character and style. Preserve the same face, hair, outfit, portrait framing, shoulder position, and transparent background. This is the S rank reaction: clearly satisfied and positive, but less intense than SSS; use a gentle closed-mouth smile and warmly attentive eyes, no eye sparkles or astonished open mouth. Centered mid-chest portrait. No props, food, text, logo, watermark, frame or background.",
+    "generatedResolution": [
+      1294,
+      1216
+    ],
+    "runtimeFile": "public/assets/game/characters/worker/v04/s.webp",
+    "runtimeResolution": [
+      1294,
+      1216
+    ],
+    "status": "concept_review"
+  },
+  "customer_tourist_s_v02": {
+    "tool": "ChatGPT Image Generation",
+    "referenceAsset": "assets/source/imagegen/chatgpt/v04/characters/customers/tourist/b_v01.png",
+    "designBasis": "docs/15_NARRATIVE_CHARACTER_AUDIO.md §2: tourist wants to discover local culture; taste 40/50/80. All appearance details are provisional, not fixed specification.",
+    "prompt": "Use the reference as the exact tourist customer character and style. Preserve the same face, hair, outfit, portrait framing, shoulder position, and transparent background. This is the S rank reaction: clearly satisfied and positive, but less intense than SSS; use a gentle closed-mouth smile and warmly attentive eyes, no eye sparkles or astonished open mouth. Centered mid-chest portrait. No props, food, text, logo, watermark, frame or background.",
+    "generatedResolution": [
+      1312,
+      1199
+    ],
+    "runtimeFile": "public/assets/game/characters/tourist/v04/s.webp",
+    "runtimeResolution": [
+      1312,
+      1199
+    ],
+    "status": "concept_review"
+  }
+}

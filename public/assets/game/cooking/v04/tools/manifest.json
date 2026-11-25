@@ -1,0 +1,171 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v04",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "subject": "Stage-specific anime cooking utensil icons for P1, P2, P4, P5 and P6. No completed katsumeshi artwork.",
+  "sourceAttribution": "ComfyUI Anima-Base-v1.0 with anima-style LoRA; transparent WebP derived from the output PNG and BirefNet mask.",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "tool_meat_mallet_anime_v401",
+      "path": "public/assets/game/cooking/v04/tools/meat_mallet_v04.webp",
+      "type": "cooking_tool",
+      "width": 1024,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "meat"
+      ],
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04/tool_meat_mallet_anime_v401",
+      "generationSeed": 98201,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "status": "concept_review",
+      "licenseNote": "Base model and LoRA distribution terms pending review; do not publish.",
+      "reviewNote": "Candidate visually checked in contact sheet; final in-game composition and license review pending.",
+      "reviewedAt": null
+    },
+    {
+      "id": "tool_breading_tray_anime_v402",
+      "path": "public/assets/game/cooking/v04/tools/breading_tray_v04.webp",
+      "type": "cooking_tool",
+      "width": 1024,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "breading"
+      ],
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04_iter2/tool_breading_tray_anime_v402",
+      "generationSeed": 98211,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "status": "concept_review",
+      "licenseNote": "Base model and LoRA distribution terms pending review; do not publish.",
+      "reviewNote": "Candidate visually checked in contact sheet; final in-game composition and license review pending.",
+      "reviewedAt": null
+    },
+    {
+      "id": "tool_sauce_ladle_anime_v401",
+      "path": "public/assets/game/cooking/v04/tools/sauce_ladle_v04.webp",
+      "type": "cooking_tool",
+      "width": 1024,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "sauce"
+      ],
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04/tool_sauce_ladle_anime_v401",
+      "generationSeed": 98203,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "status": "concept_review",
+      "licenseNote": "Base model and LoRA distribution terms pending review; do not publish.",
+      "reviewNote": "Candidate visually checked in contact sheet; final in-game composition and license review pending.",
+      "reviewedAt": null
+    },
+    {
+      "id": "tool_cabbage_pot_anime_v402",
+      "path": "public/assets/game/cooking/v04/tools/cabbage_pot_v04.webp",
+      "type": "cooking_tool",
+      "width": 1024,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "cabbage"
+      ],
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04_iter2/tool_cabbage_pot_anime_v402",
+      "generationSeed": 98212,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "status": "concept_review",
+      "licenseNote": "Base model and LoRA distribution terms pending review; do not publish.",
+      "reviewNote": "Candidate visually checked in contact sheet; final in-game composition and license review pending.",
+      "reviewedAt": null
+    },
+    {
+      "id": "tool_rice_paddle_anime_v401",
+      "path": "public/assets/game/cooking/v04/tools/rice_paddle_v04.webp",
+      "type": "cooking_tool",
+      "width": 1024,
+      "height": 1024,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "cooking",
+        "stage_tool",
+        "rice"
+      ],
+      "sourceWorkflow": "assets/source/comfyui/jobs.json#cooking_tools_v04/tool_rice_paddle_anime_v401",
+      "generationSeed": 98205,
+      "model": "Anima-Base-v1.0.safetensors",
+      "loraList": [
+        {
+          "name": "anima-style-epoch35-lr5e5.safetensors",
+          "strength": 0.8
+        }
+      ],
+      "sampler": "euler",
+      "scheduler": "simple",
+      "steps": 24,
+      "cfg": 4.5,
+      "status": "concept_review",
+      "licenseNote": "Base model and LoRA distribution terms pending review; do not publish.",
+      "reviewNote": "Candidate visually checked in contact sheet; final in-game composition and license review pending.",
+      "reviewedAt": null
+    }
+  ]
+}

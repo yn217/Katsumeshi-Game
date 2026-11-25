@@ -1,0 +1,18 @@
+{
+  "assetId": "shop_diner_anime_2d_v01",
+  "category": "background",
+  "sourceWorkflow": "ChatGPT built-in image generation, edited from a generated layout reference",
+  "sourceFile": "shop_diner_anime_2d_v01.png",
+  "dimensions": { "width": 1672, "height": 941 },
+  "intendedUse": "shop background concept for the game",
+  "status": "concept_review",
+  "runtimeConnected": false,
+  "prompt": "Edit the attached image into a clearly illustrated 2D anime game background, preserving the exact wide perspective and object placement: long wooden service counter along the left, open central floor, tables and red chairs along the right, shoji windows looking onto a small river and bridge, warm pendant lamps. Remove the photorealistic/3D-render appearance completely. Use crisp hand-inked outlines, simplified graphic shapes, cel shading with 2-3 flat shadow tones, painted anime background texture, warm limited color palette, visible brush/linework. No glossy realistic materials, no physically-based lighting, no photographic detail, no 3D render. The final must read as hand-drawn 2D Japanese anime adventure game environment art at first glance. Keep the center floor uncluttered for game UI and characters. No people, food, text, signage, logos or UI.",
+  "reviewNotes": [
+    "The output has clear inked outlines and a hand-drawn 2D appearance, improving on the rejected photorealistic first pass.",
+    "Generated at 1672x941, below the 2560x1440 native-source requirement; do not upscale and call it native resolution.",
+    "Not connected to runtime pending comparison with the existing shop background and full-screen compositing review."
+  ],
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
+}

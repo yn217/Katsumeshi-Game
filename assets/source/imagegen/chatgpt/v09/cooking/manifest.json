@@ -1,0 +1,22 @@
+{
+  "schema": "katsumeshi-imagegen-candidate-manifest/v1",
+  "version": "v09",
+  "generatedAt": "2026-11-23",
+  "status": "concept_review",
+  "assetId": "fry_stage_lifted_cutlet_chatgpt_v01",
+  "file": "fry_stage_lifted_cutlet_chatgpt_v01.png",
+  "width": 1672,
+  "height": 941,
+  "generationMethod": "ChatGPT built-in image generation",
+  "inputReferences": [
+    { "path": "assets/source/imagegen/chatgpt/v07/backgrounds/kitchen_frying_anime_chatgpt_v01.png", "role": "style reference" },
+    { "path": "assets/source/imagegen/chatgpt/v07/cooking/fry_stage_anime_chatgpt_v02.png", "role": "negative composition reference; avoid flat cutlet fused with oil" }
+  ],
+  "prompt": "Use case: stylized-concept. Wide 16:9 game background illustration for the P3 frying step in a Japanese katsumeshi game. Exactly one small-to-medium beef katsu being lifted partly out of a compact fryer by plain wooden cooking chopsticks. It is a thick, breaded beef cutlet with a distinct rounded rectangular/oval silhouette, about 1.5:1 length to width. Tilt diagonally so its thick crisp side edge is clearly visible; show golden panko crust on top and side. Slightly low three-quarter view. Cutlet occupies about 20 percent of frame, centered above the fryer basket, entire silhouette visible against a darker gap and clearly separate from oil and metal. Basket and oil below; a few droplets and tiny bubbles. Large uncluttered negative space. Warm amber light, hand-painted Japanese 2D anime game art, warm brown linework and cel shading. Avoid flat oval sheet, pancake, giant cutlet, food merged with oil, bubbles obscuring food, overlapping food, fish, chicken, humans, visible hands, plate, rice, cabbage, sauce, text, logos, watermark, photorealism, 3D render.",
+  "model": "ChatGPT built-in image generation",
+  "generationSeed": null,
+  "loraList": [],
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; this asset is not approved for release.",
+  "licenseReference": "https://openai.com/policies/terms-of-use/",
+  "review": "Standalone visual inspection: cutlet is lifted clear of the oil, has a visibly thick crusted side edge, and its silhouette is separated from the fryer. Subject scale and fit within the P3 UI still require runtime review. This remains concept_review."
+}

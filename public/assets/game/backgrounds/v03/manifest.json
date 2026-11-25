@@ -1,0 +1,33 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "v03",
+  "generatedAt": "2026-11-22",
+  "status": "concept_review",
+  "subject": "Day 7 blue-hour exterior background, no people or text",
+  "sourceAttribution": "OpenAI ChatGPT built-in image generation; original PNG master retained in assets/source/imagegen/v03/backgrounds/",
+  "charactersIncluded": false,
+  "files": [
+    {
+      "id": "background_day7_evening_v03",
+      "path": "public/assets/game/backgrounds/v03/day7_evening_v03.webp",
+      "type": "background",
+      "width": 1672,
+      "height": 941,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleHint": 1.0,
+      "tags": [
+        "result",
+        "day7",
+        "dusk"
+      ],
+      "status": "concept_review",
+      "sourceWorkflow": "assets/source/imagegen/v03/prompts.json#day7_evening_background",
+      "generationSeed": null,
+      "model": null,
+      "loraList": [],
+      "licenseNote": "Generated with ChatGPT built-in image generation for this project; review applicable distribution terms before release.",
+      "reviewedAt": null
+    }
+  ]
+}

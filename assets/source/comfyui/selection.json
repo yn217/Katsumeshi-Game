@@ -1,0 +1,427 @@
+{
+ "assets": [
+  {
+   "id": "bg_title",
+   "source": "town_game_specs/bg_title_day_v001_00001_.png",
+   "path": "backgrounds/title.webp",
+   "type": "background",
+   "tags": [
+    "title"
+   ]
+  },
+  {
+   "id": "bg_morning",
+   "source": "town_game_assets/bg_morning_prep_v101_00001_.png",
+   "path": "backgrounds/morning.webp",
+   "type": "background",
+   "letterbox": true,
+   "tags": [
+    "MORNING"
+   ]
+  },
+  {
+   "id": "bg_shop",
+   "source": "town_game_assets/bg_shop_day_v101_00001_.png",
+   "path": "backgrounds/shop.webp",
+   "type": "background",
+   "letterbox": true,
+   "tags": [
+    "OPEN"
+   ]
+  },
+  {
+   "id": "bg_kitchen",
+   "source": "town_game_specs/bg_kitchen_day_v001_00001_.png",
+   "path": "backgrounds/kitchen.webp",
+   "type": "background",
+   "tags": [
+    "COOK"
+   ]
+  },
+  {
+   "id": "bg_result",
+   "source": "town_game_assets/bg_result_evening_v101_00001_.png",
+   "path": "backgrounds/result.webp",
+   "type": "background",
+   "letterbox": true,
+   "tags": [
+    "RESULT",
+    "UPGRADE"
+   ]
+  },
+  {
+   "id": "char_owner_shop_normal",
+   "source": "town_game_assets/char_owner_shop_normal_v001_00001_.png",
+   "path": "characters/owner/shop/normal.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "normal"
+   ]
+  },
+  {
+   "id": "char_owner_shop_encourage",
+   "source": "town_game_assets/char_owner_shop_encourage_v001_00001_.png",
+   "path": "characters/owner/shop/encourage.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "encourage"
+   ]
+  },
+  {
+   "id": "char_owner_shop_happy",
+   "source": "town_game_assets/char_owner_shop_happy_v001_00001_.png",
+   "path": "characters/owner/shop/happy.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "happy"
+   ]
+  },
+  {
+   "id": "char_owner_shop_sad",
+   "source": "town_game_assets/char_owner_shop_sad_v001_00001_.png",
+   "path": "characters/owner/shop/sad.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "sad"
+   ]
+  },
+  {
+   "id": "char_owner_shop_surprised",
+   "source": "town_game_assets/char_owner_shop_surprised_v001_00001_.png",
+   "path": "characters/owner/shop/surprised.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "surprised"
+   ]
+  },
+  {
+   "id": "char_owner_shop_thinking",
+   "source": "town_game_assets/char_owner_shop_thinking_v001_00001_.png",
+   "path": "characters/owner/shop/thinking.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "thinking"
+   ]
+  },
+  {
+   "id": "char_owner_shop_full",
+   "source": "town_game_assets/char_owner_shop_full_front_v001_00001_.png",
+   "path": "characters/owner/shop/full.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "full"
+   ]
+  },
+  {
+   "id": "char_owner_casual_full",
+   "source": "town_game_assets/char_owner_casual_full_front_v001_00001_.png",
+   "path": "characters/owner/casual/full.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "full"
+   ]
+  },
+  {
+   "id": "char_regular_reaction_sss",
+   "source": "town_game_assets/char_regular_reaction_sss_v101_00001_.png",
+   "path": "characters/regular/sss.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "regular",
+    "SSS"
+   ]
+  },
+  {
+   "id": "char_regular_reaction_s",
+   "source": "town_game_assets/char_regular_reaction_s_v101_00001_.png",
+   "path": "characters/regular/s.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "regular",
+    "S"
+   ]
+  },
+  {
+   "id": "char_regular_reaction_a",
+   "source": "town_game_assets/char_regular_reaction_a_v101_00001_.png",
+   "path": "characters/regular/a.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "regular",
+    "A"
+   ]
+  },
+  {
+   "id": "char_regular_reaction_b",
+   "source": "town_game_assets/char_regular_reaction_b_v101_00001_.png",
+   "path": "characters/regular/b.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "regular",
+    "B"
+   ]
+  },
+  {
+   "id": "char_regular_reaction_c",
+   "source": "town_game_assets/char_regular_reaction_c_v101_00001_.png",
+   "path": "characters/regular/c.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "regular",
+    "C"
+   ]
+  },
+  {
+   "id": "char_regular_reaction_f",
+   "source": "town_game_assets/char_regular_reaction_f_v101_00001_.png",
+   "path": "characters/regular/f.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "regular",
+    "F"
+   ]
+  },
+  {
+   "id": "char_student_reaction_sss",
+   "source": "town_game_assets/char_student_reaction_sss_v101_00001_.png",
+   "path": "characters/student/sss.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "student",
+    "SSS"
+   ]
+  },
+  {
+   "id": "char_student_reaction_s",
+   "source": "town_game_assets/char_student_reaction_s_v101_00001_.png",
+   "path": "characters/student/s.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "student",
+    "S"
+   ]
+  },
+  {
+   "id": "char_student_reaction_a",
+   "source": "town_game_assets/char_student_reaction_a_v101_00001_.png",
+   "path": "characters/student/a.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "student",
+    "A"
+   ]
+  },
+  {
+   "id": "char_student_reaction_b",
+   "source": "town_game_assets/char_student_reaction_b_v101_00001_.png",
+   "path": "characters/student/b.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "student",
+    "B"
+   ]
+  },
+  {
+   "id": "char_student_reaction_c",
+   "source": "town_game_assets/char_student_reaction_c_v101_00001_.png",
+   "path": "characters/student/c.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "student",
+    "C"
+   ]
+  },
+  {
+   "id": "char_student_reaction_f",
+   "source": "town_game_assets/char_student_reaction_f_v101_00001_.png",
+   "path": "characters/student/f.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "student",
+    "F"
+   ]
+  },
+  {
+   "id": "char_worker_reaction_sss",
+   "source": "town_game_assets/char_worker_reaction_sss_v101_00001_.png",
+   "path": "characters/worker/sss.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "worker",
+    "SSS"
+   ]
+  },
+  {
+   "id": "char_worker_reaction_s",
+   "source": "town_game_assets/char_worker_reaction_s_v101_00001_.png",
+   "path": "characters/worker/s.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "worker",
+    "S"
+   ]
+  },
+  {
+   "id": "char_worker_reaction_a",
+   "source": "town_game_assets/char_worker_reaction_a_v101_00001_.png",
+   "path": "characters/worker/a.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "worker",
+    "A"
+   ]
+  },
+  {
+   "id": "char_worker_reaction_b",
+   "source": "town_game_assets/char_worker_reaction_b_v101_00001_.png",
+   "path": "characters/worker/b.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "worker",
+    "B"
+   ]
+  },
+  {
+   "id": "char_worker_reaction_c",
+   "source": "town_game_assets/char_worker_reaction_c_v101_00001_.png",
+   "path": "characters/worker/c.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "worker",
+    "C"
+   ]
+  },
+  {
+   "id": "char_worker_reaction_f",
+   "source": "town_game_assets/char_worker_reaction_f_v101_00001_.png",
+   "path": "characters/worker/f.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "worker",
+    "F"
+   ]
+  },
+  {
+   "id": "char_tourist_reaction_sss",
+   "source": "town_game_assets/char_tourist_reaction_sss_v101_00001_.png",
+   "path": "characters/tourist/sss.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "tourist",
+    "SSS"
+   ]
+  },
+  {
+   "id": "char_tourist_reaction_s",
+   "source": "town_game_assets/char_tourist_reaction_s_v101_00001_.png",
+   "path": "characters/tourist/s.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "tourist",
+    "S"
+   ]
+  },
+  {
+   "id": "char_tourist_reaction_a",
+   "source": "town_game_assets/char_tourist_reaction_a_v101_00001_.png",
+   "path": "characters/tourist/a.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "tourist",
+    "A"
+   ]
+  },
+  {
+   "id": "char_tourist_reaction_b",
+   "source": "town_game_assets/char_tourist_reaction_b_v101_00001_.png",
+   "path": "characters/tourist/b.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "tourist",
+    "B"
+   ]
+  },
+  {
+   "id": "char_tourist_reaction_c",
+   "source": "town_game_assets/char_tourist_reaction_c_v101_00001_.png",
+   "path": "characters/tourist/c.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "tourist",
+    "C"
+   ]
+  },
+  {
+   "id": "char_tourist_reaction_f",
+   "source": "town_game_assets/char_tourist_reaction_f_v101_00001_.png",
+   "path": "characters/tourist/f.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "tourist",
+    "F"
+   ]
+  },
+  {
+   "id": "char_owner_shop_invite",
+   "source": "town_game_assets/char_owner_invite2_owner_aesthetic_v204_00001_.png",
+   "path": "characters/owner/shop/invite.webp",
+   "type": "character",
+   "cutout": true,
+   "tags": [
+    "owner",
+    "invite",
+    "title"
+   ]
+  },
+  {
+   "id": "bg_title_riverside",
+   "source": "town_game_assets/bg_title_riverside_v102_00001_.png",
+   "path": "backgrounds/title_riverside.webp",
+   "type": "background",
+   "cutout": false,
+   "tags": [
+    "title"
+   ]
+  }
+ ]
+}

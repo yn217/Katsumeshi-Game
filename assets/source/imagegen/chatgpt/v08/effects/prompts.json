@@ -1,0 +1,37 @@
+{
+  "version": "v08",
+  "generatedAt": "2026-11-23",
+  "sourceAttribution": "ChatGPT built-in image generation",
+  "styleReference": {
+    "path": "assets/source/imagegen/chatgpt/v07/backgrounds/shop_diner_anime_chatgpt_v01.png",
+    "role": "style only; do not reproduce scene objects"
+  },
+  "assets": [
+    {
+      "id": "effect_steam_wisps_chatgpt_v08",
+      "name": "steam_wisps",
+      "sourceFile": "steam_wisps_chatgpt_v08.png",
+      "runtimeFile": "steam_wisps_chatgpt_v08.webp",
+      "transparentBackground": true,
+      "prompt": "Three graceful, thin, semi-transparent wisps of warm white steam drifting upward, with faint pale-gold highlights. Subtle and readable over warm or dark restaurant backgrounds. Single centered effect, square canvas, gently curving vertical wisps and generous transparent margin. Soft illustrated vapor, no photoreal smoke. Match clean hand-painted 2D anime game art, restrained warm cel shading. True transparent background, no backdrop, food, dish, object, text, logo, watermark, frame, border, or 3D render."
+    },
+    {
+      "id": "effect_frying_sizzle_chatgpt_v08",
+      "name": "frying_sizzle",
+      "sourceFile": "frying_sizzle_chatgpt_v08.png",
+      "runtimeFile": "frying_sizzle_chatgpt_v08.webp",
+      "transparentBackground": true,
+      "prompt": "A compact cluster of stylized hot-oil bubbles and three small golden splash droplets, like a gentle frying sizzle effect. Simple crisp ink contours and a few flat warm highlights, visibly illustrated, not photoreal or 3D. Readable at small UI scale, low visual intensity. Centered compact horizontal cluster with varied round bubbles and a few separate droplets, generous transparent margin, square canvas. Transparent golden oil, no glass/chrome/realistic reflections. True transparent background; no pan, food, flame, smoke, characters, text, logo, watermark, border, background, checkerboard, or 3D render."
+    },
+    {
+      "id": "effect_golden_sparkle_chatgpt_v08",
+      "name": "golden_sparkle",
+      "sourceFile": "golden_sparkle_chatgpt_v08.png",
+      "runtimeFile": "golden_sparkle_chatgpt_v08.webp",
+      "transparentBackground": true,
+      "prompt": "A tasteful burst of six small golden star glints and a few tiny warm light flecks arranged in a loose arc around an empty center. Lively but restrained, suitable behind a large SSS evaluation badge without reducing text contrast. Clean illustrated shapes and subtle cream highlights, not a generic emoji. Centered constellation, clear center, generous transparent margin, square sprite, elements away from edges. Warm golden celebration, moderate brightness, flat illustrated glints with slight soft glow, not metallic 3D. True transparent background; no plate, food, characters, crown, text, logo, UI, watermark, border, frame, checkerboard, or 3D render."
+    }
+  ],
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; these assets are not approved for release.",
+  "licenseReference": "https://openai.com/policies/terms-of-use/"
+}

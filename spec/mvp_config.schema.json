@@ -281,6 +281,11 @@
         },
         "purchaseQuantities": {
           "type": "array",
+          "prefixItems": [
+            { "const": 1 },
+            { "const": 5 },
+            { "const": 10 }
+          ],
           "items": {
             "type": "integer",
             "minimum": 1,
@@ -361,14 +366,10 @@
           "const": 3
         },
         "p2CellsPerZone": {
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 30
+          "const": 10
         },
         "p2KeyboardHoldSeconds": {
-          "type": "number",
-          "minimum": 0.1,
-          "maximum": 5
+          "const": 0.6
         },
         "p3TargetSeconds": {
           "type": "number",

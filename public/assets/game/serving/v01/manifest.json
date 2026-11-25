@@ -1,0 +1,119 @@
+{
+  "schema": "katsumeshi-asset-manifest/v1",
+  "version": "serving_v01",
+  "generatedAt": "2026-11-24",
+  "status": "concept_review",
+  "comfyUserApproved": true,
+  "comfyUserApprovalNote": "2026-11-24: the user asked for ComfyUI here — characters on Anima + style LoRA, Koharu with character LoRA + style LoRA, everything else on Qwen-Image.",
+  "layoutSource": "src/serving-layout.mjs",
+  "assets": [
+    {
+      "id": "serving_floor_v02",
+      "type": "background",
+      "path": "public/assets/game/serving/v01/floor_v02.webp",
+      "sourceImage": "assets/source/comfyui/serving_floor_v02/floor_s404.png",
+      "sourceWorkflow": "ComfyUI Qwen-Image 2512 Q4 GGUF + Lightning 8-step LoRA + Fun ControlNet Union (Canny of layout_control_v3.png from src/serving-layout.mjs), seed 404",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_waitress_walk",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/waitress_walk.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/waitress_walk_s5103.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + Koharu-Koharu-epoch100 0.8 + anima-style-epoch35 0.8 (presets.json owner), seed 5103, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_waitress_idle",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/waitress_idle.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/waitress_idle_s5201.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + Koharu-Koharu-epoch100 0.8 + anima-style-epoch35 0.8 (presets.json owner), seed 5201, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_chef",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/chef.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/chef_s7002.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 7002, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_diner_worker",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/diner_worker.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/diner_worker.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 6001, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_diner_office",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/diner_office.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/diner_office.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 6001, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_diner_student",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/diner_student.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/diner_student.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 6001, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_diner_elder_m",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/diner_elder_m.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/diner_elder_m.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 6001, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_diner_elder_f",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/diner_elder_f.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/diner_elder_f.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 6001, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_diner_woman",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/diner_woman.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/diner_woman.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 6001, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_diner_child",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/diner_child.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/diner_child.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 6001, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    },
+    {
+      "id": "serving_diner_tourist",
+      "type": "character",
+      "path": "public/assets/game/serving/v01/diner_tourist.webp",
+      "sourceImage": "assets/source/comfyui/serving_chars_v01/diner_tourist.png",
+      "sourceWorkflow": "ComfyUI Anima-Base v1.0 + anima-style-epoch35 0.8 (presets.json scene), seed 6001, birefnet cutout",
+      "status": "concept_review",
+      "licenseNote": "ComfyUI local generation. Character sprites use Anima-Base with the project's Koharu character LoRA and anima-style LoRA (training-data rights pending as for other Koharu assets); background uses Qwen-Image 2512 with Fun ControlNet Union. Not approved for release."
+    }
+  ]
+}

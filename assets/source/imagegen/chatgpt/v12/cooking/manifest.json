@@ -1,0 +1,27 @@
+{
+  "width": 1672,
+  "height": 941,
+  "licenseNote": "ChatGPT image output. Under OpenAI Terms of Use, the user owns output to the extent permitted by applicable law and is responsible for input rights. Human review of third-party rights and appropriateness remains pending; not approved for release.",
+  "review": "Standalone inspection: the cutlet and chopsticks are separated from the fryer; broad 2D linework is closer to the v08 kitchen background than the previous v09 image. Cutlet remains somewhat glossy and should be reviewed at runtime size; this candidate is not approved and is not connected to runtime.",
+  "schema": "katsumeshi-imagegen-candidate-manifest/v1",
+  "model": "ChatGPT built-in image generation",
+  "prompt": "Use case: style-transfer. Asset type: polished 2D game illustration for the katsumeshi game P3 frying screen. Input images: Image 1 is the composition and object placement target; preserve the one lifted cutlet, chopsticks, fryer, framing, and wide 16:9 layout. Image 2 is the style reference; match its clearly drawn 2D anime background. Primary request: redraw Image 1 in the exact visual language of Image 2. Make it unmistakably hand-illustrated 2D cel art with bold simplified warm-brown ink contours, broad clean color shapes, restrained cel shadows, and moderate texture. Subject: one broad, flat, beef cutlet, wide irregular oval/rounded rectangle, crisp golden breading and a distinctly visible thick side edge. Keep the full cutlet silhouette clear and separated above the fryer. Materials/textures: suggest panko with a few grouped marks, not individually rendered photorealistic crumbs. Lighting/mood: warm amber kitchen light as in Image 2. Constraints: change visual style only; keep the composition and single-cutlet frying action. No final plate or katsumeshi serving. Avoid: 3D rendering, realism, glossy product-photo highlights, airbrush gradients, metallic microdetail, hyper-detailed crumb texture, narrow oblong cutlet, pancake, fish, chicken, extra food, text, logos, watermark.",
+  "version": "v12",
+  "seed": null,
+  "generatedAt": "2026-11-23",
+  "licenseReference": "https://openai.com/policies/terms-of-use/",
+  "file": "fry_stage_cutlet_anime_chatgpt_v01.png",
+  "generationMethod": "ChatGPT built-in image generation",
+  "assetId": "fry_stage_cutlet_anime_chatgpt_v01",
+  "inputReferences": [
+    {
+      "path": "(external generated draft, not retained)",
+      "role": "first draft composition and subject; not retained in project"
+    },
+    {
+      "path": "public/assets/game/backgrounds/v08/kitchen_frying_anime_chatgpt_v01.webp",
+      "role": "game art style reference"
+    }
+  ],
+  "status": "concept_review"
+}
